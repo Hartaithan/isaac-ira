@@ -69,9 +69,89 @@ else:
     print("html already loaded")
 
 
-# parse item groups
+def parse_text_element(item, cl):
+    el = item.find("p", class_=cl)
+    result = el and el.text.strip().replace('"', '')
+    return result
+
+
+def parse_number_element(item, cl):
+    el = item.find("p", class_=cl)
+    content = el and el.text
+    parts = content and content.split(' ')
+    result = parts and int(parts[1])
+    return result
+
+
+def get_item_content(item):
+    el = item.find('span')
+    lines = []
+    for p in el.find_all('p', class_=False):
+        if p.find_parent('ul') is None:
+            lines.append(p.get_text())
+    return "\n".join(lines)
+
+
+def parse_items_params(item):
+    lines = item.find('ul').find_all('p') if item.find('ul') else []
+    type = None
+    item_pool = None
+    recharge_time = None
+    for p in lines:
+        text = p.get_text()
+        if "Type" in text:
+            type = text.split(': ')[-1]
+        if "Pool" in text:
+            item_pool = text.split(': ')[-1]
+        if "Recharge" in text:
+            recharge_time = text.split(': ')[-1]
+    return {
+        "type": type,
+        "item_pool": item_pool,
+        "recharge_time": recharge_time,
+    }
+
+
+def get_item_id(item):
+    id = item.get('data-tid')
+    if id is not None:
+        try:
+            id = int(id)
+        except ValueError:
+            id = None
+    return id
+
+
+def parse_group_items(content):
+    items = []
+    for item in content:
+        if not item.name:
+            continue
+        if item.name == 'h2':
+            continue
+
+        id = get_item_id(item)
+        name = parse_text_element(item, "item-title")
+        description = parse_text_element(item, "pickup")
+        quality = parse_number_element(item, "quality")
+        content = get_item_content(item)
+        unlock = parse_text_element(item, "r-unlock")
+        params = parse_items_params(item)
+
+        item = {
+            "id": id,
+            "name": name,
+            "description": description,
+            "quality": quality,
+            "content": content,
+            "unlock": unlock,
+            **params,
+        }
+        items.append(item)
+    return items
+
+
 def parse_item_group(content):
-    # skip not valid groups
     if not content.name:
         return None
     children_length = len(content.find_all(recursive=False))
@@ -80,9 +160,11 @@ def parse_item_group(content):
     if content.find("h2"):
         name_content = content.find("h2").text
         match = re.match(r"^(.*?)\s*\((\d+)\)$", name_content)
+        items = parse_group_items(content)
         group = {
             "name": match.group(1) if match else name_content,
             "count": children_length - 1,
+            "items": items
         }
         return group
     return None
@@ -99,7 +181,6 @@ if main_div:
         group = parse_item_group(line)
         if group is not None:
             groups.append(group)
-    print(groups)
     os.makedirs("assets", exist_ok=True)
     with open("assets/items.json", "w", encoding="utf-8") as json_file:
         json.dump(groups, json_file, ensure_ascii=False, indent=4)
