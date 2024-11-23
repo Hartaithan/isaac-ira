@@ -4,14 +4,13 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-
 url = "https://tboi.com"
 assets = "assets"
 styles_url = f"{url}/{assets}/main.css"
 load_timeout = 30
 
 
-# loading css
+# download css
 path = f"{assets}/main.css"
 if not os.path.exists(path):
     response = requests.get(styles_url, timeout=load_timeout)
@@ -24,7 +23,8 @@ if not os.path.exists(path):
     else:
         print(f"css load error {response.status_code}")
 else:
-    print("css already loaded")
+    with open(path, "r", encoding="utf-8") as file:
+        css_content = file.read()
 
 
 # get all images
@@ -32,8 +32,6 @@ with open(f"{assets}/main.css", "r", encoding="utf-8") as file:
     css_content = file.read()
 image_urls = re.findall(r'background:\s*url\((["\']?.+?["\']?)\)', css_content)
 image_urls = [url.strip('"').strip("'") for url in image_urls]
-print("list of images")
-print(image_urls)
 
 
 # download all images
@@ -50,11 +48,9 @@ for i, image_url in enumerate(image_urls):
             print(f"image {path} loaded")
         else:
             print(f"image {path} load error {response.status_code}")
-    else:
-        print(f"image {path} already loaded")
 
 
-# upload html
+# download html
 html_path = f"{assets}/index.html"
 if not os.path.exists(html_path):
     response = requests.get(url, timeout=load_timeout)
@@ -65,8 +61,6 @@ if not os.path.exists(html_path):
         print("html loaded")
     else:
         print(f"html load error {response.status_code}")
-else:
-    print("html already loaded")
 
 
 def parse_text_element(item, cl):
@@ -122,6 +116,35 @@ def get_item_id(item):
     return id
 
 
+def get_styles_for_class(class_name):
+    class_regex = re.compile(
+        rf"{re.escape(class_name)}\s*\{{(.*?)\}}",
+        re.DOTALL
+    )
+    match = class_regex.search(css_content)
+    if not match:
+        return None
+    styles_text = match.group(1)
+    styles = {}
+    for style_match in re.finditer(r"([\w-]+)\s*:\s*([^;]+);?", styles_text):
+        property_name = style_match.group(1).strip()
+        value = style_match.group(2).strip()
+        styles[property_name] = value
+    return styles
+
+
+def read_item_classes(item):
+    el = item.find('a').find('div')
+    classes = el.get('class')
+    filtered_classes = ['item', 'inverse']
+    filtered = [cls for cls in classes if cls not in filtered_classes]
+    item_class = '.' + '.'.join(filtered)
+    if 'rep-trink' in filtered:
+        item_class = item_class.replace('.rep-item', '')
+    item_styles = get_styles_for_class(item_class)
+    return item_styles
+
+
 def parse_group_items(content):
     items = []
     for item in content:
@@ -137,6 +160,8 @@ def parse_group_items(content):
         content = get_item_content(item)
         unlock = parse_text_element(item, "r-unlock")
         params = parse_items_params(item)
+
+        read_item_classes(item)
 
         item = {
             "id": id,
