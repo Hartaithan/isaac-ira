@@ -133,16 +133,47 @@ def get_styles_for_class(class_name):
     return styles
 
 
+def extract_filename(value):
+    match = re.search(r'[\w-]+\.\w+', value)
+    return match.group(0) if match else None
+
+
+def parse_position(str):
+    if not str:
+        return [0, 0]
+    parts = str.split()
+    x = int(parts[0].replace("px", ""))
+    y = int(parts[1].replace("px", ""))
+    return [abs(x), abs(y)]
+
+
+def parse_size(pos=None, item=None):
+    pos = pos or {}
+    item = item or {}
+    width = pos.get('width') or item.get('width')
+    height = pos.get('height') or item.get('height')
+    w = abs(int(width.replace("px", ""))) if width else 50
+    h = abs(int(height.replace("px", ""))) if height else 50
+    return [w, h]
+
+
 def read_item_classes(item):
     el = item.find('a').find('div')
     classes = el.get('class')
     filtered_classes = ['item', 'inverse']
     filtered = [cls for cls in classes if cls not in filtered_classes]
-    item_class = '.' + '.'.join(filtered)
+    item_class = '.' + filtered[0]
+    position_class = '.' + '.'.join(filtered)
     if 'rep-trink' in filtered:
-        item_class = item_class.replace('.rep-item', '')
+        position_class = position_class.replace('.rep-item', '')
     item_styles = get_styles_for_class(item_class)
-    return item_styles
+    position_styles = get_styles_for_class(position_class)
+    image_url = extract_filename(item_styles.get('background'))
+    size = parse_size(position_styles, item_styles)
+    position_style = position_styles and position_styles.get(
+        "background-position")
+    position = parse_position(position_style)
+    print(position_class, image_url, position, size)
 
 
 def parse_group_items(content):
