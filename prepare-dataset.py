@@ -3,6 +3,8 @@ import os
 import requests
 import json
 from bs4 import BeautifulSoup
+from PIL import Image
+
 
 url = "https://tboi.com"
 assets = "assets"
@@ -107,7 +109,7 @@ def parse_items_params(item):
 
 
 def get_item_id(item):
-    id = item.get('data-tid')
+    id = item.get('data-sid')
     if id is not None:
         try:
             id = int(id)
@@ -157,7 +159,22 @@ def parse_size(pos=None, item=None):
     return [w, h]
 
 
-def read_item_classes(item):
+def save_image(id, image_path, position, size):
+    try:
+        image = Image.open("assets/images/" + image_path)
+        x, y = position
+        width, height = size
+        box = (x, y, x + width, y + height)
+        cropped_image = image.crop(box)
+        output = 'dataset'
+        os.makedirs(output, exist_ok=True)
+        output_path = os.path.join(output, f"{id}.png")
+        cropped_image.save(output_path)
+    except Exception as e:
+        print(f"save image error: {e}")
+
+
+def read_item_classes(id, item):
     el = item.find('a').find('div')
     classes = el.get('class')
     filtered_classes = ['item', 'inverse']
@@ -174,6 +191,7 @@ def read_item_classes(item):
         "background-position")
     position = parse_position(position_style)
     print(position_class, image_url, position, size)
+    save_image(id, image_url, position, size)
 
 
 def parse_group_items(content):
@@ -192,7 +210,7 @@ def parse_group_items(content):
         unlock = parse_text_element(item, "r-unlock")
         params = parse_items_params(item)
 
-        read_item_classes(item)
+        read_item_classes(id, item)
 
         item = {
             "id": id,
