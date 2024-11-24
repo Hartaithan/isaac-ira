@@ -168,7 +168,7 @@ def save_image(id, image_path, position, size):
         width, height = size
         box = (x, y, x + width, y + height)
         cropped_image = image.crop(box)
-        output = 'dataset'
+        output = 'assets/cropped'
         os.makedirs(output, exist_ok=True)
         filename = f"{id}.png"
         output_path = os.path.join(output, filename)
