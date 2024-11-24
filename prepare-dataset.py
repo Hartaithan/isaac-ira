@@ -109,12 +109,14 @@ def parse_items_params(item):
 
 
 def get_item_id(item):
-    id = item.get('data-sid')
-    if id is not None:
-        try:
-            id = int(id)
-        except ValueError:
-            id = None
+    id_el = item.find('p', class_='r-itemid')
+    content = id_el and id_el.text.strip()
+    if content is None:
+        return None
+    parts = content.split(': ')
+    prefix = parts[0].lower()
+    value = parts[-1]
+    id = f"{prefix}-{value}"
     return id
 
 
@@ -168,7 +170,8 @@ def save_image(id, image_path, position, size):
         cropped_image = image.crop(box)
         output = 'dataset'
         os.makedirs(output, exist_ok=True)
-        output_path = os.path.join(output, f"{id}.png")
+        filename = f"{id}.png"
+        output_path = os.path.join(output, filename)
         cropped_image.save(output_path)
     except Exception as e:
         print(f"save image error: {e}")
@@ -190,7 +193,6 @@ def read_item_classes(id, item):
     position_style = position_styles and position_styles.get(
         "background-position")
     position = parse_position(position_style)
-    print(position_class, image_url, position, size)
     save_image(id, image_url, position, size)
 
 
@@ -203,6 +205,9 @@ def parse_group_items(content):
             continue
 
         id = get_item_id(item)
+        if not id:
+            continue
+
         name = parse_text_element(item, "item-title")
         description = parse_text_element(item, "pickup")
         quality = parse_number_element(item, "quality")
