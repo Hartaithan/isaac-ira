@@ -4,6 +4,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 from PIL import Image
+import numpy
 
 
 url = "https://tboi.com"
@@ -265,3 +266,75 @@ if main_div:
         json.dump(groups, json_file, ensure_ascii=False, indent=4)
 else:
     print("main div not found")
+
+
+def find_coeffs(source_coords, target_coords):
+    matrix = []
+    for s, t in zip(source_coords, target_coords):
+        matrix.append([t[0], t[1], 1, 0, 0, 0, -s[0]*t[0], -s[0]*t[1]])
+        matrix.append([0, 0, 0, t[0], t[1], 1, -s[1]*t[0], -s[1]*t[1]])
+    A = numpy.matrix(matrix, dtype=float)
+    B = numpy.array(source_coords).reshape(8)
+    res = numpy.dot(numpy.linalg.inv(A.T * A) * A.T, B)
+    return numpy.array(res).reshape(8)
+
+
+# prepare item images
+for filename in os.listdir("assets/cropped"):
+    image_path = os.path.join("assets/cropped", filename)
+    image = Image.open(image_path)
+    width, height = image.size
+    offset = width * 0.15
+
+    tilts = {
+        "top-tilt": [
+            (offset, 0),
+            (width - offset, 0),
+            (width, height),
+            (0, height)
+        ],
+        "top-left-tilt": [
+            (offset, offset),
+            (width, 0),
+            (width - offset, height - offset),
+            (0, height)
+        ],
+        "top-right-tilt": [
+            (0, 0),
+            (width - offset, offset),
+            (width, height),
+            (0, height - offset)
+        ],
+        "bottom-tilt": [
+            (0, 0),
+            (width, 0),
+            (width - offset, height),
+            (offset, height)
+        ],
+        "left-tilt": [
+            (0, offset),
+            (width, 0),
+            (width, height),
+            (0, height - offset)
+        ],
+        "right-tilt": [
+            (0, 0),
+            (width, offset),
+            (width, height - offset),
+            (0, height)
+        ]
+    }
+
+    out_folder = f"pre-dataset/{filename.replace('.png', '')}"
+    os.makedirs(out_folder, exist_ok=True)
+    image.save(f'{out_folder}/original.png')
+
+    output_paths = {}
+    for name, corners in tilts.items():
+        coeffs = find_coeffs(
+            [(0, 0), (width, 0), (width, height), (0, height)], corners)
+        transformed_image = image.transform(
+            (width, height), Image.PERSPECTIVE, coeffs, resample=Image.BICUBIC)
+        output_path = f"{out_folder}/{name}.png"
+        transformed_image.save(output_path)
+        output_paths[name] = output_path
