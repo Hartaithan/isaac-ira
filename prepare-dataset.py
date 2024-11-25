@@ -190,10 +190,13 @@ def read_item_classes(id, item):
     item_styles = get_styles_for_class(item_class)
     position_styles = get_styles_for_class(position_class)
     image_url = extract_filename(item_styles.get('background'))
+    if 'rep-trink' in filtered:
+        rep_trink_styles = get_styles_for_class('.rep-trink')
+        image_url = extract_filename(rep_trink_styles.get('background'))
     size = parse_size(position_styles, item_styles)
-    position_style = position_styles and position_styles.get(
+    item_position = position_styles and position_styles.get(
         "background-position")
-    position = parse_position(position_style)
+    position = parse_position(item_position)
     save_image(id, image_url, position, size)
 
 
@@ -268,13 +271,13 @@ else:
     print("main div not found")
 
 
-def find_coeffs(source_coords, target_coords):
+def find_coeffs(source, target):
     matrix = []
-    for s, t in zip(source_coords, target_coords):
+    for s, t in zip(source, target):
         matrix.append([t[0], t[1], 1, 0, 0, 0, -s[0]*t[0], -s[0]*t[1]])
         matrix.append([0, 0, 0, t[0], t[1], 1, -s[1]*t[0], -s[1]*t[1]])
     A = numpy.matrix(matrix, dtype=float)
-    B = numpy.array(source_coords).reshape(8)
+    B = numpy.array(source).reshape(8)
     res = numpy.dot(numpy.linalg.inv(A.T * A) * A.T, B)
     return numpy.array(res).reshape(8)
 
@@ -330,9 +333,9 @@ for filename in os.listdir("assets/cropped"):
     image.save(f'{out_folder}/original.png')
 
     output_paths = {}
-    for name, corners in tilts.items():
-        coeffs = find_coeffs(
-            [(0, 0), (width, 0), (width, height), (0, height)], corners)
+    for name, target in tilts.items():
+        source = [(0, 0), (width, 0), (width, height), (0, height)]
+        coeffs = find_coeffs(source, target)
         transformed_image = image.transform(
             (width, height), Image.PERSPECTIVE, coeffs, resample=Image.BICUBIC)
         output_path = f"{out_folder}/{name}.png"
