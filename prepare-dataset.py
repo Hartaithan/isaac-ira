@@ -292,13 +292,9 @@ def resize_image(image, width=None, height=None):
     return resized
 
 
-# prepare item images
-for filename in os.listdir("assets/cropped"):
-    image_path = os.path.join("assets/cropped", filename)
-    image = Image.open(image_path)
-    image = resize_image(image, 224, 224)
+def tilt_image(image, angle=0.15):
     width, height = image.size
-    offset = width * 0.15
+    offset = width * angle
 
     tilts = {
         "top-tilt": [
@@ -339,16 +335,28 @@ for filename in os.listdir("assets/cropped"):
         ]
     }
 
-    out_folder = f"pre-dataset/{filename.replace('.png', '')}"
-    os.makedirs(out_folder, exist_ok=True)
-    image.save(f'{out_folder}/original.png')
-
     output_paths = {}
     for name, target in tilts.items():
         source = [(0, 0), (width, 0), (width, height), (0, height)]
         coeffs = find_coeffs(source, target)
         transformed_image = image.transform(
             (width, height), Image.PERSPECTIVE, coeffs, resample=Image.BICUBIC)
-        output_path = f"{out_folder}/{name}.png"
+        filename = f"{angle * 100}-{name}.png"
+        output_path = f"{out_folder}/{filename}"
         transformed_image.save(output_path)
         output_paths[name] = output_path
+
+
+# prepare item images
+for filename in os.listdir("assets/cropped"):
+    image_path = os.path.join("assets/cropped", filename)
+    image = Image.open(image_path)
+    image = resize_image(image, 224, 224)
+
+    out_folder = f"pre-dataset/{filename.replace('.png', '')}"
+    os.makedirs(out_folder, exist_ok=True)
+    image.save(f'{out_folder}/original.png')
+
+    tilt_image(image, 0.05)
+    tilt_image(image, 0.1)
+    tilt_image(image, 0.15)
