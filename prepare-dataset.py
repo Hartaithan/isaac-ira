@@ -3,7 +3,7 @@ import os
 import requests
 import json
 from bs4 import BeautifulSoup
-from PIL import Image
+from PIL import Image, ImageOps
 import numpy
 
 
@@ -282,10 +282,21 @@ def find_coeffs(source, target):
     return numpy.array(res).reshape(8)
 
 
+def resize_image(image, width=None, height=None):
+    method = Image.Resampling.LANCZOS
+    image = ImageOps.contain(image, (width, height), method=method)
+    resized = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    x = (width - image.width) // 2
+    y = (height - image.height) // 2
+    resized.paste(image, (x, y))
+    return resized
+
+
 # prepare item images
 for filename in os.listdir("assets/cropped"):
     image_path = os.path.join("assets/cropped", filename)
     image = Image.open(image_path)
+    image = resize_image(image, 224, 224)
     width, height = image.size
     offset = width * 0.15
 
