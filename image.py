@@ -107,6 +107,12 @@ def change_brightness(image, brightness, path):
     transformed.save(output_path)
 
 
+def rotate_image(image, rotate, path):
+    transformed = image.rotate(rotate)
+    output_path = f'{path}/rotate-[{rotate}].png'
+    transformed.save(output_path)
+
+
 def prepare_images():
     for filename in os.listdir(assets_cropped):
         image_path = os.path.join(assets_cropped, filename)
@@ -126,3 +132,10 @@ def prepare_images():
         change_brightness(image, 0.75, output_folder)
         change_brightness(image, 1.25, output_folder)
         change_brightness(image, 1.5, output_folder)
+
+        rotate_image(image, -10, output_folder)
+        rotate_image(image, -5, output_folder)
+        rotate_image(image, -3, output_folder)
+        rotate_image(image, 3, output_folder)
+        rotate_image(image, 5, output_folder)
+        rotate_image(image, 10, output_folder)
