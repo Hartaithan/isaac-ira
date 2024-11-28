@@ -2,7 +2,7 @@ import re
 import os
 import requests
 import numpy
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageEnhance
 from globals import url, assets_css, assets_images, assets_cropped, load_timeout, pre_dataset
 
 
@@ -31,7 +31,8 @@ def download_all_images():
 
 def save_image(id, image_path, position, size):
     try:
-        image = Image.open(assets_images + image_path)
+        path = os.path.join(assets_images, image_path)
+        image = Image.open(path)
         x, y = position
         width, height = size
         box = (x, y, x + width, y + height)
@@ -66,44 +67,20 @@ def find_coeffs(source, target):
     return numpy.array(res).reshape(8)
 
 
-def get_image_tilts(offset, width, height):
+def get_image_tilts(offset, w, h):
+    top = [(offset, 0), (w - offset, 0), (w, h), (0, h)]
+    top_left = [(offset, offset), (w, 0), (w - offset, h - offset), (0, h)]
+    top_right = [(0, 0), (w - offset, offset), (w, h), (0, h - offset)]
+    bottom = [(0, 0), (w, 0), (w - offset, h), (offset, h)]
+    left = [(0, offset), (w, 0), (w, h), (0, h - offset)]
+    right = [(0, 0), (w, offset), (w, h - offset), (0, h)]
     tilts = {
-        "top-tilt": [
-            (offset, 0),
-            (width - offset, 0),
-            (width, height),
-            (0, height)
-        ],
-        "top-left-tilt": [
-            (offset, offset),
-            (width, 0),
-            (width - offset, height - offset),
-            (0, height)
-        ],
-        "top-right-tilt": [
-            (0, 0),
-            (width - offset, offset),
-            (width, height),
-            (0, height - offset)
-        ],
-        "bottom-tilt": [
-            (0, 0),
-            (width, 0),
-            (width - offset, height),
-            (offset, height)
-        ],
-        "left-tilt": [
-            (0, offset),
-            (width, 0),
-            (width, height),
-            (0, height - offset)
-        ],
-        "right-tilt": [
-            (0, 0),
-            (width, offset),
-            (width, height - offset),
-            (0, height)
-        ]
+        "tilt-top": top,
+        "tilt-top-left": top_left,
+        "tilt-top-right": top_right,
+        "tilt-bottom": bottom,
+        "tilt-left": left,
+        "tilt-right": right
     }
     return tilts
 
@@ -117,10 +94,17 @@ def tilt_image(image, angle, path):
     for name, target in tilts.items():
         source = [(0, 0), (width, 0), (width, height), (0, height)]
         coeffs = find_coeffs(source, target)
-        transformed_image = image.transform(
+        transformed = image.transform(
             (width, height), Image.PERSPECTIVE, coeffs, resample=Image.BICUBIC)
-        output_path = f'{path}/{angle * 100}-{name}.png'
-        transformed_image.save(output_path)
+        output_path = f'{path}/{name}-[{angle * 100}].png'
+        transformed.save(output_path)
+
+
+def change_brightness(image, brightness, path):
+    enhancer = ImageEnhance.Brightness(image)
+    transformed = enhancer.enhance(brightness)
+    output_path = f'{path}/brightness-[{brightness}].png'
+    transformed.save(output_path)
 
 
 def prepare_images():
@@ -136,3 +120,9 @@ def prepare_images():
         tilt_image(image, 0.05, output_folder)
         tilt_image(image, 0.10, output_folder)
         tilt_image(image, 0.15, output_folder)
+
+        change_brightness(image, 0.25, output_folder)
+        change_brightness(image, 0.5, output_folder)
+        change_brightness(image, 0.75, output_folder)
+        change_brightness(image, 1.25, output_folder)
+        change_brightness(image, 1.5, output_folder)
