@@ -1,6 +1,7 @@
 url = "https://tboi.com"
 assets = "assets"
 pre_dataset = "pre-dataset"
+dataset = "dataset"
 
 url_css = f"{url}/{assets}/main.css"
 assets_css = f"{assets}/main.css"
