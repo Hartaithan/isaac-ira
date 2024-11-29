@@ -10,16 +10,18 @@ output = dataset
 
 
 def group_dataset():
-    os.makedirs(output, exist_ok=True)
+    train_dir = os.path.join(output, 'train')
+    validation_dir = os.path.join(output, 'validation')
+    test_dir = os.path.join(output, 'test')
+    os.makedirs(train_dir, exist_ok=True)
+    os.makedirs(validation_dir, exist_ok=True)
+    os.makedirs(test_dir, exist_ok=True)
 
     for subdir in os.listdir(input):
         subdir_path = os.path.join(input, subdir)
         if os.path.isdir(subdir_path):
-            output_subdir_path = os.path.join(output, subdir)
-            os.makedirs(output_subdir_path, exist_ok=True)
-
             image_files = [f for f in os.listdir(
-                subdir_path) if f.endswith('.png')]
+                subdir_path) if f.endswith('.jpg') or f.endswith('.png')]
 
             random.shuffle(image_files)
 
@@ -27,16 +29,19 @@ def group_dataset():
             validation_files = image_files[10:20]
             test_files = image_files[20:]
 
-            train_dir = os.path.join(output_subdir_path, 'train')
-            os.makedirs(train_dir, exist_ok=True)
-            validation_dir = os.path.join(output_subdir_path, 'validation')
-            os.makedirs(validation_dir, exist_ok=True)
-            test_dir = os.path.join(output_subdir_path, 'test')
-            os.makedirs(test_dir, exist_ok=True)
+            train_subdir = os.path.join(train_dir, subdir)
+            validation_subdir = os.path.join(validation_dir, subdir)
+            test_subdir = os.path.join(test_dir, subdir)
+            os.makedirs(train_subdir, exist_ok=True)
+            os.makedirs(validation_subdir, exist_ok=True)
+            os.makedirs(test_subdir, exist_ok=True)
 
             for file in train_files:
-                shutil.copy(os.path.join(subdir_path, file), train_dir)
+                shutil.move(os.path.join(subdir_path, file), train_subdir)
             for file in validation_files:
-                shutil.copy(os.path.join(subdir_path, file), validation_dir)
+                shutil.move(os.path.join(subdir_path, file), validation_subdir)
             for file in test_files:
-                shutil.copy(os.path.join(subdir_path, file), test_dir)
+                shutil.move(os.path.join(subdir_path, file), test_subdir)
+
+
+group_dataset()
