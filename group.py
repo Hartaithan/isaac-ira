@@ -37,8 +37,8 @@ def group_dataset():
             os.makedirs(test_subdir, exist_ok=True)
 
             for file in train_files:
-                shutil.move(os.path.join(subdir_path, file), train_subdir)
+                shutil.copy(os.path.join(subdir_path, file), train_subdir)
             for file in validation_files:
-                shutil.move(os.path.join(subdir_path, file), validation_subdir)
+                shutil.copy(os.path.join(subdir_path, file), validation_subdir)
             for file in test_files:
-                shutil.move(os.path.join(subdir_path, file), test_subdir)
+                shutil.copy(os.path.join(subdir_path, file), test_subdir)
