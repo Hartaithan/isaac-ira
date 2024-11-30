@@ -42,6 +42,3 @@ def group_dataset():
                 shutil.move(os.path.join(subdir_path, file), validation_subdir)
             for file in test_files:
                 shutil.move(os.path.join(subdir_path, file), test_subdir)
-
-
-group_dataset()
