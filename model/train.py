@@ -1,8 +1,7 @@
-import tensorflow as tf
-from tensorflow.keras.applications import MobileNetV2  # type: ignore
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense  # type: ignore
-from tensorflow.keras.models import Model  # type: ignore
-from tensorflow.keras.preprocessing.image import ImageDataGenerator  # type: ignore
+from keras.api.applications import MobileNetV2
+from keras.api.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from keras.api.models import Model
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 
 base_model = MobileNetV2(
     weights='imagenet', include_top=False, input_shape=(224, 224, 3))

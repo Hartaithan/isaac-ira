@@ -3,22 +3,22 @@
 import os
 import shutil
 import random
-from globals import dataset, pre_dataset, pre_dataset
+from globals import dataset, pre_dataset
 
-input = pre_dataset
-output = dataset
+input_dir = pre_dataset
+output_dir = dataset
 
 
 def group_dataset():
-    train_dir = os.path.join(output, 'train')
-    validation_dir = os.path.join(output, 'validation')
-    test_dir = os.path.join(output, 'test')
+    train_dir = os.path.join(output_dir, 'train')
+    validation_dir = os.path.join(output_dir, 'validation')
+    test_dir = os.path.join(output_dir, 'test')
     os.makedirs(train_dir, exist_ok=True)
     os.makedirs(validation_dir, exist_ok=True)
     os.makedirs(test_dir, exist_ok=True)
 
-    for subdir in os.listdir(input):
-        subdir_path = os.path.join(input, subdir)
+    for subdir in os.listdir(input_dir):
+        subdir_path = os.path.join(input_dir, subdir)
         if os.path.isdir(subdir_path):
             image_files = [f for f in os.listdir(
                 subdir_path) if f.endswith('.jpg') or f.endswith('.png')]

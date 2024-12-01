@@ -1,20 +1,20 @@
 import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.preprocessing import image  # type: ignore
-from tensorflow.keras.preprocessing.image import ImageDataGenerator  # type: ignore
+from keras.api.models import load_model
+from keras.api.preprocessing.image import load_img, img_to_array
+from keras.src.legacy.preprocessing.image import ImageDataGenerator
 
-model = keras.models.load_model('model/v1.h5')
+model = load_model('model/v1.h5')
 
 train_dir = 'dataset/train'
+
 train_datagen = ImageDataGenerator(rescale=1./255)
 train_generator = train_datagen.flow_from_directory(
     train_dir, target_size=(224, 224), batch_size=32, class_mode='categorical')
 class_labels = {v: k for k, v in train_generator.class_indices.items()}
 
 img_dir = 'pre-dataset/itemid-128/original.png'
-img = image.load_img(img_dir, target_size=(224, 224))
-img_array = image.img_to_array(img) / 255.0
+img = load_img(img_dir, target_size=(224, 224))
+img_array = img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)
 
 predictions = model.predict(img_array)

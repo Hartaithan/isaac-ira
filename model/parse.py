@@ -30,8 +30,8 @@ def parse_item_id(item):
     parts = content.split(': ')
     prefix = parts[0].lower()
     value = parts[-1]
-    id = f"{prefix}-{value}"
-    return id
+    item_id = f"{prefix}-{value}"
+    return item_id
 
 
 def parse_item_content(item):
@@ -45,28 +45,28 @@ def parse_item_content(item):
 
 def parse_items_params(item):
     lines = item.find('ul').find_all('p') if item.find('ul') else []
-    type = None
+    item_type = None
     item_pool = None
     recharge_time = None
     for p in lines:
         text = p.get_text()
         if "Type" in text:
-            type = text.split(': ')[-1]
+            item_type = text.split(': ')[-1]
         if "Pool" in text:
             item_pool = text.split(': ')[-1]
         if "Recharge" in text:
             recharge_time = text.split(': ')[-1]
     return {
-        "type": type,
+        "type": item_type,
         "item_pool": item_pool,
         "recharge_time": recharge_time,
     }
 
 
-def parse_position(str):
-    if not str:
+def parse_position(value):
+    if not value:
         return [0, 0]
-    parts = str.split()
+    parts = value.split()
     x = int(parts[0].replace("px", ""))
     y = int(parts[1].replace("px", ""))
     return [abs(x), abs(y)]
@@ -82,7 +82,7 @@ def parse_size(pos=None, item=None):
     return [w, h]
 
 
-def read_item_classes(id, item):
+def read_item_classes(item_id, item):
     el = item.find('a').find('div')
     classes = el.get('class')
     filtered_classes = ['item', 'inverse']
@@ -101,7 +101,7 @@ def read_item_classes(id, item):
     item_position = position_styles and position_styles.get(
         "background-position")
     position = parse_position(item_position)
-    save_image(id, image_url, position, size)
+    save_image(item_id, image_url, position, size)
 
 
 def parse_group_items(content):
@@ -112,8 +112,8 @@ def parse_group_items(content):
         if item.name == 'h2':
             continue
 
-        id = parse_item_id(item)
-        if not id:
+        item_id = parse_item_id(item)
+        if not item_id:
             continue
 
         name = parse_text_element(item, "item-title")
@@ -123,10 +123,10 @@ def parse_group_items(content):
         unlock = parse_text_element(item, "r-unlock")
         params = parse_items_params(item)
 
-        read_item_classes(id, item)
+        read_item_classes(item_id, item)
 
         item = {
-            "id": id,
+            "id": item_id,
             "name": name,
             "description": description,
             "quality": quality,

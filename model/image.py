@@ -15,7 +15,7 @@ def download_all_images():
     image_urls = [url.strip('"').strip("'") for url in image_urls]
     # download all images
     os.makedirs(assets_images, exist_ok=True)
-    for i, image_url in enumerate(image_urls):
+    for _i, image_url in enumerate(image_urls):
         image_url = url + image_url.replace("..", "")
         filename = image_url.split("/")[-1]
         path = f"{assets_images}/{filename}"
@@ -29,7 +29,7 @@ def download_all_images():
                 print(f"image {path} load error {response.status_code}")
 
 
-def save_image(id, image_path, position, size):
+def save_image(name, image_path, position, size):
     try:
         path = os.path.join(assets_images, image_path)
         image = Image.open(path)
@@ -37,10 +37,9 @@ def save_image(id, image_path, position, size):
         width, height = size
         box = (x, y, x + width, y + height)
         cropped_image = image.crop(box)
-        output = assets_cropped
-        os.makedirs(output, exist_ok=True)
-        filename = f"{id}.png"
-        output_path = os.path.join(output, filename)
+        os.makedirs(assets_cropped, exist_ok=True)
+        filename = f"{name}.png"
+        output_path = os.path.join(assets_cropped, filename)
         cropped_image.save(output_path)
     except Exception as e:
         print(f"save image error: {e}")
@@ -95,7 +94,7 @@ def tilt_image(image, angle, path):
         source = [(0, 0), (width, 0), (width, height), (0, height)]
         coeffs = find_coeffs(source, target)
         transformed = image.transform(
-            (width, height), Image.PERSPECTIVE, coeffs, resample=Image.BICUBIC)
+            (width, height), Image.Transform.PERSPECTIVE, coeffs, resample=Image.Resampling.BICUBIC)
         output_path = f'{path}/{name}-[{angle * 100}].png'
         transformed.save(output_path)
 
