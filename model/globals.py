@@ -1,16 +1,18 @@
+import os
+
 url = "https://tboi.com"
-assets = "assets"
-pre_dataset = "pre-dataset"
-dataset = "dataset"
+assets = os.path.join("model", "assets")
+pre_dataset = os.path.join("model", "pre-dataset")
+dataset = os.path.join("model", "dataset")
 
-url_css = f"{url}/{assets}/main.css"
-assets_css = f"{assets}/main.css"
+url_css = f"{url}/assets/main.css"
+assets_css = os.path.join(assets, "main.css")
 
-assets_images = f"{assets}/images"
-assets_cropped = f"{assets}/cropped"
+assets_images = os.path.join(assets, "images")
+assets_cropped = os.path.join(assets, "cropped")
 
-assets_html = f"{assets}/index.html"
+assets_html = os.path.join(assets, "index.html")
 
-assets_items = f"{assets}/items.json"
+assets_items = os.path.join(assets, "items.json")
 
 load_timeout = 30
