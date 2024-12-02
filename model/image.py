@@ -123,7 +123,9 @@ def prepare_images():
         image.save(f'{output_folder}/original.png')
 
         tilt_image(image, 0.05, output_folder)
+        tilt_image(image, 0.075, output_folder)
         tilt_image(image, 0.10, output_folder)
+        tilt_image(image, 0.125, output_folder)
         tilt_image(image, 0.15, output_folder)
 
         change_brightness(image, 0.25, output_folder)
