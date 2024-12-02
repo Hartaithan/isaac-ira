@@ -3,7 +3,7 @@ import os
 import requests
 import numpy
 from PIL import Image, ImageOps, ImageEnhance
-from globals import url, assets_css, assets_images, assets_cropped, load_timeout, pre_dataset
+from globals import url, assets_css, assets_images, assets_cropped, load_timeout, pre_dataset, background
 
 
 def download_all_images():
@@ -55,6 +55,12 @@ def resize_image(image, width=None, height=None):
     return resized
 
 
+def add_background(image):
+    transformed = Image.new('RGBA', image.size, background)
+    transformed.paste(image, mask=image)
+    return transformed
+
+
 def find_coeffs(source, target):
     matrix = []
     for s, t in zip(source, target):
@@ -95,7 +101,8 @@ def tilt_image(image, angle, path):
         coeffs = find_coeffs(source, target)
         transformed = image.transform(
             (width, height), Image.Transform.PERSPECTIVE, coeffs, resample=Image.Resampling.BICUBIC)
-        output_path = f'{path}/{name}-[{angle * 100}].png'
+        output_path = f'{path}/{name}-[{angle}].png'
+        transformed = add_background(transformed)
         transformed.save(output_path)
 
 
@@ -109,6 +116,7 @@ def change_brightness(image, brightness, path):
 def rotate_image(image, rotate, path):
     transformed = image.rotate(rotate)
     output_path = f'{path}/rotate-[{rotate}].png'
+    transformed = add_background(transformed)
     transformed.save(output_path)
 
 
@@ -117,6 +125,7 @@ def prepare_images():
         image_path = os.path.join(assets_cropped, filename)
         image = Image.open(image_path)
         image = resize_image(image, 224, 224)
+        image = add_background(image)
 
         output_folder = f"{pre_dataset}/{filename.replace('.png', '')}"
         os.makedirs(output_folder, exist_ok=True)
