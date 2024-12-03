@@ -2,17 +2,18 @@ import numpy as np
 from keras.api.models import load_model
 from keras.api.preprocessing.image import load_img, img_to_array
 from keras.src.legacy.preprocessing.image import ImageDataGenerator
+from globals import root, dataset, pre_dataset
 
-model = load_model('model/v1.h5')
+model = load_model(f'{root}/model/v1.h5')
 
-train_dir = 'dataset/train'
+train_dir = f'{dataset}/train'
 
 train_datagen = ImageDataGenerator(rescale=1./255)
 train_generator = train_datagen.flow_from_directory(
     train_dir, target_size=(224, 224), batch_size=32, class_mode='categorical')
 class_labels = {v: k for k, v in train_generator.class_indices.items()}
 
-img_dir = 'pre-dataset/itemid-128/original.png'
+img_dir = f'{pre_dataset}/itemid-128/original.png'
 img = load_img(img_dir, target_size=(224, 224))
 img_array = img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)

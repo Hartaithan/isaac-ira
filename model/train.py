@@ -2,6 +2,7 @@ from keras.api.applications import MobileNetV2
 from keras.api.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.api.models import Model
 from keras.src.legacy.preprocessing.image import ImageDataGenerator
+from globals import dataset
 
 base_model = MobileNetV2(
     weights='imagenet', include_top=False, input_shape=(224, 224, 3))
@@ -21,8 +22,8 @@ model = Model(inputs=base_model.input, outputs=x)
 model.compile(optimizer='adam', loss='categorical_crossentropy',
               metrics=['accuracy'])
 
-train_dir = 'dataset/train'
-validation_dir = 'dataset/validation'
+train_dir = f'{dataset}/train'
+validation_dir = f'{dataset}/validation'
 
 train_datagen = ImageDataGenerator(rescale=1./255)
 validation_datagen = ImageDataGenerator(rescale=1./255)
