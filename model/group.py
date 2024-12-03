@@ -25,9 +25,13 @@ def group_dataset():
 
             random.shuffle(image_files)
 
-            train_files = image_files[:10]
-            validation_files = image_files[10:20]
-            test_files = image_files[20:]
+            num_files = len(image_files)
+            train_size = int(num_files * 0.7)
+            validation_size = int(num_files * 0.15)
+
+            train_files = image_files[:train_size]
+            validation_files = image_files[train_size:train_size+validation_size]
+            test_files = image_files[train_size+validation_size:]
 
             train_subdir = os.path.join(train_dir, subdir)
             validation_subdir = os.path.join(validation_dir, subdir)
