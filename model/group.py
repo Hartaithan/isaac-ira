@@ -8,12 +8,15 @@ output_dir = dataset
 
 
 def group_dataset():
-    train_dir = os.path.join(output_dir, 'train')
-    validation_dir = os.path.join(output_dir, 'validation')
-    test_dir = os.path.join(output_dir, 'test')
-    os.makedirs(train_dir, exist_ok=True)
-    os.makedirs(validation_dir, exist_ok=True)
-    os.makedirs(test_dir, exist_ok=True)
+    dirs = [
+        os.path.join(output_dir, 'train'),
+        os.path.join(output_dir, 'validation'),
+        os.path.join(output_dir, 'test'),
+    ]
+
+    os.makedirs(dirs[0], exist_ok=True)
+    os.makedirs(dirs[1], exist_ok=True)
+    os.makedirs(dirs[2], exist_ok=True)
 
     for subdir in os.listdir(input_dir):
         subdir_path = os.path.join(input_dir, subdir)
@@ -31,9 +34,9 @@ def group_dataset():
             validation_files = image_files[train_size:train_size+validation_size]
             test_files = image_files[train_size+validation_size:]
 
-            train_subdir = os.path.join(train_dir, subdir)
-            validation_subdir = os.path.join(validation_dir, subdir)
-            test_subdir = os.path.join(test_dir, subdir)
+            train_subdir = os.path.join(dirs[0], subdir)
+            validation_subdir = os.path.join(dirs[1], subdir)
+            test_subdir = os.path.join(dirs[2], subdir)
             os.makedirs(train_subdir, exist_ok=True)
             os.makedirs(validation_subdir, exist_ok=True)
             os.makedirs(test_subdir, exist_ok=True)

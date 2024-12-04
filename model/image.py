@@ -3,7 +3,8 @@ import os
 import requests
 import numpy
 from PIL import Image, ImageOps, ImageEnhance
-from globals import url, assets_css, assets_images, assets_cropped, load_timeout, pre_dataset, background
+from globals import load_timeout, pre_dataset, background
+from globals import url, assets_css, assets_images, assets_cropped
 
 
 def download_all_images():
@@ -134,7 +135,8 @@ def scale_image(image, scale, filename, path):
     transformed.paste(image, ((new_width - orig_width) //
                               2, (new_height - orig_height) // 2))
     transformed = transformed.resize((orig_width, orig_height))
-    output_path = f'{path}/scale-[{scale}]-{filename.replace('.png', '')}.png'
+    new_filename = filename.replace('.png', '')
+    output_path = f'{path}/scale-[{scale}]-{new_filename}.png'
     transformed.save(output_path)
 
 
