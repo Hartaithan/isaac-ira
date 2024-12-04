@@ -120,6 +120,24 @@ def rotate_image(image, rotate, path):
     transformed.save(output_path)
 
 
+def scale_image(image, scale, filename, path):
+    orig_width, orig_height = image.size
+    new_width = int(orig_width * scale)
+    new_height = int(orig_height * scale)
+    new_aspect_ratio = new_width / new_height
+    image_bg = image.getpixel((0, 0))
+    if orig_width / orig_height > new_aspect_ratio:
+        new_width = int(new_height * orig_width / orig_height)
+    else:
+        new_height = int(new_width * orig_height / orig_width)
+    transformed = Image.new('RGB', (new_width, new_height), image_bg)
+    transformed.paste(image, ((new_width - orig_width) //
+                              2, (new_height - orig_height) // 2))
+    transformed = transformed.resize((orig_width, orig_height))
+    output_path = f'{path}/scale-[{scale}]-{filename.replace('.png', '')}.png'
+    transformed.save(output_path)
+
+
 def prepare_images():
     for filename in os.listdir(assets_cropped):
         image_path = os.path.join(assets_cropped, filename)
@@ -149,3 +167,14 @@ def prepare_images():
         rotate_image(image, 3, output_folder)
         rotate_image(image, 5, output_folder)
         rotate_image(image, 10, output_folder)
+
+
+def scale_predataset():
+    for folder in os.listdir(pre_dataset):
+        subfolder_path = os.path.join(pre_dataset, folder)
+        for filename in os.listdir(subfolder_path):
+            image_path = os.path.join(pre_dataset, folder, filename)
+            image = Image.open(image_path)
+            scale_image(image, 1.1, filename, subfolder_path)
+            scale_image(image, 1.2, filename, subfolder_path)
+            scale_image(image, 1.3, filename, subfolder_path)
