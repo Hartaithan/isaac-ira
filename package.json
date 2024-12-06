@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "cd app && npm run dev",
+    "model:dataset": "cd model && python dataset.py",
+    "model:train": "cd model && python train.py"
+  }
+}
