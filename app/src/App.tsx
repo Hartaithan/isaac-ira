@@ -1,7 +1,8 @@
 import { FC } from "react";
+import { Button } from "./ui/button";
 
 const App: FC = () => {
-  return <pre>Hello World!</pre>;
+  return <Button>Hello World!</Button>;
 };
 
 export default App;
