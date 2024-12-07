@@ -13,12 +13,14 @@ interface Context {
   video: RefObject<HTMLVideoElement>;
   initialize: () => void;
   stop: () => void;
+  capture: () => void;
 }
 
 const initialValue: Context = {
   video: { current: null },
   initialize: () => null,
   stop: () => null,
+  capture: () => null,
 };
 
 const constraints: MediaStreamConstraints = {
@@ -27,9 +29,13 @@ const constraints: MediaStreamConstraints = {
 
 const Context = createContext<Context>(initialValue);
 
+const { width, height } = { width: 100, height: 100 };
+
 const CameraProvider: FC<PropsWithChildren> = (props) => {
   const { children } = props;
   const video = useRef<HTMLVideoElement>(null);
+  const canvas = useRef<HTMLCanvasElement>(null);
+  const cropped = useRef<HTMLCanvasElement>(null);
 
   const initialize: Context["initialize"] = useCallback(async () => {
     try {
@@ -49,12 +55,47 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     tracks.forEach((track) => track.stop());
   }, []);
 
+  const capture: Context["capture"] = useCallback(() => {
+    if (!video.current) return;
+    if (!canvas.current) return;
+    if (!cropped.current) return;
+
+    const { videoHeight, videoWidth } = video.current;
+
+    const context = canvas.current.getContext("2d");
+    if (!context) return;
+
+    canvas.current.width = videoWidth;
+    canvas.current.height = videoHeight;
+    context.drawImage(video.current, 0, 0, videoWidth, videoHeight);
+
+    const x = (videoWidth - width) / 2;
+    const y = (videoHeight - height) / 2;
+
+    const croppedData = context.getImageData(x, y, width, height);
+    cropped.current.width = width;
+    cropped.current.height = height;
+
+    const croppedContext = cropped.current.getContext("2d");
+    if (!croppedContext) return;
+
+    croppedContext.putImageData(croppedData, 0, 0);
+    const croppedImage = cropped.current.toDataURL("image/png");
+    console.info("croppedImage", croppedImage);
+  }, []);
+
   const exposed: Context = useMemo(
-    () => ({ video, initialize, stop }),
-    [initialize, stop],
+    () => ({ video, initialize, stop, capture }),
+    [initialize, stop, capture],
   );
 
-  return <Context.Provider value={exposed}>{children}</Context.Provider>;
+  return (
+    <Context.Provider value={exposed}>
+      {children}
+      <canvas className="absolute hidden" ref={canvas} />
+      <canvas className="absolute z-10" ref={cropped} />
+    </Context.Provider>
+  );
 };
 
 export const useCamera = (): Context => useContext(Context);
