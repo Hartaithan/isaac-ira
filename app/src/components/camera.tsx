@@ -10,7 +10,7 @@ const Camera: FC = () => {
   }, [initialize, stop]);
 
   return (
-    <div className="size-full overflow-hidden flex justify-center items-center">
+    <div className="flex size-full items-center justify-center overflow-hidden">
       <video ref={video} className="size-full object-cover" />
     </div>
   );
