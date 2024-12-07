@@ -1,8 +1,11 @@
 import { FC } from "react";
-import { Button } from "./ui/button";
+import Camera from "./components/camera";
+import RootProvider from "./providers/root";
 
-const App: FC = () => {
-  return <Button>Hello World!</Button>;
-};
+const App: FC = () => (
+  <RootProvider>
+    <Camera />
+  </RootProvider>
+);
 
 export default App;
