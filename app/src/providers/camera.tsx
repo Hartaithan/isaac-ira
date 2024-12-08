@@ -1,3 +1,4 @@
+import { center } from "@/constants/dimensions";
 import {
   createContext,
   FC,
@@ -28,8 +29,6 @@ const constraints: MediaStreamConstraints = {
 };
 
 const Context = createContext<Context>(initialValue);
-
-const { width, height } = { width: 100, height: 100 };
 
 const CameraProvider: FC<PropsWithChildren> = (props) => {
   const { children } = props;
@@ -69,12 +68,12 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     canvas.current.height = videoHeight;
     context.drawImage(video.current, 0, 0, videoWidth, videoHeight);
 
-    const x = (videoWidth - width) / 2;
-    const y = (videoHeight - height) / 2;
+    const x = (videoWidth - center.width) / 2;
+    const y = (videoHeight - center.height) / 2;
 
-    const croppedData = context.getImageData(x, y, width, height);
-    cropped.current.width = width;
-    cropped.current.height = height;
+    const croppedData = context.getImageData(x, y, center.width, center.height);
+    cropped.current.width = center.width;
+    cropped.current.height = center.height;
 
     const croppedContext = cropped.current.getContext("2d");
     if (!croppedContext) return;
