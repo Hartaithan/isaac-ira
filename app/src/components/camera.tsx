@@ -2,7 +2,7 @@ import { useCamera } from "@/providers/camera";
 import { FC, useEffect } from "react";
 
 const Camera: FC = () => {
-  const { video, initialize, stop } = useCamera();
+  const { camera, initialize, stop } = useCamera();
 
   useEffect(() => {
     initialize();
@@ -11,7 +11,7 @@ const Camera: FC = () => {
 
   return (
     <div className="flex size-full items-center justify-center overflow-hidden">
-      <video ref={video} className="size-full object-cover" />
+      <video ref={camera} className="size-full object-cover" />
     </div>
   );
 };

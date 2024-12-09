@@ -1,16 +1,17 @@
 import { center } from "@/constants/dimensions";
+import { useCameraSize } from "@/hooks/useCameraSize";
 import { useViewportSize } from "@/hooks/useViewportSize";
 import { Dimensions } from "@/model/dimension";
 import { useCamera } from "@/providers/camera";
-import { getActualSize, getRatio, getVideoSize } from "@/utils/dimensions";
+import { getActualSize, getRatio } from "@/utils/dimensions";
 import { FC, useMemo } from "react";
 
 const CenterPoint: FC = () => {
-  const { video } = useCamera();
+  const { camera } = useCamera();
   const viewportSize = useViewportSize();
+  const cameraSize = useCameraSize(camera);
 
   const centerSize = useMemo(() => {
-    const cameraSize = getVideoSize(video);
     const actualCameraSize = getActualSize(viewportSize, cameraSize);
     const viewportToCameraRatio = getRatio(actualCameraSize, cameraSize);
     const actualCenterSize: Dimensions = {
@@ -18,7 +19,7 @@ const CenterPoint: FC = () => {
       height: center.height * viewportToCameraRatio || center.height,
     };
     return actualCenterSize;
-  }, [video, viewportSize]);
+  }, [cameraSize, viewportSize]);
 
   return (
     <div

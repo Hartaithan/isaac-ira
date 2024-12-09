@@ -11,14 +11,14 @@ import {
 } from "react";
 
 interface Context {
-  video: RefObject<HTMLVideoElement>;
+  camera: RefObject<HTMLVideoElement>;
   initialize: () => void;
   stop: () => void;
   capture: () => void;
 }
 
 const initialValue: Context = {
-  video: { current: null },
+  camera: { current: null },
   initialize: () => null,
   stop: () => null,
   capture: () => null,
@@ -32,41 +32,41 @@ const Context = createContext<Context>(initialValue);
 
 const CameraProvider: FC<PropsWithChildren> = (props) => {
   const { children } = props;
-  const video = useRef<HTMLVideoElement>(null);
+  const camera = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const cropped = useRef<HTMLCanvasElement>(null);
 
   const initialize: Context["initialize"] = useCallback(async () => {
     try {
-      if (!video.current) return;
+      if (!camera.current) return;
       const stream = await navigator.mediaDevices.getUserMedia(constraints);
-      video.current.srcObject = stream;
-      await video.current.play();
+      camera.current.srcObject = stream;
+      await camera.current.play();
     } catch (error) {
       console.error("initialize camera error", error);
     }
   }, []);
 
   const stop: Context["stop"] = useCallback(() => {
-    if (!video.current || !video.current.srcObject) return;
-    const stream = video.current.srcObject as MediaStream;
+    if (!camera.current || !camera.current.srcObject) return;
+    const stream = camera.current.srcObject as MediaStream;
     const tracks = stream.getTracks();
     tracks.forEach((track) => track.stop());
   }, []);
 
   const capture: Context["capture"] = useCallback(() => {
-    if (!video.current) return;
+    if (!camera.current) return;
     if (!canvas.current) return;
     if (!cropped.current) return;
 
-    const { videoHeight, videoWidth } = video.current;
+    const { videoHeight, videoWidth } = camera.current;
 
     const context = canvas.current.getContext("2d");
     if (!context) return;
 
     canvas.current.width = videoWidth;
     canvas.current.height = videoHeight;
-    context.drawImage(video.current, 0, 0, videoWidth, videoHeight);
+    context.drawImage(camera.current, 0, 0, videoWidth, videoHeight);
 
     const x = (videoWidth - center.width) / 2;
     const y = (videoHeight - center.height) / 2;
@@ -84,7 +84,7 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
   }, []);
 
   const exposed: Context = useMemo(
-    () => ({ video, initialize, stop, capture }),
+    () => ({ camera, initialize, stop, capture }),
     [initialize, stop, capture],
   );
 
