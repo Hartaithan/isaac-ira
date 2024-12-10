@@ -1,4 +1,6 @@
 import { center } from "@/constants/dimensions";
+import { resizeCanvas } from "@/utils/canvas";
+import { predict } from "@/utils/model";
 import {
   createContext,
   FC,
@@ -54,7 +56,7 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     tracks.forEach((track) => track.stop());
   }, []);
 
-  const capture: Context["capture"] = useCallback(() => {
+  const capture: Context["capture"] = useCallback(async () => {
     if (!camera.current) return;
     if (!canvas.current) return;
     if (!cropped.current) return;
@@ -77,10 +79,12 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
 
     const croppedContext = cropped.current.getContext("2d");
     if (!croppedContext) return;
-
     croppedContext.putImageData(croppedData, 0, 0);
-    const croppedImage = cropped.current.toDataURL("image/png");
-    console.info("croppedImage", croppedImage);
+
+    const resized = resizeCanvas(cropped.current);
+    if (!resized) return;
+    const result = predict(resized);
+    console.info("result", result);
   }, []);
 
   const exposed: Context = useMemo(
