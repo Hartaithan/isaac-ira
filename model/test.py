@@ -1,10 +1,9 @@
 import numpy as np
-from keras.api.models import load_model
-from keras.api.preprocessing.image import load_img, img_to_array
-from keras.src.legacy.preprocessing.image import ImageDataGenerator
+from keras.models import load_model
+from keras.preprocessing.image import load_img, img_to_array, ImageDataGenerator
 from globals import root, dataset, pre_dataset
 
-model = load_model(f'{root}/model/v2.keras')
+model = load_model(f'{root}/model/v2.h5')
 
 train_dir = f'{dataset}/train'
 
