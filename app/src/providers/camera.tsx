@@ -1,6 +1,4 @@
 import { center } from "@/constants/dimensions";
-import { resizeCanvas } from "@/utils/canvas";
-import { predict } from "@/utils/model";
 import {
   createContext,
   FC,
@@ -16,7 +14,7 @@ interface Context {
   camera: RefObject<HTMLVideoElement>;
   initialize: () => void;
   stop: () => void;
-  capture: () => void;
+  capture: () => HTMLCanvasElement | null;
 }
 
 const initialValue: Context = {
@@ -56,15 +54,15 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     tracks.forEach((track) => track.stop());
   }, []);
 
-  const capture: Context["capture"] = useCallback(async () => {
-    if (!camera.current) return;
-    if (!canvas.current) return;
-    if (!cropped.current) return;
+  const capture: Context["capture"] = useCallback(() => {
+    if (!camera.current) return null;
+    if (!canvas.current) return null;
+    if (!cropped.current) return null;
 
     const { videoHeight, videoWidth } = camera.current;
 
     const context = canvas.current.getContext("2d");
-    if (!context) return;
+    if (!context) return null;
 
     canvas.current.width = videoWidth;
     canvas.current.height = videoHeight;
@@ -78,13 +76,10 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     cropped.current.height = center.height;
 
     const croppedContext = cropped.current.getContext("2d");
-    if (!croppedContext) return;
+    if (!croppedContext) return null;
     croppedContext.putImageData(croppedData, 0, 0);
 
-    const resized = resizeCanvas(cropped.current);
-    if (!resized) return;
-    const result = predict(resized);
-    console.info("result", result);
+    return cropped.current;
   }, []);
 
   const exposed: Context = useMemo(
