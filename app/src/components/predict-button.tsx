@@ -1,3 +1,4 @@
+import { classes } from "@/constants/classes";
 import { useCamera } from "@/providers/camera";
 import { Button } from "@/ui/button";
 import { predict } from "@/utils/model";
@@ -10,7 +11,7 @@ const PredictButton: FC = () => {
     const canvas = capture();
     if (!canvas) return;
     const result = await predict(canvas);
-    console.info("result", result);
+    alert(result !== null ? classes[result] : "not found");
   }, [capture]);
 
   return <Button onClick={handlePredict}>Predict</Button>;

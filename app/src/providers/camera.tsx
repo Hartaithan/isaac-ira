@@ -91,7 +91,7 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
     <Context.Provider value={exposed}>
       {children}
       <canvas className="absolute hidden" ref={canvas} />
-      <canvas className="absolute z-10" ref={cropped} />
+      <canvas className="absolute right-4 top-4 z-10" ref={cropped} />
     </Context.Provider>
   );
 };
