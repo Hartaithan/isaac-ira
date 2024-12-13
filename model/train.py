@@ -1,8 +1,41 @@
 from keras.applications import MobileNetV2
-from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from keras.layers import Dense, GlobalAveragePooling2D
 from keras.models import Model
 from keras.preprocessing.image import ImageDataGenerator
+from tensorflowjs.converters import save_keras_model
 from globals import dataset, assets_classes
+
+img_size = (224, 224)
+batch_size = 32
+num_classes = 1003
+num_epochs = 20
+
+train_dir = f'{dataset}/train'
+train_datagen = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest'
+)
+train_generator = train_datagen.flow_from_directory(
+    train_dir,
+    target_size=img_size,
+    batch_size=batch_size,
+    class_mode='categorical'
+)
+
+validation_dir = f'{dataset}/validation'
+validation_datagen = ImageDataGenerator(rescale=1./255)
+validation_generator = validation_datagen.flow_from_directory(
+    validation_dir,
+    target_size=img_size,
+    batch_size=batch_size,
+    class_mode='categorical'
+)
 
 base_model = MobileNetV2(
     weights='imagenet', include_top=False, input_shape=(224, 224, 3))
@@ -11,27 +44,14 @@ for layer in base_model.layers:
     layer.trainable = False
 
 x = base_model.output
-x = Conv2D(128, (3, 3), activation='relu')(x)
-x = MaxPooling2D((2, 2))(x)
-x = Flatten()(x)
-x = Dense(128, activation='relu')(x)
-x = Dense(1003, activation='softmax')(x)
+x = GlobalAveragePooling2D()(x)
+x = Dense(1024, activation='relu')(x)
+predictions = Dense(num_classes, activation='softmax')(x)
 
-model = Model(inputs=base_model.input, outputs=x)
+model = Model(inputs=base_model.input, outputs=predictions)
 
 model.compile(optimizer='adam', loss='categorical_crossentropy',
               metrics=['accuracy'])
-
-train_dir = f'{dataset}/train'
-validation_dir = f'{dataset}/validation'
-
-train_datagen = ImageDataGenerator(rescale=1./255)
-validation_datagen = ImageDataGenerator(rescale=1./255)
-
-train_generator = train_datagen.flow_from_directory(
-    train_dir, target_size=(224, 224), batch_size=32, class_mode='categorical')
-validation_generator = validation_datagen.flow_from_directory(
-    validation_dir, target_size=(224, 224), batch_size=32, class_mode='categorical')
 
 class_labels = {v: k for k, v in train_generator.class_indices.items()}
 content = "export const classes: Record<number, string> = {\n"
@@ -41,8 +61,13 @@ content += "\n};\n"
 with open(assets_classes, 'w', encoding='utf-8') as ts_file:
     ts_file.write(content)
 
+history = model.fit(
+    train_generator,
+    steps_per_epoch=len(train_generator),
+    epochs=num_epochs,
+    validation_data=validation_generator,
+    validation_steps=len(validation_generator)
+)
 
-history = model.fit(train_generator, epochs=10,
-                    validation_data=validation_generator)
-
-model.save('model.keras')
+model.save('model.h5')
+save_keras_model(model, "export")
