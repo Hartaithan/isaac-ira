@@ -1,6 +1,6 @@
 import re
 import os
-import json
+from json import dumps
 from bs4 import BeautifulSoup
 from utils import extract_filename
 from css import get_styles_by_class
@@ -157,6 +157,19 @@ def parse_group(content):
     return None
 
 
+def format_items(items):
+    formatted_items = []
+    for item in items:
+        formatted_item = "      {\n"
+        for key, value in item.items():
+            item_content = dumps(
+                value, ensure_ascii=False) if value is not None else 'null'
+            formatted_item += f"        {key}: {item_content}\n"
+        formatted_item += "      }"
+        formatted_items.append(formatted_item)
+    return "[\n" + ",\n".join(formatted_items) + "\n]"
+
+
 def parse_html():
     with open(assets_html, "r", encoding="utf-8") as file:
         html_content = file.read()
@@ -169,7 +182,20 @@ def parse_html():
             if group is not None:
                 groups.append(group)
         os.makedirs(assets, exist_ok=True)
-        with open(assets_items, "w", encoding="utf-8") as json_file:
-            json.dump(groups, json_file, ensure_ascii=False, indent=4)
+
+        content = "import { ItemGroup } from \"@/model/item\";\n\n"
+        content += "export const items: ItemGroup[] = [\n"
+        content += ",\n".join([
+            "  {\n" +
+            f"    name: \"{group['name']}\",\n" +
+            f"    count: {group['count']},\n" +
+            f"    items: {format_items(group['items'])}\n" +
+            "  }"
+            for group in groups
+        ])
+        content += "\n];\n"
+
+        with open(assets_items, "w", encoding="utf-8") as ts_file:
+            ts_file.write(content)
     else:
         print("main div not found")

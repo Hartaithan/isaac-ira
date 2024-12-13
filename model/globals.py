@@ -15,8 +15,8 @@ assets_images = os.path.join(assets, "images")
 assets_cropped = os.path.join(assets, "cropped")
 
 assets_html = os.path.join(assets, "index.html")
-
-assets_items = os.path.join(assets, "items.json")
+assets_items = os.path.join(assets, "items.ts")
+assets_classes = os.path.join(assets, "classes.ts")
 
 background = (77, 44, 37, 255)
 
