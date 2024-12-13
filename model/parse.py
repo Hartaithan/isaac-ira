@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from utils import extract_filename
 from css import get_styles_by_class
 from image import save_image
-from globals import assets, assets_html, assets_items
+from globals import assets, assets_html, assets_groups, assets_items
 
 
 def parse_text_element(item, cl):
@@ -106,6 +106,7 @@ def read_item_classes(item_id, item):
 
 def parse_group_items(content):
     items = []
+    ids = []
     for item in content:
         if not item.name:
             continue
@@ -135,7 +136,8 @@ def parse_group_items(content):
             **params,
         }
         items.append(item)
-    return items
+        ids.append(item_id)
+    return items, ids
 
 
 def parse_group(content):
@@ -147,27 +149,52 @@ def parse_group(content):
     if content.find("h2"):
         name_content = content.find("h2").text
         match = re.match(r"^(.*?)\s*\((\d+)\)$", name_content)
-        items = parse_group_items(content)
+        items, ids = parse_group_items(content)
         group = {
             "name": match.group(1) if match else name_content,
             "count": children_length - 1,
-            "items": items
+            "items": ids
         }
-        return group
+        return group, items
     return None
 
 
-def format_items(items):
-    formatted_items = []
-    for item in items:
-        formatted_item = "      {\n"
-        for key, value in item.items():
-            item_content = dumps(
-                value, ensure_ascii=False) if value is not None else 'null'
-            formatted_item += f"        {key}: {item_content}\n"
-        formatted_item += "      }"
-        formatted_items.append(formatted_item)
-    return "[\n" + ",\n".join(formatted_items) + "\n]"
+def format_item(item):
+    formatted_item = " {\n"
+    for key, value in item.items():
+        item_content = dumps(
+            value, ensure_ascii=False) if value is not None else 'null'
+        formatted_item += f"        {key}: {item_content},\n"
+    formatted_item += "      }"
+    return formatted_item
+
+
+def save_groups(groups):
+    content = "import { ItemGroup } from \"@/model/item\";\n\n"
+    content += "export const groups: ItemGroup[] = [\n"
+    content += ",\n".join([
+        "  {\n" +
+        f"    name: \"{group['name']}\",\n" +
+        f"    count: {group['count']},\n" +
+        f"    items: {group['items']}\n" +
+        "  }"
+        for group in groups
+    ])
+    content += "\n];\n"
+    with open(assets_groups, "w", encoding="utf-8") as ts_file:
+        ts_file.write(content)
+
+
+def save_items(items):
+    content = "import { Item } from \"@/model/item\";\n\n"
+    content += "export const items: Record<string, Item> = {\n"
+    content += ",\n".join([
+        f"  \"{item['id']}\": " + format_item(item)
+        for item in items
+    ])
+    content += "\n};\n"
+    with open(assets_items, "w", encoding="utf-8") as ts_file:
+        ts_file.write(content)
 
 
 def parse_html():
@@ -177,25 +204,21 @@ def parse_html():
     main_div = soup.find("div", class_="main")
     if main_div:
         groups = []
+        items = []
         for line in main_div.contents:
-            group = parse_group(line)
-            if group is not None:
-                groups.append(group)
+            result = parse_group(line)
+            if result is not None:
+                group, group_items = result
+                if group is not None:
+                    groups.append(group)
+                if group_items is not None:
+                    items.extend(group_items)
         os.makedirs(assets, exist_ok=True)
+        save_groups(groups)
+        save_items(items)
 
-        content = "import { ItemGroup } from \"@/model/item\";\n\n"
-        content += "export const items: ItemGroup[] = [\n"
-        content += ",\n".join([
-            "  {\n" +
-            f"    name: \"{group['name']}\",\n" +
-            f"    count: {group['count']},\n" +
-            f"    items: {format_items(group['items'])}\n" +
-            "  }"
-            for group in groups
-        ])
-        content += "\n];\n"
-
-        with open(assets_items, "w", encoding="utf-8") as ts_file:
-            ts_file.write(content)
     else:
         print("main div not found")
+
+
+parse_html()
