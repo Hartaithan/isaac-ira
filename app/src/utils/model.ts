@@ -1,3 +1,5 @@
+import { classes } from "@/constants/classes";
+import { PredictResult } from "@/model/predict";
 import * as tf from "@tensorflow/tfjs";
 
 export const loadModel = async () => {
@@ -7,6 +9,16 @@ export const loadModel = async () => {
     console.error("load model error", error);
     return null;
   }
+};
+
+const formatPredictResults = (values: number[]) => {
+  const results: PredictResult[] = [];
+  for (let index = 0; index < values.length; index++) {
+    const result = values[index];
+    const probability = Number((result * 100).toFixed(2));
+    results.push({ id: classes[index], probability });
+  }
+  return results;
 };
 
 export const predict = async (canvas: HTMLCanvasElement) => {
@@ -19,8 +31,12 @@ export const predict = async (canvas: HTMLCanvasElement) => {
       .toFloat()
       .expandDims();
     const predictions = model.predict(tensor) as tf.Tensor;
-    const result = predictions.argMax(-1).dataSync()[0];
-    return result;
+    const values = Array.from(predictions.dataSync());
+    const formatted = formatPredictResults(values);
+    const results = formatted
+      .sort((a, b) => b.probability - a.probability)
+      .slice(0, 10);
+    return results;
   } catch (error) {
     console.error("predict error", error);
     return null;

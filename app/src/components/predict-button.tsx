@@ -1,4 +1,3 @@
-import { classes } from "@/constants/classes";
 import { useCamera } from "@/providers/camera";
 import { Button } from "@/ui/button";
 import { predict } from "@/utils/model";
@@ -10,8 +9,12 @@ const PredictButton: FC = () => {
   const handlePredict = useCallback(async () => {
     const canvas = capture();
     if (!canvas) return;
-    const result = await predict(canvas);
-    alert(result !== null ? classes[result] : "not found");
+    const predictResults = await predict(canvas);
+    if (predictResults) {
+      console.info("predictResults", predictResults);
+    } else {
+      console.error("predict results not found");
+    }
   }, [capture]);
 
   return <Button onClick={handlePredict}>Predict</Button>;
