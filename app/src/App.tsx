@@ -3,6 +3,7 @@ import Camera from "./components/camera";
 import CaptureButton from "./components/capture-button";
 import CenterPoint from "./components/center-point";
 import PredictButton from "./components/predict-button";
+import PredictResultsList from "./components/predict-results-list";
 import RootProvider from "./providers/root";
 
 const App: FC = () => (
@@ -13,6 +14,7 @@ const App: FC = () => (
       <CaptureButton />
       <PredictButton />
     </div>
+    <PredictResultsList />
   </RootProvider>
 );
 
