@@ -9,6 +9,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, copies the effect of the Rune or Soul stone you are holding (like the Blank Card)\nDrops a random rune on the floor when picked up\nThe recharge time of this item depends on the Rune/Soul Stone held:\n1 room: Soul of Lazarus\n2 rooms: Rune of Ansuz, Rune of Berkano, Rune of Hagalaz, Soul of Cain\n3 rooms: Rune of Algiz, Blank Rune, Soul of Magdalene, Soul of Judas, Soul of ???, Soul of the Lost\n4 rooms: Rune of Ehwaz, Rune of Perthro, Black Rune, Soul of Isaac, Soul of Eve, Soul of Eden, Soul of the Forgotten, Soul of Jacob and Esau\n6 rooms: Rune of Dagaz, Soul of Samson, Soul of Azazel, Soul of Apollyon, Soul of Bethany\n12 rooms: Rune of Jera, Soul of Lilith, Soul of the Keeper",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19950, 0],
     type: "Active",
     item_pool: "Secret Room, Crane Game",
     recharge_time: "Varies",
@@ -21,6 +23,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears have a chance to fire a fungus tear that sticks to enemies. It grows rapidly in size then explodes into a gas cloud that damages nearby enemies\nWhen the explosion happens, more homing fungus tears fire out in random directions. Those tears will cause the same effect if they happen to hit other enemies\nEffects that replace your tears such as Brimstone simply have a chance to apply this effect",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [0, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -33,6 +37,8 @@ export const items: Record<string, Item> = {
     content:
       "Any enemies that come within close range of Isaac will become feared, which causes them to flee",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [62, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -46,6 +52,8 @@ export const items: Record<string, Item> = {
       "+5 coins when picked up\nWhen used, this item takes away 5 of your coins and gives a +1.2 Damage Up that lasts for the current room\nCan stack as many times as you want. Using it with less than 5 coins does nothing",
     unlock:
       "Unlock this item by collecting 99 coins then spending all of them in the same run",
+    image_url: "repentance-items2.png",
+    position: [122, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "Instant",
@@ -58,6 +66,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, grants use of Brimstone for the current room\nIf used twice in the same room, the brimstone laser becomes massive and deals +1.8 more damage\nUsing it more than twice in the same room will give a damage increase each time\nCounts as 1 of 3 evil items needed towards the Leviathan transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [166, 0],
     type: "Active",
     item_pool: "Devil Room",
     recharge_time: "3 rooms",
@@ -70,6 +80,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, displays a random fortune and has a chance to drop either a soul heart, a card (including dice shards), rune/soul stone or a trinket\nSoul hearts and tarot cards are much more common than trinkets",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [211, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -82,6 +94,8 @@ export const items: Record<string, Item> = {
     content:
       "With each tear fired, you have a chance to fire 1-3 extra tears in random directions\nThe extra tears scale with your other damage increasing items\nSynergises with other items that replace your tears, like Brimstone or Technology\nThe chance to fire extra tears is not affected by luck",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [267, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -94,6 +108,8 @@ export const items: Record<string, Item> = {
     content:
       "This item will fire electricity at nearby enemies, dealing roughly x0.75 of your tear damage rapidly\nThe electricity can chain up to 4 enemies if they are close enough\nOn floors with water on the ground (Downpour, Flooded Caves, Dross) this effect chain onto enemies further away than it normally would",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [329, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -106,6 +122,8 @@ export const items: Record<string, Item> = {
     content:
       "Taking damage causes Isaac to fire a circle of 10 tears around him, each dealing 10 damage\nAfter taking damage, you also gain a +1.2 Tears Up for the rest of the current room. Any subsequent hits give +0.4 Tears Up and will ignore the normal fire rate cap",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [385, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -118,6 +136,8 @@ export const items: Record<string, Item> = {
     content:
       "Greatly increases tears (x4 fire rate)\nGreatly decreases damage (x0.33 damage multiplier)\nIndividual tears gain random worm effects (e.g. Hook Worm, Wiggle Worm etc.)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [433, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -130,6 +150,8 @@ export const items: Record<string, Item> = {
     content:
       "Prevents your stats from being reduced any more for the rest of the run\ne.g. Stat Down pills do nothing, and items like Experimental Treatment increase stats but don't reduce any\nThis effect works on items that apply negative stat modifiers, such as Soy Milk\nThis effect works for anything that gives temporary buffs, like Devil/Strength cards, or kill bonuses like Bloody Lust\nIf you somehow lose Rock Bottom, your stats will go back to normal",
     unlock: "Unlock this item by defeating the Boss Rush as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [481, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -142,6 +164,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nBombs now explode with a random effect (e.g. Poison, Homing, Prize Bombs)\nIn Antibirth this was called Enigma Bombs",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [554, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -153,6 +177,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.5 Tears Up\n+0.2 Shot Speed Up",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [612, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -165,6 +191,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a red worm familiar that chases enemies nearby around the room and deals 2 contact damage per tick\nAfter killing a 15 enemies, Blood Puppy transforms into an aggressive version that will also attack Isaac by charging at him. Damaging the aggressive Blood Puppy will eventually return it to its normal state.\nWhile aggressive, Blood Puppy deals 7.5 damage and drops half a red heart for every 10 enemies it kills.\nAfter killing a 25 more enemies, it transforms again dealing 15 damage and destroying obstacles it charges into. Isaac takes a full heart if hurt by Blood Puppy and it drops a full red heart for every 10 enemies it kills.",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Lilith",
+    image_url: "repentance-items2.png",
+    position: [690, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Red Chest, Curse Room",
     recharge_time: null,
@@ -177,6 +205,8 @@ export const items: Record<string, Item> = {
     content:
       "During the transition between floors, this item shows you a preview of the item that will spawn in the item room, and the boss that will appear\nThis effect will work even if you have Curse of the Blind, but the item will still appear as a ? when entering the item room\nGives +1 Soul Heart when starting each new floor after picking this up\nOn XL floors both items are shown\nCurrently this effect doesn't work in Greed Mode - It will show 2 items but the item rooms will have different items in them",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [746, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -189,6 +219,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives +0.4 Tears Up for each room completed without taking damage, up to a maximum of +2.0 Tears Up\nWhen you take damage, the tears bonus is reset\nPicking this item up counts and gives you a temporary +0.4 Tears Up as well",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [788, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -201,6 +233,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows you to double-tap the shoot button to create a holy shield for 1 second that pushes enemies back and deals 10 damage to them if they touch it\nThe shield also reflects enemy shots and beams back at them for some extra damage\nCan only be activated every 3 seconds (Shown by a white glow and a ticking noise)\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: "Unlock this item by defeating Hush as Bethany",
+    image_url: "repentance-items2.png",
+    position: [820, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -213,6 +247,8 @@ export const items: Record<string, Item> = {
     content:
       "At the beginning of each new floor, this item will stab Isaac and reduce your red health down as much as it can without killing you. In exchange it gives you +0.05 Speed Up and Damage Up for every half a heart this item removes\nThe amount of Damage Up is (0.15 * FullHeartsRemoved ^ 2)\nIf Isaac is already at half a red heart when stabbed, no damage or speed increases are given\nThe damage from being stabbed can be avoided with invincibility, however no damage or speed stat increases are gained if you do",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [880, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -225,6 +261,8 @@ export const items: Record<string, Item> = {
     content:
       "Your individual tears each gain a random effect from either: Poison, Fear, Slow, Freeze, Charm, Burning, Homing, Bleeding, x2 Damage or Reduced damage",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [930, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -237,6 +275,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Soul Hearts\n+0.3 Speed Up\nAllows you to walk on harmful floor effects without taking damage (e.g. spikes, creep). Doesn't include Curse Room doors or spiked rocks",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [995, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -249,6 +289,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears can be controlled mid-flight using the directional keys\n+1 Damage Up\n+2.0 Range Up\n-0.16 Shot Speed Down\nCounts as 1 of 3 evil items needed towards the Leviathan transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1048, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -261,6 +303,8 @@ export const items: Record<string, Item> = {
     content:
       "In addition to regular tears, Isaac will sometimes fire extra spectral tears that orbit around him\n+1 HP Up\n+20% damage multiplier (x1.2)\nFully heals all your red heart containers\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1110, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -273,6 +317,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now emits a large light aura that damages nearby enemies 5 times per second while touching it\nThe visual effect is similar to the effect given to tears by the GodHead item\nThe aura deals more damage towards the center, ranging from 0.75 at max range to 4 damage when touching Isaac",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1226, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -285,6 +331,8 @@ export const items: Record<string, Item> = {
     content:
       "In addition to normal tears, Isaac now also fires a set of 4 quadshot tears with a slowing effect\nThe quadshot tears deal 1.5 damage each and do not scale with your damage upgrades\nUpon taking damage, you have a chance to dislodge the spider from your face. It leaps at enemies, dealing contact damage and firing quad shots at them for the rest of the room\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1156, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -297,6 +345,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time you destroy a poop, this item will spawn 1-4 friendly Dip familiars that follow you, block shots and attack nearby enemies\nDifferent poop types will spawn different types of Dip, each with their own effect\nGolden poop dips can petrify enemies, turning them to gold for a few seconds. If the enemy dies while in this state they will drop 1-4 coins\nCorn poop dips spawn 1 blue fly on death\nRainbow poop Dips charm enemies and have a chance to spawn 1/2 a red heart on death\nBlack poop Dips leave a trail of creep\nWhite poop Dips have a small Hallowed Ground aura effect, increasing your damage and fire rate while standing in it.\nPoops spawned by Tainted ??? and IBS also have special effects: Stone Dips deal 3.5 more damage and can take 6 hits before they die. Toxic Dips release a poison cloud when they move/die. Fire Dips burn enemies and leave a fire behind on death\nAll enemy dips become friendly.\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation.",
     unlock: "Unlock this item by defeating challenge #36 (Scat Man)",
+    image_url: "repentance-items2.png",
+    position: [1275, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -309,6 +359,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, places a sword directly above Isaac's head and while active, will spawn an extra item for every item pedestal spawned\nAfter getting hit once with the item activated, at any time without warning, the sword may fall, instantly killing Isaac regardless of his health\nAfter being hit the sword has a 1/10000 chance every 4 frames to fall. This chance doesnt change if you take further damage\nYou effectively have a 4.4% chance for every minute that passes after taking damage to die\nSelf-inflicted damage i.e. Curse Rooms and Blood Donation Machines don't trigger this effect\nItems with a price will spawn the extra item free of charge (i.e. in shops or devil rooms)\nThe only way to survive the falling sword is either through extra lives, by using items that would make you invincible, such as Gnawed Leaf or playing as The Lost. After the sword falls, extra items will no longer spawn",
     unlock: "Unlock this item by defeating The Lamb as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [0, 0],
     type: "Active",
     item_pool: "Devil Room",
     recharge_time: "One time use",
@@ -321,6 +373,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, spawns a giant puddle of lemonade that deals 8 damage per tick to any enemies which come in contact with it\nLasts for about 19 seconds\nA similar effect to the Lemon Party pill",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1311, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -333,6 +387,8 @@ export const items: Record<string, Item> = {
     content:
       "Your tears are replaced with a sword which can be swung to deal damage (Damage * 3 + Base Damage)\nHolding the fire button charges a spin attack (Damage * 8 + 10). The charge time is based on your tears stat.\nWhile at full red health you also shoot a projectile across the room with each swing, dealing your current Damage + 2 (similar to the Master Sword in Zelda)",
     unlock: "Unlock this item by defeating challenge #39 (Isaac's Awakening)",
+    image_url: "repentance-items2.png",
+    position: [1373, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -345,6 +401,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, a red outline of a door will appear on certain walls. Using the Red Key near it will spawn a red room\nThis room will randomly choose from many types, including (but not limited to) any regular room from that floor, treasure rooms, curse rooms, devil rooms, angel rooms, I AM ERROR rooms and more\nIn rooms with multiple door outlines, the closest one will be opened\nAttempting to create a room outside the maximum boundary (13 x 13 rooms) of the map will take you to an I AM ERROR room. You can't use the Red Key to leave this room\nThe Red Key can be used to open the secret room in the Home floor, which is the method for unlocking alternative 'Tainted' characters",
     unlock: "Unlock this item by opening Mom's Box in the Home floor",
+    image_url: "repentance-items2.png",
+    position: [1411, 0],
     type: "Active",
     item_pool: "Secret Room, Red Chest, Curse Room, Key Beggar, Mom's Chest",
     recharge_time: "4 rooms",
@@ -357,6 +415,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an orbital fly, that will rapidly charge around and deflect any incoming tears that would hit Isaac.\nIt isn't 100% effective but the effect is very strong and will deflect most shots under a bullet hell situation.\nDeflected tears turn into homing tears and fire back at enemies, dealing 2 damage.\nAfter reflecting a certain number of projectiles, Psy Fly enters a brief cooldown period\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1498, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -369,6 +429,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you use Wavy Cap, it gives +0.75 Tears Up and -0.03 Speed Down\nAlso when used, this item will distort the screen and sound slightly, stacking every time you use it\nAll of these effects stack for the rest of the floor, meaning if used too many times the screen will be distorted so much it becomes unplayable\nEach room you clear removes one use worth of effect - reducing the screen distortion slightly and giving +0.06 Speed Up and -0.3 Tears Down\nThis item was called Black Mushroom in Antibirth\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1553, 0],
     type: "Active",
     item_pool: "Secret Room",
     recharge_time:
@@ -382,6 +444,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nPlacing a bomb while pressing a fire button will fire an explosive rocket in that direction\nPlacing a bomb while standing still will place a regular bomb",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1615, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -394,6 +458,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, spawns a flame familiar that fires spectral tears and deals contact damage to enemies. After taking two hits, the fire will be extinguished\nThe Book can be held at the same time as another active item. When used, this will combine with your other active item, creating a unique flame and possibly giving special effects\nThe recharge time of this item is based on your 2nd active item, otherwise it's 4 rooms\nWhile held, guarantees the first Devil/Angel Room encountered to be an Angel Room, and increases the overall chance of getting one\nA maximum of 16 flames can be active at one time around Isaac\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: "Unlock this item by defeating Isaac as Bethany",
+    image_url: "repentance-items2.png",
+    position: [1664, 0],
     type: "Active/Passive Item",
     item_pool: "Angel Room, Library",
     recharge_time: "Varies",
@@ -406,6 +472,8 @@ export const items: Record<string, Item> = {
     content:
       "A single use active item that will spawn 3 soul hearts and 2 items from the Angel Room pool\nStarts fully uncharged and gains charges only through picking up soul and black. (6 full hearts to fully charge)\nUnless fully charged, hearts picked up are consumed by the Alabaster Box, instead of being added to your life total\nIf a devil deal was already taken this run, it spawns 2 soul hearts and 1 Angel Room item instead.\nPicking up Bone Hearts while at 12 hearts will remove charges from the Box",
     unlock: "Unlock this item by defeating The Lamb as Bethany",
+    image_url: "repentance-items2.png",
+    position: [1715, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "12 charges (one time use)",
@@ -418,6 +486,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a ladder in the starting room of all future floors, which leads to an Angel Room\nAngel rooms accessed by The Stairway are different - They sell angel room items and soul hearts for money, similar to the Shop\nPedestal items cost 15c, all other items (eternal/soul hearts, keys and holy cards) cost 5c. Sales can be randomly applied just like regular shops\nThe ladder disappears after leaving the starting room, even if you haven't used it yet\nIn Antibirth this was called Jacob's Ladder, which had to be renamed as Afterbirth+ already had an item with this name",
     unlock: "Unlock this item by defeating Isaac as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [1779, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -430,6 +500,8 @@ export const items: Record<string, Item> = {
     content:
       "Permanently shows the location of the boss room on the map\nAfter defeating the shown boss fight, this item will activate a use of the Sun card (full heal and map reveal), fully recharge your active item, remove curses from the floor, gives +3 Damage Up and +1 Luck up for the rest of the floor\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)\nIn The Void floor it shows a random boss room, which isn't necessarily Delirium's room",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1825, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -442,6 +514,8 @@ export const items: Record<string, Item> = {
     content:
       "Adds one extra secret room and one extra super secret room to each floor\nEach secret room contains a beam of light, that gives half a soul heart, and a Tears Up for the rest of the floor. These stack with multiple secret rooms - The first one gives +1.00 Tears Up, then all future ones give +0.5.\nReveals the location of one secret room on the minimap.\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1885, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -454,6 +528,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.40 Speed Up\nDoors remain open when entering a room with enemies in it. This means you can leave rooms before defeating the enemies inside\nDoesn't open locked doors, or the door that leads to the Boss Room\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1938, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -466,6 +542,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nHeals one red heart container when picked up\nThis item causes nearby enemies to be affected by the charm effect, causing them to attack other nearby enemies\nThe charm effect will wear off very quicky when enemies move away from Isaac\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [1987, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -478,6 +556,8 @@ export const items: Record<string, Item> = {
     content:
       "This item causes your tears to become rocks, which have increased knockback and can break other rocks and objects. This includes key blocks and secret room doors\n+1.0 Damage Up, but each rock tear has a random damage modifier that can go up or down (x0.5 to x2)\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2035, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -490,6 +570,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows Isaac to charge by double tapping the same direction, dealing damage to any enemies caught\nYou are invincible while charging (doesn't include self-damage like Blood Donation machines)\nCan be used multiple times per room\nThe dash deals x4 your current tear damage + 8\nDoesn't have to be in a straight line, you can hold another button to curve it\nHas a 3 second cooldown before it can be used again\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2095, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -502,6 +584,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 HP Up (only half a heart is filled)\n-0.3 Speed Down\nWhile not moving your speed rapidly increases up to a bonus of +0.5\nWhile you have this +0.5 bonus, moving will cause Isaac to fart around the room, spawning poison gas clouds\nThe farts stop spawning once you reach your regular movement speed\nPoison deals damage equal to half your tears per tick\nIsaac is immune to Poison from enemies, such as Gasbag\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2155, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -514,6 +598,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a wide circle halo which grants 7 orbital tears upon entering a new room\nThe tears orbit for 13 seconds before dropping off\nHas a chance to absorb any enemy tears and add them to the orbiting tears. They can be used to damage enemies\nSaturnus tears can't break objects such as poop and TNT barrels\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2220, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -526,6 +612,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now shoots ice tears that slow enemies. Enemies that are killed by the ice tears will become frozen\nFrozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies)\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2269, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -538,6 +626,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac will now automatically charge up tears, allowing you to store them up and fire them rapidly for a short time\nAny time you aren't firing tears, the charge bar will start filling up, for up to 3 seconds. Holding down the fire button again will quickly release all stored teared\nThe charge time and max tears stored scales with your current tears stat\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2324, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -550,6 +640,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.7 Tears Up\nGreatly reduce Isaac's size, to an extent where some enemy tears will now travel straight over him without dealing damage if they are high off the ground. Tears can still hit Isaac if gravity applies for too long\nAllows Isaac to squeeze between some objects\nOnly available inside a Planetarium - a room that has a base 1% chance to appear, which increases by +20% every time you skip an Item Room (Must not enter to count as skipped)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2380, 0],
     type: "Passive",
     item_pool: "Planetarium",
     recharge_time: null,
@@ -562,6 +654,8 @@ export const items: Record<string, Item> = {
     content:
       "This item has a chance to spawn an additional curse room on each future floor\nCauses a penny to spawn in all future Curse Rooms\nImproves curse room layouts and rewards",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2435, 0],
     type: "Passive",
     item_pool: "Shop, Crane Game",
     recharge_time: null,
@@ -574,6 +668,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears fired from your left eye gain roughly +28% fire rate increase\nCauses your tears to be fired at staggered rates",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2489, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -586,6 +682,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Eternal Heart\n+0.7 Tears Up\nAllows Angel Rooms to appears even if a Devil deal has been taken before",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2528, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -598,6 +696,8 @@ export const items: Record<string, Item> = {
     content:
       "All shops now contain a trapdoor with a ladder, which leads down to a special shop\nThe special shop contains various consumables and items at a higher price from the Devil/Angel room, Boss room and Secret room pools.\nItems cost 15-30c, trinkets cost 15c, cards/runes cost 6-8c, black/bone hearts 8c, eternal hearts 15c, rotten hearts 5c",
     unlock: "Unlock this item by spending 40+ coins in the same shop",
+    image_url: "repentance-items2.png",
+    position: [2574, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -610,6 +710,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, this item fully recharges your currently held active item and drops between 2-4 battery pickups. These can be smaller or big batteries",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2626, 0],
     type: "Passive",
     item_pool: "Shop, Battery Beggar",
     recharge_time: null,
@@ -622,6 +724,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, Mom's Bracelet allows you to grab objects in the room and throw them, damaging any enemies which are hit for 40 damage\nMost objects can be thrown including pots, rocks, poops, tnt etc\nPressing the activate button again will drop the object where you stand, which doesn't consume a charge of use\nAllows you to remove the skull on top of Host enemies, turning them into the red version\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2691, 0],
     type: "Active",
     item_pool: "Shop, Crane Game, Mom's Chest",
     recharge_time: "1 second",
@@ -634,6 +738,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item spawns a Peeper familiar for the current room, which deals 12 contact damage per tick to enemies and leaves red creep in its path\nUsing this item removes Isaac's right eye, causing tears from this eye to deal x1.5 your normal tear damage\nUsing it more than once in the same room will spawn multiple Peeper familiars",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2739, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "3 rooms",
@@ -646,6 +752,8 @@ export const items: Record<string, Item> = {
     content:
       "Fired tears now have a chance to summon a rift when they land on the ground\nThe spawned rift sucks in enemies, projectiles and pickups and deals damage to enemies caught inside for 2 seconds\nThe chance to fire the rift tear can improve based on your luck stat. At +0 Luck theres a ~2.5% chance for this effect to activate\nThe size of the rift scales with your tear damage\nRifts deal half your damage per tick\nIn Antibirth this item was called Oculus Rift",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2794, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -658,6 +766,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar boil that randomly fires bursts of tears, similar to the Boil enemy\nTears either deal 5.3 or 3.5 damage\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2838, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -670,6 +780,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar baby that fires tears which have a chance to freeze or petrify enemies\nFrozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies)\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [2887, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -682,6 +794,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, rerolls all items in the room into another random item from the current room's item pool, however the item also has a 30% chance to disappear\nThe chance associated with this item does NOT scale with your Luck stat - it's always 30%\nIn the game files this item is called 'Florians Dice', which is a reference to the Eternal update for the original Binding of Isaac game, which changed the D6 to act as this item does",
     unlock: "Unlock this item by defeating Mother in the Corpse II as ???",
+    image_url: "repentance-items2.png",
+    position: [2933, 0],
     type: "Active",
     item_pool: "Item Room, Secret Room, Crane Game",
     recharge_time: "2 rooms",
@@ -694,6 +808,8 @@ export const items: Record<string, Item> = {
     content:
       "Taking damage for the first time in a room spawns a familiar which targets an enemy and jumps on them, releasing a rock wave outwards\nFor the remainder of the room the familiar then continues to attack enemies similar to the Dead Bird item dealing 3 contact damage per tick\nDeals 45 damage to enemies it lands on. The rock wave deals 10 damage.",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Eve",
+    image_url: "repentance-items2.png",
+    position: [2993, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -706,6 +822,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item does a shout-type attack, with its effect increasing in damage and size the more charges you have\nLarynx can be used with any number of charges. At 1 charge it deals 48 damage to any enemies close to Isaac. At the full 12 charges Isaac does a massive shout, dealing 356 damage to all enemies on the screen\nLarynx gains 1 charge every time you take damage (also charges as normal)",
     unlock: "Unlock this item by defeating The Beast as Tainted Samson",
+    image_url: "repentance-items2.png",
+    position: [3060, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "12 rooms (Can be used with partial charges)",
@@ -718,6 +836,8 @@ export const items: Record<string, Item> = {
     content:
       "This item gives you a familiar version of The Lost character which dies instantly upon hit\nIf the familiar survives an entire floor you get one of: 3 soul hearts, 2 eternal hearts or a random item/angel room item\nRegenerates at the start of each floor if dead",
     unlock: "Unlock this item by defeating Mother in the Corpse II as The Lost",
+    image_url: "repentance-items2.png",
+    position: [3110, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -730,6 +850,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nRestores 5 empty red heart containers\nBombs now spawn a puddle of red creep upon explosion, dealing 2 damage per tick to enemies touching it\nWhile at 0 bombs, you can also place further bombs now at the cost of 1/2 of a heart (kills The Lost if used like this). Placing a bomb this way will not affect your devil/angel room chances",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3158, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -742,6 +864,8 @@ export const items: Record<string, Item> = {
     content:
       "Lil Dumpy follows Isaac and produces a Butter Bean fart when a projectile or enemy is about to hit Isaac, pushing the enemy back and preventing the damage\nAfter it farts, it flies away, stops following Isaac and has to be picked up again before it will follow again\nHe also has a second larger detection radius that can randomly trigger from enemy projectiles\nThe effect only works if Lil Dumpy is following and near Isaac",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3226, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -754,6 +878,8 @@ export const items: Record<string, Item> = {
     content:
       "You have a chance alongside each tear to shoot a red flame, which deals damage to enemies that come in contact with it\nDamage starts at x4 your current tear damage, and scales down each time an enemy touches the fire\nThe chance to create a fire scales with your Luck stat, at +11 Luck you have a 50% chance to shoot one\nThe flames from this item can destroy shopkeepers, which is handy since doing this once per floor increases your devil/angel room chances slightly",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3294, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -766,6 +892,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a chance to cause enemies to be magnetized\nMagnetized enemies attract other enemies, tears (including Isaac's) and enemy projectiles, causing them to be pulled in towards them\nEnemy tears that get pulled into other enemies will hurt them",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3334, 0],
     type: "Passive",
     item_pool: "Item Room, Crane Game",
     recharge_time: null,
@@ -778,6 +906,8 @@ export const items: Record<string, Item> = {
     content:
       "You have a chance to fire a tear that marks enemies red and slow them\nMarked enemies will be attacked by other enemies either until it is killed or it kills all the other enemies attacking it\nChance to fire a marking tear scales with your luck stat",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3394, 0],
     type: "Passive",
     item_pool: "Item Room, Rotten Beggar",
     recharge_time: null,
@@ -790,6 +920,8 @@ export const items: Record<string, Item> = {
     content:
       "This item has a different effect for each character. See next icon for Tainted character effects\nIsaac - All new pedestal items cycle through two options\nMaggy - +1 HP up. Increases the maximum heart limit to 18.\nCain - +1 Luck. All floors guaranteed to have an Arcade except the Chest & Dark Room floors\nJudas - Gives a passive Book of Belial item similar to Book of Virtues. Using active items gives a damage up that scales with the charge time\n??? - Every HP upgrade is now worth 2 soul hearts. Health down effects still only remove 1 heart\nEve - Whore of Babylon and Dead Bird effects are always active\nSamson - Bloody Lust can gain 4 more damage boosts, for a new max total of +14 Damage\nAzazel - His beam becomes much wider, no effect on damage\nLazarus - Every time Lazarus dies, gives +21.6 temporary Damage Up, gradually fading over 1 minute.\nEden - Spawns 3 items from any pools, you can only take 1\nThe Lost - Useless items like HP upgrades, spectral tears or flight are removed from the item pools\nLilith - Causes all your offensive familiars to stack tightly infront of Lilith for more controlled damage\nKeeper - +1 HP up. Increases HP cap by 1\nApollyon - Void has a chance to spawn a previously destroyed item as well. More items consumed = more chance for this effect\nThe Forgotten - Your Soul is now unchained and free to move.\nBethany - Activating an item using soul charges is sometimes free\nJacob & Esau - The character who picks up Birthright gains copies of three of the other character's passive items",
     unlock: "Unlock this item by defeating ??? as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [3444, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -802,6 +934,8 @@ export const items: Record<string, Item> = {
     content:
       "Fully heals all red heart containers\nSignificantly increases damage by +21.6, however the damage boost wears off slowly over time at a rate of roughly -0.04 per second\nEvery enemy you kill adds +0.02 Damage to the timed effect of Red Stew",
     unlock: "Unlock this item by defeating Satan as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [3504, 0],
     type: "Passive",
     item_pool: "Shop, Ultra Secret Room",
     recharge_time: null,
@@ -814,6 +948,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, removes all your passive items and teleports you to Isaac's Bedroom\nFor every passive item removed, you are given a choice of 3 random pedestal items from any item pool. Essentially you are rerolling all your items, but each new item you get to choose between 3 random options\nThe bedroom also contains a random trinket, 2 chests, 2 sacks and Isaac's bed, which can be used to full heal your red heart health\nThe only way to exit Isaac's bedroom is teleporting out or via the trapdoor, which takes you to the next floor. This will deviate you from the alt path if you are currently on it\nSince this item resets your stats, this item can remove Broken Hearts",
     unlock: "Unlock this item by defeating Greedier Mode as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [3575, 0],
     type: "Active",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: "One time use",
@@ -826,6 +962,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Keys\nUpon use, allows you to consume 1 key and fire it at an enemy, piercing enemies and dealing significant damage\nThe damage done by the key projectile pierces through enemies and scales with your damage upgrades (x5 damage + 30)\nKeys fired by this item can open locked doors/chests, secret rooms and destroy objects in the room, such as rocks\nCannot be used if you don't have any keys\nEnemies killed by Sharp Key have a ~10% chance to spawn random items that appear in a chests. This can be anything that would normally drop from a chest including pedestal items",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3640, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Instant",
@@ -837,6 +975,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "Spawns 5 random cards",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3740, 0],
     type: "Passive",
     item_pool: "Boss Room, Shop",
     recharge_time: null,
@@ -850,6 +990,8 @@ export const items: Record<string, Item> = {
       "When used, this item causes Isaac to become humongous for 30 seconds\nWhile huge, Isaac is invincible and can crush objects, doors and enemies\nFor the duration of the effect this gives you a x4 Damage Multiplier and +2.0 Range Up, but your rate of fire goes way down\nDeals significant contact damage to enemies while active (1600 dps).\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation.",
     unlock:
       "Unlock this item by getting all hard mode completion marks for the 17 non-tainted characters",
+    image_url: "repentance-items2.png",
+    position: [3678, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "12 rooms",
@@ -862,6 +1004,8 @@ export const items: Record<string, Item> = {
     content:
       "Combine with Knife Piece 2 to create a Knife which can be fired across the room, dealing 25 damage to any enemies it comes into contact with\nIn the Downpour/Dross II, you will find a white flame somewhere, and a room with a mirror in it. Touching the white flame temporarily turns you into The Lost, but allows you to walk through the mirror into a mirrored version of this floor. You have the Holy Mantle effect to prevent one hit per room, but taking another hit will kill you. The Knife Piece 1 is located in the Item Room in the mirrored area. Returning back through the mirror door returns you back to normal again\nIf you haven't unlocked Holy Mantle for The Lost yet, you won't gain the effect after touching a white fire so be careful!\nThe mirrored floor rooms have respawned enemies, and allows you to optionally fight the Boss a second time for an extra item\nWhen combined with Knife Piece 2, can be used to stab the fleshy door in the Mausoleum II, which then leads to the Corpse floor and the Mother boss",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3785, 0],
     type: "Passive",
     item_pool: "None (see above)",
     recharge_time: null,
@@ -874,6 +1018,8 @@ export const items: Record<string, Item> = {
     content:
       "Combine with Knife Piece 1 to create a Knife which can be fired across the room, dealing 25 damage to any enemies it comes into contact with\nIn the Mines/Ashpit II, there's a room with a minecart and a broken track. Pressing 3 yellow buttons on the floor causes the minecart to be rideable. Following the path takes you to an abandoned mineshaft, which leads you to a pedestal with the Knife Piece. Taking it will cause Mom's Shadow to spawn and chase you. You must make it back through the path solving a few bomb puzzles while avoiding her, to get back to the regular floor. All your items and consumables are temporarily removed while in the abandoned mine\nThe room to access Knife Piece 2 only appears if you have Knife Piece 1 already\nYou can skip pressing the 3 yellow buttons if you have the ability to fly and have 2 bombs to force open the door\nWhen combined with Knife Piece 1, can be used to stab the fleshy door in the Mausoleum II, which then leads to the Corpse floor and the Mother boss",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3859, 0],
     type: "Passive",
     item_pool: "None (see above)",
     recharge_time: null,
@@ -887,6 +1033,8 @@ export const items: Record<string, Item> = {
       "This is a one time use item that teleports you to an alternate floor, which contains every single item in the game\nThe items are spread between several different rooms all on pedestals. You may take only one of the items, before being teleported back to where you were\nIt's literally every item, that includes items not in item pools like Knife Pieces",
     unlock:
       "Unlock this item by completing every post-it note for every character, including the Tainted characters",
+    image_url: "repentance-items2.png",
+    position: [3933, 0],
     type: "Active",
     item_pool: "Secret Room",
     recharge_time: "1 time use",
@@ -899,6 +1047,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a robot fly familar that orbits around Isaac and fires shielded tears at incoming projectiles\nDeals contact damage to enemies it touches\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [3987, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar, Crane Game",
     recharge_time: null,
@@ -911,6 +1061,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the Meat Cleaver will split all enemies in the room into 2 smaller versions with ~40% health each\nFor enemies that have multiple parts to them (e.g. Larry Jr.) it will split them into 2 smaller enemies with half the number of sections they used to have\nIf the enemy normally has a mechanic that splits it (e.g. Teratoma, Envy) then Meat Cleaver will deal a lot of damage and trigger the splitting effect\nIf the split enemy has low enough health, it will just die instead of splitting\nDoesn't work on end-game bosses except Delirium, where it will deal a chunk of damage and spawn a 2nd Delirium to deal with",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Isaac",
+    image_url: "repentance-items2.png",
+    position: [4049, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -923,6 +1075,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Luck Up\nYou no longer take damage from poison/toxic gas/burn effects, and become immune to fear/confusion",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4107, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -935,6 +1089,8 @@ export const items: Record<string, Item> = {
     content:
       "This item isn't available in any item pools - you are automatically given it after defeating Dogma, just before The Beast sequence\n+0.1 Speed Up\n+2.0 Damage Up\nGrants you the ability to fly\nGrants a one-time use of the Holy Mantle effect\nOn normal mode this grants The Wafer effect, causing all damage to do a maximum of half a heart each time\nSets your health to 6 hearts if you have fewer than 6. This will heal red hearts and then give soul hearts up to a total of 6. This doesn't work with The Lost characters",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4170, 0],
     type: "Passive",
     item_pool: "None",
     recharge_time: null,
@@ -947,6 +1103,8 @@ export const items: Record<string, Item> = {
     content:
       "While in a room with enemies, red cracks will appear on the floor in random locations\nWalking over the crack spawns a white soul familiar, that launches itself into the nearest enemy, exploding and dealing double your tear damage to everything near it\nCracks will keep appearing but only one can exist in the room at a time",
     unlock: "Unlock this item by defeating challenge #38 (Baptism by Fire)",
+    image_url: "repentance-items2.png",
+    position: [4230, 0],
     type: "Passive",
     item_pool: "Devil Room, Angel Room",
     recharge_time: null,
@@ -959,6 +1117,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, this item spawns a familiar that can be moved around using the arrow keys and deals 1.5 damage per tick to any enemies it touches\nWhen activated, you teleport, swapping places with wherever Stitches was positioned\nTeleporting next to fires will extinguish them (including blue fires) and on top of shopkeepers will destroy them (gives +10% devil/angel room chance as normal)\nIf used while stitches is on top of an enemy, it can be used to telefrag enemies, dealing x3.5 your damage + 40\nCan be used to enter/exit Curse Rooms for free by teleporting infront of the door while holding the direction key to move in immediately. Also works for opening Spiked Chests and Mimic Chests without taking damage",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4273, 0],
     type: "Active, Familiar",
     item_pool: "Item Room",
     recharge_time: "3 seconds",
@@ -971,6 +1131,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item restarts the game and places you back on the first floor with all your currently collected items, similar to doing a Victory Lap\nThe game timer does not reset\nAllows angel rooms to be found in the new run if a devil deal was taken in the first run\nIn Greed Mode and while playing as Tainted Keeper, this item costs 99 coins instead of 15\nWhen used in the backwards path after picking up Dad's Note, R key will skip you to the Basement 1 version of this path, which leads directly to the Home floor. This may cause you to skip floors where you left a trinket to spawn a Cracked Key.\nDonation machines become fixed if they were jammed before using the R Key",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4317, 0],
     type: "Active",
     item_pool: "Secret Room",
     recharge_time: "Single use",
@@ -983,6 +1145,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now has a chance to fire a fist instead of normal tears, which have a much higher knockback effect and confuse enemies for a few seconds\nEnemies that are knocked back will take 10 damage and knock back any enemy they are knocked into, dealing damage to them as well",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4380, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -995,6 +1159,8 @@ export const items: Record<string, Item> = {
     content:
       "An active item that allows you to throw an eraser at any enemy, which will kill it and prevent it from appearing for the rest of the run\nEnemies that are erased create a puff of smoke instead of spawning\nWorks on bosses, except it doesn't kill them it just deals 15 damage\nCan only be used once per floor - batteries also cannot be used to recharge it to bypass this restriction\nThe first use will raise it above your head, then by pressing the fire button it will be thrown in that direction",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4418, 0],
     type: "Active",
     item_pool: "Shop, Crane Game",
     recharge_time: "1 room (Can only be used once per floor)",
@@ -1007,6 +1173,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will give you +1 Rotten Heart\nRotten Hearts act as red hearts and each one you currently have spawns 2 blue flies upon successfully clearing a room",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Maggy",
+    image_url: "repentance-items2.png",
+    position: [4491, 0],
     type: "Active",
     item_pool: "Item Room, Rotten Beggar",
     recharge_time: "4 rooms",
@@ -1019,6 +1187,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies now create a soul upon death, which is automatically sucked into the Urn giving it +1 charge. Mini-bosses and bosses create 2-3 souls\nWhen activated, the urn can be fired as a high damage flamethrower in any direction\nA charge is consumed roughly every 0.5 seconds of use\nMulti-part enemies such as Envy or Teratoma create a soul per each part killed\nA maximum of 20 souls can be held in the urn at one time",
     unlock: "Unlock this item by beating Satan as Bethany",
+    image_url: "repentance-items2.png",
+    position: [4612, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "None (see above)",
@@ -1031,6 +1201,8 @@ export const items: Record<string, Item> = {
     content:
       "With each shot fired, another bloody tear will spawn behind Isaac\nSpawning multiple tears will form a trail of tears that follow Isaac as he moves, bursting and dealing damage upon contact with enemies\nThe effect from this item will only work while in a hostile room that contains at least 1 enemy",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Judas",
+    image_url: "repentance-items2.png",
+    position: [4556, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1044,6 +1216,8 @@ export const items: Record<string, Item> = {
       "Upon use, this item consumes 1 heart container or 2 soul hearts and spawns one item pedestal from the current room's pool\nEvery use gives a broken heart, meaning that slot is permanently broken and the maximum health limit is reduced by 1 for the rest of the run\nIf Isaac has 12 broken hearts, he dies instantly (this also applies to The Lost despite having no health)\nMagic Skin will continue to appear after finding it once if you are not still holding it - the chance for it to replace an item is 1 ÷ (12 - number of times used) up to a maximum of 50%\nBroken hearts are empty heart containers that cannot be removed or refilled and will override other types of hearts when you reach 12 total. Replacing all 12 containers with broken hearts will kill you instantly. The only way to remove broken hearts is by donating to a Confessional Machine",
     unlock:
       "Unlock this item by defeating Mother in the Corpse II as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [4668, 0],
     type: "Active",
     item_pool: "Shop, Red Chest, Curse Room",
     recharge_time: "6 rooms",
@@ -1056,6 +1230,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Soul Hearts\nGrants you the ability to fly\nHolding the fire button charges up a light beam attack similar to Brimstone\nThe light beam deals damage equal to your current tear damage per tick to any enemies touching it\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Bethany",
+    image_url: "repentance-items2.png",
+    position: [4724, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -1068,6 +1244,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, this item gives you a stat increase, based on which is currently the lowest. Stat options are: +1.0 Damage, +0.6 Tears, +0.2 Speed, +5.25 Range\nAlso drops either a bomb, a key or 3 coins on the ground. This is decided by whatever you have the least of. Keys and bombs are equal to 3 coins for deciding which to give",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4780, 0],
     type: "Passive",
     item_pool: "Boss Room, Golden Chest, Crane Game",
     recharge_time: null,
@@ -1080,6 +1258,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants a large orbital that rotates around Isaac\nWhen the orbital takes a few hits, they split into two smaller ones\nAfter the smaller orbitals take another hit, they explode into 2 blue spiders\nThis item will respawn after a period of time",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Lazarus",
+    image_url: "repentance-items2.png",
+    position: [4823, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1093,6 +1273,8 @@ export const items: Record<string, Item> = {
       "+5 Bombs\nYour bombs now explode and fire 4 Brimstone lasers in all cardinal directions\nEach brimstone laser deals 8 damage per tick for 13 total hits",
     unlock:
       "Unlock this item by killing Hornfel before he can escape after breaking his minecart",
+    image_url: "repentance-items2.png",
+    position: [4889, 0],
     type: "Passive",
     item_pool: "Devil Room, Bomb Beggar, Greed Mode Devil Room",
     recharge_time: null,
@@ -1105,6 +1287,8 @@ export const items: Record<string, Item> = {
     content:
       "Active items no longer charge up as normal from clearing rooms\nEnemies taking damage now charges your item instead. This includes damage you deal, and environmental damage they take e.g. from Fireplaces\n60 damage dealt = 1 charge",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [4964, 0],
     type: "Passive",
     item_pool: "Shop, Battery Beggar",
     recharge_time: null,
@@ -1117,6 +1301,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a familiar which is a smaller version of the Plum boss, which sprays tears and propels itself around the room\nDeals 2 contact damage per tick to enemies, and the tears deal 3 damage each\nDeals contact damage to any enemies it runs into\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.",
     unlock: "Unlock this item by beating Baby Plum 10 times",
+    image_url: "repentance-items2.png",
+    position: [5009, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -1130,6 +1316,8 @@ export const items: Record<string, Item> = {
       "When used, this item calls a friendly version of the Plum boss to fight for you for 10 seconds\nIt will jump to the nearest enemy, slam on the ground and fire tears around it, then propel itself around the room, dealing contact damage to any enemies it touches before disappearing\nIt's possible to get a guaranteed spawn of this item by encountering the Baby Plum boss and not damaging her. After a minute or so of not hurting her she will fly away and spawn Plum Flute\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.",
     unlock:
       "Unlock this item by allowing Baby Plum to escape instead of killing her",
+    image_url: "repentance-items2.png",
+    position: [5072, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -1142,6 +1330,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a star with a white aura around it, that floats very slowly through each room on the floor, making its way towards the boss room\nWhile standing inside the aura, you gain a big Tears Up (x2.5 fire rate), Damage Up (damage * 1.2 + 1) and homing tears\nThe star continues to make its way through the floor, even if you aren't in the same room as it, moving faster if you are a long distance ahead of it\nOn The Void floor, it will move towards the boss room containing Delirium\nDoesn't travel into the Hush or Mega Satan boss room\nIt may travel through secret/curse rooms on its route to the boss room\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: "Unlock this item by defeating Delirium as Bethany",
+    image_url: "repentance-items2.png",
+    position: [5132, 0],
     type: "Passive, Familiar",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -1154,6 +1344,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a baby in an ice cube, which can be kicked around the room by walking into it\nEnemies take damage from Cube Baby depending on how fast it was travelling when it hit them. Having a higher movement speed allows you to kick it harder\nEnemies hit by the cube while moving have a high chance to become frozen. Frozen enemies never unfreeze and are considered dead by the game. Kicking a frozen enemy will push it into the wall, where it shatters and fires ice shards everywhere (these can then freeze other enemies)\nEnemies touching the cube while it's not moving or moving slowly will become slowed for a few seconds, and take a small amount of damage\nCube Baby and enemies frozen will block enemy shots\nCube Baby can be launched across the room if you have a melee weapon\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5192, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1166,6 +1358,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies that die now spawn a red ghost, that floats in place of where the enemy died\nActivating the item causes all red ghosts in the room to explode, dealing damage to any enemies near them\nThe explosion doesn't deal damage to Isaac\nDamage dealt by each ghost is 3 + 0.04x the HP of the enemy it spawned from\nLarger enemies such as minibosses will spawn a larger red ghost that causes 3 explosions\nThe red ghosts can be moved around slightly by firing tears through them\nUsing the item will instantly kill any enemy or boss that has the 'ghost' tag and is at 50% or less HP. Enemies include Candler, Lil' Haunt, Polty, Red Ghost, Wizoob and The Forsaken, The Haunt, The Heretic and The Rainmaker bosses. This effect also works on Delirium if it is currently transformed into The Haunt while below half health",
     unlock: "Unlock this item by defeating Greedier mode as Bethany",
+    image_url: "repentance-items2.png",
+    position: [5258, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "Instant",
@@ -1178,6 +1372,8 @@ export const items: Record<string, Item> = {
     content:
       "Identified all pills on pickup, and converts them to their worse counterparts (e.g. Stat Up becomes Stat Down)\nAny 'Stat down' pills you take give you a permanent +0.6 Damage Up (Horse pills +1.2)\nMost other pills spawn a black heart when used, including R U A Wizard?, Amnesia, Bad Trip, ???, Paralysis, Retro Vision, I'm Excited\n+1 Black Heart when picked up",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5300, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -1190,6 +1386,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, gives you an orbital that blocks enemy shots and deals contact damage equal to 3.5 per tick\nWhile the active key is held down, Isaac gains +0.5 Speed and all of your orbitals spin faster and deal more damage\nOrbital damage is equal to 1.5 x OrbitalDamage + 6 while this effect is active",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5374, 0],
     type: "Active & Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1202,6 +1400,8 @@ export const items: Record<string, Item> = {
     content:
       "On death enemies now fire tears in random directions, which can damage other enemies\nThe amount of tears created by this effect depends on the total health of the enemy killed. Smaller enemies spawn 2-3 tears, and bosses spawn a maximum of 16\nTears from this effect maintain tear modifiers and status effects that Isaac currently has\nIsaac doesn't take damage from the tears created by this item",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5464, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1214,6 +1414,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage, a tiny Isaac familiar will spawn, which follows you and shoots tears at nearby enemies that deal 1.3 Damage\nThe mini-Isaacs stay with you between floors, but can die if they take too much damage\nMaximum number of mini-Isaacs is 16 at one time\nMini-Isaac's keep some of the abilities and appearance that Isaac has - e.g. the ability to fly. As Azazel they fire brimstone and as The Forgotten they use a bone club",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5542, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -1225,6 +1427,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1.5 Range Up\nTear Size Up",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5602, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -1237,6 +1441,8 @@ export const items: Record<string, Item> = {
     content:
       "At the beginning of all future floors, two portals will appear, that can take you to either the Boss room (Red portal), Item room (Yellow portal) or Secret room (Blue portal)\nAfter Chapter 3 (The Depths floors) only one portal will spawn\nPortals disappear if you leave the starting room\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5640, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -1249,6 +1455,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time an enemy dies, a random familiar spawns where it was killed for the rest of the room\nThe familiar cannot move, but continues to do its usual abilities\nPossible familiars include: Abel, Boiled Baby, Brother Bobby, Sister Maggy, Little Steven, Demon Baby, Multidimensional Baby, Freezer Baby, Rotten Baby, Harlequin Baby, Ghost Baby, Guardian Angel, Lil Brimstone, Robo-Baby and Seraphim\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5700, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -1261,6 +1469,8 @@ export const items: Record<string, Item> = {
     content:
       "Every 5 seconds you become spiky for a second, becoming immune and dealing 40 contact damage to any enemies that touch you\nThe effect is indicated by 4 white flashes, where the item activates on the 4th flash\nIf timed well, can be used to enter curse rooms and open spiky chests without taking damage. You still take damage however when using Blood Donation machines and Devil Beggars",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5841, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1273,6 +1483,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes all pedestal items to show up as rotating items, that swap every 1 second between the original spawned item and a HP up item. This allows you to choose between the item that originally spawned and a HP upgrade every time\nThis effect applies to most items, including those in the shop and devil room. Doesn't apply to progress items like The Polaroid\nWhen you pick up an item that increases your maximum HP, you gain 2 permanent stat increases, and a temporary damage boost that slowly goes down over time. Starts at +3.6 damage and goes to 0 after 30 seconds\nWhile this temporary damage boost is active, each enemy you kill increases your damage slightly, allowing you to quickly kill multiple enemies and chain the effect for longer\nThis item also gives a -0.03 Speed Down for every food item held\nThe 2 permanent stat increases depend on the item taken:\nA Snack = +0.2 shot speed, +1 luck. Breakfast = +0.2 shot speed, +1.5 Range. Dessert = +1 Flat Damage, +0.2 shot speed. Dinner = +0.5 tears, +0.2 shot speed.\nLunch = +0.5 tears, +1.5 range. Midnight Snack = +1 flat damage, +1 luck. Rotten Meat = +1 flat damage, +1.5 range. Supper = +0.5 tears, +1 luck.",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [5897, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1285,6 +1497,8 @@ export const items: Record<string, Item> = {
     content:
       "Shows you to see the contents of chests, sacks, shopkeepers and items that will drop from fires before you destroy them\nDoesn't work on tinted rocks and other obstacles (e.g. poop, pots)\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: "Unlock this item by defeating Mother in the Corpse II as Cain",
+    image_url: "repentance-items2.png",
+    position: [5963, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Red Chest",
     recharge_time: null,
@@ -1297,6 +1511,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a Keeper familiar, that shoots triple tears and follows your exact movements as you walk\nThe keeper has 3 health coins and can die if it takes enough damage. He can pick up coins to restore health\nSimilar to other familiars of this kind, you can hold the drop key to cause him to stand still\nIf he dies, his corpse turns into a few blue spiders. He won't respawn even if you move to a new floor\nWill always match your current movement speed\n+1 Bomb",
     unlock: "Unlock this item by defeating The Beast as Tainted Keeper",
+    image_url: "repentance-items2.png",
+    position: [6023, 0],
     type: "Passive, Familiar",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1309,6 +1525,8 @@ export const items: Record<string, Item> = {
     content:
       "Only found in the Mausoleum/Gehenna II boss room\nThe item itself has no effect, but triggers the ascent through the backwards path towards the Home floor\nOnce you've beaten Mother once, a door will appear at the starting room in Depths II, which leads to the Mausoleum/Gehenna floors. The door can only be opened if you have The Polaroid, The Negative or Faded Polaroid (the item/trinket is taken away when it opens). This means you need a way to teleport out of the Mom's Foot boss fight. If you didn't find one before this point, there will be a tinted Skull somewhere on Depths II, which contains a Fool card when blown up.\nCannot be rerolled by 4-pip dice rooms and Spindown Dice",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [6068, 0],
     type: "Passive",
     item_pool: "None (see above)",
     recharge_time: null,
@@ -1321,6 +1539,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP\n+0.2 Speed Up\n+0.5 Tears Up\n+0.5 Damage Up\n+1.5 Range Up\n+0.16 Shot Speed Up\n+1 Luck Up\n+6.9% Devil/Angel Room chance\n+6.9% Planetarium chance",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [6123, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1333,6 +1553,8 @@ export const items: Record<string, Item> = {
     content:
       "Clearing a room will spawn an extra reward, however only one can be picked up - the other one will disappear",
     unlock: "Unlock this item by defeating the The Beast as Isaac",
+    image_url: "repentance-items2.png",
+    position: [6172, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -1345,6 +1567,8 @@ export const items: Record<string, Item> = {
     content:
       "Every half red heart you pick up gives a small but permanent stat increase\nRandomly picks between +0.10 Damage Up, +0.05 Tears Up, +0.15 Range Up, +0.02 Speed Up, +0.1 Luck Up, +0.02 Shot Speed Up per half red heart\nSpawns 1 Red Heart when picked up",
     unlock: "Unlock this item by defeating The Beast as Magdalene",
+    image_url: "repentance-items2.png",
+    position: [6232, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1357,6 +1581,8 @@ export const items: Record<string, Item> = {
     content:
       "This item causes Devil deals to cost money instead of hearts, and shop items to cost hearts instead of money\nShop items cost heart containers, and pickups have spikes around them\nThe Devil deal conversion rate is 1 heart container to 15 coins\nDevil deal items can be on discount similar to the shop, making it 1 heart container = 7 coins instead",
     unlock: "Unlock this item by defeating The Beast as Cain",
+    image_url: "repentance-items2.png",
+    position: [6287, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -1369,6 +1595,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you enter a devil room and choose not to take an item, you get +1 Damage Up upon entering the next floor\nThe effect is shown via a cross above Isaac's head. Taking a Devil deal breaks the cross and prevents the damage up next floor\nTaking free pickups such as Black hearts in the Devil room also count",
     unlock: "Unlock this item by defeating The Beast as Judas",
+    image_url: "repentance-items2.png",
+    position: [6368, 0],
     type: "Passive",
     item_pool: "None",
     recharge_time: null,
@@ -1381,6 +1609,8 @@ export const items: Record<string, Item> = {
     content:
       "When you die, you turn into a ghost with 1/2 a red heart and flying, that is chained to your body for 10 seconds. This allows you to stay alive as long as you don't get hit during this 10 second period\nAfter this effect occurs, it cannot activate again until Isaac gains a half or full Soul Heart or a Black Heart. Soul Hearts that are used to charge Spirit Shackles will not be added to your health as normal",
     unlock: "Unlock this item by defeating The Beast as The Forgotten",
+    image_url: "repentance-items2.png",
+    position: [6428, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1393,6 +1623,8 @@ export const items: Record<string, Item> = {
     content:
       "Taking damage reveals a random room on the minimap, and automatically opens certain doors in the current room. Possible doors include any needing a key to open (Item Room, Shop, Alt Path doors), secret rooms and crawl spaces\nCracked Orb can also reveal the location of the red room that contains a pedestal item. The Red Key item is required to access it, but it shows the direction to get there",
     unlock: "Unlock this item by defeating The Beast as Eve",
+    image_url: "repentance-items2.png",
+    position: [6507, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -1405,6 +1637,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon entering each new floor, if you have one red heart or less, another one is added\nThis effect works while moving up floors in the backwards path\nThis item has no effect for characters with non-red health i.e. ???, Keeper and The Forgotten",
     unlock: "Unlock this item by defeating The Beast as Samson",
+    image_url: "repentance-items2.png",
+    position: [6567, 0],
     type: "Passive",
     item_pool: "Item Room, Demon Beggar",
     recharge_time: null,
@@ -1417,6 +1651,8 @@ export const items: Record<string, Item> = {
     content:
       "The first time you take damage in a room, Isaac will become a ghost and time will stop for 3 seconds\nDuring this ghost effect, you gain flight, spectral tears and the damage from the next hit you take is negated\nIsaac returns to his body if you either clear the room or take damage while in ghost form\nOnly happens once per room - taking damage a second time does not turn you into a ghost again",
     unlock: "Unlock this item by defeating The Beast as Lazarus",
+    image_url: "repentance-items2.png",
+    position: [6612, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -1429,6 +1665,8 @@ export const items: Record<string, Item> = {
     content:
       "Your tears are replaced with a charge attack that fires a homing, spectral fetus\nThe fetus tears deal damage equal to 75% of your current tear damage while in contact with enemies, roughly 5 times per second\nCan't be held down like normal charge attacks, they will release automatically at full charge",
     unlock: "Unlock this item by defeating The Beast as Lilith",
+    image_url: "repentance-items2.png",
+    position: [6666, 0],
     type: "Passive",
     item_pool: "Item Room, Ultra Secret Room",
     recharge_time: null,
@@ -1441,6 +1679,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a familiar that can be charged up to release a black ring, that damages any enemies that touch it with rapid hits (similar to Maw of the Void / Athame effects)\nThe effect does a decent amount of damage, but doesn't scale with your damage upgrades\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by defeating The Beast as Azazel",
+    image_url: "repentance-items2.png",
+    position: [6724, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -1453,6 +1693,8 @@ export const items: Record<string, Item> = {
     content:
       "While firing tears, you now charge up a poop attack for 3 seconds that when released, fires from Isaac's behind\nThe poop attack deals your current tear damage to any enemies caught in the blast\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation",
     unlock: "Unlock this item by defeating The Beast as ???",
+    image_url: "repentance-items2.png",
+    position: [6771, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1465,6 +1707,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a little portal familiar, that moves across the screen as you're firing\nThe portal will suck up any consumables and trinkets it travels over, causing it to become larger and deal more contact damage\nWhen the portal sucks up 4 pickups, it turns into a portal that can be used to teleport to unexplored rooms around the floor. It can take you to rooms that require bombs/keys, e.g. the Secret Room or the Shop\nEvery time the portal sucks up an item, it spawns a blue attack fly for you\nOnce every room has been explored, the portal does nothing\nCannot take you to rooms that aren't a part of the floor structure e.g. Devil Rooms / I AM ERROR rooms",
     unlock: "Unlock this item by defeating Mother as Apollyon",
+    image_url: "repentance-items2.png",
+    position: [6824, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1477,6 +1721,8 @@ export const items: Record<string, Item> = {
     content:
       "You gain a familiar that lives under the floor. Every so often it will come up and attempt to grab onto a random enemy in the room, holding them in place and dealing damage\nThe Worm Friend deals 4 damage for 8 ticks total\nIf the enemy moves quickly enough it can miss its attack",
     unlock: "Unlock this item by defeating The Beast as Apollyon",
+    image_url: "repentance-items2.png",
+    position: [6886, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1489,6 +1735,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies that die will leave behind 1-2 floating bone shards where they die, until you leave the room\nOther enemies that touch the bone shards will take 3.5 damage, with a chance to either bounce off them or cause it to break and disappear",
     unlock: "Unlock this item by defeating Mother as The Forgotten",
+    image_url: "repentance-items2.png",
+    position: [6938, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1501,6 +1749,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time an enemy dies, a friendly red soul appears. It will hunt down other enemies, dealing contact damage which scales with your tear damage\nAfter 5 seconds the red soul explodes (Isaac doesn't take damage from this effect)",
     unlock: "Unlock this item by defeating The Beast as The Lost",
+    image_url: "repentance-items2.png",
+    position: [6998, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -1513,6 +1763,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives you number of blue flame orbitals based on the number shown over this item\nIt starts at 1, and increments each activation, giving you more familiars each time you use it\nThe flames fire tears at the same time Isaac does, that deal a flat 3 damage\nIf a flame touches an enemy, it deals contact damage equal to double your current tear damage and then disappears\nYou can have a maximum of 24 flame orbitals at once\nEach flame has a chance to spawn as one of many variants, such as green flames that poison enemies, or a crucifix flame that spawns a random horseman familiar + Locusts when it is extinguished",
     unlock: "Unlock this item by defeating The Beast as Bethany",
+    image_url: "repentance-items2.png",
+    position: [7041, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "12 rooms",
@@ -1525,6 +1777,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 1 soul heart on the floor\nSoul hearts give you small permanent stat increases when picked up\nPossible stats include +0.3 Range Up, +0.2 Luck Up, +0.2 Damage Up, +0.1 Tears Up, +0.04 Speed Up",
     unlock: "Unlock this item by defeating Greed Mode as Bethany",
+    image_url: "repentance-items2.png",
+    position: [7099, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -1537,6 +1791,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a random charmed enemy which fights by your side and copies your exact movements, similar to how Jacob & Esau work\nThe familiars fire tears at the same time as Isaac, and have a visible health bar showing how much damage they can take before dying",
     unlock: "Unlock this item by defeating The Beast as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [7153, 0],
     type: "Active",
     item_pool: "Item Room, Crane Game",
     recharge_time: "4 rooms",
@@ -1549,6 +1805,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you an extra life\nYou respawn as a tiny version of Isaac, with a greatly reduced hitbox and +0.2 Speed Up\nWhen the effect activates you deal 35 damage to nearby enemies\nOnce unlocked, if you have already unlocked the tainted version of the character you're playing as, Inner Child is guaranteed to spawn in the hidden closet on the Home floor",
     unlock: "Unlock this item by defeating Greed Mode as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [7233, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1560,6 +1818,8 @@ export const items: Record<string, Item> = {
     quality: 4,
     content: "Item pedestals now cycle between 5 random items",
     unlock: "Unlock this item by defeating The Beast as Tainted Isaac",
+    image_url: "repentance-items2.png",
+    position: [7281, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1572,6 +1832,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies that touch Isaac will now bounce off him and fly off in the opposite direction\nBounced enemies will take 10 damage if they slam into the wall\nThis item also gives a random chance for enemy shots to bounce off you without taking damage",
     unlock: "Unlock this item by defeating The Beast as Tainted Magdalene",
+    image_url: "repentance-items2.png",
+    position: [7344, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1584,6 +1846,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases the quality of generated items\nRerolls items with a quality of 0 or 1\n33% chance to reroll items with a quality of 2\nQuality is a hidden mechanic in Repetance for all items and ranges from 0-4. Certain items consider Quality for picking what item to spawn, allowing better items to spawn under certain conditions\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: "Unlock this item by defeating The Beast as Tainted Lost",
+    image_url: "repentance-items2.png",
+    position: [7401, 0],
     type: "Passive",
     item_pool: "Angel Room, Secret Room",
     recharge_time: null,
@@ -1596,6 +1860,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a special set of spikes in the Devil Room\nTaking damage from the spikes has a chance to spawn a reward\nNothing - 37.5% chance\n6 Pennies - 17% chance\n+0.5 Damage Up - 27.5% chance\n2 Black Hearts - 9.5% chance\nRandom Item - 5.5% chance\nLeviathan trasformation - 3% chance",
     unlock: "Unlock this item by defeating The Beast as Tainted Judas",
+    image_url: "repentance-items2.png",
+    position: [7448, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -1608,6 +1874,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, this gives you 9 orbital flies\nEach time a fly blocks an enemy shot, it will turn into a blue fly and attack nearby enemies, leaving you with one less orbital\nEvery room clear gives you +1 orbital fly, up to a maximum of 9\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.",
     unlock: "Unlock this item by defeating The Beast as Tainted Blue Baby",
+    image_url: "repentance-items2.png",
+    position: [7513, 0],
     type: "Passive",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -1620,6 +1888,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you +0.25 Damage Up for every broken heart you have\nGives 3 broken hearts when picked up\nEvery hit of damage that would kill you, instead adds 2 more broken hearts and deal 40 damage to all enemies in the room\nHeartbreak cannot kill you on pickup\nBroken hearts are empty heart containers that cannot be removed or refilled and will override other types of hearts when you reach 12 total. Replacing all 12 containers with broken hearts will kill you instantly. The only way to remove broken hearts is by donating to a Confessional Machine",
     unlock: "Unlock this item by defeating The Beast as Tainted Eve",
+    image_url: "repentance-items2.png",
+    position: [7581, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -1632,6 +1902,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage, you gain a Speed Up and a Tears Up\nThe stat increases start small, and scale up each time you take damage (+0.25 Tears Up for the first hit, +0.75 Tears Up for the 6th hit)\nThe effect maxes out at +3 Tears Up and +1 Speed Up after taking damage 6 times. This brings you to the maximum possible speed\nThe effect lasts for the rest of the current floor",
     unlock: "Unlock this item by defeating Mother as Samson",
+    image_url: "repentance-items2.png",
+    position: [7634, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -1644,6 +1916,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac gains a halo of light around him. When an enemy touches the halo for couple of seconds, a beam of light will come down and deal a burst of damage to it\nThe triggered beam also fires in all 4 cardinal directions, dealing damage to anything it touches\nEvery time Isaac takes damage, the halo grows slightly bigger up to a maximum of 10 times. The size resets when leaving the floor\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: "Unlock this item by defeating The Beast as Tainted Lazarus",
+    image_url: "repentance-items2.png",
+    position: [7711, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -1656,6 +1930,8 @@ export const items: Record<string, Item> = {
     content:
       "A fetus familiar follows Isaac, and upon entering the Boss room on each floor, it will transform into a copy of the boss\nThis makes bosses a lot harder, however you now get 2 boss item drops",
     unlock: "Unlock this item by defeating Hush as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [7801, 0],
     type: "Passive, Familiar",
     item_pool: "Secret Room, Curse Room",
     recharge_time: null,
@@ -1668,6 +1944,8 @@ export const items: Record<string, Item> = {
     content:
       "You gain two familiar demons, that stay by Isaac's side and fire shots in the same direction as you\nThe familiars deal roughly 40% of Isaac's damage, scaling with damage upgrades you get\nThey sit near and rotate around Isaac depending on which way you're firing tears. They do not block enemy shots\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by defeating The Beast as Tainted Lilith",
+    image_url: "repentance-items2.png",
+    position: [7854, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -1680,6 +1958,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac builds rage each time you clear a new room. This is shown by the Azazel skin spreading on Isaac's face\nAfter 4 rooms, Isaac's face will flash red. The next room you enter he will automatically fire a massive red brimstone laser for 4 seconds, dealing huge damage\nThe rage resets back to zero, and the cycle continues every 5 rooms cleared",
     unlock: "Unlock this item by defeating The Beast as Tainted Azazel",
+    image_url: "repentance-items2.png",
+    position: [7910, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -1692,6 +1972,8 @@ export const items: Record<string, Item> = {
     content:
       "When using a card, pill, or rune, you also use a copy of the last 3 cards/pills/runes you used after picking up Echo Chamber\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: "Unlock this item by defeating The Beast as Tainted Apollyon",
+    image_url: "repentance-items2.png",
+    position: [7948, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1704,6 +1986,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns an Old chest at the start of all future floors\nOld Chests work the same as Golden Chests, requiring a key to open but contain different items\nThe Old chest can contain: 3 trinkets (42% chance), 1-3 soul hearts (43% chance), a random item from the Old Chest pool (10% chance) or an angel room item (5% chance)\nSpawns a second chest in the mirrored floor of Downpour II or Dross II, but only if you had this item before entering the floor",
     unlock: "Unlock this item by defeating The Beast as Tainted Forgotten",
+    image_url: "repentance-items2.png",
+    position: [8010, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1716,6 +2000,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time you take damage, a red flame orbital will appear around Isaac for the remainder of the floor, up to a maximum of 6\nThe flames deal contact damage which scales with your tear damage\nUpon reaching 6 flames, they will also start to fire tears along with Isaac, dealing a flat 3.2 damage per tear\nWhen entering a new floor, all the flames disappear",
     unlock: "Unlock this item by defeating The Beast as Tainted Bethany",
+    image_url: "repentance-items2.png",
+    position: [8077, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -1728,6 +2014,8 @@ export const items: Record<string, Item> = {
     content:
       "Using this item swaps you between the character you started as, and Esau, which has 3 black hearts, +2 base damage and the ability to fly\nThis character keeps its own separate health and items. Items picked up are not shared between the two characters\nIf either character dies it's game over",
     unlock: "Unlock this item by defeating The Beast as Tainted Jacob",
+    image_url: "repentance-items2.png",
+    position: [8116, 0],
     type: "Active",
     item_pool: "Item Room, Secret Room",
     recharge_time: "1 room",
@@ -1740,6 +2028,8 @@ export const items: Record<string, Item> = {
     content:
       "When activated, Isaac's tears are replaced by a bone sword and he goes on a killing rampage, gaining +0.4 Speed, +3 Flat Damage Up for 5 seconds\nThe sword deals x3 damage if used at close range, or x1.5 damage if charged up and thrown\nClearing rooms doesn't charge this item - charge is added equal to damage taken by enemies. This includes all sources of damage, including environmental damage to enemies\nKilling an enemy while berserk will increase the duration of the effect by 1 second\nYou don't die while in Berserk mode, but taking lethal damage will kill you after the effect wears off\nThe bone sword from this item is similar to Donkey Jawbone from Antibirth\nTainted Samson starts with a passive version of this item",
     unlock: "Unlock this item by defeating Delirium as Tainted Samson",
+    image_url: "repentance-items2.png",
+    position: [8162, 0],
     type: "Active",
     item_pool: "Devil Room",
     recharge_time: "Enemy damage taken = charge",
@@ -1752,6 +2042,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Isaac turns into a ghost for 1 second and his speed goes up to maximum (2.0). During this time he can walk over enemies to mark them for death. When the effect wears off, Isaac quickly runs between each marked enemy, dealing high damage to each one rapidly (roughly x2.5 your tear damage)\nThe damage caused by this effect scales up with every target it hits in a row\nTainted Judas starts with this item",
     unlock: "Unlock this item by defeating Delirium as Tainted Judas",
+    image_url: "repentance-items2.png",
+    position: [8213, 0],
     type: "Active",
     item_pool: "Devil Room",
     recharge_time: "7 seconds",
@@ -1764,6 +2056,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Abyss consumes all pedestal items in the current room and converts them into Red attack flies\nRed attack flies will charge across the room in the same direction Isaac is shooting, dealing contact damage to enemies equal to Isaac's tear damage\nThe flies don't block enemy shots, but this also means they never die and stay with Isaac forever\nTainted Apollyon starts with this item",
     unlock: "Unlock this item by defeating Delirium as Tainted Apollyon",
+    image_url: "repentance-items2.png",
+    position: [8254, 0],
     type: "Active",
     item_pool: "Devil Room",
     recharge_time: "4 rooms",
@@ -1775,6 +2069,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [8308, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -1787,6 +2083,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\nStaples one of Isaac's eyes shut, meaning he only shoots tears from one eye. This means some effects such as R U A WIZARD pills only fire tears in one direction",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [8360, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -1799,6 +2097,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, you charge forwards for a second. If you touch an enemy in that time, Isaac will pick it up and slam it on the ground, killing it and sending a shockwave around the impact\nIn the brief period while holding the enemy you can move a target to decide where it lands\nActually does work on bosses! However after the attack you end up near the boss, which puts you in danger of taking damage too\nScales in damage and area of effect with the player's size",
     unlock: "Unlock this item by defeating Delirium as Jacob & Esau",
+    image_url: "repentance-items2.png",
+    position: [8418, 0],
     type: "Active",
     item_pool: "Item Room, Crane Game",
     recharge_time: "8 seconds",
@@ -1811,6 +2111,8 @@ export const items: Record<string, Item> = {
     content:
       "When used will do a swipe attack in any direction. Can be used to store up to 8 consumables in, such as hearts, coins, keys, bombs, cards etc\nWhen the bag has 8 items you can hold down the activate button for 2 seconds to craft yourself a brand new random item\nBag of Crafting's recipes are based on your current seed, but there are some fixed recipes that exist in every run, e.g. 8 coins = Slot Machine\nWhile playing as Tainted Cain you get a visual interface to see what items are in the bag, allowing you to see what item will be created and swap out specific consumables\nHas other uses - Will deal 3 damage to enemies it hits, and can be used to quickly push bombs and objects across rooms\nTainted Cain starts with this item, but can be used by any character after unlocking it and finding it in the item room\nCannot be used to craft another Bag of Crafting!",
     unlock: "Unlock this item by defeating Delirium as Tainted Cain",
+    image_url: "repentance-items2.png",
+    position: [8496, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "Instant",
@@ -1823,6 +2125,8 @@ export const items: Record<string, Item> = {
     content:
       "While holding flip, a ghost item will appear behind item pedestals upon entering Item Rooms and Shop that cannot be interacted with\nWhen activated, all real items in the room will be swapped with the ghost items behind them\nThe ghost item stays there even if you take the regular item, allowing you to use Flip to get both of them\nDoes nothing with item pedestals that don't have a ghost item behind them\nWhen playing as Tainted Lazarus, activating Flip also changes you between Lazarus and Dead Lazarus\nTainted Lazarus starts with this item, but can be used by any character after unlocking it and finding it in the item room",
     unlock: "Unlock this item by defeating Delirium as Tainted Lazarus",
+    image_url: "repentance-items2.png",
+    position: [8552, 0],
     type: "Active",
     item_pool: "Curse Room, Secret Room, Shop",
     recharge_time: "6 rooms",
@@ -1835,6 +2139,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives you an orbital flame which represents another random passive item in the game. While you have this flame you also have that item's effect\nThe flame deals double your tear damage to any enemies that touch it, but if it takes too much damage the flame will disappear and you lose the item's effect\nTainted Bethany starts with this item\nWisps are randomly chosen from Item Room, Boss Room and Shop item pools, with a 25% chance to pick the same pool as the current room\nCounts as 1 of 3 book items needed towards the Bookworm transformation.",
     unlock: "Unlock this item by defeating Delirium as Tainted Bethany",
+    image_url: "repentance-items2.png",
+    position: [8609, 0],
     type: "Active",
     item_pool: "Devil Room, Library",
     recharge_time: "6 rooms",
@@ -1848,6 +2154,8 @@ export const items: Record<string, Item> = {
       "When used, removes half a heart of health and creates a clot familiar\nClot familiars follow Isaac's exact movements including flight, firing tears and tear effects\nHolding down the swap button will cause all your clots to stay in place\nWorks differently as Tainted Eve - instead clots are created by firing for 2 seconds, down to a minimum of half a red heart. Using Sumptorium as her will then cause all Clots to be consumed and return your hearts back to you. Clots returning back to Eve deal 3x damage as they suck back in\nThe type of heart consumed to create a clot will give it different abilities: Soul Hearts = More health, Black Hearts = Dark Matter effect, Eternal Hearts = Sacred Heart effect, Gold Hearts = Midas Touch effect, Bone Hearts = Compound Fracture effect, Rotten Hearts = Less health\nTainted Eve starts with this item, but can be used by any character after unlocking it and finding it in the item room",
     unlock:
       "This item comes along with Tainted Eve. The achievement 'Sumptorium' is unlocked by defeating Delirium as Tainted Eve",
+    image_url: "repentance-items2.png",
+    position: [8660, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "10 seconds",
@@ -1860,6 +2168,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this will retreive the Tainted Forgotten's skeleton back to its owner's hands from any distance\nTainted Forgotten's Birthright effect. Cannot be obtained and has no use for any other character\nBirthright is a Shop item that has unique effects depending on what character you're playing as",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [8701, 0],
     type: "Active",
     item_pool: "None",
     recharge_time: "3 seconds",
@@ -1872,6 +2182,8 @@ export const items: Record<string, Item> = {
     content:
       "This is the item Tainted Blue Baby (???) uses as his main mechanic\nKilling or damaging enemies spawns various poops, which add to his collection. Pressing the bomb button will put the next poop into the 'Hold' jar. Pressing it again allows you to throw it at enemies. Each poop has random effects like Butt Bombs, Fire Poops etc\nTainted Blue Baby starts with this item, and is the only one who can use it",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [8772, 0],
     type: "Active",
     item_pool: "None",
     recharge_time: "Instant",
@@ -1884,6 +2196,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 3 random coins and a key when picked up\nBuying items from the shop gives you random stat upgrades. The more you spend the higher the stat increase\nPossible stats include Speed, Damage and Range\n15c items give all 3 stats: +1 Damage Up, +0.03 or +0.06 Speed Up, +0.25 or +0.5 Range Up\n5c items give 1 or 2 stats: +0.5 Damage Up **OR** +0.25 Range and +0.03 Speed Up",
     unlock: "Unlock this item by defeating Mother as The Keeper",
+    image_url: "repentance-items2.png",
+    position: [8820, 0],
     type: "Passive",
     item_pool: "Shop, Secret Room",
     recharge_time: null,
@@ -1896,6 +2210,8 @@ export const items: Record<string, Item> = {
     content:
       "While in a room with enemies, blue spiders will randomly spawn from objects in the room (e.g. rocks, pots, stone blocks)\nAll rocks spawn 0-2 blue spiders when destroyed\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: "Unlock this item by defeating Delirium as Tainted Keeper",
+    image_url: "repentance-items2.png",
+    position: [8870, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -1908,6 +2224,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns a random shop item or consumable, however you have to pay the relevant cost to pick it up\nCan include anything that would appear in the shop",
     unlock: "Unlock this item by defeating The Beast as Keeper",
+    image_url: "repentance-items2.png",
+    position: [8921, 0],
     type: "Active",
     item_pool: "Shop, Secret Room, Wooden Chest",
     recharge_time: "4 rooms",
@@ -1920,6 +2238,8 @@ export const items: Record<string, Item> = {
     content:
       "With every bar of charge this item has, a different consumable is shown inside the Jar. 1 = poop, 2 = penny, 3 = bomb, 4 = key, 5 = red heart, 6 = pill, 7 = card, 8 = soul heart, 9 = gold heart, 10 = gold key, 11 = gold bomb\nAt the full 12 charges, a completely random effect will happen. It can be anything including spawning a bunch of consumables, spawning a glitched pedestal item, creating a bunch of light beams, spawning troll bombs or nothing at all",
     unlock: "Unlock this item by defeating The Beast as Eden",
+    image_url: "repentance-items2.png",
+    position: [8983, 0],
     type: "Active",
     item_pool: "Item Room, Crane Game",
     recharge_time: "12 rooms",
@@ -1932,6 +2252,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, all future items become 'glitched', causing them to become random combinations of 2-3 effects based on other items\nGlitched items can be passive or active and are completely randomly generated with infinite possibilities (similar to other 'Randomizer' games)\nThe ratio of active to passive item effects given is 1/4\nRandom effects combine effects that exist on other items, and assign them to a random event (e.g. on enemy death, on room clear, on damage taken etc.)",
     unlock: "Unlock this item by defeating The Beast as Tainted Eden",
+    image_url: "repentance-items2.png",
+    position: [9039, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -1944,6 +2266,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, it puts the closes enemy in chains for 5 seconds, preventing it from moving. You can release the enemy early by using it again\nTainted Jacob starts with this item. While playing as him Anima Sola will always target Dark Esau. Releasing Dark Esau will cause him to charge directly at Jacob and deal damage to anything in his path. If used in a room with no enemies, Dark Esau will instantly spawn\nWill chain up to two targets if you have Car Battery, if only one valid target is present it will be chained for twice the duration",
     unlock: "Unlock this item by defeating Delirium as Tainted Jacob",
+    image_url: "repentance-items2.png",
+    position: [9101, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "15 seconds",
@@ -1956,6 +2280,8 @@ export const items: Record<string, Item> = {
     content:
       "Rerolls all pedestal items, lowering all their internal item IDs by 1\nFor example: Brimstone's ID = 118, so it would be rerolled into Dead Bird (ID = 117)\nSad Onion (ID = 1) will reroll into nothing\nThere are some gaps in item IDs which are skipped if no item exists, or will reroll into unexpected items if hidden items are present at that ID. For example rerolling Plan C (ID = 475) changes it into the Broken Glass Cannon, which is a hidden item with ID = 474\nItems that are yet to be unlocked will also be skipped over, preventing you from getting items you don't have access to yet",
     unlock: "Unlock this item by defeating Delirium as Tainted Isaac",
+    image_url: "repentance-items2.png",
+    position: [9149, 0],
     type: "Active",
     item_pool: "Item Room, Secret Room, Crane Game",
     recharge_time: "6 rooms",
@@ -1968,6 +2294,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon taking damage you have a chance to drop the heart that you just lost. It gives you 2 seconds to pick it up again to re-heal, before it disappears",
     unlock: "Unlock this item by defeating Delirium as Tainted Magdalene",
+    image_url: "repentance-items2.png",
+    position: [9212, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1980,6 +2308,8 @@ export const items: Record<string, Item> = {
     content:
       "Whenever you deal damage to an enemy, has a chance to give the effect of one of Tainted ???'s unique poops\nCorn poop - Spawns a blue fly every 2 seconds\nFlaming poop - Leaves behind fire that damages enemies\nStinky poop - Emits a toxic cloud\nBlack poop - Creates slowing black creep. Confuses all enemies briefly when destroyed\nWhite poop - Same effect as Hallowed Ground\nStone poop - Deals extra thrown damage, can hit multiple enemies. Takes more shots before breaking\nBomb poop - Throws a butt bomb that explodes after 2 seconds",
     unlock: "Unlock this item by defeating Delirium as Tainted Blue Baby",
+    image_url: "repentance-items2.png",
+    position: [9264, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -1992,6 +2322,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows you to quickly double tap a shoot button to sneeze on nearby enemies, dealing x1.5 your tear damage and pushing them back slightly\nIf an enemy is pushed into a wall or object it takes 10 damage",
     unlock: "Unlock this item by defeating Delirium as Tainted Azazel",
+    image_url: "repentance-items2.png",
+    position: [9311, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2004,6 +2336,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nBombs become spectral and can now pass through objects\nBombs spawn a friendly white soul, which will hunt down other enemies, dealing contact damage which scales with your tear damage\nAfter 10 seconds the white soul explodes dealing 7 damage to nearby enemies. Isaac doesn't take damage from this effect",
     unlock: "Unlock this item by defeating Delirium as Tainted Lost",
+    image_url: "repentance-items2.png",
+    position: [9367, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -2016,6 +2350,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a familiar that's attached via an Umbilical Cord, but will move and shoot in the same direction Isaac is shooting\nWhen activated you first need to throw the familiar, which deals x3 your tear damage to any enemies it touches\nGello's tears deal x0.75 your tear damage (x1.0 if Lilith)\nCan be used multiple times per room to spawn more familiars, however they only last for the current room",
     unlock: "Unlock this item by defeating Delirium as Tainted Lilith",
+    image_url: "repentance-items2.png",
+    position: [9414, 0],
     type: "Active",
     item_pool: "Item Room, Devil Room",
     recharge_time: "2 rooms",
@@ -2028,6 +2364,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item allows you to throw your head where it will sit as a stationary sentry firing bullets until you walk over and pick it up again\nThrowing Isaac's head deals 24 damage to anything it hits while being thrown\nYour hitbox remains with the body. Enemies touching the head don't hurt Isaac",
     unlock: "Unlock this item by defeating Delirium as Tainted Forgotten",
+    image_url: "repentance-items2.png",
+    position: [9464, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 seconds",
@@ -2039,6 +2377,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.75 Damage Up\n+1 Luck Up",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [9539, 0],
     type: "Passive",
     item_pool: "Boss Room, Crane Game, Golden Chest",
     recharge_time: null,
@@ -2051,6 +2391,8 @@ export const items: Record<string, Item> = {
     content:
       "+28% Damage Up (right eye only)\n+7 Range Up (right eye only)\n-0.3 Shot Speed Down (right eye only)",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [9602, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -2063,6 +2405,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Damage Up\nDrops 1 random rune or soul stone when picked up\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-items2.png",
+    position: [9662, 0],
     type: "Passive",
     item_pool: "Shop, Golden Chest, Mom's Chest, Old Chest",
     recharge_time: null,
@@ -2075,6 +2419,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears have a chance to become a tooth, dealing x3.2 damage, similar to Tough Love\nThe chance to fire a tooth with this trinket is affected by your Luck stat\nAt +0 luck you have ~12% chance for this effect to activate\nAt +9 luck every tear you fire will be a tooth",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [0, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2086,6 +2432,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Tears have a chance to slow enemies",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [60, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2098,6 +2446,8 @@ export const items: Record<string, Item> = {
     content:
       "Chance to spawn half a soul heart when picking up a coin\nThe chance scales up based on the coin's worth: Penny = 16.66%, Double Penny = 30.5%, Nickel = 59.7%, Dime = 83.3%",
     unlock: "Unlock this trinket by defeating ??? as Bethany",
+    image_url: "repentance-trinkets.png",
+    position: [133, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2110,6 +2460,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a random syringe effect every room\nThe effect can be The Virus, Roid Rage, Speed Ball, Experimental Treatment, Synthoil, Euthanasia or Growth Hormones",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [201, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2122,6 +2474,8 @@ export const items: Record<string, Item> = {
     content:
       "Placed bombs explode after 0.66 seconds instead of the usual 1.5 seconds\nThis was called Exploded Firecracker in Antibirth",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [272, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2133,6 +2487,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Farts produced by Isaac or familiars will be twice as large",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [335, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2145,6 +2501,8 @@ export const items: Record<string, Item> = {
     content:
       "Chance for enemies to burn when entering a room\nThe chance for this effect to activate is effected by your Luck stat",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [395, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2157,6 +2515,8 @@ export const items: Record<string, Item> = {
     content:
       "Explosions can open locked doors\nThis includes key blocks and golden chests",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [478, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2169,6 +2529,8 @@ export const items: Record<string, Item> = {
     content:
       "Pickups left on current floor will appear in the starting room of the next floor, up to a maximum of 4 pickups",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [533, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2181,6 +2543,8 @@ export const items: Record<string, Item> = {
     content:
       "Active items will be rerolled upon using them\nUsing with Book of Virtues will only reroll the item the book is holding\nHas no effect with Notched Axe due to how its durability works",
     unlock: "Unlock this trinket by defeating Mother as Eden",
+    image_url: "repentance-trinkets.png",
+    position: [588, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2193,6 +2557,8 @@ export const items: Record<string, Item> = {
     content:
       "Random luck-based tear effects have an extra chance of occurring\nThe additional chance is effectively +3 Luck Up",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [637, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2205,6 +2571,8 @@ export const items: Record<string, Item> = {
     content:
       "Picking up red hearts now has a high chance to spawn 1-4 blue attack spiders, instead of giving you health back\nThis effect also works while fully healed, giving a guaranteed chance of getting spiders\nWhile missing any red health the chance for spiders is less\nWorks for characters that don't use red health, which always gives you spiders\nHearts in Shops can be converted into spiders for free",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [708, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2218,6 +2586,8 @@ export const items: Record<string, Item> = {
       "Gives your familiars improved rate of fire while held\nIn Antibirth this trinket was called Song of the Siren",
     unlock:
       "Unlock this trinket by bombing the skull left by The Siren boss after her death",
+    image_url: "repentance-trinkets.png",
+    position: [759, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2230,6 +2600,8 @@ export const items: Record<string, Item> = {
     content:
       "While held at the start of each floor, this trinket spawns four wisp familiar orbitals around Isaac\nThese wisps are the same as the ones created by the Book of Virtues item",
     unlock: "Unlock this trinket by beating the Boss Rush as Bethany",
+    image_url: "repentance-trinkets.png",
+    position: [829, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2242,6 +2614,8 @@ export const items: Record<string, Item> = {
     content:
       "Your active item no longer gains charges, but battery drops become much more common",
     unlock: "Unlock this trinket by blowing up 10 Battery Beggars",
+    image_url: "repentance-trinkets.png",
+    position: [884, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2254,6 +2628,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears that miss enemies will redirect themselves and travel 90 degrees towards enemies\nTears must be roughly 2 tiles or closer to activate this effect",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [924, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2266,6 +2642,8 @@ export const items: Record<string, Item> = {
     content:
       "+10 Luck while held, but the trinket is destroyed when damage is taken\nBlood donation machines, Curse Rooms and Sacrifice Rooms wont destroy it\nTaking a hit and activating Holy Mantle won't destroy it\nCan be dropped in order to avoid breaking it\nThis trinket is automatically given to you after clearing 3 bosses without taking damage",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [1005, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2278,6 +2656,8 @@ export const items: Record<string, Item> = {
     content:
       "Treasure Rooms are replaced with Red Treasure Rooms, which contain a deal with the devil in place of a regular item pedestal\nIf an item room has not yet been entered, it can be transformed to either a regular or Red Treasure Room by picking up or dropping this trinket before entering\nDoes not affect the mirrored treasure room in Downpour II",
     unlock: "Unlock this trinket by defeating Mother as Azazel",
+    image_url: "repentance-trinkets.png",
+    position: [1058, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2291,6 +2671,8 @@ export const items: Record<string, Item> = {
       "Every time you pick up a coin, you have a small chance to gain 1 bar of charge on your active item\nThe chance for this effect to happen is 1/6th of the value of the coin picked up\nCan only activate once per coin collected\nIn Antibirth this trinket was called Electric Penny",
     unlock:
       "Unlock this trinket by donating to a battery beggar until he pays out with an item 5 times",
+    image_url: "repentance-trinkets.png",
+    position: [1137, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2303,6 +2685,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, your familiars will now orbit around Isaac instead of following behind him",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [1213, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2315,6 +2699,8 @@ export const items: Record<string, Item> = {
     content:
       "Activates your active item just before damage would be taken\nIt doesn't activate for free - the charges are used up as normal if this effect activates. This means the trinket does nothing if your active item isn't fully charged\nSingle-use active items are consumed as normal",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [1285, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2327,6 +2713,8 @@ export const items: Record<string, Item> = {
     content:
       "Doors can be opened without using up a key\nHowever, when entering the door you are taken to a blue womb room with enemies to defeat. This room will always drop a reward at the end, then allow you to exit back to the real floor",
     unlock: "Unlock this trinket by defeating The Beast as Tainted Cain",
+    image_url: "repentance-trinkets.png",
+    position: [1338, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2339,6 +2727,8 @@ export const items: Record<string, Item> = {
     content:
       "While held this trinket causes spikes to retract into the floor\nWorks for curse rooms - you no longer take damage entering or leaving\nAllows you to open spiked chests without taking damage",
     unlock: null,
+    image_url: "repentance-trinkets.png",
+    position: [1393, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2352,6 +2742,8 @@ export const items: Record<string, Item> = {
       "+9% chance for a Planetarium to spawn\nAllows Planetariums to spawn in the Womb/Utero floors\nPlanetarium have a base 1% chance to appear, which increases by +20% whenever you skip an Item Room (Must not enter to count as skipped)\nAfter entering a Planetarium the chance goes back to 1%. Holding this trinket increase that chance by +15%\nDoes not drop in Greed Mode",
     unlock:
       "Unlock this trinket by collecting three of the following in the same run: Magic 8 Ball, Tiny Planet, Crystal Ball, Star of Bethlehem or any of the Astrology-related items (e.g. Aries, Cancer, Capricorn, Leo etc.). The item called Zodiac does not count.",
+    image_url: "repentance-trinkets.png",
+    position: [1471, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2365,6 +2757,8 @@ export const items: Record<string, Item> = {
       "Has a high chance to give you the effect of a random Mom item every room",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Isaac",
+    image_url: "repentance-trinkets.png",
+    position: [1531, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2377,6 +2771,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you enter a brand new room, you have a chance to get a random one-time use Dice (e.g. D6, D20 etc.)",
     unlock: "Unlock this trinket by defeating Mother as Tainted Isaac",
+    image_url: "repentance-trinkets.png",
+    position: [1584, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2389,6 +2785,8 @@ export const items: Record<string, Item> = {
     content: "Causes Item rooms and Shops to appear in the Cathedral",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Magdalene",
+    image_url: "repentance-trinkets.png",
+    position: [1642, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2401,6 +2799,8 @@ export const items: Record<string, Item> = {
     content:
       "While held you get +1 HP Up\nThe first time you pick this trinket up, the heart container will be filled. This effect can't be abused - next time it will be empty if dropped",
     unlock: "Unlock this trinket by defeating Mother as Tainted Magdalene",
+    image_url: "repentance-trinkets.png",
+    position: [1705, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2413,6 +2813,8 @@ export const items: Record<string, Item> = {
     content:
       "Every 15 shots you will shoot an Ipecac + My Reflection shot\nThe tear will fly in the air for about 3 seconds and follows Isaac until it falls and explodes. You need to move out of the way or it will hurt Isaac, but can be used to open anything requiring a bomb e.g. Secret Rooms",
     unlock: "Unlock this trinket by defeating Mother as Tainted Lazarus",
+    image_url: "repentance-trinkets.png",
+    position: [1765, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2426,6 +2828,8 @@ export const items: Record<string, Item> = {
       "Every time you take damage, you drop up to 2 different types of consumables on the ground\nDropped consumables can be any variant of its kind - e.g. a bomb can become a troll bomb, or a dropped coin can become a dime\nDoes nothing if you have no consumables",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lazarus",
+    image_url: "repentance-trinkets.png",
+    position: [1832, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2438,6 +2842,8 @@ export const items: Record<string, Item> = {
     content: "All new chests become locked Golden chests",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Cain",
+    image_url: "repentance-trinkets.png",
+    position: [1885, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2449,6 +2855,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Spawns a sack at the start of each new floor",
     unlock: "Unlock this trinket by defeating Mother as Tainted Cain",
+    image_url: "repentance-trinkets.png",
+    position: [1953, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2461,6 +2869,8 @@ export const items: Record<string, Item> = {
     content: "Causes an Item Room and Shop to appear in Sheol",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Azazel",
+    image_url: "repentance-trinkets.png",
+    position: [2005, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2473,6 +2883,8 @@ export const items: Record<string, Item> = {
     content:
       "When entering a new room, gives a small chance to gain Azazel's short-range Brimstone laser for the current room and the ability to fly",
     unlock: "Unlock this trinket by defeating Mother as Tainted Azazel",
+    image_url: "repentance-trinkets.png",
+    position: [2074, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2486,6 +2898,8 @@ export const items: Record<string, Item> = {
       "Spawns 2 friendly Dips upon clearing a room\nDips that spawn after killing a Squirt turn friendly",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Blue Baby",
+    image_url: "repentance-trinkets.png",
+    position: [2134, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2497,6 +2911,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Drops 2 bombs at once (only 1 bomb is removed from your total)",
     unlock: "Unlock this trinket by defeating Mother as Tainted Blue Baby",
+    image_url: "repentance-trinkets.png",
+    position: [2198, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2510,6 +2926,8 @@ export const items: Record<string, Item> = {
       "Beyond the womb floor, replaces all coin and key spawns with a random pickup as follows:\nBomb - 26.6% chance. Heart - 26.6% chance\nPill - 16.6% chance. Card - 16.6% chance\nTrinket - 6.6% chance. Battery - 6.6% chance\nAlso adds a 20% chance to spawn a fly if the original drop was a coin\nDoesn't spawn in Greed Mode",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Eden",
+    image_url: "repentance-trinkets.png",
+    position: [2258, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2522,6 +2940,8 @@ export const items: Record<string, Item> = {
     content:
       "Each brand new room, this trinket has a chance to transform into a copy of a random passive item, which gives you the effect for the duration of this room",
     unlock: "Unlock this trinket by defeating Mother as Tainted Eden",
+    image_url: "repentance-trinkets.png",
+    position: [2321, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2535,6 +2955,8 @@ export const items: Record<string, Item> = {
       "Gives a small chance to spawn a friendly Bony when clearing a room, which will throw bones at enemies until it takes enough damage to die\nCan be either the regular white Bony or the black variant",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Forgotten",
+    image_url: "repentance-trinkets.png",
+    position: [2384, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2546,6 +2968,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Gives you +1 Bone Heart every time you enter a new floor",
     unlock: "Unlock this trinket by defeating Mother as Tainted Forgotten",
+    image_url: "repentance-trinkets.png",
+    position: [2429, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2559,6 +2983,8 @@ export const items: Record<string, Item> = {
       "Counts as 1 of 3 cat items needed towards the Guppy transformation\nDropping this trinket again removes the transformation if you dont have 3 other Guppy items",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lost",
+    image_url: "repentance-trinkets.png",
+    position: [2486, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2571,6 +2997,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time you clear a room there is a chance a Red Room will spawn at one of the walls.\nThe chance for a Red Room to unlock increases as you pick up more Crystal Keys.\nWhile in a regular room, the chances to spawn a Red Room are: 1 Key = 33.33% chance. 2 keys = 50% chance. 3 or more keys = 100% chance.\nWhile in a Red room, the chances to spawn a Red Room are: 1 Key = 12.5% chance. 2 keys = 16.6% chance. 3 keys = 25% chance. 4 keys = 50% chance. 5 keys = 100% chance.\nPassive rooms with no enemies don't have a chance to spawn Red Rooms.\nIt's possible to hold more than one trinket by taking Mom's Purse, Belly Button or using the Smelter to convert them into passive items. Having a golden version of this trinket counts as 2 keys.\nDoesn't spawn in Greed Mode",
     unlock: "Unlock this trinket by defeating Mother as Tainted Lost",
+    image_url: "repentance-trinkets.png",
+    position: [2546, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2584,6 +3012,8 @@ export const items: Record<string, Item> = {
       "Has a decent chance for Devil Deals to cost money instead of Health\nThe conversion rate is 1 heart container to 15 coins\nItems can be on discount similar to the shop, making it 1 heart container = 7 coins instead\nNo effect on Lost or Tainted Lost\nCan be dropped to disable this effect while in the room",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Keeper",
+    image_url: "repentance-trinkets.png",
+    position: [2599, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2596,6 +3026,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, you will be teleported to a random room everytime you pick up a coin",
     unlock: "Unlock this trinket by defeating Mother as Tainted Keeper",
+    image_url: "repentance-trinkets.png",
+    position: [2659, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2608,6 +3040,8 @@ export const items: Record<string, Item> = {
     content: "Allows you to pay for a devil deal with this trinket",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Judas",
+    image_url: "repentance-trinkets.png",
+    position: [2724, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2620,6 +3054,8 @@ export const items: Record<string, Item> = {
     content:
       "+10% devil room chance while held\nChanges Devil Room layouts. The new rooms contain 0-3 Devil Deal Items, 1-3 Black Hearts and random enemies from the Sheol floor\nPrevents Krampus from appearing",
     unlock: "Unlock this trinket by defeating Mother as Tainted Judas",
+    image_url: "repentance-trinkets.png",
+    position: [2773, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2633,6 +3069,8 @@ export const items: Record<string, Item> = {
       "Opens the door to the Blue Womb, regardless of whether you meet the 30 minute speed timer\nOpening Pandora's Box while holding this item will ignore the normal effect and instead spawn 6 item pedestals from random item pools. Both the box and trinket are consumed when this happens",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Eve",
+    image_url: "repentance-trinkets.png",
+    position: [2821, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2645,6 +3083,8 @@ export const items: Record<string, Item> = {
     content:
       "A small clot friend will hug Isaac, following his exact movements (similar to how Jacob & Esau work) and shooting tears when he does\nThe clot can be moved around by collision with an object/wall, allowing you to re-position it\nThe clot's damage is roughly 1/3 of your tear damage\nIf it takes a few hits it will die, and respawn in the next room",
     unlock: "Unlock this trinket by defeating Mother as Tainted Eve",
+    image_url: "repentance-trinkets.png",
+    position: [2874, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2658,6 +3098,8 @@ export const items: Record<string, Item> = {
       "Spawns a random chest after completing a regular Challenge Room\nSpawns a pedestal item after completing a boss Challenge Room\nDoesn't spawn in Greed Mode",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Samson",
+    image_url: "repentance-trinkets.png",
+    position: [2943, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2670,6 +3112,8 @@ export const items: Record<string, Item> = {
     content:
       "When taking damage you have a chance to explode and deal 185 damage to all enemies around you (Same damage as a Mr. Mega bomb)",
     unlock: "Unlock this trinket by defeating Mother as Tainted Samson",
+    image_url: "repentance-trinkets.png",
+    position: [3011, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2683,6 +3127,8 @@ export const items: Record<string, Item> = {
       "Familiars follow Isaac's exact movements, (similar to how Jacob & Esau work) instead of following loosely like they usually do\nHolding the drop button (Ctrl on Steam version) causes them to stop moving\nDoesn't affect some familiars with specific movement patterns, e.g. Abel",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Jacob",
+    image_url: "repentance-trinkets.png",
+    position: [3082, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2695,6 +3141,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a familiar that follows Isaac's exact movements (similar to how Jacob & Esau work) and shoots spectral tears\nSimilar to Jacob and Esau, positions can be altered by running it into objects, or holding the drop button (Ctrl on Steam version)\nWhen you place a bomb, the Found Soul will drop one too\nIf it takes any damage, it will die and not respawn until the next floor\nWill always match your current movement speed",
     unlock: "Unlock this trinket by defeating Mother as Tainted Jacob",
+    image_url: "repentance-trinkets.png",
+    position: [3134, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2708,6 +3156,8 @@ export const items: Record<string, Item> = {
       "Everytime you use your active item, you have a chance to activate another random active item\nGlowing Hourglass effect is blocked from this item",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Bethany",
+    image_url: "repentance-trinkets.png",
+    position: [3184, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2720,6 +3170,8 @@ export const items: Record<string, Item> = {
     content:
       "Taking damage gives you a chance to spawn a flame orbital, similar to the ones created by Book of Virtues\nEntering an Angel Room gives you +5 flame orbitals. The angel room spawned by The Stairway item also counts\nGiving money to a beggar gives a flame orbital",
     unlock: "Unlock this trinket by defeating Mother as Tainted Bethany",
+    image_url: "repentance-trinkets.png",
+    position: [3257, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2733,6 +3185,8 @@ export const items: Record<string, Item> = {
       "Upon entering each new room, this trinket has a chance to copy one of your current familiars\nIf you have no familiars instead it will spawn either Brother Bobby or Sister Maggy\nOnly lasts for the current room",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Lilith",
+    image_url: "repentance-trinkets.png",
+    position: [3317, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2745,6 +3199,8 @@ export const items: Record<string, Item> = {
     content:
       "All shops only sell familiars while holding this trinket\nIf you enter a shop while holding this trinket, the effect won't undo by dropping it until you move to a new floor",
     unlock: "Unlock this trinket by defeating Mother as Tainted Lilith",
+    image_url: "repentance-trinkets.png",
+    position: [3379, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2758,6 +3214,8 @@ export const items: Record<string, Item> = {
       "Every time an enemy dies you have a chance to gain a random Locust\nDifferent color Locusts correspond to the horsemen. Each of them deal double your tear damage, similar to how standard blue flies work\nWar (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage\nPestilence (Green) - Poisons the enemy it attacks\nFamine (Brown) - Applies a slowing effect\nDeath (Black) - Deals x4 damage instead of x2\nConquest (White) - Spawns 2-5 at once",
     unlock:
       "Unlock this trinket by defeating Isaac, ???, Satan and The Lamb as Tainted Apollyon",
+    image_url: "repentance-trinkets.png",
+    position: [3439, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2770,6 +3228,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a red attack fly, that will charge at enemies in the same direction you are shooting\nDeals damage equal to your current tear damage\nStops charging once it hits an enemy and returns to Isaac's side",
     unlock: "Unlock this trinket by defeating Mother as Tainted Apollyon",
+    image_url: "repentance-trinkets.png",
+    position: [3502, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2782,6 +3242,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a 33% chance to spawn an extra blind pedestal item in all future item rooms. This one will be a hidden question mark\nAllows you to see what both items are on alternative path floors (Downpour/Dross, Mines/Ashpit, Gehenna/Mausoleum)",
     unlock: "Unlock this trinket by defeating challenge #40 (Seeing Double)",
+    image_url: "repentance-trinkets.png",
+    position: [3562, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2794,6 +3256,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a small chance when entering a room for enemies to be petrified for 4 seconds. Killing a petrified enemy will freeze it.\nThe chance for this effect to activate depends on your Luck stat.\nFrozen enemies can be pushed into obstacles where they shatter on contact and fire ice shards around them. Any other enemies hit by these shards will become frozen too\nFrozen enemies are considered dead by the game, and won't unfreeze or move again. The room doors will open if only frozen enemies remain",
     unlock: "Unlock this trinket by defeating challenge #41 (Pica Run)",
+    image_url: "repentance-trinkets.png",
+    position: [3630, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2806,6 +3270,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you kill an enemy you get an invincibility shield for 1 second\nWhile shielded, each enemy killed adds +1 seconds to the duration",
     unlock: "Unlock this trinket by defeating challenge #37 (Bloody Mary)",
+    image_url: "repentance-trinkets.png",
+    position: [3687, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -2817,6 +3283,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.7 Tears Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [0, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2829,6 +3297,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now shoot three at a time (Triple Shot)\nTears Down significantly - Tears fired per second * 0.51",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [43, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2840,6 +3310,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "Gives Isaac's tears a homing effect",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [103, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2852,6 +3324,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.5 Damage Up\nx1.5 times Damage Multiplier (Does not stack with the Magic Mushroom multiplier)\nCan be found in golden chests\nCricket's Head used to be known as Max's Head in the original game and was renamed for Rebirth",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [172, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2864,6 +3338,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives tears a boomerang effect\n+1.5 Damage Up\n+0.6 Shot Speed Up\n-1 Luck Down\nRange Up (1.6x + 1.5)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [232, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2876,6 +3352,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a very high tear rate in exchange for a big range down\n+1.5 Tears Up\n-2.5 Range Down",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [280, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -2888,6 +3366,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\nx1.5 times Damage Multiplier if you also have Book of Belial (Does not stack with Magic Mushroom or Cricket's Head multipliers)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [321, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -2900,6 +3380,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and shoots normal tears which do 3.5 damage\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [415, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -2912,6 +3394,8 @@ export const items: Record<string, Item> = {
     content:
       "A lot of fly enemies are no longer aggressive towards Isaac\nAttack Fly, Dart Fly, Eternal Fly, and Ring Fly are transformed into a neutral black fly\nBoom Fly, Red Boom Fly, Drowned Boom Fly move slower, but still deal contact damage\nMoter, Level 2 Fly, Full Fly, Pooter, and Super Pooter move slower and deal no contact damage\nCan only be obtained from the shell game in the arcade\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [461, 0],
     type: "Passive",
     item_pool: "None (Arcade shell game only)",
     recharge_time: null,
@@ -2924,6 +3408,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac 2 orbital flies which block enemy shots\nPicking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [512, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -2936,6 +3422,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the player an extra life\nWhen revived, the green mushroom that follows Isaac will disappear and he will respawn with the same amount of red heart containers at full health\nResurrection takes place before all other items which give you an extra life",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [563, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -2948,6 +3436,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.3 Damage Up\nx1.5 times Damage Multiplier (Does not stack with the multipliers from Cricket's Head / Blood of The Martyr + Book of Belial)\n+1.5 Range Up\n+0.3 Speed Up\nIncreases the size of your player sprite, but doesn't increase the hitbox\nFully restores all red heart containers\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation\nCounts as 1 of 3 size-increasing items needed towards the Stompy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [620, 0],
     type: "Passive",
     item_pool: "Item Room, Mushrooms",
     recharge_time: null,
@@ -2960,6 +3450,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies touching you take 12 damage, then a poison effect is applied for 6-7 ticks, dealing damage equal to the amount of red hearts you have (up to 30.8 at 12 full red hearts)\n+0.2 Speed Up\nHas a chance to drop from the Lust miniboss fight\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [677, 0],
     type: "Passive",
     item_pool: "Item Room, Demon Beggar, Lust Miniboss",
     recharge_time: null,
@@ -2972,6 +3464,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Speed Up\n+1.5 Range Up\n+0.5 Shot Height\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [712, 0],
     type: "Passive",
     item_pool: "Item Room, Boss Room, Demon Beggar",
     recharge_time: null,
@@ -2984,6 +3478,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nFully restores all red heart containers\nHas a chance to drop from the Gluttony miniboss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [747, 0],
     type: "Passive",
     item_pool: "Item Room, Gluttony Miniboss",
     recharge_time: null,
@@ -2995,6 +3491,8 @@ export const items: Record<string, Item> = {
     quality: 2,
     content: "+2 Health Up\nFull red heart heal",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [807, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -3006,6 +3504,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "Gives Isaac 99 Keys",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [870, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -3018,6 +3518,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac 100 coins\nCan drop from an exploding slot machine while playing it",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [914, 0],
     type: "Passive",
     item_pool: "None (Arcade machine only)",
     recharge_time: null,
@@ -3029,6 +3531,8 @@ export const items: Record<string, Item> = {
     quality: 0,
     content: "+10 Bombs",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [962, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3040,6 +3544,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "Gives Isaac the ability to fly",
     unlock: "Unlock this item by beating Mom's Heart 3 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [1028, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -3052,6 +3558,8 @@ export const items: Record<string, Item> = {
     content:
       "Shows most icons on the map (Shops, Item Rooms, Boss Rooms etc.)\nDoes not show the layout of the map\nDoesn't show the location of Secret or Super Secret rooms\nRoom icons will not show if a Curse of the Lost is in effect on the current floor",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1064, 0],
     type: "Passive",
     item_pool: "Shop, Beggar",
     recharge_time: null,
@@ -3063,6 +3571,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1130, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room, Beggar",
     recharge_time: null,
@@ -3074,6 +3584,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1231, 0],
     type: "Passive",
     item_pool: "Boss Room, Beggar, Challenge Room",
     recharge_time: null,
@@ -3085,6 +3597,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1181, 0],
     type: "Passive",
     item_pool: "Boss Room, Beggar, Challenge Room",
     recharge_time: null,
@@ -3096,6 +3610,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1289, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room, Beggar",
     recharge_time: null,
@@ -3107,6 +3623,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1351, 0],
     type: "Passive",
     item_pool: "Boss Room, Beggar, Challenge Room",
     recharge_time: null,
@@ -3118,6 +3636,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+0.3 Speed Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1416, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -3129,6 +3649,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+0.3 Speed Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1455, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -3141,6 +3663,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Range Up\nGives 3-6 blue attack flies when picked up\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1523, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room, Gold/Stone Chest, Mom's Chest",
     recharge_time: null,
@@ -3153,6 +3677,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Range Up\nMakes Isaac deal 12 contact damage per tick (24 damage per second)\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1592, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -3165,6 +3691,8 @@ export const items: Record<string, Item> = {
     content:
       "+2.25 Range Up\nDrops a random heart on the floor when picked up\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1658, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -3176,6 +3704,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.7 Tears Up",
     unlock: "Unlock this item by beating Mom's Heart 4 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [1692, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -3188,6 +3718,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac angel wings for the current room, allowing him to fly\nInstantly kills the Mom's Foot, Mom's Heart and It Lives boss fights\nIf used during the Satan fight, The Bible will instantly kill Isaac\nCounts as 1 of 3 angel items needed towards the Seraphim transformation\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1745, 0],
     type: "Active",
     item_pool: "Shop, Library, Angel Room",
     recharge_time: "4 rooms",
@@ -3200,6 +3732,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, gives +2 damage up which lasts for the current room\nx1.5 times Damage Multiplier if you also have Blood of the Martyr (Does not stack with Magic Mushroom or Cricket's Head multipliers)\nIncreases your chances of getting a devil/angel room by +12.5%\nJudas starts with this item\nAdditional uses in the same room or combined with The Devil XV give +1 damage per use\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1796, 0],
     type: "Active",
     item_pool: "Library, Devil Room",
     recharge_time: "3 rooms",
@@ -3212,6 +3746,8 @@ export const items: Record<string, Item> = {
     content:
       "Deals 40 damage to everything in the room when used\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: "Unlock this item by using 4 XIII - Death cards",
+    image_url: "repentance-rebirth-items.png",
+    position: [1847, 0],
     type: "Active",
     item_pool: "Library, Secret Room, Devil Room",
     recharge_time: "3 rooms",
@@ -3224,6 +3760,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops a poop on the floor\nBlue Baby starts with this item\nCan be placed next to a pit and exploded to make a bridge\nCan be placed over a broken red poop to overwrite it, causing it to no longer regenerate\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1898, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "1 room",
@@ -3236,6 +3774,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops a large bomb below the player which does 185 damage\nCompatible with bomb modifiers, such as Glitter Bombs, Sticky Bombs etc\nHas a chance to drop from the Wrath miniboss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [1964, 0],
     type: "Active",
     item_pool: "Item Room, Wrath Miniboss, Bomb Beggar",
     recharge_time: "2 rooms",
@@ -3248,6 +3788,8 @@ export const items: Record<string, Item> = {
     content:
       "Fires 10 tears in a circle around Isaac\nEach tear is equal to your damage stat + 25 flat damage\nThe tears spawned from Tammy's Head retain tear effects of Isaac's tears, such as poison or homing",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2082, 0],
     type: "Active",
     item_pool: "Item Room, Gold Chest",
     recharge_time: "1 room",
@@ -3260,6 +3802,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, freezes all enemies in the current room for about 4 seconds\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2014, 0],
     type: "Active",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: "3 rooms",
@@ -3272,6 +3816,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes an explosion near Isaac which takes away half a heart and does 40 damage all enemies in close proximity\nDoes not reduce your devil/angel room chances when used",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2135, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "Instant",
@@ -3284,6 +3830,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, causes all enemies in the current room to run away from Isaac in fear for 5 seconds\nSpawns 1 blue attack fly per use\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2193, 0],
     type: "Active",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: "2 rooms",
@@ -3296,6 +3844,8 @@ export const items: Record<string, Item> = {
     content:
       "A poison bomb which can be thrown and leaves a poison effect on any enemies within the blast radius. It also leaves a gas cloud at the place where it exploded\nThe bomb deals 185 damage + your tear damage on hit and leaves a damage over time poison effect that does 3 times your tear damage per tick\nSynergizes with tear modifying items such as My Reflection or Tiny Planet\nHas a chance to drop from the Sloth miniboss fight\nCounts as 1 of 3 poison items needed towards the Bob transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2233, 0],
     type: "Active",
     item_pool: "Item Room, Sloth Miniboss",
     recharge_time: "2 rooms",
@@ -3308,6 +3858,8 @@ export const items: Record<string, Item> = {
     content:
       "Teleports Isaac to a random location on the map\nCan't be used to teleport to the I AM ERROR room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2298, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -3320,6 +3872,8 @@ export const items: Record<string, Item> = {
     content:
       "Heals Isaac for one whole red heart\nMaggy starts with this item\nWhen used as the Keeper, one coin HP is restored\nHas a chance to drop from the Super Lust miniboss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2341, 0],
     type: "Active",
     item_pool: "Item Room, Super Lust Miniboss",
     recharge_time: "4 rooms",
@@ -3332,6 +3886,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Luck Up\nBetter chance to win while gambling at the Shell Game and Fortune Telling Machine\nHigher chance to get a random drop after clearing a room\nConverts all negative pills into their positive counterparts. Doesn't affect neutral ones and pills remain unidentified",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2411, 0],
     type: "Passive",
     item_pool: "Item Room, Beggar",
     recharge_time: null,
@@ -3344,6 +3900,8 @@ export const items: Record<string, Item> = {
     content:
       "A target is placed on the floor which can be controlled. After a few seconds a huge missile hits the target and deals 20x your tear damage to anything nearby\nEssentially a one-time use of the Epic Fetus item",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2464, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -3356,6 +3914,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears now have a piercing effect which allows them to travel through enemies instead of breaking on hit",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2507, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3368,6 +3928,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, fires a high damage laser in a straight line across the room in a similar way to Brimstone\nThe laser deals damage equal to double your tear damage. The laser hits up to 13 times if an enemy stays inside it for the duration\nHas a chance to drop from the Envy and Super Envy miniboss fights",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2543, 0],
     type: "Active",
     item_pool: "Item Room, Envy Miniboss, Super Envy Miniboss",
     recharge_time: "2 rooms",
@@ -3380,6 +3942,8 @@ export const items: Record<string, Item> = {
     content: "+1 Damage Up\nCan only be dropped by the Steven boss",
     unlock:
       "Unlock this item by beating the Basement 40 times and defeating the Steven boss",
+    image_url: "repentance-rebirth-items.png",
+    position: [2605, 0],
     type: "Passive",
     item_pool: "Steven Boss",
     recharge_time: null,
@@ -3392,6 +3956,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+10% chance of a devil/angel room opening while held\nA second Pentagram will give an extra +5% chance\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2705, 0],
     type: "Passive",
     item_pool: "Boss Room, Curse Room, Devil Room, Demon Beggar, Crane Game",
     recharge_time: null,
@@ -3404,6 +3970,8 @@ export const items: Record<string, Item> = {
     content:
       "Instead of tears, Isaac now shoots bombs from his eyes, which explode dealing damage to anything nearby\nBomb damage = damage * 10\nTears Down (Tear delay * 2.5)\nBombs will also synergize with other bomb items and tear modifiers, including Sad Bombs, Mr. Mega and many more\nBombs grow larger or smaller with tear size modifiers and are immune to knockback from their own explosions",
     unlock: "Unlock this item by beating Mom's Heart 9 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [2665, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3416,6 +3984,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes pickups on the floor move towards the player\nWorks across pits, but not through Key blocks\nChests up to 2 tiles away from Isaac open automatically. Spiked chests are opened without damaging Isaac. Locked chests and stone chests are not opened and still require a key/bomb",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2760, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3428,6 +3998,8 @@ export const items: Record<string, Item> = {
     content:
       "Reveals the entire map for every floor except the secret room locations\nDoes not show the icons for any unexplored rooms\nCan still help you to guess which direction the boss room is in, due to the fact that the Boss Room is usually in the room furthest away from the first room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2818, 0],
     type: "Passive",
     item_pool: "Shop, Beggar",
     recharge_time: null,
@@ -3440,6 +4012,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac has a random chance to fire another tear out the back of his head\nThe chance to fire the second tear can improve based on your luck stat and will always activate at +5 Luck\nAt +0 luck theres a ~50% chance for this effect to activate\nSynergizes very well with a lot of items. If used with Brimstone you have a 100% chance to fire a laser out the back of your head\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2868, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -3452,6 +4026,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, drops a pool of 'lemonade' on the floor which damages any enemies that come into contact with it for 8 damage per tick",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3006, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -3464,6 +4040,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an orbiting fly which deals 5 contact damage to enemies per tick\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [2916, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -3476,6 +4054,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the player an invulnerability effect which lasts for a 10 seconds\nCan be used to get free hits on the Blood Donation machines and Devil Beggars\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3066, 0],
     type: "Active",
     item_pool: "Item Room, Library",
     recharge_time: "3 rooms",
@@ -3487,6 +4067,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "Allows Isaac to walk over gaps with a width of one tile",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3117, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -3499,6 +4081,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Damage Up\nHeals half a heart after every 13 enemies killed\nWorks with the Keeper for restoring coin HP",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3168, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3511,6 +4095,8 @@ export const items: Record<string, Item> = {
     content:
       "All spacebar items can now be 'overcharged', allowing them to be charged up twice instead of once\nThe extra charges appear in yellow on top of the normal green bars\nThis item works with self-recharging items",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3248, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -3523,6 +4109,8 @@ export const items: Record<string, Item> = {
     content:
       "Items in the shop are now -50% off\n15c items are reduced to 7c. 5c pickups become 3c. 3c pickups become 2c\nTaking more than 1 steam sale reduces the price of all items even further\nThis item is called Steamy Sale on PS4, PS Vita, Xbox One and Switch versions, probably due to copyright reasons",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3296, 0],
     type: "Passive",
     item_pool: "Shop, Greed Miniboss, Shopkeeper",
     recharge_time: null,
@@ -3535,6 +4123,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 6 troll bombs at random locations around the room\nBombs are effected by other passive bomb items\nHas a chance to drop from the Pride miniboss fight\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3349, 0],
     type: "Active",
     item_pool: "Item Room, Library, Pride Miniboss",
     recharge_time: "3 rooms",
@@ -3547,6 +4137,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, slows down all enemies in the current room and their projectiles for about 8 seconds",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3400, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -3559,6 +4151,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac around and shoots blood tears that deal 5 damage\nThe tears appear red but have no additional damage\nSister Maggy fires tears at a rate of 1 tear per second\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3450, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -3571,6 +4165,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears are replaced with a laser that has unlimited range and can only fire at right angles\nLasers travel through enemies but not obstacles in the room\nSynergizes with most items that affect how many tears you fire (20/20, Mutant Spider etc.) or the path they take (My Reflection, Tiny Planet etc.)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3496, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3583,6 +4179,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac can now charge shots for more damage by holding down the fire button\nAt full charge, your tears do 4 times more damage\nTears fired at the minimum possible charge do roughly 1/3 of your normal damage\nYou can spam the fire button to rapid fire, however the overall damage per second will be low\nTears down: Delay * 2.5",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3558, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3595,6 +4193,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+0.2 Speed Up\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3603, 0],
     type: "Passive",
     item_pool: "Boss Room, Demon Beggar",
     recharge_time: null,
@@ -3607,6 +4207,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Speed Up\n+1.5 Range Up\nCauses Isaac to shrink in size (including hitbox slightly)\nCan be dropped when exploding mushrooms in the environment that are usually found in the Caves/Catacombs and in secret rooms\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3638, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3619,6 +4221,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Soul Hearts\n+0.5 Tears Up\nAdds several instances of The Bible item into all item pools\nCounts as 1 of 3 angel items needed towards the Seraphim transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3689, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -3631,6 +4235,8 @@ export const items: Record<string, Item> = {
     content:
       "An orbital which blocks shots and damages enemies it comes into contact with for 7 damage per tick\nExclusively drops from one of the horsemen bosses\n2 cubes of meat transform the orbital into a meat head which fires blood tears which deal 3.5 damage each\n3 cubes of meat transform it into a meat boy familiar that walks around and deals 3.5 contact damage per tick to enemies\n4 cubes of meat cause the meat boy familiar to grow in size and do 5.5 damage per tick instead\nAny further cubes of meat past 4 will start the cycle again",
     unlock: "Unlock this item by beating Mom for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [3747, 0],
     type: "Passive",
     item_pool: "None (Horsemen boss only)",
     recharge_time: null,
@@ -3643,6 +4249,8 @@ export const items: Record<string, Item> = {
     content:
       "+25 Coins\nHas a very small chance to drop after destroying one of the pots that appear in the Basement and Cellar floors\nHas a chance to drop from the Super Greed miniboss fight",
     unlock: "Unlock this item by beating Mom's Heart 8 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [3810, 0],
     type: "Passive",
     item_pool: "Devil Room, Gold Chest, Super Greed Miniboss",
     recharge_time: null,
@@ -3655,6 +4263,8 @@ export const items: Record<string, Item> = {
     content:
       "Converts most negative pills into their positive counterparts, e.g. Stat Down becomes Stat Up. Bad Trip becomes Balls of Steel. Amnesia becomes I Can See Forever etc\nPills are identified before using them\nDrops one pill on pickup\nHeals for 2 full red hearts\nAdds 0-2 coins to the payout when you use a Blood Donation machine or IV Bag",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3865, 0],
     type: "Passive",
     item_pool: "Item Room, Shop",
     recharge_time: null,
@@ -3667,6 +4277,8 @@ export const items: Record<string, Item> = {
     content:
       "Reveals the entrance to secret rooms and automatically opens the hole, removing the need for bombs to enter",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [3941, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3679,6 +4291,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac invincibility and +0.28 Speed for 6 seconds\nWhile active you cannot fire tears, but running into enemies will deal 40 contact damage per second\nAllows free hits on the Blood Donation machines and devil beggars",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4031, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -3692,6 +4306,8 @@ export const items: Record<string, Item> = {
       "Upon use, gives Isaac an extra Soul heart\nUsing this item gives you a higher chance of finding a horsemen boss at the end of the floor\n+17.5% chance of a Devil Deal opening after the boss fight\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock:
       "Unlock this item by beating one of the horsemen bosses for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [4075, 0],
     type: "Active",
     item_pool: "Item Room, Library",
     recharge_time: "6 rooms",
@@ -3704,6 +4320,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+0.2 Speed Up\n+1 Soul Heart\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4126, 0],
     type: "Passive",
     item_pool: "Curse Room, Devil Room, Demon Beggar",
     recharge_time: null,
@@ -3716,6 +4334,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.5 Damage Up\n+0.7 Tears Up\n+2 Black Hearts\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4189, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -3728,6 +4348,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's health is set to 1 and he also gains 9 extra lives\nEach time Isaac dies, he will respawn with 1 Health\nHas a chance to drop from the Super Pride mini boss\nThe floating Dead Cat head that follows you will disappear when you are on your last life (Very useful for The Lost)\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4234, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Red Chest, Super Pride Miniboss",
     recharge_time: null,
@@ -3740,6 +4362,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac demon wings and the ability to fly\n+0.3 Speed Up\nCounts as 1 of 3 evil items needed towards the Leviathan transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4350, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -3752,6 +4376,8 @@ export const items: Record<string, Item> = {
     content:
       "Each use of this item gives +0.7 Damage Up, -0.18 Speed Down and the ability to destroy most obstacles for the current room.\nEach use also gives half a black heart, however this is stays between rooms unlike the other effects\nAllows Isaac to deal 40 contact damage to enemies for the current room. Does not prevent Isaac from taking contact damage\nAll the above effects are only active when the item is used for the current room\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: "Unlock this item by beating the Boss Rush with Azazel",
+    image_url: "repentance-rebirth-items.png",
+    position: [4311, 0],
     type: "Active",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: "6 rooms",
@@ -3764,6 +4390,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a trapdoor at Isaac's feet which allows him to travel to the next floor\nDigging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor\nIn Sheol, Cathedral, Chest and Dark Room this item either opens a Crawl Space, or does nothing\nCannot spawn a trapdoor directly infront of a secret room entrance\nCan destroy rocks if used when Isaac is flying over a rock",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4397, 0],
     type: "Active",
     item_pool: "Secret Room, Devil Room",
     recharge_time: "6 rooms",
@@ -3776,6 +4404,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a random tarot card on use\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4437, 0],
     type: "Active",
     item_pool: "Item Room, Shop",
     recharge_time: "6 rooms",
@@ -3788,6 +4418,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns a Monstro which will jump on a random enemy in the room, dealing 120 damage and destroying nearby obstacles",
     unlock: "Unlock this item by beating the Basement II for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [4501, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "3 rooms",
@@ -3800,6 +4432,8 @@ export const items: Record<string, Item> = {
     content:
       "Everytime you fire a tear, there is a chance that you will also fire three more tears in all cardinal directions\nThe chance to fire 4-way tears is affected by your luck stat and at +15 Luck it will activate every time\nAt +0 luck the effect has a 30% chance to activate",
     unlock: "Unlock this item by beating Lokii for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [4549, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Demon Beggar",
     recharge_time: null,
@@ -3812,6 +4446,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and charges forwards, dealing 3.5 damage per tick to any enemies it comes into contact with",
     unlock: "Unlock this item by beating the Caves II for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [4605, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3824,6 +4460,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a chance of slowing enemies and their projectiles for 2.5 seconds\nThe chance to slow enemies is affected by your luck stat and at +15 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4653, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3836,6 +4474,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+0.2 Tears Up\n-0.2 Speed Down\nHas a chance to drop when exploding a tinted rock",
     unlock: "Unlock this item by destroying 100 tinted rocks",
+    image_url: "repentance-rebirth-items.png",
+    position: [4741, 0],
     type: "Passive",
     item_pool: "None (Tinted rock only)",
     recharge_time: null,
@@ -3848,6 +4488,8 @@ export const items: Record<string, Item> = {
     content:
       "Reveals adjacent rooms up to 2 rooms away, this includes revealing if you're next to a Secret Room or Super Secret Rooms\nGives Isaac a slight glow when Curse of Darkness is active\nBlocks damage from projectiles falling from above",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [4804, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3860,6 +4502,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+2 Soul Hearts\nHeals one red heart container when picked up",
     unlock: "Unlock this item by making a Super Bandage Girl",
+    image_url: "repentance-rebirth-items.png",
+    position: [4862, 0],
     type: "Passive",
     item_pool: "Item Room, Boss Room",
     recharge_time: null,
@@ -3872,6 +4516,8 @@ export const items: Record<string, Item> = {
     content:
       "When used Isaac transforms into pacman, which makes him invincible for 6 seconds and does 40 contact damage to enemies per chomp\nEverytime you 'eat' 2 enemies, you regain 1/2 heart of red health\nYou can't shoot tears while the effect is active",
     unlock: "Unlock this item by visiting 10 arcades",
+    image_url: "repentance-rebirth-items.png",
+    position: [4935, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -3884,6 +4530,8 @@ export const items: Record<string, Item> = {
     content:
       "A bag that floats around following Isaac and drops a random coin every 2 rooms",
     unlock: "Unlock this item by beating Isaac with Cain",
+    image_url: "repentance-rebirth-items.png",
+    position: [4984, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3896,6 +4544,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and shoots lasers, similar to the Technology item\nRobo-Baby's laser is spectral and piercing (It will pass through rocks and objects in the environment)\nRobo-Baby's lasers deal 3.5 damage per hit\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5029, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -3909,6 +4559,8 @@ export const items: Record<string, Item> = {
       "A familiar which follows Isaac and drops half a red heart every 3 rooms",
     unlock:
       "Unlock this item by beating the Caves 30 times and defeating C.H.A.D",
+    image_url: "repentance-rebirth-items.png",
+    position: [5075, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, C.H.A.D. Boss",
     recharge_time: null,
@@ -3921,6 +4573,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a random pickup on the floor\nAny pickups are possible from this item, including Bombs, hearts, keys, coins, pills, batteries, tarot cards, runes etc\nDoesn't produce microbatteries, only regular sized ones and rarely golden/mega batteries\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: "Unlock this item by beating each of the Seven Sins once",
+    image_url: "repentance-rebirth-items.png",
+    position: [5123, 0],
     type: "Active",
     item_pool: "Item Room, Library, Devil Room",
     recharge_time: "4 rooms",
@@ -3933,6 +4587,8 @@ export const items: Record<string, Item> = {
     content:
       "A blue cross that follows Isaac and drops a soul heart every 7 or 8 rooms",
     unlock: "Unlock this item by beating the Isaac boss with Maggy",
+    image_url: "repentance-rebirth-items.png",
+    position: [5174, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -3946,6 +4602,8 @@ export const items: Record<string, Item> = {
       "A familiar that follows Isaac and fires black tar tears, which slow enemy movement and projectile speed for a few seconds\nLittle Gish's tears do 3.5 damage\nLittle Gish fires tears at a rate of 1 tear per second\nA Guaranteed drop from the Gish boss fight",
     unlock:
       "Unlock this item by beating the Depths 20 times and killing the Gish boss",
+    image_url: "repentance-rebirth-items.png",
+    position: [5226, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Gish Boss",
     recharge_time: null,
@@ -3958,6 +4616,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and fires homing tears that deal 3.5 damage each\nHas a high chance to drop from the Steven boss fight\nLittle Steven fires tears at a rate of 1 tear per second with a slightly longer range than other familiars\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: "Unlock this item by killing the Steven boss for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [5286, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Steven Boss",
     recharge_time: null,
@@ -3971,6 +4631,8 @@ export const items: Record<string, Item> = {
       "+1 HP Up\n+0.3 Damage Up\n+0.2 Tears Up\n+0.38 Range Up\n+0.3 Speed Up\nHeals one red heart container when picked up\nCounts as 1 of 3 angel items needed towards the Seraphim transformation",
     unlock:
       "Unlock this item by killing Mom (Mom's Foot or Mom's Heart) using The Bible",
+    image_url: "repentance-rebirth-items.png",
+    position: [5335, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -3983,6 +4645,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives Isaac a random pill\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5425, 0],
     type: "Active",
     item_pool:
       "Item Room, Shop, Challenge Room, Beggar, Demon Beggar, Mom's Chest",
@@ -3996,6 +4660,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a random chance to apply a poison effect, causing double your tear damage per tick to enemies over time\nThe chance to fire poison shots is affected by your luck stat and at +12 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5490, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4009,6 +4675,8 @@ export const items: Record<string, Item> = {
       "Isaac's tears now split into two upon contact with enemies or the environment\nTears that split off from the main tear do less damage (tear damage * 0.5)\nTears can keep splitting if they still have range and damage above 1",
     unlock:
       "Unlock this item by collecting two of the following items: Bob's Rotten Head, Dead Cat, Cricket's Head, Tammy's Head",
+    image_url: "repentance-rebirth-items.png",
+    position: [5550, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4021,6 +4689,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, replaces all pedestal items in the current room with another random item. Re-rolled items pick from the current room's item pool\nIsaac starts with this item after it is unlocked",
     unlock: "Unlock this item by defeating the Isaac boss with Blue Baby",
+    image_url: "repentance-rebirth-items.png",
+    position: [5601, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -4033,6 +4703,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nBombs now do 185 damage (up from 100) and have a larger blast radius\nCan be found in the secret room\nHas a chance to drop from the Super Wrath miniboss fight",
     unlock: "Unlock this item by destroying 10 tinted rocks",
+    image_url: "repentance-rebirth-items.png",
+    position: [5666, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar, Super Wrath Miniboss",
     recharge_time: null,
@@ -4045,6 +4717,8 @@ export const items: Record<string, Item> = {
     content:
       "Cuts Isaac's head from his body for the current room, allowing him to fly and leaving the decapitated body to run around attacking enemies for 5.5 damage per tick",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5717, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -4057,6 +4731,8 @@ export const items: Record<string, Item> = {
     content:
       "All damage taken is reduced to half a heart\nDamaged reduction is reduced from every source in the game except Devil Deals and health down pills\nDoes not prevent death (i.e. Suicide King or using The Bible on Isaac, ??? or Satan)\nThe Wafer becomes most effective in the Womb and beyond where enemies all deal a whole heart of damage\nThe Wafer causes the Sharp Plug item to only cost 1/2 a heart per use\nHas no effect with the Keeper - there's no such thing as half a coin health point",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5772, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -4069,6 +4745,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.04 Damage Up for every coin you currently have\nAt 99 coins this item gives +3.96 Damage Up\n+0.04 per coin is the amount added before the damage formula is calculated, as this is the only way to show a consistent amount of damage given. You may see more or less than this on the Found HUD overlay, however this number varies based on your other damage increasing items",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5832, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4081,6 +4759,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a random chance to freeze enemies in place\nThe chance to freeze enemies is affected by your luck stat\n+0.38 Range Up\nChance to activate increases with luck, up to around 50% chance at +20 luck\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: "Unlock this item by collecting 3 'Mom' items in one playthrough",
+    image_url: "repentance-rebirth-items.png",
+    position: [5895, 0],
     type: "Passive",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -4093,6 +4773,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item causes Isaac to fart and poison any enemies in close proximity\nThe Bean deals 5 damage, then poisons enemies for 6 total ticks of damage\nThe poison deals your current tear damage per tick",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [5953, 0],
     type: "Active",
     item_pool: "Item Room, Beggar",
     recharge_time: "1 room",
@@ -4105,6 +4787,8 @@ export const items: Record<string, Item> = {
     content:
       "An orbital which does 7 contact damage per tick, blocks shots and increases the speed of all other orbitals\nCounts as 1 of 3 angel items needed towards the Seraphim transformation\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating Satan with Maggy",
+    image_url: "repentance-rebirth-items.png",
+    position: [5999, 0],
     type: "Passive, Orbital",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -4117,6 +4801,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and automatically fires tears that deal 3 damage each at any enemies in close range\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating the Dark Room with Azazel",
+    image_url: "repentance-rebirth-items.png",
+    position: [6073, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4129,6 +4815,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears are replaced with a knife which can be charged and thrown in a boomerang style action\nThe knife can also do damage without being thrown as a close range melee weapon\nWhen used as a melee weapon, Mom's Knife deals your tear damage * 2 per tick\nAt the furthest point from Isaac the knife deals your tear damage * 6\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: "Unlock this item by beating Satan with Isaac",
+    image_url: "repentance-rebirth-items.png",
+    position: [6116, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Devil Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -4141,6 +4829,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)\n+0.4 Tears Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6146, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4153,6 +4843,8 @@ export const items: Record<string, Item> = {
     content:
       "Automatically gives you 1 bar of charge after using your spacebar item\nFully recharges your current spacebar item when picked up\nAny items which are normally a 1 room recharge are now timed instead",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6223, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -4165,6 +4857,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac takes damage, the dead bird will spawn and attack nearby enemies in the current room for 2 damage per tick\nEve starts with this item",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6274, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4177,6 +4871,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears are replaced with the ability to charge and fire a powerful laser that travels in a straight line across the room, dealing a lot of damage (tear damage hits for 9 ticks per laser) to any enemies it comes into contact with\nDoes not directly affect your Damage stat but hits enemies 9 times per charge\nSynergizes very well with a lot of items including Tammy's Head, Tiny Planet, Inner Eye (Triple Shot), Mutant Spider (Quad Shot) and many others\nIf you somehow manage to get a second Brimstone, the laser becomes massive and deals double damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6339, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -4189,6 +4885,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.3 Speed Up\nHeals for 5 full red hearts\nHas a chance to drop while playing any Blood Donation machine",
     unlock: "Unlock this item by playing the Blood Donation machine 30 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [6399, 0],
     type: "Passive",
     item_pool: "None (Blood Donation machine only)",
     recharge_time: null,
@@ -4201,6 +4899,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a high rate of fire in exchange for a damage down\n+1.7 Tears Up\n+0.3 Speed Up\nDamage Down (damage * 0.9 - 0.4)\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6452, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -4213,6 +4913,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+1.0 Damage Up\n+0.38 Range Up\n-0.2 Speed Down\nHeals one red heart container when picked up\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6495, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -4225,6 +4927,8 @@ export const items: Record<string, Item> = {
     content:
       "When you only have half a red heart remaining or less, you enter a curse state which adds +1.5 damage and +0.3 speed\nWhen playing as Eve, this item activates with one FULL heart remaining or less AND also removes her 0.75 damage multiplier, raising it up to 1.0\nThe effect is permanently active for characters with no red hearts (e.g. Blue Baby, The Lost)\nOne of Eve's starting items",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6587, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -4237,6 +4941,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives a random familiar for the entire floor\nIt can spawn familiars you haven't unlocked yet!",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6654, 0],
     type: "Active",
     item_pool: "Item Room, Devil Room, Library",
     recharge_time: "6 rooms",
@@ -4249,6 +4955,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, the dead sea scrolls gives a random active item effect\nAn item that can be found in the Angel room\nThe name of the effect given is displayed when used.\nCannot give the Kamikaze effect",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6705, 0],
     type: "Active",
     item_pool: "Item Room, Angel Room",
     recharge_time: "2 rooms",
@@ -4261,6 +4969,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nAll of Isaac's bombs now having a homing effect when placed on the floor",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6754, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -4273,6 +4983,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, deals damage to Isaac in exchange for +1.2 damage up which lasts for the current room\nThis item takes 1 full heart of damage per use, and will take red hearts first before any other\nEve starts with this item after donating 439 coins to the Greed Donation Machine",
     unlock: "Unlock this item by beating Satan with Eve",
+    image_url: "repentance-rebirth-items.png",
+    position: [6801, 0],
     type: "Active",
     item_pool: "Item Room, Curse Room, Demon Beggar",
     recharge_time: "Instant",
@@ -4285,6 +4997,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item refreshes the current floor with brand new rooms, monsters and items, as if you had entered a new floor",
     unlock: "Unlock this item by beating Satan with Blue Baby",
+    image_url: "repentance-rebirth-items.png",
+    position: [6846, 0],
     type: "Active",
     item_pool: "Item Room, Secret Room, Devil Room, Demon Beggar",
     recharge_time: "Instant (One time use)",
@@ -4297,6 +5011,8 @@ export const items: Record<string, Item> = {
     content:
       "An orbiting fly which deals 2 contact damage per tick to enemies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [6913, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4309,6 +5025,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Health Up\n-0.2 Speed Down\nHas a chance to drop from the Super Gluttony miniboss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7003, 0],
     type: "Passive",
     item_pool: "Item Room, Super Gluttony Miniboss",
     recharge_time: null,
@@ -4321,6 +5039,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows Isaac to fly while the Pony is held\nSets your speed stat to 1.5 if it isn't already that high\nWhen the active attack is used, Isaac will dash across the screen dealing scaling contact damage to anything he hits (damage * 4 + 28)\nDrops from the Headless Horseman boss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7057, 0],
     type: "Active",
     item_pool: "None (Headless horseman only)",
     recharge_time: "2 rooms",
@@ -4332,6 +5052,8 @@ export const items: Record<string, Item> = {
     quality: 2,
     content: "A bag of bombs that will drop a bomb pickup every 2 rooms",
     unlock: "Unlock this item by beating Satan with Cain",
+    image_url: "repentance-rebirth-items.png",
+    position: [7103, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4344,6 +5066,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears gain a damage up and increase in size based on the distance they travel\nThe length of a normal room roughly gives +6 damage, but this can be higher with double rooms or Tiny Planet\nThis item synergises with beam items such as Brimstone and Tech, allowing them to do more damage the further away the enemy is",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7148, 0],
     type: "Passive",
     item_pool: "None (Krampus only)",
     recharge_time: null,
@@ -4356,6 +5080,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, removes one heart container and gives you 3 soul hearts\nBone hearts cannot be converted\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7212, 0],
     type: "Active",
     item_pool: "Devil Room, Curse Room, Red Chest",
     recharge_time: "Instant",
@@ -4368,6 +5094,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a 1/3 chance for room clear rewards to become a normal or locked chest, and a 1/3 chance to reward nothing at all\nDoesn't affect coins dropped after waves in Greed Mode\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7261, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Red Chest",
     recharge_time: null,
@@ -4380,6 +5108,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, the IV Bag takes half a red heart and spawns 1-3 coins (the same effect as a blood donation machine)\nCan drop from a blood donation machine after playing it\nIn the Womb and beyond this deals 1 full heart of damage\nIf no red hearts exist, other types of hearts are consumed instead\nWith the Keeper this is changed to spawning 0-1 coins per use instead",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7323, 0],
     type: "Active",
     item_pool: "None (Blood donation machine only)",
     recharge_time: "Instant",
@@ -4392,6 +5122,8 @@ export const items: Record<string, Item> = {
     content:
       "Places a decoy on the floor which attracts enemies and explodes after a period of time\nWhen it explodes, it deals 185 damage to everything in radius (Same damage as Mr Mega bombs)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7386, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "3 rooms",
@@ -4404,6 +5136,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nBombs no longer automatically explode and will only do so when you activate the remote detonator\nCan be used to detonate Dr. Fetus bombs early",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7440, 0],
     type: "Active",
     item_pool: "Item Room, Shop, Bomb Beggar",
     recharge_time: "Instant",
@@ -4416,6 +5150,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.3 Damage Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7498, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4428,6 +5164,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac can now hold two trinkets at the same time\nDrops a random trinket on the floor when picked up\nAllows you to pick up more trinkets while also holding The Tick\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7549, 0],
     type: "Passive",
     item_pool: "Shop, Mom's Chest",
     recharge_time: null,
@@ -4440,6 +5178,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nIsaac's bombs now poison nearby enemies and leave behind a gas cloud that poisons enemies that move through it. Poisoned enemies take 4 or 6 damage per tick for a few seconds\nHas a chance to drop from the Super Sloth miniboss fight\nCounts as 1 of 3 poison items needed towards the Bob transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7632, 0],
     type: "Passive",
     item_pool: "Item Room, Super Sloth Miniboss, Bomb Beggar",
     recharge_time: null,
@@ -4452,6 +5192,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 7 random coins around Isaac on the floor\nIsaac wears a pink crown on his head",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7687, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -4464,6 +5206,8 @@ export const items: Record<string, Item> = {
     content:
       "Once per room when you are damaged down to your final half a heart, you gain 1 soul heart\nRe-entering a room allows this effect to be triggered again\nScapular won't grant its soul heart if the player is attempting to proc it with certain heart donation mechanics (such as IV Bag)\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7750, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -4476,6 +5220,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Speed Up\n+0.2 Shot Speed Up\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7808, 0],
     type: "Passive",
     item_pool: "Item Room, Boss Room, Demon Beggar",
     recharge_time: null,
@@ -4488,6 +5234,8 @@ export const items: Record<string, Item> = {
     content:
       "A beggar who follows Isaac around and automatically picks up nearby coins\nAfter picking up 6 coins he will drop a random pickup, e.g. hearts, keys, bombs, coins, pills, cards, trinkets, batteries etc\nAfter the first drop, he has a 67% chance to drop a pickup after 3 coins and a 33% chance to drop a pickup after 4 coins\nBum friend also has a chance to spawn items from the Beggar Item Pool\nCounts as 1 of 3 bum items needed towards the Super Bum transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7843, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4500,6 +5248,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns between 2-4 blue flies\nBlue Flies do double your tear damage\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7896, 0],
     type: "Active",
     item_pool: "Devil Room, Curse Room, Red Chest, Gold/Stone Chest",
     recharge_time: "1 room",
@@ -4512,6 +5262,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an eternal heart when used\nTaking an eternal heart to the next floor or collecting two on the same floor gives you an extra heart container",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [7956, 0],
     type: "Active",
     item_pool: "Item Room, Angel Room",
     recharge_time: "6 rooms",
@@ -4524,6 +5276,8 @@ export const items: Record<string, Item> = {
     content:
       "When activated, Isaac takes out the axe and gives you the ability to break rocks and damage enemies with it\nIt has a limited amount of uses per floor, decreasing with every hit that connects with a rock/enemy\nCannot break the stone blocks which appear in the environment\nCreates bridges when breaking rocks next to pits",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8005, 0],
     type: "Active",
     item_pool: "Shop, Crane Game",
     recharge_time: "At the start of each new floor",
@@ -4536,6 +5290,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac gets hit, 2-6 blue flies will randomly spawn\nBlue Flies do double your tear damage\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8065, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4548,6 +5304,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears are replaced with explosive poison bombs, which will arc upwards and explode on contact with the floor, dealing huge damage and leaving a poison effect on enemies in range\nIpecac shots are given a flat +40 Damage on top of the normal 3.5 base damage\nTears Down (Tear delay * 2 + 10)\nIpecac explosion size scales with tear size\nShots will damage Isaac if he is in the blast radius when they explode\nCounts as 1 of 3 poison items needed towards the Bob transformation",
     unlock: "Unlock this item by beating Mom's Heart 6 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [8111, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4560,6 +5318,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac has a random chance to fire a tooth shot instead of a tear sometimes\nTeeth shots deal damage equal to your tear damage * 3.2\nThe chance to fire a tooth is affected by your luck stat and at +9 Luck it will activate every time\nSynergizes well with some tear modifiers such as Ipecac, which causes it to do massive damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8161, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4572,6 +5332,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac has a 1/6 chance to spawn a blue fly when one of his tears hits an enemy\nBlue Flies do double your tear damage\nThe chance to activate this effect is not changed with your Luck stat\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8248, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4584,6 +5346,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now also has a laser with unlimited range which fires continuously, dealing damage 15 times per second\nTears continue to fire from your left eye at a rate of 2/3\nThe laser deals damage equal to 1/7th of your tear damage, but very rapidly\nThe laser can apply status effects (e.g. Poison) rapidly due to how often it hits\nDoes not apply a negative damage multiplier as it used to prior to Repentance",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8299, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4596,6 +5360,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now shoot 4 at a time (Quad Shot)\nTears Down significantly (Tear delay * 2.1 + 3)\nSynergizes well with a lot of tear effects - e.g. with Brimstone you get 4 lasers\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8366, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4608,6 +5374,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Damage Up for tears fired from Isaac's left eye\nIf playing as Cain or you have an item which modifies which eye you fire tears from, each shot has a 50% chance to do +2 Damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8433, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4620,6 +5388,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an eye companion that floats around the room and deals 8 damage per tick on contact with enemies\nDamage from Isaac's left eye deal roughly +35% damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8476, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4632,6 +5402,8 @@ export const items: Record<string, Item> = {
     content:
       "When you take damage, this item recharges one room's worth of charge to your spacebar item\nFor example, with the D6 you would need to take damage 6 times to fully recharge it",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8520, 0],
     type: "Passive",
     item_pool: "Shop, Angel Room",
     recharge_time: null,
@@ -4644,6 +5416,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time you take damage, you gain a damage up which lasts for the rest of the floor and turn a darker red colour each time\nAfter taking 6 hits Bloody Lust doesn't give you any further damage increases\nDamage given for each hit increases as follows: +0.5, +0.7, +0.9, +1.1, +1.3, +1.5\nSamson starts with this item",
     unlock: "Unlock this item by beating the Isaac boss with Samson",
+    image_url: "repentance-rebirth-items.png",
+    position: [8573, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4656,6 +5430,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, reveals the map and drops either a soul heart or a random card/rune (50% chance for each)\nIt reveals the location of the secret room, however it doesn't reveal the Super secret room\nHas a chance to drop from playing a fortune machine\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums\nGuarantees a Planetarium if an item room has been skipped, otherwise +15% chance for Planetariums to spawn while held. After entering a Planetarium the chance goes back to 1%. The floor generation can fail and cause the guaranteed Planetarium to not spawn sometimes.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8614, 0],
     type: "Active",
     item_pool: "None (Fortune machine only)",
     recharge_time: "6 rooms",
@@ -4668,6 +5444,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac the ability to fly and spectral tears\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8669, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -4680,6 +5458,8 @@ export const items: Record<string, Item> = {
     content:
       "Creates 5 beams of light from the sky that deal damage equal to your tear damage + 20 to any enemies which come into contact with them\nThe beams have a high chance to spawn on top of enemies where possible",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8727, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -4692,6 +5472,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon death, you respawn in the previous room as Blue Baby with three Soul hearts\nThis is a one time use item and all new heart containers will be soul hearts\nCan be used to unlock some of Blue Baby's secrets before having the character available",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8784, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4704,6 +5486,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon taking damage, you have a 20% chance to gain an invulnerability shield for 7 seconds\nThe chance to gain a shield is affected by your luck stat and at +27 Luck it will activate every time\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: "Unlock this item by beating the Chest with Maggy",
+    image_url: "repentance-rebirth-items.png",
+    position: [8838, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -4716,6 +5500,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and shoots spectral tears that deal 3.5 damage\nGhost Baby fires tears at a rate of 1 tear per second\nCan drop while destroying skulls in the Depths and Necropolis floors\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8890, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4728,6 +5514,8 @@ export const items: Record<string, Item> = {
     content:
       "A spacebar item which allows Isaac to fire a blue flame that damages anything in its path for 23 damage per tick\nCan cause up to a total of 276 potential damage\nThe flame destroys enemy shots, making it useful for bullet hell bosses",
     unlock: "Unlock this item by donating 900 coins to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [8939, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Timed (A few seconds)",
@@ -4740,6 +5528,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+0.23 Shot Speed Up\nAn item only found in the Boss room pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [8993, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -4752,6 +5542,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, re-rolls all pickup consumables in the current room into another random kind of pickup\nThis includes all types of pickup such as hearts, bombs, keys, coins, pills, tarot cards, chests, trinkets etc",
     unlock: "Unlock this item by beating the Chest with Isaac",
+    image_url: "repentance-rebirth-items.png",
+    position: [9051, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -4764,6 +5556,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and shoots two normal tears at once in a V-shaped pattern\nEach of Harlequin Baby's tears deal 4 damage\nHarlequin Baby fires tears at a rate of 1 tear per second\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9111, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4776,6 +5570,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now become missiles which deal huge damage to anything nearby\nMissiles damage = damage * 20\nThis item places a controllable red target on the ground which will cause a missile to fall from the sky and hit it after a short period of time",
     unlock: "Unlock this item by beating Challenge #19 (The Family Man)",
+    image_url: "repentance-rebirth-items.png",
+    position: [9160, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -4788,6 +5584,8 @@ export const items: Record<string, Item> = {
     content:
       "High Damage Up - (damage + 4) * 2\nTears Down significantly (Tear delay * 2.1 + 3)\nIf a tear kills an enemy, it continues to travel forward with the leftover damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9198, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4800,6 +5598,8 @@ export const items: Record<string, Item> = {
     content:
       "A shadow follows Isaac and stomps on enemies randomly, dealing 40 damage per stomp (2 damage ticks at 20 damage each)\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9260, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4812,6 +5612,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, does 10 damage to all enemies in the room and gives them a slowing effect for 4 seconds\nEnemies killed by Spider Butt will spawn friendly blue spiders\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9325, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -4824,6 +5626,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an orbital knife that blocks shots and deals 15 damage per tick on contact with enemies\nThe highest damage orbital in the game, dealing 225 damage per second\nSynergises very well with invulnerability items such as Book of Shadows",
     unlock: "Unlock this item by beating the Chest with Eve",
+    image_url: "repentance-rebirth-items.png",
+    position: [9394, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -4836,6 +5640,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a 33% chance of converting red heart drops into soul hearts\nCounts as 1 of 3 angel items needed towards the Seraphim transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9424, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -4848,6 +5654,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar the follows Isaac and fires random tears\nRainbow Baby's tears can choose from any of the other familiars, such as homing, spectral, tar shots etc\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9475, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -4861,6 +5669,8 @@ export const items: Record<string, Item> = {
       "Upon use, opens all closed doors in the current room, including the ones which require a key to enter and secret room doors\nCan be used to open the golden door that appears in the Dark Room or the Chest\nCannot be used to escape the Mom's Foot boss, open angel/devil rooms, or open the door to the Blue Womb floor",
     unlock:
       "Unlock this item by collecting both Key Pieces #1 & #2 for the first time",
+    image_url: "repentance-rebirth-items.png",
+    position: [9545, 0],
     type: "Active",
     item_pool: "Item Room, Key Beggar",
     recharge_time: "2 rooms",
@@ -4873,6 +5683,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.16 Shot Speed Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9600, 0],
     type: "Passive",
     item_pool: "Item Room, Boss Room",
     recharge_time: null,
@@ -4885,6 +5697,8 @@ export const items: Record<string, Item> = {
     content:
       "Using the portable slot takes a coin and has a chance to give a pickup - similar to how the normal slot machines work",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9660, 0],
     type: "Active",
     item_pool: "Shop, Beggar",
     recharge_time: "Instant",
@@ -4897,6 +5711,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a familiar that follows Isaac and launches itself in the direction Isaac shoots\nUpon hitting an enemy, it will deal 7 damage and shatter, creating a pool of damaging blue creep that also petrifies enemies that touch it\nOnce the pool disappears, the familiar will respawn and can be thrown again",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9729, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -4909,6 +5725,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an eternal heart and the ability to fly\nTaking an eternal heart to the next floor or collecting two on the same floor gives you an extra heart container",
     unlock: "Unlock this item by beating the Chest with Blue Baby",
+    image_url: "repentance-rebirth-items.png",
+    position: [9778, 0],
     type: "Passive",
     item_pool: "Gold Chest",
     recharge_time: null,
@@ -4921,6 +5739,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon taking damage, Isaac will fart, causing all enemies in close proximity to become poisoned\nBlack Bean deals your tear damage for 6 ticks",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9843, 0],
     type: "Passive",
     item_pool: "Item Room, Beggar",
     recharge_time: null,
@@ -4933,6 +5753,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows Isaac to fly while the White Pony is held\nWhile held, sets your speed stat to 1.5 if it isn't already that high. If your speed stat is already higher then that value is still used\nUpon use, Isaac charges in the direction the pony is facing, becoming invulnerable during the charge and damaging enemies\nWhile charging, Isaac spawns a trail of light beams that deal a lot of damage to enemies (damage * 4 + 10)\nDrops from the Conquest boss fight",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9889, 0],
     type: "Active",
     item_pool: "None (Conquest boss only)",
     recharge_time: "2 rooms",
@@ -4945,6 +5767,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears are now white, do a lot more damage and move slower across the screen with a homing effect\nHealth Up\nDamage Up (damage * 2.3 + 1)\n-0.4 Tears Down\n-0.25 Shot Speed Down\nFull red heart heal\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9935, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -4957,6 +5781,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.7 Tears Up\n+0.16 Shot Speed Up\nDoes not increase your damage, simply makes your tears red",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [9978, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -4969,6 +5795,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nGives Isaac the ability to fly\nHeals one red heart container when picked up\nCounts as 1 of 3 angel items needed towards the Seraphim transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10052, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -4981,6 +5809,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac the ability to fly and spectral tears\nAn item only found in the Angel room\nCounts as 1 of 3 angel items needed towards the Seraphim transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10103, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -4993,6 +5823,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, takes away one full heart and deals 40 damage to the entire room\nShields and invincibility effects do not prevent damage when using this item\nUsing with Isaac's Heart previously prevented you from taking damage, however in Repentance this was fixed\nUsing this item as The Lost will instantly kill him, even if you have Holy Mantle active",
     unlock: "Unlock this item by beating Satan with Samson",
+    image_url: "repentance-rebirth-items.png",
+    position: [10193, 0],
     type: "Active",
     item_pool: "Item Room, Devil Room",
     recharge_time: "Instant",
@@ -5005,6 +5837,8 @@ export const items: Record<string, Item> = {
     content:
       "Follows behind Isaac and can be swung back and forth, dealing 5 contact damage per tick to anything it hits\nEvery time the hairball kills an enemy, it grows in size allowing it to deal more damage\nThis is one of the items which allows you to transform into Guppy\nMoving to a new floor decreases the size of the hairball\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10258, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -5017,6 +5851,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that mirrors the player's movements and shoots tears directly at Isaac\nAbel's tears do 3.5 damage, unless playing as Cain in which case they do 5\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating the Dark Room with Cain",
+    image_url: "repentance-rebirth-items.png",
+    position: [10333, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5029,6 +5865,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac turns red like Meatboy\n+1 HP Up\n+0.3 Damage Up\n+0.2 Tears Up\n+1.5 Range Up\n+0.2 Speed Up\nFull red heart heal",
     unlock: "Unlock this item by beating Challenge #14 (It's in the Cards)",
+    image_url: "repentance-rebirth-items.png",
+    position: [10398, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5040,6 +5878,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "Gives Isaac 99 bombs",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10458, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room, Bomb Beggar",
     recharge_time: null,
@@ -5052,6 +5892,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants Isaac random tear effects\nCan pick from a list of 39 item effects, including 8 Inch Nails, 20/20, Apple!, Ball of Tar, Continuum, Cricket's Body, Dark Matter, Dead Eye, Death's Touch, Euthanasia, Explosivo, Eye of Belial, Fire Mind, Holy Light, Iron Bar, Little Horn, Lost Contact, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mutant Spider, My Reflection, Mysterious Liquid, Number One, Ouija Board, Parasitoid, Proptosis, Pupula Duplex, Rubber Cement, Sagittarius, Scorpio, Sinus Infection, Speed Ball, Spoon Bender, The Inner Eye, The Parasite, The Sad Onion, The Wiz and Tough Love\nThe tear type changes every 2-3 seconds",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10520, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5064,6 +5906,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Isaac gains homing shots and +3.0 Range Up for the current room\nCounts as 1 of 3 book items needed towards the Bookworm transormation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10568, 0],
     type: "Active",
     item_pool: "Item Room, Library",
     recharge_time: "2 rooms",
@@ -5076,6 +5920,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.3 Damage Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10619, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -5088,6 +5934,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.16 Shot Speed Up\nGives Isaac a random tarot card when picked up\n+15% chance for Planetariums to spawn\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10664, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -5100,6 +5948,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops 4 random pills on the floor around Isaac\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10724, 0],
     type: "Passive",
     item_pool:
       "Shop, Boss Room, Challenge Room, Beggar, Demon Beggar, Mom's Chest",
@@ -5112,6 +5962,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+2 Soul Hearts\n+0.4 Tears Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10796, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -5123,6 +5975,8 @@ export const items: Record<string, Item> = {
     quality: 2,
     content: "+0.5 Damage Up\n+0.38 Range Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10849, 0],
     type: "Passive",
     item_pool: "Boss Room, Angel Room",
     recharge_time: null,
@@ -5135,6 +5989,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, spawns 1 red heart, 1 key, 1 bomb, 1 coin, 1 card/rune, 1 pill and 1 trinket",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10899, 0],
     type: "Passive",
     item_pool: "Boss Room, Challenge Room",
     recharge_time: null,
@@ -5147,6 +6003,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Keys\nDoubles the yield of hearts, coins, bombs and keys that spawn from non-red chests\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [10964, 0],
     type: "Passive",
     item_pool: "Shop, Challenge Room, Key Beggar, Mom's Chest",
     recharge_time: null,
@@ -5159,6 +6017,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears have a random chance to charm enemies\nCharmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac\nThe chance to charm enemies is affected by your luck stat and at +27 Luck it will activate every time\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11010, 0],
     type: "Passive",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -5171,6 +6031,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Damage Up\nTears now have a chance to concuss enemies, causing them to walk around dazed and confused for a short period of time\nThe chance to concuss enemies is affected by your luck stat and at +27 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11070, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5183,6 +6045,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's touch now petrifies enemies, turning them to gold for a few seconds. \nIf an enemy is killed while it is golden, it will drop between 1-4 coins\nContact damage is also dealt to enemies equal to the amount of coins Isaac is currently holding\nHas a synergy with The Poop item, which gives it a high chance to spawn golden poops",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11148, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5195,6 +6059,8 @@ export const items: Record<string, Item> = {
     content:
       "All future pennies, keys, bombs and hearts have a chance to drop in pairs\nDoes not work for other pickups, such as soul hearts, nickels, dimes, cards, pills etc\nDoes not affect existing pickups that already dropped before taking this item",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11226, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5207,6 +6073,8 @@ export const items: Record<string, Item> = {
     content:
       "When you take damage, there is a 50% chance to drop a random heart, key, bomb or coin",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11294, 0],
     type: "Passive",
     item_pool: "Shop, Beggar",
     recharge_time: null,
@@ -5219,6 +6087,8 @@ export const items: Record<string, Item> = {
     content:
       "When your spacebar item is not fully charged, you can press spacebar to recharge it at the cost half of a heart per charge\nCan be used on partially charged items\nWill not kill you if used - it stops a half a heart left\nRed hearts are taken before other kinds, i.e. soul or black hearts\nYour devil deal chance isn't ruined by this item taking away red hearts",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11367, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5231,6 +6101,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n-1 Tear Delay (Tears Up)\nCauses Isaac's head to detach and orbit his body, blocking shots and dealing 7 contact damage per tick\nBFFs will cause the Guillotine head to do double damage (14 damage per tick)\nTears are still fired from Isaac's head but the hitbox remains around his body",
     unlock: "Unlock this item by beating the Isaac boss with Judas",
+    image_url: "repentance-rebirth-items.png",
+    position: [11425, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5243,6 +6115,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an orbital ball of bandages that deals 7 contact damage per tick and blocks enemy shots\nCollecting a second Ball of Bandages in the run turns the orbital into a pink head that shoots tears that deal 7 damage each and have a chance to charm enemies\nGetting a third Ball of Bandages will transform the head into bandage girl which will chase enemies dealing 3.5 contact damage per tick while firing charm tears\nA fourth Ball of Bandages will make the Bandage Girl bigger and stronger, making her deal 5.5 damage per tick instead\nAny further Ball of Bandages will repeat the cycle\nCharmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11487, 0],
     type: "Passive, Orbital",
     item_pool: "None (Horsemen boss only)",
     recharge_time: null,
@@ -5255,6 +6129,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\nIncreases the chance of champion enemies appearing by 15%\nDoesn't affect the chance for champion bosses to spawn\nAn item only found in the Shop room pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11545, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5267,6 +6143,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 bombs\nBombs now become poop bombs, which deal 10 damage to all enemies in the room and daze them for a short period of time\nButt Bombs heal the poop bosses (Dingle, Dangle, Brownie) by 25% of their max HP\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11626, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -5279,6 +6157,8 @@ export const items: Record<string, Item> = {
     content:
       "If Isaac stands still and stops shooting for a second, he turns to stone, making him invincible until he moves/shoots again\nUsing bombs or your active item will remove the invicibility as well\nThis item is a reference to the Tanuki suit in Super Mario 3",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11688, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5291,6 +6171,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 2-5 friendly attack spiders every time you take damage\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11742, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5303,6 +6185,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac dies, he has a 50% chance to resurrect with 1/2 a heart\nCounts as 1 of 3 cat items needed towards the Guppy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11802, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Red Chest",
     recharge_time: null,
@@ -5315,6 +6199,8 @@ export const items: Record<string, Item> = {
     content:
       "All of Isaac's tears now have a shield, allowing them to block an enemy projectile\nIf a tear blocks something, both Isaac's and the enemies tears are destroyed\n-0.16 Shot Speed Down",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11862, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -5327,6 +6213,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Range Up\nWhen Isaac takes damage, he will start to leave a trail of blood creep behind him as he walks for the current room. The creep deals 2 damage per tick while enemies stand in it\nLazarus' revived form (Lazarus II) respawns with this item",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11954, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5339,6 +6227,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a guaranteed devil or angel room on every floor that they can appear, even if you have already beaten the boss and it didn't show up originally\nTaking the Goat Head (or any other item) in a Devil Deal bars you from encountering Angel Rooms naturally. After which, the only way to access an Angel Room is via the Sacrifice Room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [11997, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -5351,6 +6241,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Black Hearts\n+1 Damage Up\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12063, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -5363,6 +6255,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now has a small chance to create friendly attack spiders everytime he fires a tear\nCan create up to a maximum of 5 spiders in the room at one time\nThe Hive Mind item allows Mom's Wig to spawn a maximum of 10 spiders at once, and increases their damage\nThe chance to create a spider is affected by your luck stat and at +10 Luck it will activate every time\nHeals you for 1 red heart when picked up\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12108, 0],
     type: "Passive",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -5375,6 +6269,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nGives a chance to heal 1/2 a red heart every time the in-game timer hits a new minute\nHeals one red heart container when picked up\nThere are no restrictions on when the regeneration effect happens as long as the game is not paused, so you can simply afk and heal over time\nWorks in crawl spaces\nIt's possible to find this item by blowing up Polyps (the weird red rocks found in the Womb floors)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12168, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -5387,6 +6283,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nThe given heart container is empty\nWhen you get hit, you will sometimes cause hearts to drop on the floor\nThe chance to drop hearts is affected by your luck stat and at +29 Luck it will activate 50% of the time",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12238, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -5399,6 +6297,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nEverytime a bomb explodes, it will release a circle of 10 tears outwards, much like the Tammy's Head effect\nThe tears from each bomb deal a flat 25 damage and are affected by any tear modifiers Isaac has\nThe tears caused by Sad Bombs are much larger and do a lot more damage than Isaac's normal tears",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12303, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -5411,6 +6311,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears now bounce off walls and objects in the environment, such as rocks and pots\nAllows tears to hit the same enemy multiple times\nIf you also have Lost Contact, tears will bounce off enemy projectiles instead of being destroyed",
     unlock: "Unlock this item by beating Mom's heart 2 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [12365, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -5423,6 +6325,8 @@ export const items: Record<string, Item> = {
     content:
       "-2 Tear Delay (Tears Up)\nAs you hold down the fire button, shots will float in the same place until you release the fire key again\nAllows you to store up a lot of tears in the air and release them all at once\nWhen the tears are released, they will fire off in the direction that Isaac was originally facing when it was created",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12420, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5435,6 +6339,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nAll explosions now heal Isaac for 0.5 red hearts instead of hurting him\nPyromaniac grants Isaac immunity to fire, but does not protect against stomps or shockwave effects",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12483, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5447,6 +6353,8 @@ export const items: Record<string, Item> = {
     content:
       "-1 Tear Delay (Tears Up)\n-1.3 Range Down\nx1.2 Tear Size\nMakes tears break into 4 smaller tears on impact with anything, which deal half of your damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12541, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5459,6 +6367,8 @@ export const items: Record<string, Item> = {
     content:
       "When getting hit, this item has a chance to drop a soul heart or black heart\nThe chance to spawn a heart is affected by your luck stat and at +22 Luck it will activate 50% of the time\nEnemies have a chance to drop half a red heart when killed",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12603, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -5471,6 +6381,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+1 Soul Heart\n+1 Black Heart\nHeals one red heart container when picked up\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect\nAn item only found in the secret room pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12668, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -5483,6 +6395,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Coins when picked up\nWhen you take damage, 1-2 coins will drop on the floor\nWhen playing as the Keeper, this item drops 0-1 coins instead",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12728, 0],
     type: "Passive",
     item_pool: "Item Room, Shop",
     recharge_time: null,
@@ -5495,6 +6409,8 @@ export const items: Record<string, Item> = {
     content:
       "-1 Tear Delay (Tears Up)\nIsaac's tears have a 15% chance of causing a fear effect\nFeared enemies will run away from Isaac temporarily\nThe chance to fear enemies is affected by your luck stat and at +85 Luck it will activate every time\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12806, 0],
     type: "Passive",
     item_pool: "Item Room, Challenge Room, Mom's Chest",
     recharge_time: null,
@@ -5507,6 +6423,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears can now be charged and released in a shotgun style effect, much like Monstro's main attack\nTears down (Tear delay * 4.3)\nPartial charging does nothing - must be fully charged to use",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12866, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5519,6 +6437,8 @@ export const items: Record<string, Item> = {
     content:
       "On pickup Abaddon converts all your heart containers to black hearts, then gives you +2 more black hearts\n+1.5 Damage Up\n+0.2 Speed Up\nTears now have a chance to induce the fear effect, causing enemies to run away from Isaac for a short period\nThe chance to fear enemies is affected by your luck stat and at +85 Luck it will activate every time\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect\nCounts as 1 of 3 evil items needed towards the Leviathan transformation\nWhen taken as The Keeper, your coin health is reduced to 1",
     unlock: "Unlock this item by beating the Chest with Azazel",
+    image_url: "repentance-rebirth-items.png",
+    position: [12921, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -5531,6 +6451,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac leaves a trail of tar behind him which will slow down enemies that walk over it\nTears have a chance to slow enemies and their projectiles for a short period of time\nThe chance to slow enemies can improve based on your luck stat and will always slow enemies at +18 Luck",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [12985, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5543,6 +6465,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Speed Up\nThe Stop Watch applies a permanent but slight slowing effect to all enemies and their projectiles\nThe slowing effect has a reduced effect against Brimstone lasers fired by enemies",
     unlock: "Unlock this item by donating 999 pennies to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [13048, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5555,6 +6479,8 @@ export const items: Record<string, Item> = {
     content:
       "Range greatly increased\nGrants spectral tears\nTears now revolve around Isaac's Body at a fixed distance until they hit the ground\nThe tears orbit close to Isaac, offset slightly in the direction fired. Changing the firing direction will redirect all previously fired tears\nCauses a lot of great synergies with items such as Lump of Coal, Brimstone, Rubber Cement, Technology and most of the worm trinkets",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13102, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5567,6 +6493,8 @@ export const items: Record<string, Item> = {
     content:
       "Creates a friendly blue spider when you kill an enemy\nSpiders are spawned at the location where the enemy died\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13162, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5579,6 +6507,8 @@ export const items: Record<string, Item> = {
     content:
       "E. Coli turns normal enemies into poop if they touch you\nEnemies can turn into poop even if they do not do contact damage, allowing you to apply the effect without taking damage\nCan be combined with Midas Touch to turn enemies into Golden Poop\nThis does not work on mini-bosses and bosses\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13232, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5591,6 +6521,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Damage Up\n-0.3 Tears Down\nx2 Tear Size\nIsaac's tears turn into large scythes that pierce through enemies (Similar to how Death's scythes look)",
     unlock: "Unlock this item by beating Challenge #17 (Waka Waka)",
+    image_url: "repentance-rebirth-items.png",
+    position: [13307, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -5603,6 +6535,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases your chances to find an Angel Room instead of a Devil Room. See the dedicated Devil room page for more details\nFirst half of the key required to enter the door to the Mega Satan boss\nDrops from one of the angels which appear by bombing the statue in an angel room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13375, 0],
     type: "Passive, Familiar",
     item_pool: "None (Angel statue only)",
     recharge_time: null,
@@ -5615,6 +6549,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases your chances to find an Angel Room instead of a Devil Room. See the dedicated Devil room page for more details\nSecond half of the key required to enter the door to the Mega Satan boss\nDrops from one of the angels which appear by bombing the statue in an angel room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13446, 0],
     type: "Passive, Familiar",
     item_pool: "None (Angel statue only)",
     recharge_time: null,
@@ -5627,6 +6563,8 @@ export const items: Record<string, Item> = {
     content:
       "Randomly increases 4 of your stats, and decreases 2 of them\nPossible stat changes are fixed values: ±1 health, ±1 damage, ±0.2 speed, ±0.5 range, ±0.5 tears, ±0.2 shot speed, ±1 luck\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: "Unlock this item by beating Mom's Heart 7 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [13535, 0],
     type: "Passive",
     item_pool: "Item Room, Boss Room, Demon Beggar",
     recharge_time: null,
@@ -5639,6 +6577,8 @@ export const items: Record<string, Item> = {
     content:
       "Doubles pickups and chests from clearing a room\nAlso gives a 30% chance for room clear rewards to not spawn\nDoesn't affect coins spawned in Greed Mode",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13570, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -5650,6 +6590,8 @@ export const items: Record<string, Item> = {
     quality: 2,
     content: "Gives a 50% chance to not take damage from projectiles",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13633, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -5662,6 +6604,8 @@ export const items: Record<string, Item> = {
     content:
       "Puts a shield in front of Isaac which blocks projectiles\nThe shield will rotate based on the direction in which Isaac is firing tears",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13688, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -5674,6 +6618,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a laser that will fire at random intervals in addition to your normal tears\nEach laser does damage equal to your current tear damage\nThe laser will occasionally fire with one of these effects: Hook Worm, Spoon Bender, Tiny Planet, Mysterious Liquid, Rubber Cement\nLuck has no effect on the rate at which Tech.5 fires and does not scale with items that increase your tears stat",
     unlock: "Unlock this item by beating Challenge #18 (The Host)",
+    image_url: "repentance-rebirth-items.png",
+    position: [13748, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5686,6 +6632,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now shoots two tears at once\n0.75x damage multiplier\nUnlike the Inner Eye and Mutant Spider items, this double shot item does not give a tears down",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13792, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5698,6 +6646,8 @@ export const items: Record<string, Item> = {
     content:
       "Reveals the locations of the secret and super secret room for the current floor and all future floors",
     unlock: "Unlock this item by donating 10 pennies to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [13864, 0],
     type: "Passive",
     item_pool: "Shop, Beggar, Key Beggar",
     recharge_time: null,
@@ -5710,6 +6660,8 @@ export const items: Record<string, Item> = {
     content:
       "Makes all of Isaac's familiars stronger and bigger\nCauses most familiars to deal double damage\nHas no effect on most familiars that scale with Isaac's tear damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13922, 0],
     type: "Passive",
     item_pool: "Shop, Key Beggar",
     recharge_time: null,
@@ -5722,6 +6674,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes your friendly blue spiders and flies to become bigger and do x2 more damage\nAllows Mom's Wig to spawn a maximum of 10 spiders at once instead of 5\nFly and spider familiars become stronger similar to BFFS\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [13984, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5734,6 +6688,8 @@ export const items: Record<string, Item> = {
     content:
       "Two items now spawn after beating a boss fight and the boss rush, however only one can be taken\nThe additional item will pick from the Boss Item Pool\nDoes nothing after the Krampus fight\nUnlocked by donating to the donation machine in the shop",
     unlock: "Unlock this item by donating 50 pennies to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [14046, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5746,6 +6702,8 @@ export const items: Record<string, Item> = {
     content:
       "All bomb pickups are now 1+1 bombs\nAn item only found in the Shop item pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14104, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5758,6 +6716,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a random card\nIsaac can now hold 2 cards or runes at once. Tap the drop button to cycle between each one\nAll future pill drops will now instead become cards\nAn item only available in the Shop room",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14164, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5771,6 +6731,8 @@ export const items: Record<string, Item> = {
       "Allows for 2 pills to be held. Tap the drop button to cycle between each one\nDrops a pill on the floor when picked up\nChanges all card and rune drops into pills. Any Tarot card or rune on the floor or current held when picking this item up will change into a pill\nDice Shard counts as a card and will be converted",
     unlock:
       "Unlock this item by picking up 2 of the following items: Roid Rage, The Virus, Growth Hormones, Experimental Treatment or Speed Ball",
+    image_url: "repentance-rebirth-items.png",
+    position: [14216, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -5783,6 +6745,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+1.0 Luck Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14274, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -5795,6 +6759,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up (Left eye only)\n+1.5 Range Up (Left eye only)\nThe above stats only apply to tears fired from Isaac's left eye or with a 50% chance if you have an item which causes you to fire from a single source only",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14332, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -5806,6 +6772,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.5 Tears Up\n+0.2 Shot Speed Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14392, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -5818,6 +6786,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 Bombs\nGrants immunity to fire\nEnemies touching placed bombs take 16 damage\nGives all bombs a burning effect when they explode, leaving fire on the floor which deals 22 damage to enemies",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14450, 0],
     type: "Passive",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -5830,6 +6800,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears now set enemies on fire, leaving a damage over time effect that does 4 or 6 damage per tick\nThere is a chance that tears that hit enemies will explode, leaving a small fire on the floor that damages enemies\nExploding tears deal damage * 2 + 22 per tick\nThe chance for tears to explode is affected by your luck stat and at +13 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14508, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5842,6 +6814,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, and at the start of each floor this rerolls all your current items, giving you a new item to replace each of the ones you had\nAlso rerolls all your stats at the same time, giving a random flat modifier that changes each time\nDoesn't affect important items such as Polaroid, Negative and Key Pieces",
     unlock: "Unlock this item by beating Boss Rush with Lazarus",
+    image_url: "repentance-rebirth-items.png",
+    position: [14560, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -5854,6 +6828,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\nTears now have a chance to apply the fear effect to enemies, which causes them to run away from Isaac\nThe chance to fear enemies is affected by your luck stat and at +20 Luck it will activate every time\nAn item only found in the devil room pool (Note: The Fallen boss pulls items from the Devil Room Pool)",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14624, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -5866,6 +6842,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Black Heart\nImmunity to all floor curses (e.g. Curse of the Lost)\nBlack Candle removes the teleportation effect of Cursed Eye\n+15% chance of a devil or angel room opening after the boss fight",
     unlock: "Unlock this item by donating 150 pennies to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [14691, 0],
     type: "Passive",
     item_pool: "Shop, Curse Room",
     recharge_time: null,
@@ -5878,6 +6856,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac high damage tears with a short range\nTear size and damage falls off very fast with this item, the further the tear travels the less damage it does\nTear damage starts at triple (300%) and decreases over range to eventually be 0%",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14745, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5890,6 +6870,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Black Heart\nIf the total sum of all your health is at one heart after taking damage, the necronomicon effect will activate, dealing 40 damage to the entire room\nMissing Page 2 now doubles all black heart and Necronomicon damage to 80",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14813, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar, Secret Room",
     recharge_time: null,
@@ -5902,6 +6884,8 @@ export const items: Record<string, Item> = {
     content:
       "A yellow orbital fly that will block shots and when Isaac gets hit, will seek out the nearest enemy and attack it\nIf the fly is in its attacking state and there are no longer any enemies in range, it will return to Isaac and go back to being a defensive orbital\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14868, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -5914,6 +6898,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and blocks any shots that hit it\nIf a projectile is blocked by Dry Baby, he has a 10% chance to activate the Necronomicon effect, dealing 40 damage to the entire room\nThe chance to activate the effect is not changed by your Luck stat\nCan drop while destroying skulls in the Depths and Necropolis floors\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [14949, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5926,6 +6912,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows isaac around dropping white creep which slows down enemies that walk over it\nSpawns 1-2 familiar blue spiders after every room\nBlue Spiders do x2 of Isaac's damage\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15009, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5938,6 +6926,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that is controlled via the arrow keys and will automatically fire a laser if anything is in its line of sight\nRobo-Baby 2.0's lasers deal 3.5 damage per hit\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating Challenge #16 (Computer Savvy)",
+    image_url: "repentance-rebirth-items.png",
+    position: [15072, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5950,6 +6940,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and spawns a blue flies as you're firing tears\nRotten Baby can only create one fly at a time, meaning if he has created a fly he cannot make another until it is used\nBlue Flies do double your tear damage\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15115, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -5962,6 +6954,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and leaves blood creep on the floor as it floats, hurting enemies that walk over it for 2 damage per tick\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15161, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -5974,6 +6968,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a familiar leech on the ground that hunts down enemies and heals you for half a heart each time it eats one\nThe Leech deals 1.5 contact damage per tick",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15235, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -5986,6 +6982,8 @@ export const items: Record<string, Item> = {
     content:
       "A bag that follows Isaac and drops a random heart, coin, bomb or key every 5-6 rooms (alternating, 5 rooms then 6, then repeats)\nCan drop any kind of heart, coin, bomb or key",
     unlock: "Unlock this item by beating the Dark Room with Eden",
+    image_url: "repentance-rebirth-items.png",
+    position: [15325, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Beggar, Secret Room",
     recharge_time: null,
@@ -5998,6 +6996,8 @@ export const items: Record<string, Item> = {
     content:
       "A large familiar black fly that bounces around the room, exploding on contact with enemies dealing 70 damage\nDoes not explode if it hits Isaac, however if it explodes on an enemy while Isaac is in range, he will take damage\nRespawns after 10 seconds or by moving to another room\nPicking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15370, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6010,6 +7010,8 @@ export const items: Record<string, Item> = {
     content:
       "A green brain that launches in the direction you are firing your tears and will explode on contact with enemies, dealing damage and poisoning anything in the blast radius\nBob's Brain deals 100 damage and applies a poison damage over time effect, which deals double your tear damage per tick\nRegenerates over time\nWill hurt Isaac if he is in the blast radius\nCounts as 1 of 3 poison items needed towards the Bob transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15435, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Rotten Beggar",
     recharge_time: null,
@@ -6022,6 +7024,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac takes damage, a white attack fly will spawn that orbits him at a similar distance to the Distant Admiration fly\nThe fly orbits a lot faster than Distant Admiration or Forever Alone and deals 10 damage per tick\nPicking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15495, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -6034,6 +7038,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and can fire up and charge brimstone shots, exactly how the normal Brimstone item works but with less damage\nEach laser deals 3 damage per tick, up to 8 times for a total of 24 damage\nA familiar found in the devil room\nLil Brimstone is now unable to start charging until he is finished attacking\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15562, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -6046,6 +7052,8 @@ export const items: Record<string, Item> = {
     content:
       "Prevents Isaac from taking any damage, but instead summons a familiar heart that follows you around. If the heart is hit, Isaac will take damage\nIt will attempt to hide behind you when shooting\nMost enemies will target the heart over Isaac himself\nIsaac's Heart has a charge attack, which when released will push enemies away and fire blood tears in all directions\nSpikes, Curse Rooms and Spiked Chests no longer deal damage to you, but sacrifice rooms still work as normal\nSharp Plug becomes useless with this item, due to how damage is prevented on Isaac's body",
     unlock: "Unlock this item by beating the Isaac boss with The Lost",
+    image_url: "repentance-rebirth-items.png",
+    position: [15624, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6058,6 +7066,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar ghost that follows Isaac around and chases enemies close-by, damaging them for 2 contact damage and causing a fear effect",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15675, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6070,6 +7080,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar beggar similar to Bum Friend that follows Isaac and collects red hearts, giving Isaac black hearts, pills, cards, runes or spiders in return\nFor every 1.5 red hearts he takes, he will give a reward\nReward chances: Black Heart - 40%, Card/Rune - 20%, Pill - 20%, Blue Spider - 10%, Spider 10%\nCounts as 1 of 3 bum items needed towards the Super Bum transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15745, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Devil Room, Demon Beggar",
     recharge_time: null,
@@ -6082,6 +7094,8 @@ export const items: Record<string, Item> = {
     content:
       "A very large orbital that moves around Isaac very slowly, blocking shots and dealing 2 contact damage per tick\nAffects the speed of all other orbitals, slowing them down a lot (NOTE: This effect does not happen until you get a new orbital after Big Fan)\nDoes not count as one of your three standard orbital slots\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15793, 0],
     type: "Passive, Orbital",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6094,6 +7108,8 @@ export const items: Record<string, Item> = {
     content:
       "An adorable friendly blue spider that walks around the room laying other blue spiders which attack enemies\nBlue Spiders do x2 of Isaac's damage\nShe can only spawn a maximum of up to 5 spiders at a time and will only do so while there are enemies in the room\nSissy Long Legs also charms enemies on contact\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15855, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6106,6 +7122,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a friendly Mulligan that walks around the room. Mulligan can be hit by enemy projectiles, making him a good shield\nEnemies will sometimes target the Mulligan if he is closer",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15915, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6118,6 +7136,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, makes Isaac leap in the air, similar to the leaper enemies\nMaintains momentum if you are already moving in the same direction\nIf you already have an item which gives you flying, this item becomes a dash effect instead\nCan be used in the Isaac boss fight to jump over the beams of light he spawns",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [15967, 0],
     type: "Active",
     item_pool: "Item Room, Library",
     recharge_time: "Instant",
@@ -6130,6 +7150,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D100 will activate the effects of all other dice items at once, including D1, D4, The D6, D7, D8, D10, D12 and D20. Search 'Dice effect' to see all those items and their relevant effects\nNote: Full run reroll effects (such as D4) are able to remove heart containers and transformations if losing the respective items during the reroll",
     unlock: "Unlock this item by beating Boss Rush with The Lost",
+    image_url: "repentance-rebirth-items.png",
+    position: [16022, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -6142,6 +7164,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D4 re-rolls each item you currently have into another random item from the same item pool\nIf you have an item with no room pool (e.g. Blood Bag) it will be rerolled into a random Item Room item\nFull run reroll effects such as D4 are able to remove heart containers and transformations if losing the respective items during the reroll\nCannot remove Azazel's Brimstone laser, or The Lost's Holy Mantle",
     unlock: "Unlock this item by blowing up 30 slot machines",
+    image_url: "repentance-rebirth-items.png",
+    position: [16082, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -6154,6 +7178,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, rerolls all enemies in the room which are currently alive into another random type of enemy\nD10 attempts to reroll enemies into enemies of similar health where possible\nCannot reroll mini-bosses or bosses",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16151, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -6166,6 +7192,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, copies the effect of the card you are currently holding without consuming it\nThe charge time depends on the quality of the card you're holding, and will update with each activation\nUsing this with the ? card will teleport you to the I AM ERROR room",
     unlock: "Unlock this item by beating the Isaac boss with Eden",
+    image_url: "repentance-rebirth-items.png",
+    position: [16211, 0],
     type: "Active",
     item_pool: "Shop, Secret Room",
     recharge_time: "Varies",
@@ -6178,6 +7206,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, you have a chance of getting one of the three following effects: Treasure Map (floor layout), Compass (map icons) or Blue Map (secret room locations)\nCounts as 1 of 3 book items needed towards the Bookworm transformation\nBook of Secrets avoids giving mapping effects that you already have. If the player has all mapping effects, it grants the 'I can see forever!' effect for the floor",
     unlock: "Unlock this item by beating Satan with Eden",
+    image_url: "repentance-rebirth-items.png",
+    position: [16259, 0],
     type: "Active",
     item_pool: "Item Room, Library, Secret Room",
     recharge_time: "6 rooms",
@@ -6190,6 +7220,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns 4-8 friendly blue spiders on the floor\nBlue Spiders do x2 of Isaac's damage\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16310, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -6202,6 +7234,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the candle is raised above Isaac's head. Upon pressing any fire button, a red flame will slide across the floor in that direction, dealing 23 damage per tick to enemies that come into contact with it\nEach flame deals 125 total damage and disappears after 10 seconds\nThe flame will shrink in size when deals damage to something and eventually disappear",
     unlock: "Unlock this item by donating 400 pennies to the Shop",
+    image_url: "repentance-rebirth-items.png",
+    position: [16374, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Timed (A few seconds)",
@@ -6214,6 +7248,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac can now pick up hearts while at full health, which will be stored in the Jar and can be spawned again using the spacebar\nUp to 4 hearts can be stored in The Jar\nSoul hearts and black hearts cannot be stored\nIf used in a Black heart or Eternal heart super secret room, it will spawn the relevant heart",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16428, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Instant",
@@ -6226,6 +7262,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, turns every normal enemy in the room into poop!\nDoes not work on mini-bosses and bosses\nKills poop bosses when used - Dingle, Dangle and Brownie\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16478, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -6238,6 +7276,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives Isaac +1 Black Heart\nUsing this book once before the boss dies, causes the boss item on the current floor to become a devil deal instead, where it will cost heart containers to pick up. Taking this item DOES count as a devil deal, preventing future angel rooms.\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect\nCounts as 1 of 3 book items needed towards the Bookworm transformation",
     unlock: "Unlock this item by beating the Isaac boss with Azazel",
+    image_url: "repentance-rebirth-items.png",
+    position: [16569, 0],
     type: "Active",
     item_pool: "Item Room, Library, Devil Room",
     recharge_time: "6 rooms",
@@ -6251,6 +7291,8 @@ export const items: Record<string, Item> = {
       "When used, fires a 4 way brimstone laser in all cardinal directions, dealing a lot of damage to any enemies\nLaser damage does not scale with your damage stat - its a fixed 10 damage per tick for 20 ticks (200 total per use)\nHas a chance to drop after you beat Krampus\nIf you get close enough to an enemy that has a large hitbox, you can hit it with 2 of the laser beams, allowing you to deal more damage",
     unlock:
       "Unlock this item by beating Krampus (Krampus is unlocked by taking 20 devil deal items)",
+    image_url: "repentance-rebirth-items.png",
+    position: [16620, 0],
     type: "Active",
     item_pool: "None (Krampus only)",
     recharge_time: "3 rooms",
@@ -6263,6 +7305,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, farts on nearby enemies and knocks them backwards forcefully away from Isaac\nAllows you to reflect projectiles away from Isaac\nIf a pushed enemy hits a rock or wall forcefully enough, they take 10 damage",
     unlock: "Unlock this item by destroying 100 poops",
+    image_url: "repentance-rebirth-items.png",
+    position: [16670, 0],
     type: "Active",
     item_pool: "Item Room, Beggar",
     recharge_time: "Timed (A few seconds)",
@@ -6275,6 +7319,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, consumes a coin and deals damage to everything in the room\nDamage dealt is equal to your tear damage * 2 + 10",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16750, 0],
     type: "Active",
     item_pool: "Item Room, Shop",
     recharge_time: "Instant",
@@ -6287,6 +7333,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, converts 1 soul/black heart into 1 red heart container\nThis item will take from your soul hearts first",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16815, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "3 rooms",
@@ -6299,6 +7347,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will spawn a set of items or consumables based on which chapter you are currently on\nBasement 1: 2 Soul hearts. Basement 2: 2 Bombs + 2 Keys\nCaves 1: 1 Boss Item. Caves 2: 1 Boss Item + 2 Soul Hearts\nDepths 1: 4 Soul hearts. Depths 2: 20 coins\nWomb 1: 2 Boss Items. Womb 2: Bible\nBlue Womb: Nothing!. The Void: Nothing!\nSheol: 1 Devil Room Item + 1 Black Heart. Cathedral: 1 Angel Room Item + 1 Eternal Heart\nChest: 1 coin. Dark Room: Nothing!\nHome: Gives Red Key.\nPandora's Box considers XL floors to always be the first floor of a chapter\nAlternative floors drop the same stuff e.g. Corpse II drops same as Womb II",
     unlock: "Unlock this item by beating the Dark Room with Lazarus",
+    image_url: "repentance-rebirth-items.png",
+    position: [16885, 0],
     type: "Active",
     item_pool: "Shop, Red Chest",
     recharge_time: "One time use",
@@ -6311,6 +7361,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, turns Isaac invincible and gains +0.28 speed for a 5 seconds\nYou cannot fire tears while the stump is active\nVery similar to the My Little Unicorn item but does not deal contact damage\nWhen used with Mom's Knife, you can still deal contact damage but will be unable to change the way the knife faces while the effect is active",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [16947, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "1 room",
@@ -6323,6 +7375,8 @@ export const items: Record<string, Item> = {
     content:
       "-0.3 Speed Down\nWhile in a hostile room your speed raises at a rate of +0.065 per game tick\nWhen you hit a speed stat of 2.0, Isaac will gain an invincibility effect for 5 seconds, increasing speed and allowing him to run into enemies to deal 40 contact damage per hit\nThe time it takes for the effect to activate becomes shorter with a higher base Speed stat\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17011, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6335,6 +7389,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.25 Speed up\nRunning into enemies while at a high speed will deal 25 damage. Moving at this speed also prevents contact damage\nWill not deal contact damage unless you are moving fast enough (at least 0.85 speed)\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17073, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6347,6 +7403,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Soul Hearts\nAfter getting hit once, you gain a damage reduction for the rest of the room similar to The Wafer item (-50% damage taken)\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17141, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6359,6 +7417,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac increases in size, gets a lion's mane and now has the ability to crush rocks by walking over them\nCrushed rocks and poop can fill holes if you walk in their direction\nAllows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums\nCounts as 1 of 3 size-increasing items needed towards the Stompy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17199, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6371,6 +7431,8 @@ export const items: Record<string, Item> = {
     content:
       "A random chance when you take damage to get an invincibility shield for 7 seconds\nThe chance to get an invincibility shield is affected by your luck stat and at +10 Luck it will activate every time you get hit\nConverts all negative pills into their positive counterparts e.g. Stat Down becomes Stat Up, 'Bad Trip' turns into 'Balls of Steel' and 'Amnesia' turns into 'I can see forever'\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17267, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6383,6 +7445,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you 6 keys, 6 bombs and 6 coins\nBalances out your main stats to bring the high and low stats closer to an average value\nAll future stat upgrading items will now instead spread out across all other stats. For example, an item which usually gives +1 Damage would instead give a small 'all stats up'\nStats effected by this item are: Damage, Tears, Range, Speed\nWhen taken with another item which gives an extreme value in a certain stat (e.g. Soy Milk) can lead to interesting synergies\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17327, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6395,6 +7459,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears turn bright green and always apply a poison effect to enemies which deals a total of double your tear damage\nThis is essentially a superior version of The Common Cold item\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17397, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6407,6 +7473,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.2 Speed Up\nGrants piercing tears\nTears do not travel through rocks with this item\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17467, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6419,6 +7487,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.5 Damage Up\n-1 Tear Delay (Tears Up)\n+0.1 Speed Up\n+0.75 Range Up\n+1 Key, +1 Bomb, +1 Coin\nHeals one red heart container when picked up\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17527, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6431,6 +7501,8 @@ export const items: Record<string, Item> = {
     content:
       "Leaves a trail of tears on the floor behind Isaac which damages enemies that walk over it for 2 damage per tick\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums\nAquarius synergizes with tear effects",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17600, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6443,6 +7515,8 @@ export const items: Record<string, Item> = {
     content:
       "-1 Tear Delay (Tears Up)\nx1.25 Tear Size Up\nTears now have a bigger knockback effect, which pushes enemies backwards\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17677, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6455,6 +7529,8 @@ export const items: Record<string, Item> = {
     content:
       "x2 Damage Multiplier\nTears Down by exactly half (Tear delay * 2)\n-0.5 Shot Speed Down\nThe tears down from this item is a x2.0 multiplier after the formula, meaning it will always halve your tear rate (Unless you have Monstro's Lung or Soy Milk)",
     unlock: "Unlock this item by beating Boss Rush with Eve",
+    image_url: "repentance-rebirth-items.png",
+    position: [17737, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6467,6 +7543,8 @@ export const items: Record<string, Item> = {
     content:
       "When you die with this item, you respawn in the previous room as Dark Judas with 2 black hearts for health\nDark Judas has a damage multiplier of 2.00 (double Isaac's damage) and an additional +0.1 Speed\nDark Judas is considered a separate character by the game, however he can be used to unlock Judas' secrets/achievements\nDark Judas cannot gain red heart containers, HP upgrades give soul hearts instead",
     unlock: "Unlock this item by beating Boss Rush with Judas",
+    image_url: "repentance-rebirth-items.png",
+    position: [17822, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -6479,6 +7557,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\nHeals one red heart container when picked up\nAll future red hearts now heal for double. Half hearts heal a whole heart and full hearts heal 2 red hearts",
     unlock: "Unlock this item by beating Boss Rush with Maggy",
+    image_url: "repentance-rebirth-items.png",
+    position: [17870, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6491,6 +7571,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time you enter a new room, damage is negated for the first time you get hit\nCan be used to go in and out of a Curse Room without taking damage\nCounts as 1 of 3 angel items needed towards the Seraphim transformation\nThe Lost starts with this item after donating 879 coins to the Greed Donation Machine.\nREPENTANCE - The Lost's Holy Mantle can no longer be re-rolled using an item like D4.",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17930, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -6503,6 +7585,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n-0.4 Speed Down\nYou can now break obstacles by walking over them\nHeals one red heart container when picked up\nHoles in the ground can be filled by crushing adjacent rocks, similar to how this can be done with bombs\nAllows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [17983, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6515,6 +7599,8 @@ export const items: Record<string, Item> = {
     content:
       "Enemies and pickups (keys, bombs etc.) are now magnetically attracted to Isaac's tears\nCan cause some enemies to have unpredictable movement",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18053, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6527,6 +7613,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears are now charged up and fired rapidly in a burst of up to 5 shots at once\nThe amount of tears fired in the charge depends on how long you charge for\nThe eye has three states, white (not firing), black (first second of charging) and blinking between black and white. If you get hit while Cursed eye is a solid black colour you are guaranteed to be teleported to another random room on the floor. If you get hit in either of the other 2 states you will not be teleported\nThe Black Candle item will remove the Cursed Eye's teleportation effect\nREPENTANCE - Burst now has 5 shots instead of 4",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18116, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -6539,6 +7627,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac's tears hit anything, they leave a green toxic creep on the floor that damages enemies for 1 damage per tick",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18176, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6551,6 +7641,8 @@ export const items: Record<string, Item> = {
     content:
       "A familar that is attached to Isaac, which will seek out and damage any enemies close by for 3 contact damage\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18221, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6563,6 +7655,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar eye that follows Isaac and copies all his tear modifiers/effects, but shoots in random directions\nTears from this familiar deal 75% of Isaac's tear damage",
     unlock: "Unlock this item by beating Boss Rush with Cain",
+    image_url: "repentance-rebirth-items.png",
+    position: [18291, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6575,6 +7669,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar fly that can be moved around via use of the arrow keys dealing 2.5 contact damage per tick, similar to the Ludovico Technique's mechanic\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: "Unlock this item by beating Boss Rush with Blue Baby",
+    image_url: "repentance-rebirth-items.png",
+    position: [18354, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6587,6 +7683,8 @@ export const items: Record<string, Item> = {
     content:
       "An iron ball and chain attached to Isaac, similar to Guppy's Hairball that you can fling around to deal 5 damage per tick\nThe ball will block enemy shots and can also destroy environmental objects such as rocks, mushrooms and skulls\nDoes not decrease your movement speed stat at all however the ball has to be dragged around causing Isaac to slow down slightly when the chain is fully extended",
     unlock: "Unlock this item by beating Boss Rush with Samson",
+    image_url: "repentance-rebirth-items.png",
+    position: [18416, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -6599,6 +7697,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that will follow Isaac and copy the effect of one of your other familiars\nIf you don't have any other familiars, he will just shoot normal tears\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation\nREPENTANCE - Removed the double damage multiplier on Mongo Baby's attacks",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18484, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6611,6 +7711,8 @@ export const items: Record<string, Item> = {
     content:
       "A spacebar item that fires 8 of Isaac's tears in a circle around him\nTears spawned from this item keep most effect that Isaac currently has applied to his tears, and deal an additional +5 flat damage",
     unlock: "Unlock this item by beating the Isaac boss with Isaac",
+    image_url: "repentance-rebirth-items.png",
+    position: [18540, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "1 bar per tear fired",
@@ -6623,6 +7725,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, teleports you to one of the following rooms at random: Item room, Secret room, Super secret room, the I AM ERROR room or the Black Market (very low chance)\nThere are no I AM ERROR rooms on the final floors, preventing looping with this item",
     unlock: "Unlock this item by beating Boss Rush with Eden",
+    image_url: "repentance-rebirth-items.png",
+    position: [18603, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -6635,6 +7739,8 @@ export const items: Record<string, Item> = {
     content:
       "When used will cut your head from your body. Isaac's head will remain stationary and fire tears. His body can be controlled and spews blood nearby\nTears fired by the head do a flat 3.5 damage and don't scale\nREPENTANCE - Scissors has been redesigned. The stationary head is now affected by Isaac's stats and attack modifiers, and the body will spew a controllable fountain of blood shots. Charge time increased to 4 (from 2)",
     unlock: "Unlock this item by dying 100 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [18671, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -6647,6 +7753,8 @@ export const items: Record<string, Item> = {
     content:
       "Holding the active item button will deplete the charge bar. When the charge bar gets to zero it will grant you a brief period of invincibility\nIf the spacebar is held for too long (about 1 second) when it has no charge, you will take damage\nDuring the invincibility period, Isaac deals 3.5 contact damage to enemies and beams of light will strike down from the sky, dealing 15 damage\nIf damage is blocked perfectly at the exact second the charge bar reaches zero, it will release holy beams in four directions and grant a brief shile effect\nThe invincibility effect is shown via a rapid flashing animation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18729, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "Timed (1 bar per second)",
@@ -6659,6 +7767,8 @@ export const items: Record<string, Item> = {
     content:
       "After taking damage, if you have half a red heart or less, The Polaroid will give you an invincibility shield for 5 seconds\nGrants access to the Chest floor\nAllows you to open the door at the beginning of Depths II that leads to the Mausoluem\nWhen unlocked, is guaranteed to drop after the Mom's Foot boss fight\nThe Polaroid will always spawn on the left pedestal",
     unlock: "Unlock this item by beating Isaac in the Cathedral 5 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [18804, 0],
     type: "Passive",
     item_pool: "None (Mom's foot boss only)",
     recharge_time: null,
@@ -6671,6 +7781,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\nAfter taking damage, if you have half a red heart or less, The Negative will deal 40 damage to all enemies in the room\nGives you access to the Dark Room floor\nAllows you to open the door at the beginning of Depths II that leads to the Mausoluem\nWhen unlocked, is guaranteed to drop after the Mom's Foot boss fight\nThe Negative will always spawn on the right pedestal",
     unlock: "Unlock this item by beating Satan in Sheol 5 times",
+    image_url: "repentance-rebirth-items.png",
+    position: [18864, 0],
     type: "Passive",
     item_pool: "None (Mom's foot boss only)",
     recharge_time: null,
@@ -6683,6 +7795,8 @@ export const items: Record<string, Item> = {
     content:
       "You no longer shoot tears and instead now control a single large tear with the arrow keys\nItems which increase your tears stat will cause the tear to deal damage at a faster rate\nItems which increase your shot speed cause the tear to travel faster across the screen\nLudo and Brimstone create a large controllable red ring of death that does massive damage to anything in its path\nTaking this with Mom's Knife allows you to remote control the knife around the room, dealing huge damage",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18924, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6695,6 +7809,8 @@ export const items: Record<string, Item> = {
     content:
       "Very high Tears Up: Tears * 5.5\n-80% Damage Down\nx0.5 Tear Size\nREPENTANCE - Soy Milk tears now cause drastically less knockback",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [18984, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6708,6 +7824,8 @@ export const items: Record<string, Item> = {
       "Isaac's tears become homing and have an aura around them, which will deal a flat 2 damage per tick to anything inside its radius\n+0.5 Damage Up\n-0.3 Tears Down\n-0.3 Shot Speed Down\nMultiple GodHeads doesn't stack the aura damage\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock:
       "Unlock this item by completing all post-it note marks in hard mode with The Lost character",
+    image_url: "repentance-rebirth-items.png",
+    position: [19029, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -6720,6 +7838,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac an extra life on death, exactly the same as Lazarus' default respawn effect\nWhen you die with this item, you respawn in the same room with 1 heart and the Anemic item\nThe game considers you to be a different character (Lazarus II) when this effect activates",
     unlock: "Unlock this item by beating the Isaac boss with Lazarus",
+    image_url: "repentance-rebirth-items.png",
+    position: [19103, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -6732,6 +7852,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a full mapping effect, revealing the entire floor and locations of all secret rooms",
     unlock: "Unlock this item by beating Satan with The Lost",
+    image_url: "repentance-rebirth-items.png",
+    position: [19163, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -6744,6 +7866,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Health Up\nThe three heart containers are pre-filled with red hearts",
     unlock: "Unlock this item by beating the Chest with The Lost",
+    image_url: "repentance-rebirth-items.png",
+    position: [19223, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -6756,6 +7880,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Soul Hearts\nEnemy projectiles will now slowly curve away from Isaac and avoid hitting him",
     unlock: "Unlock this item by beating Dark Room with The Lost",
+    image_url: "repentance-rebirth-items.png",
+    position: [19283, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -6768,6 +7894,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears become large, brown and will penetrate all objects and enemies (piercing + spectral)\n-1.2 Range Down\n-0.4 Shot Speed Down\nx1.5 Tear Size\nDespite the increase in tear size, Dead Onion does NOT increase your damage stat. It also doesn't do poison damage despite having the tagline 'toxic aura tears'",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19343, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6780,6 +7908,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon entering every 4th unexplored room, the Broken Watch will either slow down or speed up all enemies in the room\nThe slow effect is much more common than the speed up\nAn item only found in the Shop item pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19386, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -6792,6 +7922,8 @@ export const items: Record<string, Item> = {
     content:
       "A blue boomerang which can be thrown in a similar fashion to Mom's Knife, to stun any enemies it hits and deal damage\nThe damage dealt by the Boomerang is equal to double your tear damage\nThe boomerang can also be used to grab pickups and consumables from a distance, similar to the legend of zelda boomerang\nThe range of the boomerang is affected by range, with number one the distance is very short and makes the item a lot less effective\nThe Boomerang can be used to kill shopkeeper corpses, allowing you to farm their drops for coins, items, Steam Sale etc\nREPENTANCE - Boomerang is now piercing, and has far less downtime between throwing it and being able to fire tears again",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19446, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Timed (A few seconds)",
@@ -6804,6 +7936,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Range Up\n+0.16 Shot Speed Up\n+1 Black Heart\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19491, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -6816,6 +7950,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Speed Up\nDecreases the size of Isaac, and your player hitbox, making you less likely to be hit\nGives you a random pill when picked up\nAn item only found in the boss room pool",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19565, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -6827,6 +7963,8 @@ export const items: Record<string, Item> = {
     quality: 3,
     content: "+0.7 Tears Up\n+0.16 Shot Speed Up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19608, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -6839,6 +7977,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 HP Up\n+0.7 Tears Up\n-0.16 Shot Speed Down\nHeals one red heart container when picked up\nAn item only found in the Boss Room pool\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19668, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -6850,6 +7990,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 Luck Up\n+1 Soul Heart\nSpawns 2 keys on the ground",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19712, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest, Key Beggar",
     recharge_time: null,
@@ -6862,6 +8004,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Black Heart\n+3 Bombs\nWhen depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect\nREPENTANCE - Also drops the Match Stick trinket",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19783, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -6874,6 +8018,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.0 Damage Up\n+1.5 Range Up\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19834, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -6885,6 +8031,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nHeals one red heart container when picked up",
     unlock: null,
+    image_url: "repentance-rebirth-items.png",
+    position: [19882, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -6897,6 +8045,8 @@ export const items: Record<string, Item> = {
     content:
       "A one-time use item which when used, will duplicate any pedestal items or consumables in the current room\nIf used in a shop, the duplicated items can be taken for free\nIf used on a trinket, another random trinket will spawn instead of a duplicate\nIf used in the Boss Rush, all the duplicates can be taken for free as well as one of the original items\nIf used in a Devil Room or Black Market, the duplicates can be taken for free",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [0, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Instant (One time use)",
@@ -6909,6 +8059,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, copies the effect of the pill you are currently holding without consuming it\nThe charge time of this item depends on the quality of the pill you're holding\nDoes not copy effects of Cards or Runes",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [71, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Shop",
     recharge_time: "Varies",
@@ -6922,6 +8074,8 @@ export const items: Record<string, Item> = {
       "When used, has a 50% chance to drop one random type of coin (penny, nickel or dime)\nKeeper starts with this item after beating Isaac with Keeper",
     unlock:
       "Unlock this item by donating 33 coins to the Greed Donation Machine",
+    image_url: "repentance-ab-items.png",
+    position: [112, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Item Room",
     recharge_time: "1 room",
@@ -6934,6 +8088,8 @@ export const items: Record<string, Item> = {
     content:
       "With this item, at the start of every room you will deal double your tear damage to the entire room in a poison effect\nEnemies killed now also leave a pool of creep on the ground where they died. This deals 1 damage per tick\nHigh tear damage will cause this item to become very powerful for rooms with a lot of enemies, since they can die instantly and render the room harmless\nEnemies which spawn after the first few seconds of each room are not affected by this item, e.g. Flies spawned from a Mulligan dying",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [178, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -6946,6 +8102,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the Mega Bean will freeze all enemies in the current room for a couple of seconds, deal 5 damage and poison any enemies in close proximity and send a wave of spikes across the room in the direction you are facing\nThe enemies in close range will take 5 damage then have a poison over time effect which deals your tear damage 4 or 6 times\nThe spike wave will deal 10 damage to any enemies in contact with it\nCan be used to open secret rooms",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [240, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "3 rooms",
@@ -6958,6 +8116,8 @@ export const items: Record<string, Item> = {
     content:
       "Glass Cannon allows you to fire one huge spectral tear that deals a lot of damage.\nWhen taking damage, the cannon will break and remain broken until recharged (Recharge time: 4 rooms)\nWhen you take damage and the cannon breaks, you take an additional 2 full hearts of damage and gain the Anemic effect for the room.\nThe damage done by Glass Cannon is calculated as follows: dmg = (dmg * 10) + 10 (i.e. at base damage of 3.5, that's 45 damage)\nSelf-inflicted damage such as Blood Donation machines don't trigger this effect",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [319, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "5 seconds",
@@ -6970,6 +8130,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 bombs\nIsaac's bombs will now explode in a large cross-shaped pattern (roughly 5 bombs explosions wide)\nThis also affects troll bombs",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [381, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room, Bomb Beggar",
     recharge_time: null,
@@ -6981,6 +8143,8 @@ export const items: Record<string, Item> = {
     quality: 2,
     content: "+1 HP Up\nSpawns a random trinket on the floor",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [435, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -6993,6 +8157,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.38 Range Up\n+1 Luck Up\n+1 Soul Heart\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [488, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest, Mom's Chest",
     recharge_time: null,
@@ -7005,6 +8171,8 @@ export const items: Record<string, Item> = {
     content:
       "The Car Battery causes your spacebar item to activate twice on each use\nFor example, with Yum Heart you would heal 2 full red hearts instead of 1",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [556, 0],
     type: "Passive",
     item_pool: "Shop, Greed Mode Shop",
     recharge_time: null,
@@ -7017,6 +8185,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, gives you a duplicate of each familiar you have for the current room\nIt will not 'double' your familiars as the tagline suggests - if you have 2 of one kind, it will only give you an extra one\nIf the familiar only appears when taking damage (i.e. Dead Bird) then Box of Friends will cause it to spawn but won't create duplicates\nThis can be used multiple times in the same room to generate more familiars, meaning you can get a level 4 meatboy or bandage girl by using this item 3 times in the same room\nIf used when you have no familiars, it will give you a Demon Baby temporarily",
     unlock: "Unlock this item by beating Greed Mode with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [616, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Item Room",
     recharge_time: "3 rooms",
@@ -7029,6 +8199,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac wears a dunce hat and fires 2 tears at once diagonally, similar to the R U A WIZARD pill tear pattern\nGives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [744, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7041,6 +8213,8 @@ export const items: Record<string, Item> = {
     content:
       "+1.5 Damage Up\nReplaces Isaac's tears with nails, which have increased knockback\nThe increased knockback will also affect Brimstone, which usually has no knockback at all",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [684, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7053,6 +8227,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a familiar demon incubus that follows you and shoots tears that scale with your own tears in terms of damage, stats and also effects\nIt will mimic any tear effects you currently have and also copy your current stats, meaning it will fire with the same damage, fire rate and range\nLilith starts with this item\nIncubus' damage is reduced by 25% when playing as characters other than Lilith\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [796, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room, Greed Mode Devil Room",
     recharge_time: null,
@@ -7065,6 +8241,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar blue head that will follow Isaac and fire tears copying his tear damage and effects\nThis familiar is very similar to Incubus, however it only copies damage and is not affected by tears or range upgrades",
     unlock: "Unlock this item by beating Blue Womb (Hush) with ??? (Blue baby)",
+    image_url: "repentance-ab-items.png",
+    position: [874, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -7077,6 +8255,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar chest that follows Isaac and has a 25% chance to drop a pickup after clearing a room\nPossible drops include hearts, coins, bombs, key, pills, card, runes, batteries, trinket\nThere's a 10% chance to spawn a trinket",
     unlock: "Unlock this item by beating Greed Mode with Isaac",
+    image_url: "repentance-ab-items.png",
+    position: [937, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Greed Mode Item Room, Beggar",
     recharge_time: null,
@@ -7089,6 +8269,8 @@ export const items: Record<string, Item> = {
     content:
       "An orbital angel which does 7 contact damage per tick and blocks shots\nThe angel will attract bullets towards it and block them\nSworn Protector will drop an eternal heart if it blocks 10 shots in one room. Can only happen once per room\nVisually this is almost identical to the Guardian Angel item, but without a face\nCounts as 1 of 3 angel items needed towards the Seraphim transformation\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating Blue Womb (Hush) with The Lost",
+    image_url: "repentance-ab-items.png",
+    position: [1000, 0],
     type: "Passive, Familiar",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7101,6 +8283,8 @@ export const items: Record<string, Item> = {
     content:
       "A white orbiting fly which deals 3 contact damage per tick to enemies\nThis familiar orbits Isaac at a middle length distance somewhere between Distant Admiration and Forever Alone\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1165, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Greed Mode Item Room, Key Beggar",
     recharge_time: null,
@@ -7113,6 +8297,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar fly that moves in a straight line and attaches itself to the first obstacle or wall it comes into contact with in each room.\nIf any enemies walk into its path, it will deal 7 contact damage every 7 frames\nNearby enemies will be forced to target and attack it\nIf the obstacle it is attached to is destroyed then it will continue rolling in the direction it was previously travelling until it meets another wall or obstacle",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1089, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Greed Mode Item Room, Key Beggar",
     recharge_time: null,
@@ -7125,6 +8311,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 bombs\nCauses your bombs to explode into 2-4 tiny bombs\nThe smaller bombs deal half damage and have a smaller explosion area. They also retain most of your bomb synergizing items",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1255, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room, Bomb Beggar",
     recharge_time: null,
@@ -7137,6 +8325,8 @@ export const items: Record<string, Item> = {
     content:
       "This item causes your bombs to stick to enemies and when exploding will leave white creep on the ground which slows enemies\nWhen one of your bombs kills an enemy, a bunch of blue spiders are spawned to fight by your side, which deal x2 your current damage\n+5 Bombs\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1303, 0],
     type: "Passive, Bomb Modifier",
     item_pool: "Item Room, Greed Mode Item Room, Bomb Beggar, Bomb Beggar",
     recharge_time: null,
@@ -7149,6 +8339,8 @@ export const items: Record<string, Item> = {
     content:
       "Shooting in one direction increases your fire rate until a cap is reached\nThe maximum effect is to halve your delay, which takes roughly 10 seconds to achieve\nThe accuracy of your tears is also reduced as your fire rate increases\nAs soon as you change firing direction, your fire rate is reset to its normal amount",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1367, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7161,6 +8353,8 @@ export const items: Record<string, Item> = {
     content:
       "+3 Range Up\nTears will now travel through walls and appear out of the opposite wall, similar to a portal-type mechanic\nYour tears can now also travel over rocks and objects in the environment",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1423, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7173,6 +8367,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.7 Tears Up\n+1.5 Range Up\nSpawns 3 random types of hearts on the floor",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1499, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -7185,6 +8381,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes Isaac to spawn 6 troll bombs on the floor every time he gets hit, similar to the Anarchist Cookbook mechanic\nDoesn't trigger on damage taken from blood donation machines and devil beggars (but still triggers on other forms of intentional self damage such as IV Bag)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1557, 0],
     type: "Passive",
     item_pool: "Item Room, Red Chest, Curse Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7197,6 +8395,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar baby that has a random chance to drop a battery pickup or freeze all enemies in the room for a short while\nCharged Baby also has a chance to add one charge to your spacebar item\nThese effects can only occur while in a hostile room with enemies",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1604, 0],
     type: "Passive, Familiar",
     item_pool: "Shop, Greed Mode Shop",
     recharge_time: null,
@@ -7209,6 +8409,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a +25% damage up for every tear that successfully hits an enemy\nThe bonus from Dead Eye maxes out at double your damage (+100%)\nIf a tear misses an enemy, there is a chance for the multiplier to be reset back to 1. It's a 20% chance on first miss, 33% for a second miss and 50% for anything beyond that\nPiercing shots work with this item and multiple hits with a single tear will each give a damage bonus",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1652, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7221,6 +8423,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac has a random chance to fire a Holy tear, which when it hits an enemy, will spawn a light beam on the same enemy, dealing damage\nThe beams from this item deal damage equal to 400% of your tear damage (4x damage multiplier for the beams only)\nThe chance to fire a Holy tear is affected by your luck stat, maxing out at a 50% chance\nCounts as 1 of 3 angel items needed towards the Seraphim transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1705, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room, Angel Room",
     recharge_time: null,
@@ -7233,6 +8437,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar host that sits on Isaac's head and has a 20% chance to block enemy shots\nWhen a shot is blocked, Host Hat will fire 3 bullets back at the enemy\nCauses you to become immune to explosions, but doesn't protect against stomps or shockwaves\nBlocks damage from projectiles falling from above",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1765, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7245,6 +8451,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes your shops to instantly restock their items when you buy them\nNew items generated by Restock are from the shop item pool\nThe cost increases exponentially every time you purchase an item. For Items it increases by 2 coins * the number of purchases. For everything it increases by 1 coin * the number of purchases\nThe max price of an item is always 99c with this item\nWorks with Keeper's Box and the Member Card extra shop",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1823, 0],
     type: "Passive",
     item_pool: "Shop, Beggar",
     recharge_time: null,
@@ -7257,6 +8465,8 @@ export const items: Record<string, Item> = {
     content:
       "Most spider enemies no longer target or deal contact damage to Isaac\nThis is very similar to a Skatole for spiders instead of flies\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1876, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7269,6 +8479,8 @@ export const items: Record<string, Item> = {
     content:
       "Continuously firing or charging tears for 3 seconds causes Isaac to fart and drop a Butt Bomb\nOnly 1 Butt Bomb can be dropped per charge, so you'll need to stop firing then start again to drop another one\nButt Bombs explode for 50 damage like normal bombs, but also deal 10 damage to all enemies in the room and daze them for a short period of time\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [1944, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7281,6 +8493,8 @@ export const items: Record<string, Item> = {
     content:
       "Transforms Isaac's tears into a wide arc shape which doubles their size and hitbox\nGives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2028, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7293,6 +8507,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 coins\nThis item turns all doors that require a key into doors which need a coin to enter instead\nThis affects shops, item rooms, libraries, double locked doors, key blocks, chests and other key doors\nChanges the appearance of doors and objects that this item works on to show a coin slot instead of a keyhole",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2116, 0],
     type: "Passive",
     item_pool: "Shop, Greed Mode Item Room, Greed Mode Shop",
     recharge_time: null,
@@ -7305,6 +8521,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.7 Tears Up\nGives you a random item at the start of your next run (You need to start a fresh run to receive the item)\nImportant progression items such as Key Pieces or the Mom's Shovel pieces cannot be given by Eden's Blessing",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Eden",
+    image_url: "repentance-ab-items.png",
+    position: [2159, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -7317,6 +8535,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, can be thrown at enemies to capture them (similar to a Poké Ball)\nAfter capturing an enemy, the next use of the Friendly Ball will re-spawn the same enemy as a friendly companion which will attack other enemies\nThe companion will persist between rooms and floors until it dies by taking enough damage\nWalking over the thrown ball after capturing an enemy will immediately recharge it",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2206, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "2 rooms",
@@ -7329,6 +8549,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, will detonate any tears currently on the screen and cause each one to split into 6 more tears which will fire in a circle, similar to Tammy's Head\nLuck-based items such as Holy Light are applied to each tear individually",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2266, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Item Room",
     recharge_time: "15 seconds",
@@ -7341,6 +8563,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a familiar Gurdy that will charge around the room dealing contact damage to enemies\nThe Gurdy is charged by holding down the fire button and letting go. The longer the button is held the faster Gurdy will fling itself across the screen\nDeals a fixed amount of damage depending on charge level, at lowest being ~5 and at max being ~20\nLil Gurdy bounces off of enemies and obstacles",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2324, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7353,6 +8577,8 @@ export const items: Record<string, Item> = {
     content:
       "A beggar head which floats around the room and picks up any nearby coins. Every 6 coins Bumbo will evolve to a new form except for level 4 which takes 12 coins\nLevel 2: Bumbo gains a body and crawls around the room, sometimes dropping random pickups\nLevel 3: It now fires tears in the same direction Isaac does\nLevel 4: Bumbo no longer fires tears but instead will chase enemies slowly and deal contact damage. It will also sometimes randomly drop bombs\nAfter reaching level 4 (and at a much lower chance before level 4), Bumbo will also continue to collect coins and drop random pickups, similar to the Bum Friend item, but can also drop pedestal items very rarely.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2387, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Beggar",
     recharge_time: null,
@@ -7365,6 +8591,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D12 re-rolls any rocks into another random type of object (e.g. poop, pots, TNT, red poop, stone blocks, spikes, fireplaces etc.)",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Cain",
+    image_url: "repentance-ab-items.png",
+    position: [2453, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Shop",
     recharge_time: "3 rooms",
@@ -7377,6 +8605,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a familiar golden Censer which creates a huge aura of light that slows down any enemies inside it",
     unlock: "Unlock this item by beating Greed Mode with Maggy",
+    image_url: "repentance-ab-items.png",
+    position: [2516, 0],
     type: "Passive, Familiar",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7389,6 +8619,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar beggar similar to Bum Friend that follows Isaac and collects keys, giving random chests in return\nDoesn't pick up golden keys\nCounts as 1 of 3 bum items needed towards the Super Bum transformation",
     unlock: "Unlock this item by beating Greed Mode with Lazarus",
+    image_url: "repentance-ab-items.png",
+    position: [2555, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Secret Room, Key Beggar",
     recharge_time: null,
@@ -7401,6 +8633,8 @@ export const items: Record<string, Item> = {
     content:
       "A bag that follows Isaac and drops a random Rune or Soul Stone every 7 or 8 rooms",
     unlock: "Unlock this item by beating the Isaac boss with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [2606, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Secret Room",
     recharge_time: null,
@@ -7413,6 +8647,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar angel which follows Isaac and fires Sacred Heart tears which deal 10 damage at -25% shot speed and a reduced fire rate\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2651, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7425,6 +8661,8 @@ export const items: Record<string, Item> = {
     content:
       "This item causes enemy projectiles to be able to hit other enemies. When an enemy takes damage from an enemy projectile, it will attempt to target the enemy that fired it",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Judas",
+    image_url: "repentance-ab-items.png",
+    position: [2724, 0],
     type: "Passive",
     item_pool:
       "Item Room, Greed Mode Item Room, Devil Room, Greed Mode Devil Room",
@@ -7438,6 +8676,8 @@ export const items: Record<string, Item> = {
     content:
       "Zodiac will give you a random zodiac item effect that changes after every floor\nPossible item effects include: Taurus, Aries, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Gemini or Pisces\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: "Unlock this item by beating Greed Mode with The Lost",
+    image_url: "repentance-ab-items.png",
+    position: [2774, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7450,6 +8690,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a random chance to apply a poison effect, dealing damage equal to your tears each tick, for 2 ticks\nIsaac now deals poison damage on contact with enemies similar to The Virus item (Damage over time 4 or 6 per tick)\nEnemies that were poisoned by contact damage have a 20% chance to drop a black sin heart when killed. Only contact poison has this effect - poison from tears doesn't work",
     unlock: "Unlock this item by beating Satan with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [2834, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7462,6 +8704,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac will now fire tears automatically directed at a red target on the ground which is controlled by the player\nThis allows for a full 360 degree tear firing radius\nCan be overridden by other tear modifiers such as Mom's Knife or Brimstone\nEvery time you leave the room this effect turns off until you press a shoot button again\n+0.7 Tears Up\n+3.0 Range Up\nHas no effect with Lilith's Incubus",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2905, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7474,6 +8718,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears are replaced with the ability to charge and fire a laser ring that travels across the room\nThe size of the ring will depend on how long you charge it\nThe laser ring does damage scaling based on charge, from 25% at minimum to 100% at max\nRings have infinite range and travel until they hit a wall\nMultiple Tech X stacks - every one taken adds another laser ring (doesn't affect your fire rate)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [2967, 0],
     type: "Passive, Tear modifier",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7486,6 +8732,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows you to create one brown tunnel and one blue tunnel in the floor, that can be used to teleport between wherever you placed each one\nThis item will let you port out of the devil room but not back into it\nVery useful in the boss rush and challenge rooms",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3046, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "Instant",
@@ -7498,6 +8746,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears now travel directly forwards following a beam of light, but will also move sideways based on your player movement\n+0.5 Tears Up\n+1.5 Range Up\n+0.16 Shot Speed Up\nAllows for more accurate correction when firing tears, as their direction can be controlled even after they have been fired\nIf you switch the direction in which you are firing tears, the beam of light and all your tears will also be transported to the new direction",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3098, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7510,6 +8760,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a random chance to apply a shrinking effect, causing enemies to shrink in size for 5 seconds and also run away from Isaac\nShrunk enemies can be crushed and killed by walking over them\nCounts as 1 of 3 mushroom items needed towards the Fun Guy transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3158, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7522,6 +8774,8 @@ export const items: Record<string, Item> = {
     content:
       "After firing tears for 3 seconds, a red cross appears on Isaac's head that, upon releasing the fire button, creates a black ring which deals a lot of damage to any enemies inside it\nThe ring deals damage equal to your tear damage rapidly to any enemies in contact with it, for a total of 30 ticks of damage\nYou have to keep the fire button held down for the full 3 seconds to cause this effect\nCounts as 1 of 3 evil items needed towards the Leviathan transformation",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Azazel",
+    image_url: "repentance-ab-items.png",
+    position: [3220, 0],
     type: "Passive",
     item_pool: "Devil Room, Greed Mode Devil Room",
     recharge_time: null,
@@ -7534,6 +8788,8 @@ export const items: Record<string, Item> = {
     content:
       "In addition to tears, Isaac now holds a spear infront of him which deals damage equal to 2 times your tear damage\nThe spear occasionally inflicts fear on enemies it damages.\nThe spear cannot be thrown like Mom's Knife but deals damage while it is in contact with an enemy",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3276, 0],
     type: "Passive",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7546,6 +8802,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now have a random chance to become sticky bombs, which will attach to enemies and explode after a few seconds\nThe bomb explosion deals your tear damage + 60\nExplosivo shots deal regular tear damage upon sticking to an enemy",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3336, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7558,6 +8816,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes all item pedestals to be chosen from a random item pool instead of the pre-defined ones which normally exist\nWhen picked up, drops between 1-6 random pickups on the floor\nMakes it possible to see items that have been rerolled away, preventing emptying the item pool and Breakfasting\nFixed item drops won't be replaced - e.g. Cube of Meat after defeating a Horseman\nChaos assigns a weight to item pools based on how many items are in the pool. The more items in a pool, the more likely that pool will be picked",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3396, 0],
     type: "Passive",
     item_pool: "Shop, Secret Room",
     recharge_time: null,
@@ -7570,6 +8830,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar grey spider that wanders around and allows you to see your tear damage and the health bars of all enemies\nThe spider will inflict a random status effect on any enemies it comes into contact with (e.g. slow, shrink, fear)\nSpider Mod will also randomly drop battery consumables or blue spiders when a room is completed\nFor the sake of simplicity for players, all damage values displayed are multiplied by 10 and rounded to the nearest number\nThis item is a reference to Spider853, creator of Spidermod for the original game and one of the lead developers that worked on Rebirth and its DLCs",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [3456, 0],
     type: "Passive",
     item_pool: "Shop, Greed Mode Shop",
     recharge_time: null,
@@ -7582,6 +8844,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and blocks tears\nIf a tear hits Farting Baby, there is a 10% chance for it to fart, with 3 possible effects: Charm, Poison or Knock back\nCharm deals 5 damage. Poison deals 5 damage initially and then 3.5\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Isaac",
+    image_url: "repentance-ab-items.png",
+    position: [3519, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -7594,6 +8858,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a familiar that follows Isaac.\nDouble tapping the fire button launches it forward, causing it to reroll the first monster, trinket, or pickup it hits\nGB Bug respawns after a room has been cleared\nCannot reroll bosses - instead just deals 8 contact damage",
     unlock: "Unlock this item by beating Greed Mode with Eden",
+    image_url: "repentance-ab-items.png",
+    position: [3579, 0],
     type: "Passive",
     item_pool: "Item Room, Secret Room, Greed Mode Shop",
     recharge_time: null,
@@ -7606,6 +8872,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D8 rerolls all of your stats\nWill only effect your damage, tears, range and speed stats\nEach stat is given a multiplier that applies after all other adjustments",
     unlock: "Unlock this item by beating Challenge #28 (Pride Day)",
+    image_url: "repentance-ab-items.png",
+    position: [3633, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Shop",
     recharge_time: "4 Rooms",
@@ -7618,6 +8886,8 @@ export const items: Record<string, Item> = {
     content:
       "Purity will boost one of Isaac's stats depending on the colour of the aura around him\nWhen you take damage, the aura will be removed and replaced with another random one when you enter the next room\nColour code is as follows:\nRed = +4.0 Damage\nBlue = -4 Tear Delay\nYellow = +0.5 Speed Up\nOrange = +3.0 Range Up",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Maggy",
+    image_url: "repentance-ab-items.png",
+    position: [3716, 0],
     type: "Passive",
     item_pool:
       "Item Room, Angel Room, Greed Mode Item Room, Greed Mode Angel Room",
@@ -7631,6 +8901,8 @@ export const items: Record<string, Item> = {
     content:
       "Adds a chance for a black ring to spawn around killed enemies, dealing damage to others that touch it\nThe ring damage scales with your tear damage\nThe chance for a ring to spawn scales with your luck stat",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Eve",
+    image_url: "repentance-ab-items.png",
+    position: [3681, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Greed Mode Devil Room",
     recharge_time: null,
@@ -7643,6 +8915,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Black Hearts\nWhen Isaac has no red hearts, this item gives Isaac the ability to fly. Every 40 seconds spent in the same room since last activating, when the timer displays 00, 20 or 40 seconds, a shield triggers, nullifying all types of damage for 10 seconds\nAs soon as Isaac has half a red heart or more, this item deactivates",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Lazarus",
+    image_url: "repentance-ab-items.png",
+    position: [3779, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -7655,6 +8929,8 @@ export const items: Record<string, Item> = {
     content:
       "While firing tears this item gives you a chance to fire an eye across the screen with a very slow shot speed, which will fire tears of its own in the same direction as Isaac\nThe evil eye shots will be destroyed if they come into contact with enemies or obstacles",
     unlock: "Unlock this item by beating Greed Mode with Cain",
+    image_url: "repentance-ab-items.png",
+    position: [3856, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7667,6 +8943,8 @@ export const items: Record<string, Item> = {
     content:
       "Each time Isaac kills an enemy, you get a temporary +0.5 damage up which lasts for the current room\nEach subsequent kill will stack further damage up to a maximum of +5 Damage Up after 10 kills\nThis item is the same principle as the Bloody Lust item from the original flash game",
     unlock: "Unlock this item by beating Greed Mode with Samson",
+    image_url: "repentance-ab-items.png",
+    position: [3916, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7679,6 +8957,8 @@ export const items: Record<string, Item> = {
     content:
       "After taking enough damage you will gain a permanent demon familiar\nPossible familiars include: Dark Bum, Demon Baby, Leech, Lil' Brimstone, Succubus, Incubus, Lil Abaddon, Twisted Pair\nThe effect is shown visually in 3 stages with the character's belly getting larger each time until it finally gives birth to a familiar.\nThe first and second familiars spawn after 15 hits, then 30 hits for the third and fourth\nCambion Conception cannot grant more than 4 familiars in total\nLilith starts with this item",
     unlock: "Unlock this item by beating ??? with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [3961, 0],
     type: "Passive",
     item_pool: "Devil Room, Greed Mode Devil Room",
     recharge_time: null,
@@ -7691,6 +8971,8 @@ export const items: Record<string, Item> = {
     content:
       "After picking up 15 hearts, Isaac gains a permanent angelic familiar and a soul heart drops\nPossible familiars include: Holy Water, Guardian Angel, Sworn Protector, The Relic and Seraphim\nIt is possible to get multiple followers by continuing to pick up hearts, at intervals of 15 hearts each\nAfter all 5 familiars have spawned, it will just drop a soul heart every 15 hearts collected",
     unlock: "Unlock this item by beating Boss Rush with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [4010, 0],
     type: "Passive",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7703,6 +8985,8 @@ export const items: Record<string, Item> = {
     content:
       "Two items now spawn in each of your item rooms, however only one can be taken and the other will disappear\nDoesn't work for half-sized item rooms",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4062, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -7715,6 +8999,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Soul Hearts\nA crown that replaces normal tears with blue diamond tears while you don't have any empty red heart containers or bone hearts\nWhile the effect is active, tears do double damage and have -0.30 Shot Speed\nThe crown will glow blue while active, if inactive it will appear grey\nThe effect will also deactivate for the rest of the current room when you take damage, regardless of your health",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4120, 0],
     type: "Passive",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7727,6 +9013,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases your money cap to 999\nWhen a room clear would otherwise yield no rewards, it now spawns 1-3 pennies\nPreviously this item would add an extra card/pill slot, however this was removed with the Repentance rebalance",
     unlock: "Unlock this item by beating The Chest floor with Keeper",
+    image_url: "repentance-ab-items.png",
+    position: [4182, 0],
     type: "Passive",
     item_pool: "Shop, Greed Mode Item Room, Greed Mode Shop",
     recharge_time: null,
@@ -7739,6 +9027,8 @@ export const items: Record<string, Item> = {
     content:
       "A flying familiar that bounces around the room with a damaging aura, dealing rapid damage to any enemies inside it and boosting Isaac's tear damage\nWhile standing in the black aura, Isaac has a temporary 1.5x damage multiplier (this will stack if you have more than one Succubus)\nThe aura deals 2.5 damage per tick or about 7.5 - 10 damage per second",
     unlock: "Unlock this item by beating The Lamb with Lilith",
+    image_url: "repentance-ab-items.png",
+    position: [4240, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -7751,6 +9041,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a different tear effect with every tear that you fire\nTear effects include: Anti-Gravity, Ball of Bandages (Lvl 4), Bumbo (Lvl 3), Continuum, Cupid's Arrow, Compound Fracture, Euthanasia, Explosivo, Eye of Greed, Fire Mind, Flat Stone, Flat Worm, God's Flesh, Godhead, Head of the Keeper, Holy Light, Hook Worm, Ipecac, Iron Bar, Jacob's Ladder, Knockout Drops, Lachryphagy, Little Horn, Lodestone, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mucormycosis, My Reflection, Mysterious Liquid, Ocular Rift, Ouija Board, Ouroboros Worm, The Parasite, Parasitoid, Polyphemus, Pop!, Proptosis, Pulse Worm, Ring Worm, Rotten Tomato, Rubber Cement, Serpent's Kiss, Sinus Infection, Spider Bite, Strange Attractor, Sulfuric Acid, Technology Zero, Tiny Planet, Trisagion and Wiggle Worm\nWith Dr. Fetus, this item will also cycle through random Bomb Modifiers (e.g. Butt Bombs, Hot Bombs)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4306, 0],
     type: "Passive, Tear Modifier",
     item_pool: "Item Room",
     recharge_time: null,
@@ -7763,6 +9055,8 @@ export const items: Record<string, Item> = {
     content:
       "When used will teleport you to another random room that has not been explored yet\nAfter all the normal rooms have been explored, the hierarchy of rooms chosen is: Super Secret Room, Shop, Item Room, Sacrifice Room, Dice Room, Library, Curse Room, Miniboss, Challenge Room, Bedroom, Arcade, Vault, Secret Room, Devil/Angel Room, I AM ERROR\nThis ordering means a Devil and I Am Error room can both be forced if all others have been visited\nIf used in a normal room with enemies it will teleport you out and back into the exact same room",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4377, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -7775,6 +9069,8 @@ export const items: Record<string, Item> = {
     content:
       "Walking in a circle will spawn a pentagram symbol on the floor, which deals 10 damage per tick to any enemies inside it\nThe trail of black powder left on the floor will quickly disappear, meaning you are limited on the size of the pentagram symbol you can create\nWill deal damage to flying enemies inside the pentagram",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4420, 0],
     type: "Passive",
     item_pool: "Devil Room, Demon Beggar",
     recharge_time: null,
@@ -7787,6 +9083,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, applies the charm effect to any enemies in close range and deals 5 damage\nCharmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac\nREPENTANCE - Kidney Bean now has a bigger effect radius, no longer deals damage to the enemies it's charming, and charge time has been reduced to 1 (from 2).",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4475, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "1 Rooms",
@@ -7799,6 +9097,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will rewind time and put you back in the previous room, in the same state you were in at that moment\nThis means any damage taken or consumables used in the current room will be reset back to the previous state\nCan be used to check the contents of an Item Room without affecting Planetarium spawn chances\nGlowing Hour Glass has no cooldown, but can only be used 3 times per floor",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4548, 0],
     type: "Active",
     item_pool: "Item Room, Shop, Greed Mode Item Room",
     recharge_time: "None (Max 3 use per floor)",
@@ -7811,6 +9111,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a large white halo around him, that deals a bit of damage to any enemies in contact with the ring\nEvery time an enemy bullet enters the ring, there is a chance it will reflect a homing tear back at the enemy",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4608, 0],
     type: "Passive",
     item_pool: "Angel Room, Greed Mode Angel Room",
     recharge_time: null,
@@ -7823,6 +9125,8 @@ export const items: Record<string, Item> = {
     content:
       "Coins have a 10% chance to be replaced with Sack. Bombs, keys, cards, runes and batteries have a 20% chance\nSpawns a sack when picked up\nCan lead to game-breaking combinations with the D20 due to the amount of consumables and batteries spawned by the item sacks\nREPENTANCE - Added to the Secret Room pool",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4666, 0],
     type: "Passive",
     item_pool: "Shop, Secret Room",
     recharge_time: null,
@@ -7835,6 +9139,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a cone of light infront of him that slows any enemies inside it and their tears\nThe light faces the direction that you are facing, not the direction you are firing\nRemoves Curse of Darkness for the current floor, if picked up on a floor where the curse is active",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4724, 0],
     type: "Passive",
     item_pool: "Shop, Greed Mode Item Room",
     recharge_time: null,
@@ -7847,6 +9153,8 @@ export const items: Record<string, Item> = {
     content:
       "A purple familiar fly that follows your exact movement on a 1 second delay and deals 2 contact damage to enemies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4763, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -7859,6 +9167,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, places an explosive TNT barrel next to you\nThe TNT barrel can be pushed and used to explode rocks or damage enemies\nIf used a second time in the same room while the last TNT barrel is still there, it will remotely explode the first TNT and not spawn another",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4918, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "1 room",
@@ -7871,6 +9181,8 @@ export const items: Record<string, Item> = {
     content:
       "+4 Soul Hearts\nFully restores your red health\nREPENTANCE - Added to the Gold Chest Pool",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4853, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -7883,6 +9195,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears become coins and now have a 5% chance to drop pennies on the floor upon successfully hitting an enemy\nHas a chance to drop when exploding a dead shopkeeper",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [4983, 0],
     type: "Passive",
     item_pool: "Dead shopkeeper",
     recharge_time: null,
@@ -7895,6 +9209,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar blue fly that will follow Isaac's movement pattern but delayed by 1 second\nPapa Fly will fire tears at nearby enemies that deal damage equal to Isaac's tear damage\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5101, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -7907,6 +9223,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar baby that will follow your movement pattern on a 2 second delay\nTears that pass through the baby will double up and gain x1.33 speed boost\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5048, 0],
     type: "Passive, Familiar",
     item_pool:
       "Item Room, Greed Mode Item Room, Devil Room, Greed Mode Devil Room",
@@ -7920,6 +9238,8 @@ export const items: Record<string, Item> = {
     content:
       "+5 bombs\nIsaac's normal bombs become pink and causes them to drop random pickups when they explode (e.g. keys, coins, bombs, trinkets)\nBombs have a chance to charm enemies\nThe chance for pickups to spawn decreases by 1% each time Glitter Bombs provides something (resets at the next floor). This is to prevent a syngery like Dr. Fetus or a Golden Bomb giving you infinite resources",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5177, 0],
     type: "Passive, Bomb Modifier",
     item_pool: "Item Room, Bomb Beggar",
     recharge_time: null,
@@ -7932,6 +9252,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's shadow will follow closely behind him and when it comes into contact with enemies, will spawn friendly dark charger mobs\nThe chargers deal contact damage to enemies, and will be killed if it is hurt too much\nChargers disappear upon entering a new room",
     unlock: "Unlock this item by beating Greed Mode with Judas",
+    image_url: "repentance-ab-items.png",
+    position: [5283, 0],
     type: "Passive",
     item_pool: "Devil Room, Greed Mode Devil Room",
     recharge_time: null,
@@ -7944,6 +9266,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you kill an enemy a fly will be added to the Jar, allowing you to stack up to 20\nUsing the Jar of Flies will release all the flies that are currently in the jar as friendly flies that will damage enemies\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5233, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Item Room, Greed Mode Shop",
     recharge_time: "Instant",
@@ -7956,6 +9280,8 @@ export const items: Record<string, Item> = {
     content:
       "A Loki familiar that follows Isaac and shoots tears 4 tears in a cross pattern, dealing a flat 3.5 damage each",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5331, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -7968,6 +9294,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a familiar glass of milk that follows him and spills on the floor upon taking damage\nAfter being spilt, the milk gives you a -2 Tear Delay (Tears up) for the rest of the room",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5384, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -7980,6 +9308,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D7 will restart the current room and bring back all enemies once again, enabling you to farm rewards that spawn at the end after beating the room\nCan be used to generate infinite consumable combinations, gaining as many coins/keys/bombs as you need\nThis item has no effect in Greed Mode, Challenge Rooms and rooms that had no enemies in originally\nIf used in a Boss Room or Angel/Devil Room, you get teleported to another random room, which is reset instead of the boss/angel/devil room you were in\nEnemies respawned by the D7 don't drop loot if they were champions and also don't grant score in daily run",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5447, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "3 rooms",
@@ -7992,6 +9322,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Soul heart\n+0.75 Tears Up\nIsaac size down\nMakes Isaac very small like a baby, reducing his hitbox size",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5513, 0],
     type: "Passive",
     item_pool: "Boss Room, Gold/Stone Chest",
     recharge_time: null,
@@ -8004,6 +9336,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Mom's Box will drop a random trinket on the ground\n+1 Luck while held\nWhile held, doubles the effect of trinkets which make sense to be doubled (e.g. +4 damage from Curved Horn instead of 2, -4 Tear Delay from Cancer instead of 2)",
     unlock: null,
+    image_url: "repentance-ab-items.png",
+    position: [5570, 0],
     type: "Active",
     item_pool: "Shop, Greed Mode Shop, Mom's Chest",
     recharge_time: "4 rooms",
@@ -8016,6 +9350,8 @@ export const items: Record<string, Item> = {
     content:
       "Randomly while firing tears, Isaac will stop firing and turn red, where he will charge and release a lot of 'tears' in one go. In the burst of tears is a kidney stone which deals a lot of damage\nREPENTANCE - Kidney Stone is no longer a speed downgrade",
     unlock: "Unlock this item by beating Challenge #29 (Onan's Streak)",
+    image_url: "repentance-ab-items.png",
+    position: [5643, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -8028,6 +9364,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, fires a huge Mega Satan laser for 15 seconds, dealing your tear damage * 5 per tick to anything in its path and pushing Isaac back by the force\nThe laser persists for the entire 15 seconds even between rooms and floors\nThis item appears in the Devil Room but is weighted to be about 5 times rarer than all other devil room items",
     unlock: "Unlock this item by beating Mega Satan with every character",
+    image_url: "repentance-ab-items.png",
+    position: [5724, 0],
     type: "Active",
     item_pool: "Devil Room, Greed Mode Devil Room",
     recharge_time: "12 rooms",
@@ -8040,6 +9378,8 @@ export const items: Record<string, Item> = {
     content:
       "A crown appears above your head and while at exactly 1 full red heart of health, you gain a +1.5 Range Up, +2.0 Tears Up and +0.20 Shot Speed Up\nAny time your health changes to be not exactly 1 red heart you lose the effect\nThis item does nothing with The Lost\nREPENTANCE - Dark Prince's Crown now grants more of an increase in rate of fire, and the bonus now breaks the soft tears cap.",
     unlock: "Unlock this item by defeating Delirium as Azazel",
+    image_url: "repentance-ap-items.png",
+    position: [0, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -8052,6 +9392,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a 6.66% chance to fire a razor blade which deals x4 damage\n+0.3 Tears Up\nThis item also turns your tears red, but does not change your actual damage stat or the damage your normal tears do\nThe chance to fire a razor blade depends on your luck stat, and at +14 luck you will fire a razor blade every time",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [67, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8064,6 +9406,8 @@ export const items: Record<string, Item> = {
     content:
       "With every 15 tears fired, Isaac will fire a cluster of 12 tears instead of your normal tear\nCauses your normal tears to fire out of one eye, which means tears will fire in a near-perfect line instead of slightly off-center\nREPENTANCE - Lead Pencil's tear barrage no longer deals double damage",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [134, 0],
     type: "Passive",
     item_pool: "Item Room, Gold/Stone Chest",
     recharge_time: null,
@@ -8076,6 +9420,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Damage Up\n+0.1 Speed Up\nWhen entering a room connected to a Secret Room or Super Secret Room, a howling sound will play\nWhen entering a room with a crawl space trapdoor in it, a barking sound will play",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [194, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8088,6 +9434,8 @@ export const items: Record<string, Item> = {
     content:
       "While firing, you gain a green aura that poisons any enemies which touch it. The poison deals your tear damage per tick, for 2 ticks\nHas no effect on Lilith, as she cannot fire tears",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [246, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8100,6 +9448,8 @@ export const items: Record<string, Item> = {
     content:
       "While firing tears constantly for 7.5 seconds, you spawn a poop cloud, which deals periodic damage to any enemies which come near it\nThe cloud deals damage equal to your base tear damage per tick, roughly 5 times per second\nClouds last 15 seconds before disappearing\nThe cloud can be pushed slightly by firing tears at it",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [296, 0],
     type: "Passive",
     item_pool: "Item Room, Beggar",
     recharge_time: null,
@@ -8112,6 +9462,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon taking damage, Isaac starts to bleed, leaving a trail of blood and spraying blood tears everywhere which deal damage to nearby enemies\nWhile bleeding, Isaac takes damage every 30 seconds\nThe blood sprays in the direction you are current firing, or just randomly near Isaac if not shooting your tears\nThe blood spray scales with your current tear damage and any future damage increases\nThis effect lasts until you pick up a red heart\nUpon taking damage, this item gives a 25% chance to drop a full red heart\nREPENTANCE - This entire item has been reworked",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [375, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8124,6 +9476,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Soul Heart\nEnemy bullets have a 25% chance to be deflected back at the enemy, which will hurt them and apply the concussive status effect, causing it to be stunned for a few seconds",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [425, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8136,6 +9490,8 @@ export const items: Record<string, Item> = {
     content:
       "Every 20th tear fired will also fire a golden coin tear at the same time. This tear turns enemies to gold for a few seconds and causes them to drop 1-4 coins if killed while golden (similar to the Midas' Touch item)\nWhen the Midas Touch tear effect triggers, it will remove 1 coin from your current total\nThe golden tear deals double your tear damage\nThe effect can still trigger even if you have no held coins",
     unlock: "Unlock this item by defeating Greedier Mode with Keeper",
+    image_url: "repentance-ap-items.png",
+    position: [482, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -8148,6 +9504,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops a random card on pickup\nDoubles the effect of most tarot cards. A slow pulsing outline HUD effect appears for cards that would be buffed by Tarot Cloth\nTo see the full list of Tarot Card effects, check out the Mechanics > Tarot Cloth page\nCounts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [542, 0],
     type: "Passive",
     item_pool: "Shop, Curse Room",
     recharge_time: null,
@@ -8160,6 +9518,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage, 10 high damage tears are fired in a circle around you (similar to the Tammy's Head effect)\nTear damage is equal to Isaac's tear damage + 25 flat damage\nAdditionally, has a chance to activate the Anemic effect when taking damage for 2 seconds\nSimilar to Tammy's Head, this item synergizes with a lot of items (i.e. with Brimstone it fires 10 lasers)",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [611, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8173,6 +9533,8 @@ export const items: Record<string, Item> = {
       "Turns your tears into bones, which shatter into 1-3 smaller bone shards upon hitting any object or enemy\nThe smaller bone shards deal damage equal to half your normal tear damage\n+0.38 Range Up",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Lazarus",
+    image_url: "repentance-ap-items.png",
+    position: [663, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8185,6 +9547,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows Isaac to carry two cards, runes or pills (or any combination of these) at the same time\nDrops a random card, pill or rune on pickup",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [717, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8196,6 +9560,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+0.38 Range Up\nDrops a lucky penny",
     unlock: "Unlock this item by beating Greedier Mode with The Lost",
+    image_url: "repentance-ap-items.png",
+    position: [809, 0],
     type: "Passive",
     item_pool: "Boss Room, Beggar, Gold/Stone Chest",
     recharge_time: null,
@@ -8207,6 +9573,8 @@ export const items: Record<string, Item> = {
     quality: 1,
     content: "+1 HP Up\nREPENTANCE - This was renamed from Moldy Bread",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [864, 0],
     type: "Passive",
     item_pool: "Boss Room, Beggar, Gold/Stone Chest",
     recharge_time: null,
@@ -8219,6 +9587,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Soul Heart\nEach time you take damage from any source, Cone Head has a 20% chance to prevent it from reducing your health\nIsaac flashes blue very briefly when damage is negated by this item",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [924, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8231,6 +9601,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops one random trinket on pickup\nGives you an extra trinket slot",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [979, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8243,6 +9615,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears have a 20% chance to be a booger instead, which stick on to enemies and deal periodic poison damage until they die\nEach tick of poison damage is equal to your normal tear damage\nEach booger persists for 10 seconds or until the enemy dies",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1042, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8255,6 +9629,8 @@ export const items: Record<string, Item> = {
     content:
       "Adds a chance to shoot a concussive tear, which will cause enemies to walk around dazed in confusion\nThe daze effect is effectively permanent for normal enemies, and has a much longer duration for bosses compared to other status effects\nMakes all rooms slightly darker\nThe visual effect of a Glaucoma tear is hard to notice, however it is slightly lighter than normal tears and is not a perfect circle shape",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1083, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8267,6 +9643,8 @@ export const items: Record<string, Item> = {
     content:
       "This item gives you a chance that instead of firing tears you will fire an egg sack, which slows enemies on hit and drops a pool of white slowing creep below them\nIf a parasitoid shot successfully hits an enemy, a blue friendly fly or spider is spawned\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.\nCounts as 1 of 3 spider items needed towards the Spider Baby transformation.",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1143, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8279,6 +9657,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes your tears to become piercing, allowing them to travel through enemies\nAfter hitting its first enemy, each tear will double in damage and gain a homing effect\n+0.38 Range Up",
     unlock: "Unlock this item by defeating Greedier Mode with Judas",
+    image_url: "repentance-ap-items.png",
+    position: [1203, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -8291,6 +9671,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.3 Damage Up\nEach tear has a chance to become acidic, allowing it to break rocks, pots and other breakable objects\nAcidic tears can also be used to open secret rooms",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1332, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8303,6 +9685,8 @@ export const items: Record<string, Item> = {
     content:
       "+2 Soul Hearts\nThis item will modify drops from room clearing and champion enemies based on your current player state. The priority list of what will drop from champion enemies in order is as follows:\nSoul Hearts - When you have no red heart containers and less than 2 soul hearts\nRed Hearts (Full hearts) - While at 0.5 red hearts\nKeys - When you have no keys\nBombs - When you have no Bombs\nRed Hearts (Full hearts) - When you have at least half a red heart container empty\nCoins - While at less than 15 cents\nKeys - When you have less than 5 keys\nBombs - When you have less than 5 bombs\nTrinkets - If you have no trinkets and there are no trinkets on the ground in the room\nSoul Hearts - When you have less than 6 total heart containers of any kind\nIf none of the above conditions are true, champions will resume dropping their regular pickups",
     unlock: "Unlock this item by defeating Greedier mode with Maggy",
+    image_url: "repentance-ap-items.png",
+    position: [1263, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -8315,6 +9699,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.35 Tears Up\nAllows you to fire tears diagonally by holding down two of the fire buttons at once\nIf you are using a gamepad, this item allows you to fire in any direction",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1373, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8327,6 +9713,8 @@ export const items: Record<string, Item> = {
     content:
       "The first enemy you kill in each new room will now explode and poison all nearby enemies, causing them to take periodic damage until they also die and explode\nIf you have lots of enemies near each other this can cause a chain reaction, killing lots of enemies in one go",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1436, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8339,6 +9727,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a finger which floats infront of him and points in the same direction he is facing or firing. The finger deals 10% of your normal damage to all enemies in the same direction that the finger is pointing\nThe finger will also deal damage to entities such as fires and poops\nApplies on-hit status effects such as the burning debuff from Fire Mind\nSpawns guppy flies if you have the Guppy transformation",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1498, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8352,6 +9742,8 @@ export const items: Record<string, Item> = {
       "Isaac gains a shadow familiar that will follow Isaac's movement pattern  by a 0.66 second delay and deal 5 contact damage to enemies per tick\nShade is absorbed by Isaac after dealing over 666 damage. This spawns friendly charger enemies and causes Isaac to deal 5 contact damage (same as the shade did). This effect stacks with multiple shades, scaling the contact damage each time",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Judas",
+    image_url: "repentance-ap-items.png",
+    position: [1535, 0],
     type: "Passive, Familiar",
     item_pool: "Devil Room, Curse Room",
     recharge_time: null,
@@ -8364,6 +9756,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac gains a cloud familiar that follows him and leaves a trail of tears on the floor which damages enemies for 2 damage per tick\nEnemies touching the cloud have a chance to activate the Crack the Sky effect, which spawns a light beam that deals damage equal to your tear damage + 20",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1585, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8376,6 +9770,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a small Hush familiar that bounces diagonally around the room dealing 2 contact damage per tick\nWhile you're firing tears Hushy will stop moving, which allows you to keep it in one place\nHushy will block enemy tears and projectiles",
     unlock: "Unlock this item by beating Hush with Apollyon",
+    image_url: "repentance-ap-items.png",
+    position: [1656, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8388,6 +9784,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a small Monstro familar, who's tears can be charged and released in a shotgun style effect, much like Monstro's main attack\nLil Monstro's tears each deal base damage (3.5) and do not scale with damage upgrades",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1714, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8400,6 +9798,8 @@ export const items: Record<string, Item> = {
     content:
       "A baby familiar that follows you and causes other familiars to follow it. It stops moving while Isaac is firing tears and upon releasing the fire button, King Baby will teleport back to your location\nKing Baby will always appear first in the queue of familiars\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.\nREPENTANCE - Familiars now automatically aim at enemies when being commanded by King Baby",
     unlock: "Unlock this item by beating Delirium on The Void floor with ???",
+    image_url: "repentance-ap-items.png",
+    position: [1774, 0],
     type: "Passive, Familiar",
     item_pool: "Shop",
     recharge_time: null,
@@ -8412,6 +9812,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that follows Isaac and charges forwards very slowly, dealing 2.7 damage per tick to any enemies it comes into contact with\nAlmost identical to the Little Chubby familiar, but this one moves much more slowly and deals less damage\nREPENTANCE - The damage tick rate on Big Chubby has been increased",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [1814, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8424,6 +9826,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item deals 9,999,999 damage to all enemies in the room and then kills you 3 seconds later\nThis is a single use active item, meaning it is destroyed after using it\nDoes not kill both phases of multi-phase bosses like Hush or Ultra Greed\nIf used to kill a boss, the kill still counts as a victory for post-it note completion marks, but the run will still get a game over\nDelirium's death animation takes longer than 3 seconds, meaning you will die before it can count as a completion mark. One exception to this is if you are playing as Lazarus or have Lazarus' Rags - you will respawn in the same room and get the kill\nPlan C is 5 times rarer than other items in the same item pool, making it less likely to appear",
     unlock: "Unlock this item by defeating Greedier Mode with Lazarus",
+    image_url: "repentance-ap-items.png",
+    position: [1941, 0],
     type: "Active",
     item_pool: "Shop, Devil Room, Curse Room, Red Chest, Demon Beggar",
     recharge_time: "One time use",
@@ -8436,6 +9840,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the D1 duplicates 1 random pickup in the current room. This works with all normal pickups, including cards, runes, chests and trinkets. Duplicated items might not be identical copies of the original - for example duplicating a card may spawn a different card\nJera runes and trinkets cannot be duplicated using the D1\nDuplicated chests can turn into another kind of chest randomly (e.g. Red chests)\nCan be used in a shop to duplicate pickups which have not yet been purchased, and take the duplicate pickup for free",
     unlock: "Unlock this item by defeating Greedier Mode with Isaac",
+    image_url: "repentance-ap-items.png",
+    position: [2008, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -8449,6 +9855,8 @@ export const items: Record<string, Item> = {
       "When used, Void will consume any pedestal items in the current room\nIf an active item is consumed, its effect will be added to Void's effect when used, allowing you to consume multiple items and combine their effects\nIf a passive item is consumed, you gain a small stat upgrade to a random stat\nPossible stat changes include: +1.0 flat damage, +0.5 tears, +0.2 speed, +0.2 shot speed, +0.5 range, +1.0 luck\nVoid does not work on devil deal or shop items unless they have been bought first\nUsing Void to absorb items in Boss Rush or Challenge Rooms counts as taking the items and will cause the encounter to start\nUsing Void on one time use items such as Mama Mega or Diplopia will cause their effect to instantly trigger and will not give you further uses through activating Void again",
     unlock:
       "Unlock this item by beating Delirium in The Void floor with Apollyon",
+    image_url: "repentance-ap-items.png",
+    position: [2068, 0],
     type: "Active",
     item_pool: "Devil Room, Angel Room",
     recharge_time: "6 rooms",
@@ -8461,6 +9869,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item freezes all enemies in the room until you press the fire button again or 30 seconds passes (whichever happens first)\nUnlike other active items, bosses are not immune to this effect\nTouching a frozen enemy will still hurt you\nThis item doesn not affect troll bombs - they will still explode",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2174, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -8474,6 +9884,8 @@ export const items: Record<string, Item> = {
       "Upon use, the Smelter will destroy your currently held trinket and give you the effect permanently, allowing you to stack up lots of different trinket effects\nHolding the Smelter increases the chance for a trinket to drop. (2% chance for the end of room drop to become a trinket)\nIf a trinket has been smelted, it won't appear a second time unless the entire trinket pool is exhausted or you restart the run (e.g. by doing a victory lap)",
     unlock:
       "Unlock this item by beating Mom's Heart on Hard Mode with Apollyon",
+    image_url: "repentance-ap-items.png",
+    position: [2126, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "6 rooms",
@@ -8486,6 +9898,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Compost doubles up the current number of blue flies and spiders you have\nWhen picked up, Compost will also destroy every consumable on the ground in the current room and turn each of them into a blue fly or blue spider\nIf you have no pickups on the ground in the current room and no other flies or spiders, Compost will spawn 1 blue fly or blue spider",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2217, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "2 rooms",
@@ -8498,6 +9912,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will distort all the sprites and music, rotating graphics 90 degrees and translating them diagonally up/left, while leaving the hitbox in the same place. This can make it confusing while navigating the room\nEnemy hitboxes remain the same\nDataminer will randomly increase or decrease one of your stats by a small amount when used\nGives you the Fruit Cake effect for the room when used, which will give a random tear effect with every tear fired\nAll visual and tear effects reset after leaving the room",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2279, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -8510,6 +9926,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will randomly change you into another character and remove the last item you picked up\nAll stat changes of the new character are applied (e.g. character damage multipliers)\nThis item can only reduce your heart containers and will not increase them if you change back into a character with more health. This means if you roll into The Lost, changing back to another character will leave you with only 1/2 of a soul heart\nCannot turn you into a character that isn't unlocked yet\nAlso includes Lazarus II (Lazarus' revived form) and Dark Judas (effect of Judas' Shadow)\nIt's also possible that this item will pick the same character, making it seem like nothing happened",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2339, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "6 rooms",
@@ -8522,6 +9940,8 @@ export const items: Record<string, Item> = {
     content:
       "A one time use item that when used will explode all objects (i.e. rocks, poop) in the room and deal 200 damage to all enemies in the current room, as well as every other room for the remainder of the floor\nAlso opens the boss rush door after Mom's Foot, blue womb door after Mom's Heart, secret rooms and super secret rooms\nLike all single-use items, this item cannot be absorbed and used multiple times by the Void item\nEntering a room with an angel statue will destroy it and automatically spawn one of the Angel mini bosses\nREPENTANCE - This now blows up machines, beggars and fireplaces too",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2385, 0],
     type: "Active",
     item_pool: "Shop, Bomb Beggar",
     recharge_time: "One time use",
@@ -8534,6 +9954,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item will fart, pushing enemies away and causing a wave of rocks to spawn that spread outwards from Isaac in a circle, dealing 10 damage per hit to any enemies caught in it\nCan be used to open secret rooms\nVisually this item is very similar to Butter Bean\nThe rock waves can destroy destructible objects, e.g. poop",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2451, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "10 seconds",
@@ -8547,6 +9969,8 @@ export const items: Record<string, Item> = {
       "When used, you have a 50% chance to double all items, consumables and chests in the current room\nIf the effect fails, all pickups and items are deleted and Crooked Penny spawns 1 coin\nIf there are no consumables currently on the floor, Crooked Penny spawns 1 coin\nThis item works with items which can be purchased such as shop items, allowing you to spawn a free version if the effect triggers\nIf used in a shop and the effect fails, a Restock box can be used to restore the shop items. This mechanic is very useful on Greed and Greedier modes",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Keeper",
+    image_url: "repentance-ap-items.png",
+    position: [2531, 0],
     type: "Active",
     item_pool: "Item Room, Shop, Beggar",
     recharge_time: "4 rooms",
@@ -8559,6 +9983,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use this item hurts Isaac without actually taking health away, allowing you to activate any items which trigger when taking damage without losing health",
     unlock: "Unlock this item by defeating Delirium on The Void floor with Eve",
+    image_url: "repentance-ap-items.png",
+    position: [2589, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "2 rooms",
@@ -8571,6 +9997,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item permanently removes one of your red heart containers and gives you a flat +0.2 Damage Up, the Anemic effect (+1.5 Range Up + red creep trail) and a Cube of Meat\nThe Anemic effect will only last for the current room, but the Cube of Meat and Damage Up are both permanent\nOnly works for red hearts and has no effect when used if you only have soul/black hearts\nHas no recharge time and can be used as often as you like\nIt is possible to generate multiple meatboys by stacking more than 4 Cubes of Meat",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2670, 0],
     type: "Active",
     item_pool: "Shop, Demon Beggar",
     recharge_time: "None",
@@ -8583,6 +10011,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item gives you the effect of a random item for the rest of the room\nUsing this item multiple times in the same room will replace the previous item's effect with a new one\nCertain items can be activated with this item which have unexpected effects and many items will do nothing\nItems do not grant consumable drops which would normally occur when that item is picked up\nMost flight-granting items have cosmetic effects only, and will not allow you to fly\nItems that usually give HP up will not give extra health when gained from Metronome",
     unlock: "Unlock this item by defeating Greedier Mode with Eden",
+    image_url: "repentance-ap-items.png",
+    position: [2730, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "2 rooms",
@@ -8596,6 +10026,8 @@ export const items: Record<string, Item> = {
       "This dice allows you to press the Drop key to cycle between all possible dice effects and pick one to use\nCharge time scales based on the chosen dice, updating every time you use it\nPossible dice include: D1, D4, D6, D8, D10, D12, D20, D100\nREPENTANCE - This item was completely reworked for Repentance and no longer forces a random dice use each time. You can pick which dice you want to use.",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Isaac",
+    image_url: "repentance-ap-items.png",
+    position: [2790, 0],
     type: "Active",
     item_pool: "Secret Room",
     recharge_time: "Varies",
@@ -8609,6 +10041,8 @@ export const items: Record<string, Item> = {
       "A one time use active item that when used, will spawn 2 random item pedestals from the item pool associated with the current room (e.g. in an Angel room, this will spawn 2 Angel room items)\nStarts with 0 charge and requires 12 charges to use",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Eden",
+    image_url: "repentance-ap-items.png",
+    position: [2850, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "12 rooms (one time use)",
@@ -8621,6 +10055,8 @@ export const items: Record<string, Item> = {
     content:
       "Every 6-7 rooms Acid Baby will drop a random pill\nThe first pill drops after 2 rooms\nEvery time you use a pill, Acid Baby will deal 10 damage to all enemies and poison them for 6-7 ticks\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.\nREPENTANCE - Poison effect is stronger, but Acid Baby's pill drop rate has been reduced to every 6-7 rooms (previously every 2-3 rooms)",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2910, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8633,6 +10069,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Luck Up\nA familiar fairy that will float around the room and highlight the location of any secret room doors, tinted rocks or trapdoors under rocks\nUpon entering a new room, if there is an undiscovered secret room or tinted rock, it will move directly to the point of interest, otherwise it will just randomly fly around the room\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation.",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [2960, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Key Beggar",
     recharge_time: null,
@@ -8645,6 +10083,8 @@ export const items: Record<string, Item> = {
     content:
       "For every empty red heart container, Isaac gains Damage Up and his body increases in size\nOnly works on full hearts - damage does not change if Isaac is missing 1/2 of a heart in one container\nHealing empty red heart containers will remove the damage increases\nHas no effect for The Lost and ???, as they cannot gain red heart containers (except for counting towards the Spun transformation)\nCounts as 1 of 3 syringe items needed towards the Spun transformation\nREPENTANCE - Adrenaline now grants an increasingly higher damage bonus the more empty heart containers Isaac has",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3025, 0],
     type: "Passive",
     item_pool: "Item Room, Demon Beggar",
     recharge_time: null,
@@ -8657,6 +10097,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac gains electric tears, which fire 1-2 sparks of electricty in random directions upon hitting any object or enemy\nThe electricity will chain between nearby enemies\nThe electricty deals half of your normal tear damage\nTear effects will still apply to your electricty sparks in a lot of cases. Spoon Bender will give them a homing effect, and status effects like fear/poison will spread onto all enemies the electricity chains to\nTears which fall naturally to the floor at max range do not generate sparks\nIt's possible to fire tears at a wall to create electricity that damages enemies on the other side of the wall",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3073, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8669,6 +10111,8 @@ export const items: Record<string, Item> = {
     content:
       "Each tear now has a small chance to be a spectral blue flame instead, which deals damage to enemies that come in contact with it\nThe fire will remain in place and shrink in size when deals damage to something. After dealing enough damage it will eventually disappear\nAt full size the flame deals 6x your tear damage, scaling down to 3x at its smallest size\nThe chance to for each tear to become a flame is affected by your luck stat and at +10 Luck it will activate 50% of the time (starts at 8.33% at +0 Luck)",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3140, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8682,6 +10126,8 @@ export const items: Record<string, Item> = {
       "Each tear now has a small chance (3.33%) to be a needle instead, which deals 3 times your tear damage\nIf a needle hits a non-boss enemy it will instantly kill it and will explode into a circle of 10 more needles\nThe 10 spawned needles will also deal 3 times your tear damage, but won't instantly kill enemies or explode into more needles\nThe chance to for each tear to become a needle is affected by your luck stat and at +15 Luck it will activate 50% of the time\nCounts as 1 of 3 syringe items needed towards the Spun transformation",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Lilith",
+    image_url: "repentance-ap-items.png",
+    position: [3183, 0],
     type: "Passive",
     item_pool: "Item Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -8694,6 +10140,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon entering a new room, Isaac will become camouflaged and enemies won't attack until you start firing tears\nBosses are immune to this effect\nCamo Undies grants +0.5 speed while cloaked\nWhen uncloaking, all nearby enemies take damage, and Isaac gains a brief tears + damage up",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3219, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8706,6 +10154,8 @@ export const items: Record<string, Item> = {
     content:
       "Any time a devil or angel room door opens after a boss, the other one will also spawn\nThe extra door will only spawn if a devil or angel room was randomly chosen to spawn already\nAfter entering one of the doors, the other will disappear\nIf there isn't an available wall for the extra door to spawn on, only one door will spawn (i.e. in a small boss room)",
     unlock: "Unlock this item by defeating Greedier Mode with Lilith",
+    image_url: "repentance-ap-items.png",
+    position: [3302, 0],
     type: "Passive",
     item_pool: "Devil Room, Angel Room",
     recharge_time: null,
@@ -8719,6 +10169,8 @@ export const items: Record<string, Item> = {
       "Gives you a 100% chance to find an Angel Room on every valid floor after defeating the boss\nDoesn't spawn an angel room on any floor where it is normally not possible to find one (e.g. Basement 1, Cathedral, Sheol etc.)\nKeeps the chance at 100% even after entering and leaving the angel room, meaning the door will not close after visiting\nMakes it impossible to find Devil Rooms again, unless you find a way to remove or reroll this item away, or find the Duality item",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Maggy",
+    image_url: "repentance-ap-items.png",
+    position: [3362, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -8731,6 +10183,8 @@ export const items: Record<string, Item> = {
     content:
       "A sack familiar that drops a sack every 5 or 6 rooms cleared (alternates between 5 and 6)",
     unlock: "Unlock this item by defeating Greedier Mode as Cain",
+    image_url: "repentance-ap-items.png",
+    position: [3403, 0],
     type: "Passive, Familiar",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -8743,6 +10197,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you an extra heart container for every 25 coins you are currently holding, up to a maximum of 4 extra HP at 99 coins held\nIf your coin counter goes below the required amount for a heart container, you will lose it again\nThis item works for the Keeper, allowing him to exceed his usual 2 health containers\nHowever, if Keeper drops to under 2 health coins as a result of Greed's Gullet, he is unable to use a HP Up to increase his health back to 2, and has to regain the lost coins to do so",
     unlock: "Unlock this item by beating Challenge #35 (Pong)",
+    image_url: "repentance-ap-items.png",
+    position: [3456, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -8755,6 +10211,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a random chance while firing tears to also fire a creep shot, which deals double your tear damage and places white creep on the floor infront of you that slows enemies down if they walk through it\nUnlike some similar tear effects, your luck stat does not alter the chance for this effect to activate\nA creep shot is also fired in a random direction after taking damage",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3514, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8767,6 +10225,8 @@ export const items: Record<string, Item> = {
     content:
       "While firing tears you have a 5% chance to fire a void tear. Void tears that touch enemies will spawn Big Horn, who appears and grabs them, instantly killing that enemy\nThe chance to for each tear to become a void tear is affected by your luck stat and at +15 Luck it will activate 20% of the time\nIsaac also grows a horn on his head, which causes you to deal contact damage to enemies by running into them (this effect deals base damage of 3.5 per tick)\nVoid tears from this item can also destroy blue/purple fires, spiked blocks and stone grimaces",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3597, 0],
     type: "Passive",
     item_pool: "Devil Room, Curse Room, Demon Beggar",
     recharge_time: null,
@@ -8779,6 +10239,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, will spawn a fly turret that doesn't move and fires tears at nearby enemies\nOnly persists for the current room\nThe fly's bullets deal 3.5 damage each and do not scale with your own damage stat\nREPENTANCE - Brown Nugget flies now have faster shot speed, and their damage has been increased to 3.5 (from 2).",
     unlock: "Unlock this item by defeating Ultra Greed as Apollyon",
+    image_url: "repentance-ap-items.png",
+    position: [3642, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "7 seconds",
@@ -8791,6 +10253,8 @@ export const items: Record<string, Item> = {
     content:
       "At the start of each new hostile room, you have a 20% chance to gain a random charmed familiar which will fight for you\nThe charmed enemy has its own health bar and will die if it takes enough damage\nCharmed enemies persist between each room and floor for as long as they stay alive\nAllows you to have more than one charmed familiar at a time if you can keep them alive",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3697, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -8803,6 +10267,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time one of your tears hits an enemy, it has a chance to start bleeding, which will cause it to take damage every 5 seconds\nThe bleed damage dealt by BackStabber is based on how quickly an enemy is moving (faster enemies take more damage)\nDamaging enemies from behind gives the bleed effect a 100% chance to apply\nWhile an enemy bleeds, they leave behind creep that damages other enemies\nThe tear that inflicts the bleed effect also deals double damage\nThe bleed effect cannot be applied to immune enemies (e.g. bosses and mini bosses)",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3745, 0],
     type: "Passive",
     item_pool: "Item Room, Devil Room",
     recharge_time: null,
@@ -8815,6 +10281,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Sharp Straw will deal damage to all enemies in the room\nThe damage dealt is equal to Isaac's current tear damage plus 10% of the enemy's max health\nEvery time this item deals damage, it has a 15% chance to drop 1/2 red hearts\nREPENTANCE - Sharp Straw is now only able to generate half red hearts (previously, it generated half soul hearts if the player had no heart containers)",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3805, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "8 seconds",
@@ -8827,6 +10295,8 @@ export const items: Record<string, Item> = {
     content:
       "A razor blade orbital that deals contact damage and applies the bleeding status effect to enemies and bosses, which will cause them to take damage every 5 seconds\nThe contact damage dealt by Mom's Razor is based on how quickly an enemy is moving (faster enemies take more damage)\nWhile an enemy bleeds, they leave behind creep that damages other enemies\nThis item DOES block enemy shots\nIts speed is not affected by the Guardian Angel item\nCounts as 1 of 3 mom items needed towards the Mom transformation",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3860, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room, Mom's Chest",
     recharge_time: null,
@@ -8839,6 +10309,8 @@ export const items: Record<string, Item> = {
     content:
       "An eye orbital that shoots tears that deal 3.5 damage and deals 2 contact damage per tick to enemies\nThe damage dealt by this orbital does not scale with damage upgrades\nIts speed is not affected by the Guardian Angel item\nREPENTANCE - Bloodshot Eye now blocks enemy shots, has increased shot speed and rate of fire, and now only shoots when lined up with enemies",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [3907, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8852,6 +10324,8 @@ export const items: Record<string, Item> = {
       "When used, spawns a charmed random white delirium version of a boss, that will fight for you and kill other enemies for the rest of the current room\nPossible bosses spawned include most bosses in the game\nSome bosses' effects can harm Isaac. For example if the spawned boss leaves creep, it can damage Isaac",
     unlock:
       "Unlock this item by defeating Delirium for the first time on any character",
+    image_url: "repentance-ap-items.png",
+    position: [3955, 0],
     type: "Active",
     item_pool: "Angel Room",
     recharge_time: "12 rooms",
@@ -8865,6 +10339,8 @@ export const items: Record<string, Item> = {
       "A familiar fly that orbits around a random enemy in the room until that enemy dies, dealing 2 contact damage to other enemies\nAngry Fly will move to the next enemy after the one it is currently orbiting dies, until the room is cleared, at which point it will return to orbiting Isaac\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Custom Phase\nCounts as 1 of 3 fly items needed towards the Beelzebub transformation",
     unlock:
       "Unlock this item by transforming into Beelzebub (Achieved by picking up 3 fly related items, see Transformations page for full list)",
+    image_url: "repentance-ap-items.png",
+    position: [4018, 0],
     type: "Passive, Familiar",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8877,6 +10353,8 @@ export const items: Record<string, Item> = {
     content:
       "A throwable active item that places a black hole on the ground where it lands, sucking all enemies into it for 6 seconds\nEnemies stuck inside the black hole take rapid damage over time\nThe Black Hole will also suck Isaac into it, but with a much weaker effect than to enemies\nThe Black Hole will destroy nearby obstacles such as rocks and pots\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Custom Phase",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4092, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -8889,6 +10367,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.1 Damage Up\n+1 Soul Heart\nAdds a random chance for an enemy in the current room to become charmed or feared briefly\nAdds a random chance to spawn a rainbow poop upon taking damage\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Electoon",
     unlock: "Unlock this item by breaking 5 rainbow poops",
+    image_url: "repentance-ap-items.png",
+    position: [4172, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8901,6 +10381,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes random enemies to 'lag' at random intervals, causing them to freeze in place for a second\nThe lag effect can also apply to tears, projectiles and consumables on the ground\nWhile held, this item has a 25% chance to double up any end of room drops (similar to the Contract from Below effect)\nIsaac's Luck stat affects how often the lag effect occurs\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Freezenification",
     unlock: "Complete 7 Daily Challenges (30 on console)",
+    image_url: "repentance-ap-items.png",
+    position: [4212, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -8913,6 +10395,8 @@ export const items: Record<string, Item> = {
     content:
       "A one-time use item that spawns a random item from the current room's item pool, with a chance for it to spawn Lump of Coal or The Poop instead\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Mills",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4278, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "One time use",
@@ -8925,6 +10409,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns a Sprinkler that rotates in a circle, spraying tears in all directions\nWill also synergize with some other items, such as Mom's Eye, Brimstone, Dr. Fetus, Tech X or Loki's Horns\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Kieran and Stewartisme",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4338, 0],
     type: "Active",
     item_pool: "Item Room",
     recharge_time: "4 rooms",
@@ -8937,6 +10423,8 @@ export const items: Record<string, Item> = {
     content:
       "+7 Bombs\nAllows you to rapidly place bombs on the ground\nAdded as part of the Afterbirth+ Booster Pack #1\nREPENTANCE - Bombs no longer knock each other around when the player has Fast Bombs, allowing for a more controlled line of explosions.",
     unlock: "Unlock this item by defeating Lil Horn 20 times",
+    image_url: "repentance-ap-items.png",
+    position: [4441, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -8949,6 +10437,8 @@ export const items: Record<string, Item> = {
     content:
       "When picked up, gives Isaac a random familiar which has a random sprite and tear effect\nThe familiar will be fully randomized again upon entering the next floor\nThe appearance is chosen from a random co-op baby sprite\nCounts as 1 of 3 familiar items needed towards the Conjoined transformation.\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ashkait and Scayze",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4392, 0],
     type: "Passive, Familiar",
     item_pool: "Shop",
     recharge_time: null,
@@ -8961,6 +10451,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that will transform into another random familiar every 10 seconds, copying their behaviour and effect\nCan be any other familiar, including (but not limited to) Lil Brimstone, Bob's Brain, BBF, Meatboy, Rotten Baby\nFamiliars appear as a white Delirium version of the original\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ashkait and Scayze",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4495, 0],
     type: "Passive, Familiar",
     item_pool: "Angel Room, Devil Room",
     recharge_time: null,
@@ -8974,6 +10466,8 @@ export const items: Record<string, Item> = {
       "This item gives you 1 bar of charge on your active item for every 15 enemies you kill\nAdded as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Ashkait and Scayze",
     unlock:
       "Unlock this item by picking up any 3 of these items in a single run: 9 Volt, The Battery, Car Battery, AAA Battery, Watch Battery",
+    image_url: "repentance-ap-items.png",
+    position: [4552, 0],
     type: "Passive",
     item_pool: "Greed Mode Item Room, Shop",
     recharge_time: null,
@@ -8986,6 +10480,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the coupon causes one random item in the shop to become free\nWhile held, guarantees a random item or pickup from the shop to be half price\nThe effect of this item also works in Devil Rooms, allowing you to take one random item for free\nAdded as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Plumbo",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4608, 0],
     type: "Active",
     item_pool: "Item room, Shop, Beggar",
     recharge_time: "6 rooms",
@@ -8998,6 +10494,8 @@ export const items: Record<string, Item> = {
     content:
       "An active that causes all enemy tears to be held in place and then thrown back away from Isaac for a period of 3 seconds\nThe aura from this item will repel nearby enemies\nAdded as part of the Afterbirth+ Booster Pack #2",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4668, 0],
     type: "Active",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: "6 seconds",
@@ -9010,6 +10508,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, the box will pick up a maximum of 6 items. Using the box again will put the picked up items back on the floor again, allowing you to move things between rooms\nCan move any of the following: Batteries, Items, Trinkets, Hearts, Keys, Bombs, Coins, Chests and more\nUsing Moving Box with Car Battery will trigger 2 interactions at the same time: First it will drop all items currently inside the box and secondly will then pick up the current room's contents\nWhen used in a room with 2 items you can choose from (e.g. There's Options, Double item room, Boss Rush) the Moving Box will pick only one of the items at random\nAdded as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by HurleyFarrill",
     unlock: "Unlock this item by using Pandora's Box in the Dark Room floor",
+    image_url: "repentance-ap-items.png",
+    position: [4716, 0],
     type: "Active",
     item_pool: "Shop",
     recharge_time: "4 rooms",
@@ -9022,6 +10522,8 @@ export const items: Record<string, Item> = {
     content:
       "Your tears will now be connected together by beams of electricity which deals damage to enemies they hit\nThe lasers from this item deal 30% of your current damage stat\nAdded as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Ashkait and Scayze\nREPENTANCE - Technology Zero's lasers now deal 30% of the player's damage stat per tick (from 100%)",
     unlock: "Unlock this item by having 2 technology items at once",
+    image_url: "repentance-ap-items.png",
+    position: [4781, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9034,6 +10536,8 @@ export const items: Record<string, Item> = {
     content:
       "Taking damage will spawn an orbital that rotates around Isaac, dealing contact damage to enemies and blocking enemy projectiles\nA maximum of 3 Leprocy orbitals can be active at one time\nUsing the orbital to deal damage to enemies can cause it to break\nAdded as part of the Afterbirth+ Booster Pack #2. Based loosely on the Steam Workshop mod created by Extreme Ninja Home Makeover with changes by Edmund McMillen",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4841, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9046,6 +10550,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a random Harbinger familiar that changes every 10 seconds\nEach harbinger behaves differently, based on any of the original 5 horsemen bosses\nREPENTANCE - The harbingers will also randomly spawn their relevant Locust variant. The locust fly will do different things for each harbinger - e.g. poison effect for Pestilence\nAdded as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by by Scayze and Ashkait",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [4901, 0],
     type: "Passive",
     item_pool: "Devil Room, Angel Room",
     recharge_time: null,
@@ -9058,6 +10564,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon use, this item summons a ghost near Isaac that will follow him around. Also summons a blue crosshair which can be moved around freely. After a few seconds, the crosshair will disappear, and the Ghost will do certain things based on what you targeted:\nItems, pickups, trinkets: Brings them to Isaac. Works in shops and devil deals as well, allowing you to take them for no cost. Stealing an item has a chance to fail (a buzzer sound will play if it fails)\nButtons: Presses the button\nEnemies: Attacks the enemy until either the ghost or the enemy dies\nDoors: Opens the door, even if it is locked\nSecret room entrances: Explodes and opens the entrance\nBoss rush door: Will open the Boss Rush door from either side, allowing you get into and escape the Boss Rush\nSlot machines, dead shopkeepers: Charges towards them and explodes them\nAdded as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by Jean-Alphonse",
     unlock: "Unlock this item by opening 20 locked chests",
+    image_url: "repentance-ap-items.png",
+    position: [4957, 0],
     type: "Active",
     item_pool: "Shop, Key Beggar",
     recharge_time: "4 rooms",
@@ -9070,6 +10578,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants a prism orbital with a large orbital radius\nIsaac's tears that pass through the prism split into four multi-colored tears\nDoes not deal contact damage to enemies that it passes over\nAdded as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by electoon and Erfly",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [5022, 0],
     type: "Passive, Orbital",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -9082,6 +10592,8 @@ export const items: Record<string, Item> = {
     content:
       "Replaces Isaac's tears with eyeballs that can bounce off of each other\nIssac's tears are no longer limited by range, and will instead dissipate when they stop moving or when hitting an enemy or obstacle\nAdded as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by Scayze and Ashkait",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [5082, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -9094,6 +10606,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon entering a room, a skull appears over a random enemy's head\nKilling the marked enemy will cause the skull to move to a different enemy\nIf all enemies in the room are cleared in the order they are marked, Isaac gains a random reward from one of the following: Soul heart, Key, Pill, Bomb, Nickel, +0.2 Speed, +0.5 Range, +0.5 Tears, +1 Flat damage or +1 luck\nKilling enemies in the wrong order will end the streak and deny you any extra rewards\nAdded as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod created by Merlo",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [5153, 0],
     type: "Passive",
     item_pool: "Devil Room",
     recharge_time: null,
@@ -9106,6 +10620,8 @@ export const items: Record<string, Item> = {
     content:
       "With Haemolacria, Isaac's tears become bloody and now fire by in the air in an arc\nUpon hitting the floor, an obstacle or enemy, the bloody tear will burst and fire lots of smaller tears at random directions around the impact point\nTears Down - (Tear delay * 2) + 10\nYour damage stat is unaffected by this item, however the large bloody tear does +31% of your tear damage and the smaller scattering tears deal 50-80% of your tear damage\nAdded as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Water Balloon) created by HiHowAreYou",
     unlock: "Unlock this item by picking up the Blood Clot item 10 times",
+    image_url: "repentance-ap-items.png",
+    position: [5213, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -9119,6 +10635,8 @@ export const items: Record<string, Item> = {
       "Isaac's tears slow down over time while moving across the room, and upon stopping completely or hitting an object will burst into 8 smaller tears which fire in all directions\nThis item will also allow you to 'feed' a tear with other tears. Doing so will cause it to increase in size, and also increase their damage and the damage of the burst tears\nOnce a tear is fed 5 times, it will immediately burst\nTears in the burst will deal half the damage the main tear would have\nTears which hit an enemy do not burst\nAdded as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Hungry Tears) created by Echo",
     unlock:
       "Unlock this item by taking 10 Tears Up items or pills in the same run",
+    image_url: "repentance-ap-items.png",
+    position: [5281, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -9131,6 +10649,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears are replaced with piercing holy flashes of light, which travel across the room in a similar speed to regular tears\nTrisagion tears deal roughly 33% of your usual tear damage, however due to the size of the holy flash it is likely to hit enemies multiple times\nTrisagion tears cause no knockback on enemies and simply travel through them (piercing tears)\nAdded as part of the Afterbirth+ Booster Pack #4. Based on the Steam Workshop mod (originally called Lightshot) created by Wyvern and TRPG",
     unlock: "Unlock this item by taking 25 Angel Room items",
+    image_url: "repentance-ap-items.png",
+    position: [5346, 0],
     type: "Passive",
     item_pool: "Angel Room",
     recharge_time: null,
@@ -9144,6 +10664,8 @@ export const items: Record<string, Item> = {
       "Gives you an extra active item slot\nPressing the CTRL key (R2 on PS4, RT on XB1, ZR on Switch) allows you to switch active items\nSome items that give temporary effects like The Nail might deactivate if switched to the other slot\nAdded as part of the Afterbirth+ Booster Pack #4",
     unlock:
       "Unlock this item by entering every Shop from the first floor up to Mom's Foot (Depths 2) in one run",
+    image_url: "repentance-ap-items.png",
+    position: [5406, 0],
     type: "Passive",
     item_pool: "Shop, Gold/Stone Chest",
     recharge_time: null,
@@ -9156,6 +10678,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Soul Heart\nHeals 1 red heart when picked up\nGrants you a shield when entering the Boss Room, which prevents damage from 1 hit, then disappears. This shield stacks with Holy Mantle, giving you 2 free hits\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ratlah",
     unlock: "Unlock this item by sleeping in 10 different beds",
+    image_url: "repentance-ap-items.png",
+    position: [5546, 0],
     type: "Passive",
     item_pool: "Shop",
     recharge_time: null,
@@ -9168,6 +10692,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this item will sacrifice up to 2 of your familiars (chosen at random), and spawn a random Devil Room item for each familar sacrificed this way\nIn addition to the familiars, any blue flies or spiders will be converted to 1 coin each\nIf Guardian Angel, Sworn Protector, or Seraphim is sacrificed, Satan will be extra happy and reward you with 2 black hearts\nIncubus won't be sacrificed if you're playing as Lilith\nIf used while you have no familiar, this item will do nothing and won't consume the item\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Niro",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [5473, 0],
     type: "Active",
     item_pool: "Devil Room, Curse Room",
     recharge_time: "Single use",
@@ -9180,6 +10706,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar with a charged attack, that spawns a line of creep on the floor which damages enemies that walk over it\nSpawns 1 random pill when picked up\nThe familiar and its creep will change randomly when Isaac uses a pill\nPossible creep types include green (deals damage), black (slows enemies), red (deals damage, forms a line with a larger puddle), yellow (deals damage, forms a short-range cone) and white (slows enemies, forms a ring)\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Strawrat and Aczom",
     unlock: "Unlock this item by dying to your own Ipecac explosion",
+    image_url: "repentance-ap-items.png",
+    position: [5636, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9192,6 +10720,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 3 random trinkets when picked up\nUpon taking damage, you have a random chance to consume one of your currently held trinkets, gaining its effect permanently\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Amethyst",
     unlock: "Unlock this item by using 5 Gulp! pills in one run",
+    image_url: "repentance-ap-items.png",
+    position: [5696, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -9204,6 +10734,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and, upon taking damage, will spawn a charmed enemy that will fight for you\nWhen the charmed enemy is spawned the egg will crack, but regenerate in the next room\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Strawrat and Aczom",
     unlock: "Unlock this item by spawning 3 charmed enemies in a single room",
+    image_url: "repentance-ap-items.png",
+    position: [5756, 0],
     type: "Passive",
     item_pool: "Item Room",
     recharge_time: null,
@@ -9216,6 +10748,8 @@ export const items: Record<string, Item> = {
     content:
       "Flat Stone causes your tears to bounce across the room\nWhenever a tear bounces, it deals splash damage to nearby enemies for 25% of your tear damage\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Maddogs",
     unlock: "Unlock this item by picking up Rubber Cement 5 times",
+    image_url: "repentance-ap-items.png",
+    position: [5810, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9229,6 +10763,8 @@ export const items: Record<string, Item> = {
       "+1 Bone Heart\nSpawns 3 red hearts on the ground when picked up\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock:
       "Unlock this item by defeating Mom's Heart on hard mode as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [5891, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -9241,6 +10777,8 @@ export const items: Record<string, Item> = {
     content:
       "This item gives you an orbital, which will reflect projectiles back at enemies\nUnlike some other orbitals, Slipped Rib doesn't deal contact damage to enemies\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock: "Unlock this item by defeating the Isaac boss as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [5956, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9253,6 +10791,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar which follows Isaac and spawns a white poop when you take damage\nThe white poop gives an aura that cuts your tear delay in half (Tears up) and has a chance to block damage\nThe aura disappears if the poop is destroyed\nAdded as part of the Afterbirth+ Booster Pack #5\nCounts as 1 of 3 poop items needed towards the Oh Crap transformation.\nCan cause white poops through other item effects such as A Card Against Humanity or Re-Lax pills.\nREPENTANCE - White poop from Hallowed Ground is now more durable, similar to golden poop. While standing in the aura, Isaac's damage is now also increased by 25%, and his tears gain a homing effect",
     unlock: "Unlock this item by defeating Hush as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6019, 0],
     type: "Passive",
     item_pool: "Item Room, Angel Room",
     recharge_time: null,
@@ -9265,6 +10805,8 @@ export const items: Record<string, Item> = {
     content:
       "A familiar that can be aimed with the fire buttons similar to the Finger item, dealing contact damage to enemies equal to your tear damage\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock: "Unlock this item by defeating Satan as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6089, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9278,6 +10820,8 @@ export const items: Record<string, Item> = {
       "When used, this item will spawn a bone orbital or charmed Bony for each enemy killed in the current room\nThe orbitals and charmed enemies persist when travelling between rooms\nBone orbitals break after dealing enough damage or blocking too many shots\nAdded as part of the Afterbirth+ Booster Pack #5\nCounts as 1 of 3 book items needed towards the Bookworm transformation.",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6179, 0],
     type: "Active",
     item_pool: "Item Room, Library, Devil Room",
     recharge_time: "6 rooms",
@@ -9290,6 +10834,8 @@ export const items: Record<string, Item> = {
     content:
       "A passive item that puts a yellow ring around Isaac. Enemies are frozen in place while touching the yellow ring\nEnemies touching the ring will stay permanently frozen until you move away, except for bosses which only get a temporary freeze effect after touching it\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock: "Unlock this item by defeating Ultra Greedier as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6230, 0],
     type: "Passive",
     item_pool: "Secret Room",
     recharge_time: null,
@@ -9302,6 +10848,8 @@ export const items: Record<string, Item> = {
     content:
       "+1 Bone Heart\n+0.7 Tears Up\nWhen you pick this item up, the Mysterious Paper trinket is spawned on the ground\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock: "Unlock this item by defeating Boss Rush as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6290, 0],
     type: "Passive",
     item_pool: "Boss Room",
     recharge_time: null,
@@ -9315,6 +10863,8 @@ export const items: Record<string, Item> = {
       "A familiar that flies across the room every few seconds while firing and damages enemies (2x your tear damage)\nCan also be used like the Boomerang to pick up consumables on the ground\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock:
       "Unlock this item by defeating ??? in The Chest floor as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6347, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode item Room",
     recharge_time: null,
@@ -9328,6 +10878,8 @@ export const items: Record<string, Item> = {
       "When picked up, this item replaces all of your red heart containers with 6 Bone Hearts\nEvery time you lose a bone heart, lots of bones fire in all directions damaging any enemies hit and you gain a permanent +0.5 Tears Up\nFor the Lost and Keeper characters, this item simply gives a permanent Tears Up\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock:
       "Unlock this item by defeating The Lamb in the Dark Room floor as The Forgotten",
+    image_url: "repentance-ap-items.png",
+    position: [6415, 0],
     type: "Passive",
     item_pool: "Item Room, Greed Mode Item Room",
     recharge_time: null,
@@ -9340,6 +10892,8 @@ export const items: Record<string, Item> = {
     content:
       "Obtained by beating the Basement 1 boss within 1 minute, then bombing the large shadow that appears in the middle of the starting room\nWhile held, Mom's Foot will stomp on you from above twice every few seconds, and she will continue to stomp for as long as you hold this item\nUsing the Broken Shovel will stop Mom stomping you for the rest of the current room (or current wave if you're in the boss rush or challenge room)\nBeating the Boss Rush while holding this item will drop the second half of the Broken Shovel, which combine to create Mom's Shovel, which is used to unlock The Forgotten character\nDropping the Broken Shovel will cause it to disappear if you leave the room\nNOTE: This item will not drop unless you have beaten The Lamb at least once\nAdded as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [6483, 0],
     type: "Active",
     item_pool: null,
     recharge_time: "4 rooms",
@@ -9352,6 +10906,8 @@ export const items: Record<string, Item> = {
     content:
       "Drops after beating the Boss Rush while holding the other half of the Broken Shovel (see previous item for more details)\nCombines with the first Broken Shovel piece to create Mom's Shovel (see next item for more details)\nAdded as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [6522, 0],
     type: "Passive",
     item_pool: null,
     recharge_time: null,
@@ -9364,6 +10920,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, spawns a trapdoor that leads to the next floor\nDigging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor\nUnlocks The Forgotten character when used on a mound of dirt that appears in a room in The Dark Room floor\nObtained by combining the two Broken Shovel pieces. The first piece drops by beating the first floor boss within 1 minute then bombing the shadow in the first room. The second piece drops after beating the Boss Rush as long as you are holding the first Broken Shovel piece (see previous 2 items for full details)\nAfter The Forgotten is unlocked, using it on the mound of dirt again just spawns a random type of chest\nAdded as part of the Afterbirth+ Booster Pack #5 and used in the quest to unlock The Forgotten character",
     unlock: null,
+    image_url: "repentance-ap-items.png",
+    position: [6590, 0],
     type: "Active",
     item_pool: null,
     recharge_time: "4 rooms",
@@ -9375,6 +10933,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Each time you get hit, you drop a coin or two",
     unlock: "Unlock this item by beating Challenge #15 (Slow Roll)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [0, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9387,6 +10947,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, Isaac has a significantly higher chance to find drops when breaking poops",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [64, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9399,6 +10961,8 @@ export const items: Record<string, Item> = {
     content:
       "Lowers your spacebar item charge rate by 1\nCannot lower the charge of your spacebar item below 1 room\nFor example, you will now be able to use a 3 room charge item after 2 rooms instead",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [127, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9411,6 +10975,8 @@ export const items: Record<string, Item> = {
     content:
       "Does the teleport effect every time you use your current spacebar item\nCan be used infinitely every room if you have Guppy's Paw and no red heart containers (Can be exploited to get to the boss room without clearing any other rooms)",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [176, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9422,6 +10988,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Higher chance for champion enemies while held",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [224, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9434,6 +11002,8 @@ export const items: Record<string, Item> = {
     content:
       "Has a partial Magneto effect and will attract coins, pulling them into Isaac from a distance\nDoes not attract other pickups like the full Magneto item does",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [268, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9446,6 +11016,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases your chances to find an Angel Room instead of a Devil Room\nNormally there is a 50%/50% chance of a Angel or Devil room with if a door spawns after the boss. The Rosary Bead changes this to a 75%/25% chance of an angel or devil room (respectively)",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [313, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9458,6 +11030,8 @@ export const items: Record<string, Item> = {
     content:
       "When Isaac takes damage, there is a chance he will gain the Gamekid effect, turning him invincible and dealing contact damage to any enemies he touches\nThe chance to activate the invincibility effect is affected by your luck stat and at +38 Luck it will activate every time you get hit",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [365, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9470,6 +11044,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears shrink and grow in size as they go across the room\nDoes not appear to affect your damage and only the hitbox size of tears",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [422, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9482,6 +11058,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now move in a wave fashion across the room\nGrants spectral tears\n+0.4 Tears up",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [499, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9494,6 +11072,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, tears move in a spiral pattern across the screen at high speed\nGrants spectral tears\n+0.4 Tears up\nEffectively increases your range due to the tear pattern",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [554, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9506,6 +11086,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears become flat and disc shaped giving them a larger hitbox\nHigher knockback effect with your tears",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [617, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9518,6 +11100,8 @@ export const items: Record<string, Item> = {
     content:
       "While this trinket is held, all items in the Shop cost 0 coins\nAfter buying any 0 cent item in the Shop, the trinket disappears",
     unlock: "Unlock this item by beating the Chest with Lazarus",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [707, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9530,6 +11114,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [757, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9541,6 +11127,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "33% chance to drop a coin for every rock that you destroy",
     unlock: "Unlock this item by destroying 100 rocks",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [812, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9553,6 +11141,8 @@ export const items: Record<string, Item> = {
     content:
       "Mom's Leg will now appear every 20 seconds and stomp down randomly in the room dealing 300 damage to enemies\nBe warned though, Mom's leg can also stomp and hurt Isaac too!",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [872, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9564,6 +11154,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Increases the chance for Black hearts to spawn",
     unlock: "Unlock this item by beating the Dark Room with Eve",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [955, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9576,6 +11168,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you a higher chance of eternal hearts\nContrary to popular belief, the Bible Tract doesn't allow Angel Rooms to appear after paying for a Devil Deal",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [989, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9588,6 +11182,8 @@ export const items: Record<string, Item> = {
     content:
       "Allows you to unlock golden chests without needing a key\nDoes not work on locked rooms\nCain starts with this trinket after donating 68 coins to the Greed Donation Machine",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1060, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9600,6 +11196,8 @@ export const items: Record<string, Item> = {
     content:
       "When you reach half a heart of life remaining, a black heart will spawn\nAfter three black hearts have spawned, the trinket dissapears",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1118, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9612,6 +11210,8 @@ export const items: Record<string, Item> = {
     content:
       "Imitates the behaviours of some of the other 'paper' items/trinkets\nA Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect\nHas a chance to trigger the Polaroid or Negative effect every time you take damage with half a red heart or less\nMissing Poster: Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost'\nIf held when you touch the chest after the Satan or Isaac fight and you don't have the relevant item to go to the next floor (Polaroid or Negative), you have a small chance to be taken there anyway",
     unlock: "Unlock this item by beating the Chest with Eden",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1169, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9624,6 +11224,8 @@ export const items: Record<string, Item> = {
     content:
       "80% of heart drops are replaced with keys\nHearts turn into black hearts where possible. This doesn't convert hearts that dropped before picking up this trinket, and doesn't apply to set heart drops, i.e. the eternal hearts that drop in angel themed super secret rooms\nAll heart drops from Ace of Hearts will be Black Hearts",
     unlock: "Unlock this item by beating Satan with Azazel",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1221, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9636,6 +11238,8 @@ export const items: Record<string, Item> = {
     content:
       "Dying in a sacrifice room while holding this trinket will unlock The Lost character\nAfter The Lost is unlocked, dying anywhere with this trinket will bring you back to life as The Lost and the trinket will be deleted\nWhen playing as Tainted Lost, you don't swap to being regular Lost, it simply acts as an extra life",
     unlock: "Unlock this item by beating Dark Room with Isaac",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1371, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9648,6 +11252,8 @@ export const items: Record<string, Item> = {
     content:
       "Everytime you pick up a coin, you fart, inflicting poison damage to nearby enemies\nGreatly increases the chance of coins dropping from poops",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1281, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9659,6 +11265,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Causes Isaac to create poops randomly",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1421, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9671,6 +11279,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears now move forwards at right angles, shifting left and right across the room\n+0.4 Tears up\nGrants spectral tears\nIncreases your range stat by +10.0 while held but due to the fire pattern, your tears travel a similar distance to normal",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1477, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9683,6 +11293,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.5 Shot Speed Up\nYour tears now whip across the room at a very high shot speed\nShot speed gives your tears more effective range, but doesn't increase your range stat directly",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1553, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9695,6 +11307,8 @@ export const items: Record<string, Item> = {
     content:
       "Has a 22.22% chance to respawn with 3 Soul hearts as Blue Baby when you die",
     unlock: "Unlock this item by beating Satan with Lazarus",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1611, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9706,6 +11320,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Everytime Isaac takes damage, one blue fly will spawn",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1671, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9718,6 +11334,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac's tears have a chance to poison enemies\nThe poison effect leaves a damage over time, which deals 4 or 6 damage per tick\nThe chance to poison enemies is affected by your luck stat and at +18 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1734, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9730,6 +11348,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac now has a chance to make a spectral and piercing tear\nThe chance to fire a piercing tear is affected by your luck stat and at +18 Luck it will activate every time",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1855, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9742,6 +11362,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, this trinket gives a random mushroom effect each room\nPossible mushrooms include: Mini Mush, Odd Mushroom (Thin), Odd Mushroom (Thick), The Compass",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1797, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9754,6 +11376,8 @@ export const items: Record<string, Item> = {
     content:
       "While at 1/2 a red heart of health, you gain a Little Steve familiar that follows you and shoots homing tears\nUmbilical Cord has a high chance to spawn a Gemini familiar for the room when Isaac takes damage. This effect is stackable",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1915, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9766,6 +11390,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [1969, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9777,6 +11403,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "+2 Damage Up",
     unlock: "Unlock this item by beating the Dark Room with Judas",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2024, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9788,6 +11416,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Gives Isaac a higher chance to find keys and chests",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2068, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9799,6 +11429,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "+0.15 Speed Up",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2119, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9811,6 +11443,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants a secondary chance of any non-specific heart drop turning into a soul heart",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2166, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9823,6 +11457,8 @@ export const items: Record<string, Item> = {
     content:
       "-2 Tear Delay (Tears Up)\nThe fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is\nBreaks the normal fire rate cap, allowing you to fire faster than the normal maximum",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2226, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9835,6 +11471,8 @@ export const items: Record<string, Item> = {
     content:
       "You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2278, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9847,6 +11485,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a higher chance to find bombs\nPicking up the Match Stick is the only way to remove the Tick trinket",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2331, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9859,6 +11499,8 @@ export const items: Record<string, Item> = {
     content: "+1 Luck Up while held",
     unlock:
       "Unlock this item by blowing up 20 shop keepers (this includes the ones in the secret room)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2365, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9871,6 +11513,8 @@ export const items: Record<string, Item> = {
     content:
       "When you take damage while on 1/2 a heart, you are teleported back to the previous room",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2416, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9882,6 +11526,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Gives Isaac a higher chance to find pills",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2474, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9894,6 +11540,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2534, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9906,6 +11554,8 @@ export const items: Record<string, Item> = {
     content:
       "After clearing a room, you have a chance to heal for half a red heart",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2583, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9918,6 +11568,8 @@ export const items: Record<string, Item> = {
     content:
       "When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect\nThe chance to damage enemies is affected by your luck stat and at +50 or more Luck it will activate 50% of the time",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2686, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9930,6 +11582,8 @@ export const items: Record<string, Item> = {
     content:
       "Everytime you pick up a penny, you have a 25% chance to spawn a red heart on the floor",
     unlock: "Unlock this item by beating the Chest with Samson",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2738, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9942,6 +11596,8 @@ export const items: Record<string, Item> = {
     content:
       "Everytime you pick up a coin, you have a 25% chance to spawn a bomb on the floor",
     unlock: "Unlock this item by beating Challenge #13 (Beans!)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2828, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9954,6 +11610,8 @@ export const items: Record<string, Item> = {
     content:
       "Everytime you pick up a coin, you have a 25% chance to spawn a key",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2881, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9967,6 +11625,8 @@ export const items: Record<string, Item> = {
       "When picking up a coin, you have a chance to automatically gain one more coin",
     unlock:
       "Unlock this item by playing the shell game in the arcade 100 times",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [2971, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9979,6 +11639,8 @@ export const items: Record<string, Item> = {
     content:
       "When you enter a boss room, immediately remove 15% health from the boss and restore 1 red heart\nThis trinket cannot be dropped by holding the drop key or picking up other trinkets. The only way to remove it is via having a second trinket slot (Mom's Purse, Belly Button) or absorbing it (Marbles, Smelter, Gulp! pill) or picking up the Match Stick trinket, which will burn it off you",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3060, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -9991,6 +11653,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage",
     unlock: "Unlock this item by beating the Boss Rush with Isaac",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3120, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10002,6 +11666,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "At the start of a new floor, you get an eternal heart",
     unlock: "Unlock this item by beating the Dark Room with Maggy",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3183, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10014,6 +11680,8 @@ export const items: Record<string, Item> = {
     content:
       "Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart",
     unlock: "Unlock this item by beating Satan with Judas",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3243, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10026,6 +11694,8 @@ export const items: Record<string, Item> = {
     content:
       "Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac",
     unlock: "Unlock this item by beating the Dark Room with Blue Baby",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3311, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10038,6 +11708,8 @@ export const items: Record<string, Item> = {
     content:
       "When you kill an enemy, you have a chance to get +0.5 damage up for the current room",
     unlock: "Unlock this item by beating the Dark Room with Samson",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3369, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10050,6 +11722,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass)",
     unlock: "Unlock this item by beating the Chest with Cain",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3414, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10062,6 +11736,8 @@ export const items: Record<string, Item> = {
     content:
       "When you kill an enemy, you have a chance to spawn a transparent Dead Bird familiar\nThe Dead Bird familiar deals 2 damage per tick to enemies while in contact with them",
     unlock: "Unlock this item by beating the Isaac boss with Eve",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3474, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10074,6 +11750,8 @@ export const items: Record<string, Item> = {
     content:
       "Replaces chest spawns with red chests\nDoesn't replace chests that have already spawned",
     unlock: "Unlock this item by beating Ultra Pride",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3519, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10086,6 +11764,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, tinted rocks and rocks with a crawlspace below them will flash white every 10 seconds",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3569, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10098,6 +11778,8 @@ export const items: Record<string, Item> = {
     content:
       "Turns all troll bombs into bombs which you can pick up and use\nSuper Troll bombs turn into 1+1 free double bomb pickups",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3629, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10110,6 +11792,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives your tears a random worm effect every few seconds\nThe possible tear effects include: Whip Worm, Ring Worm, Wiggle Worm, Flat Worm, Hook Worm, Pulse Worm, Tape Worm and Lazy Worm",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3678, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10122,6 +11806,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, Tape Worm doubles your range stat and halves your tear height stat",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3738, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10133,6 +11819,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "-0.4 Shot Speed Down",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3798, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10145,6 +11833,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you get hit, you have a chance to activate the D6, D20, D8, D10 or D12 effect",
     unlock: "Unlock this item by beating Greed Mode with ???",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3861, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10157,6 +11847,8 @@ export const items: Record<string, Item> = {
     content:
       "While held this trinket causes all pickups and enemies to move slowly towards you\nWill also attract the Mom's Foot and Ultra Greed door entities",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3926, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10169,6 +11861,8 @@ export const items: Record<string, Item> = {
     content:
       "Randomly Isaac will gain a camouflage for a few seconds and all enemies in the current room will have a confused status effect applied to them\nThis trinket can be used to open the door to Mausoleum in Depths II",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [3999, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10181,6 +11875,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a small chance to spawn a friendly attack spider while in a hostile room with enemies",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4061, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10193,6 +11889,8 @@ export const items: Record<string, Item> = {
     content:
       "Leaves a pool of green creep under all bombs you place, which damages enemies that walk over it",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4121, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10205,6 +11903,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a +6.66% chance of a getting a small battery after clearing a room\nGives a +2.0% chance for pickups to be small batteries\nGives a +5.0% chance to add an extra charge to your active item after clearing a room",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4197, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10217,6 +11917,8 @@ export const items: Record<string, Item> = {
     content:
       "Exploding bombs now have a chance to drop another bomb that you can pick up",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4257, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10228,6 +11930,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Higher chance to find crawl spaces when exploding rocks",
     unlock: "Unlock this trinket by beating Challenge #27 (Brains)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4314, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10240,6 +11944,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives a different trinket effect per room, randomly choosing between any of the other available trinkets in the game\nEach room is locked to a specific trinket effect, meaning if you exit and re-enter a room, that specific room will always have the same effect",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4437, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10252,6 +11958,8 @@ export const items: Record<string, Item> = {
     content:
       "Chests now have a 50/50 chance to either pay out with extra consumables or nothing/an enemy",
     unlock: "Unlock this trinket by beating Challenge #26 (I Rule)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4374, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10264,6 +11972,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears have a stronger knockback effect while this trinket is held",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4527, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10276,6 +11986,8 @@ export const items: Record<string, Item> = {
     content:
       "Increases the time that status effects stay on enemies. e.g. With poison effects, the damage over time poison will last for much longer",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4612, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10288,6 +12000,8 @@ export const items: Record<string, Item> = {
     content:
       "While held there is a small chance when using a tarot card or pill that a copy of it will be dropped on the floor next to you",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4699, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10300,6 +12014,8 @@ export const items: Record<string, Item> = {
     content:
       "+0.2 Damage Up for each 'evil' item you have\nItems classed as evil in this case are Black Candle, Ceremonial Robes, Abaddon, Goat Head, Match Book, Missing Page 2, Safety Pin",
     unlock: "Unlock this item by beating Greed Mode with Eve",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4774, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10312,6 +12028,8 @@ export const items: Record<string, Item> = {
     content:
       "Invincibility lasts longer after getting hit (Increased i-frames)\nThis makes it possible to use the Blood Donation machine twice from one hit of damage",
     unlock: "Unlock this item by beating Blue Womb (Hush) with Samson",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4820, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10324,6 +12042,8 @@ export const items: Record<string, Item> = {
     content:
       "+15% chance to get a double item room to spawn on the next floor\nIf the effect activates, two items spawn in your item room, however only one can be taken (Same effect as the More Options item)\nThe chance doubles to +30% with the effect from Mom's Box",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4878, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10336,6 +12056,8 @@ export const items: Record<string, Item> = {
     content: "Automatically opens all shop room doors for free",
     unlock:
       "Unlock this trinket by donating 666 coins to the Greed Donation Machine",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5018, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10348,6 +12070,8 @@ export const items: Record<string, Item> = {
     content:
       "Forces the Greed and Super Greed mini bosses to no longer appear in shops or secret rooms\nHolding Rib of Greed increase your chance to receive coin drops",
     unlock: "Unlock this trinket by beating Ultra Greed with Keeper",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [4941, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10360,6 +12084,8 @@ export const items: Record<string, Item> = {
     content:
       "Donating to a Donation Machine has a chance to heal Isaac for a full red heart or spawn a Beggar\nCan't spawn in greed mode",
     unlock: "Unlock this item by beating The Lamb boss with Keeper",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5058, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10371,6 +12097,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Destroying poops now gives you a blue fly",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5121, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10383,6 +12111,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, you heal for half a red heart every time you use a key to open a door or golden chest\nChanges all half red hearts into full hearts\nHearts dropped from Tainted Magdalene's mechanic will be always full red hearts",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5173, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10395,6 +12125,8 @@ export const items: Record<string, Item> = {
     content:
       "While this trinket is held you have a significantly lower chance to find spacebar/active items\nIt will cause passive items to spawn except when the game cannot generate any more passive items and will then instead choose spacebar/active items\nSome hard coded spacebar items from bosses and mini-bosses (i.e. Krampus Head) can still spawn\nBible drops caused by the Rosary item are not prevented by this trinket",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5238, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10406,6 +12138,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Causes your familiars to stay closer to each other",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5301, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10417,6 +12151,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Poop in the environment will now explode when destroyed",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5359, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10429,6 +12165,8 @@ export const items: Record<string, Item> = {
     content:
       "While held you have an increased chance for Black Poops to spawn, which deal damage to all enemies in the room when destroyed\nGives The Poop active item a chance to spawn a Black Poop too",
     unlock: "Unlock this trinket by defeating Greedier Mode with ???",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5541, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10442,6 +12180,8 @@ export const items: Record<string, Item> = {
       "Boosts speed, range, shot speed, tears and damage if they are above their base values by roughly +20%\nAffects stat bonuses from passive items, trinkets that are absorbed or in a second trinket slot, and permanent bonuses given by items such as Void",
     unlock:
       "Unlock this trinket by getting a 5-win streak in daily challenges (must have a score of above 0 on the score screen)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5416, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10454,6 +12194,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, gives the Skatole effect only in certain rooms, which will turn hostile flies to neutral and stop others from shooting\nAttack, Dart and Ring Flies turn into neutral Black Flies and Pooters and Fat Flies will no longer fire at you",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5485, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10466,6 +12208,8 @@ export const items: Record<string, Item> = {
     content:
       "Items and trinkets which generate blue flies and spiders will have double the effect, causing twice as many to spawn",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5603, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10478,6 +12222,8 @@ export const items: Record<string, Item> = {
     content:
       "Some tears will randomly become a black tooth, that deal double your normal tear damage and can poison enemies",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5724, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10490,6 +12236,8 @@ export const items: Record<string, Item> = {
     content:
       "Tears become spectral and travel in a huge spiral pattern\n+1.5 Range Up\n+0.4 Tears up",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5666, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10502,6 +12250,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage you have a very small chance to gain a Tonsil familiar, which follows you and blocks enemy projectiles\nThis effect can happen twice before the Tonsil trinket is destroyed\nDoes not deal contact damage to enemies",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5767, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10514,6 +12264,8 @@ export const items: Record<string, Item> = {
     content:
       "Your tears have a random chance to become booger tears\nBooger tears stick on to enemies and deal periodic poison damage until they die or 60 seconds passes. Each tick of poison damage is equal to your normal tear damage\nThe boogers will have a homing effect",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5833, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10526,6 +12278,8 @@ export const items: Record<string, Item> = {
     content:
       "Some random tears will gain the Rubber Cement effect and become bouncy",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5893, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10538,6 +12292,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants +0.25 Speed, +0.75 Range, +0.1 Shot Speed, +0.2 Tears, +0.5 Damage and +1 Luck when Isaac's active item is fully charged\nInfinite use items such as Potato Peeler count as charged and provide the bonus from this trinket",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [5953, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10550,6 +12306,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants +0.5 Speed, +1.5 Range, +0.3 Shot Speed, +0.4 Tears, +1.5 Damage when Isaac's active item is completely uncharged\nOne-time use items such as Mama Mega count as uncharged and provide the bonus from this trinket",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6003, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10562,6 +12320,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you another secret room on each new floor while held\nDoes not spawn more than one super secret room, only the normal secret room",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6053, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10574,6 +12334,8 @@ export const items: Record<string, Item> = {
     content:
       "When you have the same amount of coins, bombs and keys, half consumables turn into their doubled version\nThis effect works for any number of consumables, including 0 and 99, as long as the count for coins/keys/bombs is equal",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6101, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10586,6 +12348,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage you have a very small chance to spawn a random pedestal item\nWhen the effect triggers, the trinket is destroyed",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6164, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10598,6 +12362,8 @@ export const items: Record<string, Item> = {
     content:
       "Every time you take damage you have a very small chance to spawn the Lunch item, which gives +1 HP up\nWhen the effect triggers, this trinket is destroyed",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6217, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10609,6 +12375,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Increases the radius of any creep you produce",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6277, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10621,6 +12389,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, any damage taken remove red hearts first, before soul hearts, black hearts and rotten heart damage\nWhile at 1/2 of a red heart, it will begin to remove your other hearts again",
     unlock: "Unlock this item by beating Greedier mode with Eve",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6334, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10633,6 +12403,8 @@ export const items: Record<string, Item> = {
     content:
       "The Walnut has a chance to break when taking damage from an explosion. If it does, it will drop a random trinket, coin, heart and key\nThe Walnut trinket is destroyed once the effect activates",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6390, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10645,6 +12417,8 @@ export const items: Record<string, Item> = {
     content:
       "Causes any orbitals you have to stop moving while held\nStops shooting familiars from moving (including Lilith's Incubus)\nSome familiars with irregular movement are not affected by Duct Tape, such as Abel, BBF, Bumbo, Guppy's Hair Ball, Lil Gurdy, Punching Bag, Robo-Baby 2.0, Succubus",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6455, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10658,6 +12432,8 @@ export const items: Record<string, Item> = {
       "While held, shops will now appear on the womb floors (The Womb, Utero and Scarred Womb)",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Cain",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6515, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10671,6 +12447,8 @@ export const items: Record<string, Item> = {
       "While held, item rooms now appear on the womb floors (The Womb, Utero and Scarred Womb)\nCauses item rooms to appear on the Corpse floors",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with Samson",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6578, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10682,6 +12460,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "While held, restock boxes will always spawn in item rooms",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6628, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10695,6 +12475,8 @@ export const items: Record<string, Item> = {
       "Upon entering a room with enemies, spawns a Red Locust which detonates upon impact with enemies, dealing double tear damage for the impact of the Locust and 60 damage for the explosion\nCan be dangerous as the fly will target the nearest enemy, which can be close enough to catch Isaac in its blast radius",
     unlock:
       "Unlock this trinket by defeating Isaac in the Cathedral as Apollyon",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6688, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10707,6 +12489,8 @@ export const items: Record<string, Item> = {
     content:
       "At the start of each new hostile room you spawn a green attack fly, which will target a nearby enemy, deal double your tear damage and then poison them",
     unlock: "Unlock this item by beating Satan with Apollyon",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6748, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10719,6 +12503,8 @@ export const items: Record<string, Item> = {
     content:
       "At the start of each new hostile room you spawn a yellow attack fly, which will target a nearby enemy, deal double your tear damage and apply a slowing effect to it",
     unlock: "Unlock this trinket by defeating ??? in The Chest as Apollyon",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6808, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10731,6 +12517,8 @@ export const items: Record<string, Item> = {
     content:
       "Upon entering a room with enemies, spawns a Black Locust that deals quadruple Isaac's damage, applied as two hits of double damage",
     unlock: "Unlock this trinket by defeating The Lamb as Apollyon",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6868, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10743,6 +12531,8 @@ export const items: Record<string, Item> = {
     content:
       "At the start of each new hostile room you spawn 2-5 white attack flies, which will target a nearby enemy and deal double your tear damage to it",
     unlock: "Unlock this trinket by defeating Boss Rush as Apollyon",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6928, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10755,6 +12545,8 @@ export const items: Record<string, Item> = {
     content:
       "When killing an enemy, you have a very small chance to gain the ability to fly for the rest of the room",
     unlock: "Unlock this trinket by defeating Greedier Mode with Azazel",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [6988, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10767,6 +12559,8 @@ export const items: Record<string, Item> = {
     content:
       "Stem Cell heals Isaac's red heart containers to 50% each floor\nIf Isaac already has 50% health or more, it heals half of a heart instead",
     unlock: "Unlock this trinket by defeating Greedier Mode with Samson",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7078, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10779,6 +12573,8 @@ export const items: Record<string, Item> = {
     content:
       "Fully recharges your active item at the start of each boss fight\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Zaratus",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7138, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10791,6 +12587,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives you the Holy Mantle shield effect at the start of every new floor, which protects you from the next hit of damage you take\nDoes not recharge until the start of the next floor\nStacks with the effects from Holy Mantle and Blanket, but it does not stack with Holy Card\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Ep and Mills",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7187, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10803,6 +12601,8 @@ export const items: Record<string, Item> = {
     content:
       "Using your active item while holding this trinket will drop it back on a pedestal on the ground\nAlso after taking damage, you have a very small chance to drop one of your passive items\nOne-time use active items will be consumed and not dropped\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by MarkusLeben and iguesti",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7236, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10815,6 +12615,8 @@ export const items: Record<string, Item> = {
     content:
       "Holding this trinket will cause the Angel mini bosses to drop normal items instead of Key Pieces\nAdded as part of the Afterbirth+ Booster Pack #2, designed by Edmund McMillen",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7313, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10828,6 +12630,8 @@ export const items: Record<string, Item> = {
       "While held, the last door Isaac went through stays open, allowing him to leave the room even if enemies are in it\nThis trinket works on boss rooms (except Ultra Greed) and devil rooms containing Krampus, allowing you to exit out mid-fight\nDoes not drop in Greed mode",
     unlock:
       "Unlock this trinket by blowing up doors and secret room walls 50 times",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7358, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10840,6 +12644,8 @@ export const items: Record<string, Item> = {
     content:
       "After being picked up, a yellow laser chain now flows through Isaac's familiars\nAdded as part of the Afterbirth+ Booster Pack #4 and based on the Steam Workshop mod created by Strawrat and Aczom",
     unlock: null,
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7448, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10852,6 +12658,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, spawns +1 friendly blue fly every time you pick up a coin\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Eufuu",
     unlock: "Unlock this trinket by having a lot of blue flies at once",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7527, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10865,6 +12673,8 @@ export const items: Record<string, Item> = {
       "While held this trinket gives your familiars homing shots\nAdded as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Ink Tears",
     unlock:
       "Unlock this item by having two items or effects that grant homing shots at once (e.g. Spoon Bender, Telepathy for Dummies, I - The Magician)",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7605, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10877,6 +12687,8 @@ export const items: Record<string, Item> = {
     content:
       "While held, gives you a 5% chance to gain a bone heart everytime you take damage\nAdded as part of the Afterbirth+ Booster Pack #5",
     unlock: "Unlock this trinket by defeating Ultra Greed as The Forgotten",
+    image_url: "repentance-rebirth-trinkets.png",
+    position: [7696, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10889,6 +12701,8 @@ export const items: Record<string, Item> = {
     content:
       "Teleports the player to the first room of the current floor\nThere is a guaranteed Fool card in the Depths 2, if you bomb the skull with an X on it. This is intended give you a guaranteed way to teleport out of the Mom's Foot fight, for accessing the path to the Mausoleum floor",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [50, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10901,6 +12715,8 @@ export const items: Record<string, Item> = {
     content:
       "For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a purple appearance.",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [89, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10913,6 +12729,8 @@ export const items: Record<string, Item> = {
     content:
       "Summons Mom's foot which will stomp on a random enemy in the current room, dealing 300 damage\nIf no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [128, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10925,6 +12743,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the player the Whore of Babylon effect for the current room, increasing damage and speed",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [167, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10936,6 +12756,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Teleports the player to the Boss room on the current floor",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [206, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10947,6 +12769,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Spawns 2 Soul hearts on the floor",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [245, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10959,6 +12783,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 2 red hearts on the floor\nIf used in a Super Secret Room containing a Black Heart or Eternal Heart, it will spawn those types of hearts instead",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [284, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10971,6 +12797,8 @@ export const items: Record<string, Item> = {
     content:
       "Grants the same effect as 'My Little Unicorn', which makes Isaac invincible and deal 40 contact damage to enemies per hit",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [323, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10983,6 +12811,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [362, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -10995,6 +12825,8 @@ export const items: Record<string, Item> = {
     content:
       "Teleports the player to the Shop\nOn or below the Womb, this acts as a random teleport, since there are no shops on those floors",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [401, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11006,6 +12838,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Spawns a Slot Machine or a Fortune Machine",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [441, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11018,6 +12852,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the player the Magic Mushroom effect, which increasing size and all stats by 1 for the current room\nIf you use the Strength card with 12 heart containers, it will take you down to 11 when you leave the room",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [480, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11030,6 +12866,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room\nThis card is useless if you have any item which allows you to permanently fly",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [519, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11042,6 +12880,8 @@ export const items: Record<string, Item> = {
     content:
       "Deals 40 damage to all enemies in the room in a similar style to the Necronomicon",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [558, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11053,6 +12893,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Spawns a Blood Donation Machine",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [597, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11065,6 +12907,8 @@ export const items: Record<string, Item> = {
     content:
       "Gives the Book of Belial effect for the current room, increasing damage",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [636, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11077,6 +12921,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns some troll bombs at random locations in the current room\nEach bomb deals 60 damage (normal bomb damage",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [675, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11089,6 +12935,8 @@ export const items: Record<string, Item> = {
     content:
       "Teleports the player to the Item Room\nOn or below the Womb, this acts as a random teleport, since there are no item rooms on those floors",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [714, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11100,6 +12948,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Teleports the player to the Secret Room",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [753, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11112,6 +12962,8 @@ export const items: Record<string, Item> = {
     content:
       "A card with three uses: A full heal, deals 100 damage to all enemies in the current room and reveals the entire map for the current floor (Treasure Map + The Compass)",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [792, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11124,6 +12976,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns a beggar\nHas a chance to be a demon beggar\nKilling a Devil Beggar, Key Master, or Shell Game Beggar gives you an increased chance of finding Angel rooms instead of Devil rooms. See the dedicated Devil room page for more details",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [831, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11136,6 +12990,8 @@ export const items: Record<string, Item> = {
     content:
       "Reveals the entire map and shows the icons for every room which has one\nThis is completely useless if you currently have both the Treasure Map and The Compass",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [870, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11148,6 +13004,8 @@ export const items: Record<string, Item> = {
     content:
       "Doubles the number of Bombs you have\nIf you have no bombs, it gives you two",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [948, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11160,6 +13018,8 @@ export const items: Record<string, Item> = {
     content:
       "Doubles the number of coins you have\nIf you have no coins, it gives you two",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [1026, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11172,6 +13032,8 @@ export const items: Record<string, Item> = {
     content:
       "Doubles the number of keys you have\nIf you have no keys, it gives you two",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [909, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11184,6 +13046,8 @@ export const items: Record<string, Item> = {
     content:
       "Doubles your current red hearts up to full health\nThis card is useless for the Bluе Baby",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [987, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11196,6 +13060,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, turns all pickups, chests and non-boss enemies in the room into Bombs",
     unlock: "Unlock this item by getting a 3 win streak",
+    image_url: "ap-cards2.png",
+    position: [2325, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11208,6 +13074,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, turns all pickups, chests and non-boss enemies in the room into Coins",
     unlock: "Unlock this item by defeating The Lamb in under 20 minutes",
+    image_url: "ap-cards2.png",
+    position: [2375, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11221,6 +13089,8 @@ export const items: Record<string, Item> = {
       "When used, turns all pickups, chests and non-boss enemies in the room into Keys",
     unlock:
       "Unlock this item by defeating The Lamb without taking hearts, coins and bombs",
+    image_url: "ap-cards2.png",
+    position: [2275, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11234,6 +13104,8 @@ export const items: Record<string, Item> = {
       "When used, turns all pickups, chests and non-boss enemies in the room into Hearts",
     unlock:
       "Unlock this item by defeating any floor after Basement I with only half a heart of health (works as The Lost)",
+    image_url: "ap-cards2.png",
+    position: [2225, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11245,6 +13117,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Teleports you to the Devil Deal Room on the current floor",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [1065, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11257,6 +13131,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, instantly kills you and spawns 10 pickup on the floor\nEach of the 10 things spawned can be any type of consumable or sometimes a pedestal item (up to a maximum of 3 pedestal items)\nAny pedestal item created by Suicide King will be related to the room where it was used, meaning that using it in the Angel room will spawn Angel room items",
     unlock: "Unlock this card by beating Challenge #7 (Suicide King)",
+    image_url: "ap-cards2.png",
+    position: [1262, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11268,6 +13144,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Drops 1-20 full red hearts on the floor",
     unlock: "Unlock this card by defeating Mega Satan as Tainted Magdalene",
+    image_url: "repentance-cards_final.png",
+    position: [180, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11280,6 +13158,8 @@ export const items: Record<string, Item> = {
     content:
       "A card which can be thrown as a projectile directly infront of Isaac, instantly killing anything it hits, including most bosses\nIf thrown at a multi-phase boss with multiple forms such Satan, Mega Satan or Hush it will only kill that particular phase of the boss\nIf thrown at a multi-phase boss that works from a single health bar such as Isaac, ??? or The Lamb, it will die instantly\nWill not kill Delirium or The Beast\nWill destroy rocks and poop in its path\nCan also be thrown against a door to open it (Doesn't work against Mega Satan's door)\nThrowing this at the Great Gideon boss will trigger a special animation and reveal a crawl space containing several chests and items!",
     unlock: "Unlock this card by beating Challenge #9 (Demo Man)",
+    image_url: "ap-cards2.png",
+    position: [1103, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11293,6 +13173,8 @@ export const items: Record<string, Item> = {
       "Temporarily makes Isaac huge, giving him +7 Damage Up and +30 Range Up for the rest of the current room\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140",
     unlock:
       "Unlock this item by getting 5 items or consumables that increase your size, e.g. 'One Makes you Larger' pills, Magic Mushroom etc",
+    image_url: "ap-cards2.png",
+    position: [2918, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11305,6 +13187,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns 3 random cards on the floor when used\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [2968, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11318,6 +13202,8 @@ export const items: Record<string, Item> = {
       "When used, this card will slow down enemies, Isaac's tears by -1 Shot Speed, but speed up Isaac's movement speed by +0.50 for the rest of the current room\nAdded as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Coper140",
     unlock:
       "Unlock this item by getting both the Broken Watch and the Stop Watch in your collection",
+    image_url: "ap-cards2.png",
+    position: [3018, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11330,6 +13216,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, removes the price tag from all items in the current shop or devil deal, making everything free\nThe effect of the Credit Card only lasts for the current room",
     unlock: "Unlock this card by beating Challenge #10 (Cursed!)",
+    image_url: "ap-cards2.png",
+    position: [1142, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11342,6 +13230,8 @@ export const items: Record<string, Item> = {
     content:
       "Displays a random cryptic message on the screen similar to the fortune machine ones. One of the following messages may show:\n'Rooms may yield more than you expect'\n'Some doors require a blessing. Carry them with you'\n'The walls will harden over time. Time is the essence'\n'Sleeping gatekeepers will need to be awoken with a loud sound'\n'A piece of paper is your guide'\n'Deny his gifts to attain your reward'\n'A dark market lies under your feet\n'Chub dislikes smoke!'",
     unlock: "Unlock this card by beating Challenge #11 (Glass Cannon)",
+    image_url: "ap-cards2.png",
+    position: [1182, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11354,6 +13244,8 @@ export const items: Record<string, Item> = {
     content: "When used, fills the entire room with poop!",
     unlock:
       "Unlock this card by beating Challenge #12 (When Life Gives You Lemons)",
+    image_url: "ap-cards2.png",
+    position: [1222, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11366,6 +13258,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, will open all doors in the current room, similar to a one-time use of Dad's Key",
     unlock: "Unlock this card by beating Challenge #22 (Speed)",
+    image_url: "ap-cards2.png",
+    position: [1858, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11378,6 +13272,8 @@ export const items: Record<string, Item> = {
     content:
       "When used this card will activate a use of your spacebar item for free",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [1906, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11390,6 +13286,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this rune will destroy all breakable objects in the current room, such as poop, rocks, secret room entrances\nThis includes Key Blocks",
     unlock: "Unlock this card by beating Challenge #1 (Pitch Black)",
+    image_url: "ap-cards2.png",
+    position: [1352, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11402,6 +13300,8 @@ export const items: Record<string, Item> = {
     content:
       "When used this rune will double all pickups on the floor in the room\nCreates copies of pickups in the Shop which can be taken for free, even if you haven't purchased them yet\nCan be used to double the number of item chests in the first room of the final Chest / Dark Room floors\nCloned chests have the same types of items as the first one\nCannot be used to clone trinkets or other Jera runes",
     unlock: "Unlock this card by beating Challenge #2 (High Brow)",
+    image_url: "ap-cards2.png",
+    position: [1402, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11414,6 +13314,8 @@ export const items: Record<string, Item> = {
     content:
       "Creates a trapdoor on the floor\nDigging in certain spots with objects or markings on the floor will guarantee a crawlspace once per floor",
     unlock: "Unlock this card by beating Challenge #3 (Head Trauma)",
+    image_url: "ap-cards2.png",
+    position: [1452, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11426,6 +13328,8 @@ export const items: Record<string, Item> = {
     content:
       "Removes the curse which is in effect on the current floor (except Curse of the Labyrinth)\nCan also cure the effect of the Amnesia pill\n+1 Soul Heart",
     unlock: "Unlock this card by beating Challenge #4 (Darkness Falls)",
+    image_url: "ap-cards2.png",
+    position: [1502, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11438,6 +13342,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, reveals the entire map including all the secret room locations and other icon rooms",
     unlock: "Unlock this card by beating Challenge #5 (The Tank)",
+    image_url: "ap-cards2.png",
+    position: [1552, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11450,6 +13356,8 @@ export const items: Record<string, Item> = {
     content:
       "Rerolls all pedestal items in the current room (One time use of the D6)",
     unlock: "Unlock this card by beating Challenge #6 (Solar System)",
+    image_url: "ap-cards2.png",
+    position: [1602, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11461,6 +13369,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Summons 3 blue friendly spiders and 3 blue flies",
     unlock: "Unlock this card by beating Challenge #20 (Purist)",
+    image_url: "ap-cards2.png",
+    position: [1652, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11473,6 +13383,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives you an invincibility effect which lasts for 20 seconds",
     unlock: "Unlock this card by beating Challenge #8 (Cat Got Your Tongue)",
+    image_url: "ap-cards2.png",
+    position: [1302, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11485,6 +13397,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, gives a random Mystic rune effect\nPossible effects include: Algiz, Ansuz, Berkano, Dagaz, Ehwaz, Hagalaz, Jera, Perthro\nAlso has a 25% chance to spawn another Blank Rune upon use",
     unlock: "Unlock this card by beating Challenge #30 (Guardian)",
+    image_url: "ap-cards2.png",
+    position: [2021, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11497,6 +13411,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this rune deals 40 damage to all enemies in the room and consumes all pedestal items in the room, giving you a random stat increase for each item consumed\nAlso consumes all pickups in the room and turns them into blue flies and spiders",
     unlock: "Unlock this item by beating Greedier mode as Apollyon",
+    image_url: "ap-cards2.png",
+    position: [2472, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11509,6 +13425,8 @@ export const items: Record<string, Item> = {
     content:
       "Activates a random rune effect. The effect is weaker than normal runes.\nThese only appear if not all runes have been unlocked yet.",
     unlock: null,
+    image_url: "repentance-cards_final.png",
+    position: [49, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11520,6 +13438,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Gives a one-time use of the D6 and D20 effects at the same time",
     unlock: null,
+    image_url: "ap-cards2.png",
+    position: [1759, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11532,6 +13452,8 @@ export const items: Record<string, Item> = {
     content:
       "When used will cause two of Mom's Hand to come down and grab a random enemy",
     unlock: null,
+    image_url: "repentance-cards_final.png",
+    position: [0, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11545,6 +13467,8 @@ export const items: Record<string, Item> = {
       "Grants the Holy Mantle effect for, which will negate your next hit of damage\nThe effect persist between rooms/floors\nTainted Lost starts with this card, and while playing as this character all cards and runes have a 10% chance to turn into a Holy Card",
     unlock:
       "Unlock this item by defeating Delirium in The Void floor with The Lost",
+    image_url: "ap-cards2.png",
+    position: [2423, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11557,6 +13481,8 @@ export const items: Record<string, Item> = {
     content:
       "This is a one-time use of the Red Key item.\nThe main purpose of the Cracked Key is to unlock Tainted character in the Home floor without needing to find the Red Key. You can force spawn a cracked key by droping any trinket in a Boss Room or Item room, on any floor on your way down to Depths II. When you take the reverse path back up to Home, the trinket will turn into Cracked Key in the same floor/room you dropped it before.",
     unlock: "Unlock this card by opening Mom's Box on the Home floor.",
+    image_url: "repentance-cards_final.png",
+    position: [93, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11569,6 +13495,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this card drops all of your hearts (including non-red hearts), coins, keys and bombs on the floor\nThis effect is done in the most efficient way possible - e.g. if you have 99 coins it will create 3 x Quarters, 2 Dimes and 4 Pennies. If you have 40 bombs it will spawn 4 x Boom! pedestal items\nPicking up all dropped items leaves you with the same health and consumables you had before\nThis allows you to manipulate your consumables in lots of different ways, for example by rerolling them with the D6/D20, re-arrange your Bone heart containers and more\nIf you have the Tarot Cloth item, this card will also drop all your passive items on the floor as pedestals",
     unlock: "Unlock this card by defeating Ultra Greedier mode as Tainted Lost",
+    image_url: "ap-cards2.png",
+    position: [50, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11582,6 +13510,8 @@ export const items: Record<string, Item> = {
       "Gives you a blue aura that repels enemy projectiles, causing them to slowly curve away from Isaac and avoid hitting him\nLasts for 60 seconds",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Judas",
+    image_url: "ap-cards2.png",
+    position: [89, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11595,6 +13525,8 @@ export const items: Record<string, Item> = {
       "Causes Mom's Foot to keep stomping down randomly for 60 seconds where Isaac is standing",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Lilith",
+    image_url: "ap-cards2.png",
+    position: [128, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11606,6 +13538,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Gives 2 HP Up and +1.5 Tears Up for 60 seconds",
     unlock: "Unlock this card by defeating Ultra Greedier mode as Tainted Eve",
+    image_url: "ap-cards2.png",
+    position: [167, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11618,6 +13552,8 @@ export const items: Record<string, Item> = {
     content:
       "Teleports you to an extra boss room, that drops a Boss room item as normal. This room isn't part of the actual floor, and leaving it returns you to where you teleported from\nThe boss isn't necessarily from the current floor - e.g. you could find a caves boss in the basement",
     unlock: "Unlock this card by defeating Ultra Greedier mode as Tainted ???",
+    image_url: "ap-cards2.png",
+    position: [206, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11630,6 +13566,8 @@ export const items: Record<string, Item> = {
     content: "Spawns 2 Bone hearts on the floor",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Bethany",
+    image_url: "ap-cards2.png",
+    position: [245, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11643,6 +13581,8 @@ export const items: Record<string, Item> = {
       "Spawns a random pedestal item from the current room's item pool\nIn exchange, turns one heart container or 2 soul hearts into a broken heart. Broken hearts permanently subtract from your total possible health containers",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Magdalene",
+    image_url: "ap-cards2.png",
+    position: [284, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11655,6 +13595,8 @@ export const items: Record<string, Item> = {
     content:
       "Isaac turns to stone and can't move for 10 seconds, but your tear rate goes up significantly for the duration",
     unlock: "Unlock this card by defeating challenge #42 (Hot Potato)",
+    image_url: "ap-cards2.png",
+    position: [323, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11666,6 +13608,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Spawns 2-4 locked gold chests",
     unlock: "Unlock this card by defeating challenge #43 (Cantripped)",
+    image_url: "ap-cards2.png",
+    position: [362, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11678,6 +13622,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, all items and pickups in the current room are turned into money. Everything is sold for its shop price, e.g. Items for 15c, hearts for 3c, sacks for 7c",
     unlock: "Unlock this card by defeating challenge #44 (Red Redemption)",
+    image_url: "ap-cards2.png",
+    position: [401, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11690,6 +13636,8 @@ export const items: Record<string, Item> = {
     content:
       "Activates a random effect from a Dice room\nSee the dice icon above for each possible effect",
     unlock: "Unlock this card by defeating Ultra Greedier mode as Tainted Cain",
+    image_url: "ap-cards2.png",
+    position: [441, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11703,6 +13651,8 @@ export const items: Record<string, Item> = {
       "All enemies in the current room are slowed and take double damage",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Samson",
+    image_url: "ap-cards2.png",
+    position: [480, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11716,6 +13666,8 @@ export const items: Record<string, Item> = {
       "You turn into the Keeper, gaining triple shot, -0.1 Speed Down for 30 seconds\nEnemies drop random coins while this effect is active",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Keeper",
+    image_url: "ap-cards2.png",
+    position: [519, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11729,6 +13681,8 @@ export const items: Record<string, Item> = {
       "Activates the Book of the Dead effect, spawning a bone orbital or charmed Bony for each enemy killed in the current room",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Forgotten",
+    image_url: "ap-cards2.png",
+    position: [558, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11741,6 +13695,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this card activates 5 random pill effects one after the other",
     unlock: "Unlock this card by defeating challenge #45 (DELETE THIS)",
+    image_url: "ap-cards2.png",
+    position: [597, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11754,6 +13710,8 @@ export const items: Record<string, Item> = {
       "Activates The Bible effect (granting flight) and gives a Seraphim familiar for 30 seconds",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Azazel",
+    image_url: "ap-cards2.png",
+    position: [636, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11767,6 +13725,8 @@ export const items: Record<string, Item> = {
       "Spawns 6 clusters of rocks and objects that normally appear on this floor\nIt won't block any doors that exist\nRocks have a pretty good chance to become tinted rocks",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Apollyon",
+    image_url: "ap-cards2.png",
+    position: [675, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11780,6 +13740,8 @@ export const items: Record<string, Item> = {
       "Removes your oldest item and spawns 2 pedestal items from the current room's pool\nCan remove either passive or active items\nDoesn't remove your character's starting items",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Isaac",
+    image_url: "ap-cards2.png",
+    position: [714, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11793,6 +13755,8 @@ export const items: Record<string, Item> = {
       "Teleports you to the ultra secret room on the floor\nThe ultra secret room is a red room containing an item from the angel room item pool. Can only be accessed via the Red Key, Crystal Key or Cracked Key. Using this card will also open a pathway of red rooms back to the regular floor",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Jacob",
+    image_url: "ap-cards2.png",
+    position: [753, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11806,6 +13770,8 @@ export const items: Record<string, Item> = {
       "When used, grants +1.5 Damage Up, turns your hearts to Bone hearts and the Spirit of the Night effect (Spectral tears and the ability to fly) for the current floor\nAlso gives the Curse of Darkness effect that can't be removed for the current floor",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Jacob",
+    image_url: "ap-cards2.png",
+    position: [792, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11818,6 +13784,8 @@ export const items: Record<string, Item> = {
     content: "Spawns a Restock machine",
     unlock:
       "Unlock this card by defeating Ultra Greedier mode as Tainted Lazarus",
+    image_url: "ap-cards2.png",
+    position: [831, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11829,6 +13797,8 @@ export const items: Record<string, Item> = {
     quality: null,
     content: "Creates a trapdoor to a guaranteed crawl space",
     unlock: "Unlock this card by defeating Ultra Greedier mode as Tainted Eden",
+    image_url: "ap-cards2.png",
+    position: [870, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11841,6 +13811,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this copies the effect of the card, pill, rune, soul stone or active item you used most recently",
     unlock: "Unlock this card by defeating Mega Satan as Tainted Eden",
+    image_url: "repentance-cards_final.png",
+    position: [229, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11853,6 +13825,8 @@ export const items: Record<string, Item> = {
     content:
       "Turns all pedestal items in the current room into rotating items, which cycle between the old item and a random new item every second\nThis allows you to effectively reroll items like with The D6, but choose the old item as well if you want\nTainted Isaac has this effect passively for all items\nIf you use more than one in the same room, each pedestal item will cycle through +1 random item\nItems are chosen from the item pool related to the current item",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Isaac",
+    image_url: "repentance-cards_final.png",
+    position: [278, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11866,6 +13840,8 @@ export const items: Record<string, Item> = {
       "When used, all enemies in the current room drop half a red heart that will disappear after 2 seconds if not picked up",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Magdalene",
+    image_url: "repentance-cards_final.png",
+    position: [331, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11878,6 +13854,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, this Soul Stone creates Red rooms for every possible exit in the current room\nRed outlines of doors appear where this Soul Stone will create exits for\nSee the Red Key item description for more information about these Red rooms behave",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Cain",
+    image_url: "repentance-cards_final.png",
+    position: [384, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11890,6 +13868,8 @@ export const items: Record<string, Item> = {
     content:
       "Activates the Dark Arts item effect, which turns Isaac into a ghost for a few seconds. While in this form you can walk over enemies to mark them for death. After a few seconds, he will quickly attack each target, chaining higher damage for each enemy it hits",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Judas",
+    image_url: "repentance-cards_final.png",
+    position: [442, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11903,6 +13883,8 @@ export const items: Record<string, Item> = {
       "When used this will cause 8 poison farts that leave a brown creep behind, and then drop 7 Butt Bombs very quickly\nStanding in the creep gives you +1 Damage Up and +1.35 Tears Up",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Blue Baby",
+    image_url: "repentance-cards_final.png",
+    position: [495, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11915,6 +13897,8 @@ export const items: Record<string, Item> = {
     content:
       "For the current room, 14 Dead Birds fly in from off the screen and attack all enemies, dealing low but frequent damage",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Eve",
+    image_url: "repentance-cards_final.png",
+    position: [545, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11928,6 +13912,8 @@ export const items: Record<string, Item> = {
       "Isaac gains the Berserk! effect for 10 seconds. This gives Isaac a bone sword and he goes on a killing rampage, gaining +0.4 Speed, +3 Flat Damage Up",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Samson",
+    image_url: "repentance-cards_final.png",
+    position: [594, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11941,6 +13927,8 @@ export const items: Record<string, Item> = {
       "Activates the Mega Blast item effect, which gives you a giant laser that deals x5 your tear damage per tick to anything in its path and pushing Isaac back by the force\nThe effect lasts for 8 seconds but does persist between rooms",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Azazel",
+    image_url: "repentance-cards_final.png",
+    position: [638, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11954,6 +13942,8 @@ export const items: Record<string, Item> = {
       "When used this kills Isaac and revives him with 1/2 a red heart. You get a couple of seconds of invincibility to move away after\nThe main benefit of this Soul Stone is that it automatically activates if you die, meaning it is effectively an extra passive life while held",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Lazarus",
+    image_url: "repentance-cards_final.png",
+    position: [687, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11966,6 +13956,8 @@ export const items: Record<string, Item> = {
     content:
       "Activates the D6 and D20 effects, rerolling all items and pickups in the room. Unlike the regular D6, rerolled items can pick from any item pool",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Eden",
+    image_url: "repentance-cards_final.png",
+    position: [740, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11978,6 +13970,8 @@ export const items: Record<string, Item> = {
     content:
       "When used, Isaac dies and becomes The Lost for the current room. This gives you his ability to fly, and the Holy Mantle effect. However if you take damage a second time you die like the Lost does\nSame effect as touching a white fire, but only lasts one room",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Lost",
+    image_url: "repentance-cards_final.png",
+    position: [791, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -11990,6 +13984,8 @@ export const items: Record<string, Item> = {
     content: "Gives you 1 random permanent familiar",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Lilith",
+    image_url: "repentance-cards_final.png",
+    position: [836, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -12002,6 +13998,8 @@ export const items: Record<string, Item> = {
     content: "Spawns up to 25 random coins on the floor",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Keeper",
+    image_url: "repentance-cards_final.png",
+    position: [889, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -12015,6 +14013,8 @@ export const items: Record<string, Item> = {
       "Creates 15 random Locusts\nLocusts are variants of blue flies, except they have special effects based on the color\nWar (Red) - Explodes when touching the enemy. The actual explosion deals flat 60 damage\nPestilence (Green) - Poisons the enemy it attacks\nFamine (Brown) - Applies a slowing effect\nDeath (Black) - Deals x4 damage instead of x2\nConquest (White) - Spawns 2-5 at once",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Apollyon",
+    image_url: "repentance-cards_final.png",
+    position: [940, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -12028,6 +14028,8 @@ export const items: Record<string, Item> = {
       "Gives you The Forgotten as a temporary familiar, with 2 Bone hearts and his bone weapon. He behaves the same as how Esau works with Jacob, following your exact movements\nDisappears after the current room or if he takes enough damage and dies",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Forgotten",
+    image_url: "repentance-cards_final.png",
+    position: [986, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -12041,6 +14043,8 @@ export const items: Record<string, Item> = {
       "Creates 6 wisps, similar to the Book of Virtues effect\nMosts wisps will be the standard blue ones, but have a chance to have random special properties",
     unlock:
       "Unlock this item by defeating Hush and Boss Rush as Tainted Bethany",
+    image_url: "repentance-cards_final.png",
+    position: [1037, 0],
     type: null,
     item_pool: null,
     recharge_time: null,
@@ -12053,6 +14057,8 @@ export const items: Record<string, Item> = {
     content:
       "Spawns Esau as a temporary familiar, who copies your exact movements the same as how the Jacob & Esau character works\nDisappears after the current room or if he takes enough damage and dies",
     unlock: "Unlock this item by defeating Hush and Boss Rush as Tainted Jacob",
+    image_url: "repentance-cards_final.png",
+    position: [1085, 0],
     type: null,
     item_pool: null,
     recharge_time: null,

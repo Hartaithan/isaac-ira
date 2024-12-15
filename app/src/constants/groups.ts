@@ -1,6 +1,6 @@
 import { ItemGroup } from "@/model/item";
 
-export const items: ItemGroup[] = [
+export const groups: ItemGroup[] = [
   {
     name: "Repentance Items",
     count: 173,
