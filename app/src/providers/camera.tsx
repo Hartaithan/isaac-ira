@@ -36,22 +36,34 @@ const CameraProvider: FC<PropsWithChildren> = (props) => {
   const canvas = useRef<HTMLCanvasElement>(null);
   const cropped = useRef<HTMLCanvasElement>(null);
 
+  const handleCanPlay = useCallback(async () => {
+    try {
+      if (!camera.current) return;
+      await camera.current.play();
+      camera.current.removeEventListener("canplay", handleCanPlay);
+    } catch (error) {
+      console.error("initialize camera  error", error);
+    }
+  }, []);
+
   const initialize: Context["initialize"] = useCallback(async () => {
     try {
       if (!camera.current) return;
       const stream = await navigator.mediaDevices.getUserMedia(constraints);
       camera.current.srcObject = stream;
-      await camera.current.play();
+      camera.current.addEventListener("canplay", handleCanPlay);
     } catch (error) {
       console.error("initialize camera error", error);
     }
-  }, []);
+  }, [handleCanPlay]);
 
   const stop: Context["stop"] = useCallback(() => {
     if (!camera.current || !camera.current.srcObject) return;
     const stream = camera.current.srcObject as MediaStream;
     const tracks = stream.getTracks();
     tracks.forEach((track) => track.stop());
+    camera.current.srcObject = null;
+    camera.current.load();
   }, []);
 
   const capture: Context["capture"] = useCallback(() => {

@@ -44,7 +44,7 @@ const PredictionProvider: FC<PropsWithChildren> = (props) => {
 
   const exposed: Context = useMemo(
     () => ({ results, makePrediction }),
-    [makePrediction, results],
+    [results, makePrediction],
   );
 
   return <Context.Provider value={exposed}>{children}</Context.Provider>;
