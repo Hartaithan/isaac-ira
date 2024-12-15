@@ -13,6 +13,7 @@ assets_css = os.path.join(assets, "main.css")
 
 assets_images = os.path.join(assets, "images")
 assets_cropped = os.path.join(assets, "cropped")
+assets_used = os.path.join(assets, "used")
 
 assets_html = os.path.join(assets, "index.html")
 assets_groups = os.path.join(assets, "groups.ts")

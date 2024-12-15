@@ -4,8 +4,11 @@ from json import dumps
 from bs4 import BeautifulSoup
 from utils import extract_filename
 from css import get_styles_by_class
-from image import save_image
+from image import save_image, save_used_images
 from globals import assets, assets_html, assets_groups, assets_items
+
+
+used_images: list[str] = []
 
 
 def parse_text_element(item, cl):
@@ -97,6 +100,8 @@ def read_item_classes(item_id, item):
     if 'rep-trink' in filtered:
         rep_trink_styles = get_styles_by_class('.rep-trink')
         image_url = extract_filename(rep_trink_styles.get('background'))
+    if image_url and image_url not in used_images:
+        used_images.append(image_url)
     size = parse_size(position_styles, item_styles)
     item_position = position_styles and position_styles.get(
         "background-position")
@@ -216,9 +221,6 @@ def parse_html():
         os.makedirs(assets, exist_ok=True)
         save_groups(groups)
         save_items(items)
-
+        save_used_images(used_images)
     else:
         print("main div not found")
-
-
-parse_html()

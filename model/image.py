@@ -2,9 +2,10 @@ import re
 import os
 import requests
 import numpy
+import shutil
 from PIL import Image, ImageOps, ImageEnhance
 from globals import load_timeout, pre_dataset, background
-from globals import url, assets_css, assets_images, assets_cropped
+from globals import url, assets_css, assets_images, assets_cropped, assets_used
 
 
 def download_all_images():
@@ -180,3 +181,14 @@ def scale_predataset():
             scale_image(image, 1.1, filename, subfolder_path)
             scale_image(image, 1.2, filename, subfolder_path)
             scale_image(image, 1.3, filename, subfolder_path)
+
+
+def save_used_images(images: list[str]):
+    os.makedirs(assets_used, exist_ok=True)
+    for filename in images:
+        image_path = os.path.join(assets_images, filename)
+        if not os.path.exists(image_path):
+            print(f"used image {image_path} does not exist")
+            continue
+        output_path = os.path.join(assets_used, filename)
+        shutil.copy(image_path, output_path)

@@ -1,4 +1,4 @@
-from keras.api.models import load_model
+from keras.models import load_model
 from tensorflowjs.converters import save_keras_model
 from globals import root
 
