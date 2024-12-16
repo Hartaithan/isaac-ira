@@ -2,7 +2,7 @@ import re
 import os
 import requests
 import numpy
-import shutil
+import pillow_avif  # pylint: disable=W0611
 from PIL import Image, ImageOps, ImageEnhance
 from globals import load_timeout, pre_dataset, background
 from globals import url, assets_css, assets_images, assets_cropped, assets_used
@@ -190,5 +190,7 @@ def save_used_images(images: list[str]):
         if not os.path.exists(image_path):
             print(f"used image {image_path} does not exist")
             continue
+        image = Image.open(image_path)
         output_path = os.path.join(assets_used, filename)
-        shutil.copy(image_path, output_path)
+        output_path = output_path.replace('.png', '.avif')
+        image.save(output_path, format='avif', quality=50)
