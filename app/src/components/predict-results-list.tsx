@@ -1,6 +1,7 @@
 import { items } from "@/constants/items";
 import { PredictResult } from "@/model/predict";
 import { usePrediction } from "@/providers/prediction";
+import { getItemStyles } from "@/utils/item";
 import { FC, memo } from "react";
 
 interface ItemProps {
@@ -12,7 +13,8 @@ const PredictResultItem: FC<ItemProps> = memo((props) => {
   const item = items[result.id];
   return (
     <div className="flex min-w-24 flex-col items-center justify-center rounded bg-neutral-900/80 px-3 py-2 text-center text-white">
-      <p className="font-bold">{item.name}</p>
+      <img style={getItemStyles(item)} />
+      <p className="font-bold">{item?.name || "Not found"}</p>
       <p>{result.probability + "%"}</p>
     </div>
   );
