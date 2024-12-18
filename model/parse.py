@@ -107,7 +107,7 @@ def read_item_classes(item_id, item):
         "background-position")
     position = parse_position(item_position)
     save_image(item_id, image_url, position, size)
-    return image_url, position
+    return image_url, position, size
 
 
 def parse_group_items(content):
@@ -130,7 +130,7 @@ def parse_group_items(content):
         unlock = parse_text_element(item, "r-unlock")
         params = parse_items_params(item)
 
-        image_url, position = read_item_classes(item_id, item)
+        image_url, position, size = read_item_classes(item_id, item)
 
         item = {
             "id": item_id,
@@ -141,6 +141,8 @@ def parse_group_items(content):
             "unlock": unlock,
             "image_url": image_url,
             "position": position,
+            "width": size[0],
+            "height": size[1],
             **params,
         }
         items.append(item)

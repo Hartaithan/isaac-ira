@@ -13,6 +13,8 @@ export interface Item {
   unlock: string | null;
   image_url: string;
   position: [number, number];
+  width: number;
+  height: number;
   type: string | null;
   item_pool: string | null;
   recharge_time: string | null;
