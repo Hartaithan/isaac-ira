@@ -19,6 +19,8 @@ def group_dataset():
     os.makedirs(dirs[2], exist_ok=True)
 
     for subdir in os.listdir(input_dir):
+        if subdir == '.DS_Store':
+            continue
         subdir_path = os.path.join(input_dir, subdir)
         if os.path.isdir(subdir_path):
             image_files = [f for f in os.listdir(

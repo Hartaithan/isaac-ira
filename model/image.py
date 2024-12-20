@@ -143,6 +143,8 @@ def scale_image(image, scale, filename, path):
 
 def prepare_images():
     for filename in os.listdir(assets_cropped):
+        if filename == '.DS_Store':
+            continue
         image_path = os.path.join(assets_cropped, filename)
         image = Image.open(image_path)
         image = resize_image(image, 224, 224)
@@ -174,8 +176,12 @@ def prepare_images():
 
 def scale_predataset():
     for folder in os.listdir(pre_dataset):
+        if folder == '.DS_Store':
+            continue
         subfolder_path = os.path.join(pre_dataset, folder)
         for filename in os.listdir(subfolder_path):
+            if filename == '.DS_Store':
+                continue
             image_path = os.path.join(pre_dataset, folder, filename)
             image = Image.open(image_path)
             scale_image(image, 1.1, filename, subfolder_path)
