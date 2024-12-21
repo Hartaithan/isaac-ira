@@ -2,6 +2,7 @@ import os
 import shutil
 import random
 from globals import dataset, pre_dataset
+from progress import Progress
 
 input_dir = pre_dataset
 output_dir = dataset
@@ -18,11 +19,17 @@ def group_dataset():
     os.makedirs(dirs[1], exist_ok=True)
     os.makedirs(dirs[2], exist_ok=True)
 
-    for subdir in os.listdir(input_dir):
+    progress = Progress("Group dataset")
+    progress.start()
+
+    folders = os.listdir(input_dir)
+    for i, subdir in enumerate(folders):
         if subdir == '.DS_Store':
             continue
         subdir_path = os.path.join(input_dir, subdir)
         if os.path.isdir(subdir_path):
+            progress.update(subdir_path, i, len(folders))
+
             image_files = [f for f in os.listdir(
                 subdir_path) if f.endswith('.jpg') or f.endswith('.png')]
 
@@ -37,10 +44,10 @@ def group_dataset():
             test_files = image_files[train_size+validation_size:]
 
             train_subdir = os.path.join(dirs[0], subdir)
-            validation_subdir = os.path.join(dirs[1], subdir)
-            test_subdir = os.path.join(dirs[2], subdir)
             os.makedirs(train_subdir, exist_ok=True)
+            validation_subdir = os.path.join(dirs[1], subdir)
             os.makedirs(validation_subdir, exist_ok=True)
+            test_subdir = os.path.join(dirs[2], subdir)
             os.makedirs(test_subdir, exist_ok=True)
 
             for file in train_files:
@@ -49,3 +56,5 @@ def group_dataset():
                 shutil.copy(os.path.join(subdir_path, file), validation_subdir)
             for file in test_files:
                 shutil.copy(os.path.join(subdir_path, file), test_subdir)
+
+    progress.complete()

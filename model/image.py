@@ -6,9 +6,12 @@ import pillow_avif  # pylint: disable=W0611
 from PIL import Image, ImageOps, ImageEnhance
 from globals import load_timeout, pre_dataset, background
 from globals import url, assets_css, assets_images, assets_cropped, assets_used
+from progress import Progress
 
 
 def download_all_images():
+    progress = Progress("Downloading all image assets")
+    progress.start()
     # get all images
     with open(assets_css, "r", encoding="utf-8") as file:
         css_content = file.read()
@@ -17,18 +20,19 @@ def download_all_images():
     image_urls = [url.strip('"').strip("'") for url in image_urls]
     # download all images
     os.makedirs(assets_images, exist_ok=True)
-    for _i, image_url in enumerate(image_urls):
+    for i, image_url in enumerate(image_urls):
         image_url = url + image_url.replace("..", "")
         filename = image_url.split("/")[-1]
         path = f"{assets_images}/{filename}"
+        progress.update(path, i, len(image_urls))
         if not os.path.exists(path):
             response = requests.get(image_url, timeout=load_timeout)
             if response.status_code == 200:
                 with open(path, "wb") as file:
                     file.write(response.content)
-                print(f"image {path} loaded")
             else:
                 print(f"image {path} load error {response.status_code}")
+    progress.complete()
 
 
 def save_image(name, image_path, position, size):
@@ -142,7 +146,10 @@ def scale_image(image, scale, filename, path):
 
 
 def prepare_images():
-    for filename in os.listdir(assets_cropped):
+    progress = Progress("Prepare images")
+    progress.start()
+    files = os.listdir(assets_cropped)
+    for i, filename in enumerate(files):
         if filename == '.DS_Store':
             continue
         image_path = os.path.join(assets_cropped, filename)
@@ -152,6 +159,9 @@ def prepare_images():
 
         output_folder = f"{pre_dataset}/{filename.replace('.png', '')}"
         os.makedirs(output_folder, exist_ok=True)
+
+        progress.update(output_folder, i, len(files))
+
         image.save(f'{output_folder}/original.png')
 
         tilt_image(image, 0.05, output_folder)
@@ -172,10 +182,14 @@ def prepare_images():
         rotate_image(image, 3, output_folder)
         rotate_image(image, 5, output_folder)
         rotate_image(image, 10, output_folder)
+    progress.complete()
 
 
-def scale_predataset():
-    for folder in os.listdir(pre_dataset):
+def scale_dataset():
+    progress = Progress("Scale dataset")
+    progress.start()
+    folders = os.listdir(pre_dataset)
+    for i, folder in enumerate(folders):
         if folder == '.DS_Store':
             continue
         subfolder_path = os.path.join(pre_dataset, folder)
@@ -184,14 +198,18 @@ def scale_predataset():
                 continue
             image_path = os.path.join(pre_dataset, folder, filename)
             image = Image.open(image_path)
+            progress.update(f"{image_path}", i, len(folders))
             scale_image(image, 1.1, filename, subfolder_path)
             scale_image(image, 1.2, filename, subfolder_path)
             scale_image(image, 1.3, filename, subfolder_path)
+    progress.complete()
 
 
 def save_used_images(images: list[str]):
+    progress = Progress("Downloading all image assets")
+    progress.start()
     os.makedirs(assets_used, exist_ok=True)
-    for filename in images:
+    for i, filename in enumerate(images):
         image_path = os.path.join(assets_images, filename)
         if not os.path.exists(image_path):
             print(f"used image {image_path} does not exist")
@@ -199,4 +217,6 @@ def save_used_images(images: list[str]):
         image = Image.open(image_path)
         output_path = os.path.join(assets_used, filename)
         output_path = output_path.replace('.png', '.avif')
+        progress.update(output_path, i, len(images))
         image.save(output_path, format='avif', quality=50)
+    progress.complete()

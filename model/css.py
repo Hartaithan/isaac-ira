@@ -2,9 +2,12 @@ import re
 import os
 import requests
 from globals import assets, assets_css, url_css, load_timeout
+from progress import Progress
 
 
 def download_css():
+    progress = Progress("Downloading CSS")
+    progress.start()
     if not os.path.exists(assets_css):
         response = requests.get(url_css, timeout=load_timeout)
         if response.status_code == 200:
@@ -12,12 +15,13 @@ def download_css():
             os.makedirs(assets, exist_ok=True)
             with open(assets_css, "w", encoding="utf-8") as file:
                 file.write(css_content)
-            print("css loaded")
+            progress.complete()
         else:
-            print(f"css load error {response.status_code}")
+            progress.complete(f"error {response.status_code}")
     else:
         with open(assets_css, "r", encoding="utf-8") as file:
             css_content = file.read()
+        progress.complete()
 
 
 def get_styles_by_class(class_name):

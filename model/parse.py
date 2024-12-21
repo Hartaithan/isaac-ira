@@ -4,8 +4,9 @@ from json import dumps
 from bs4 import BeautifulSoup
 from utils import extract_filename
 from css import get_styles_by_class
-from image import save_image, save_used_images
+from image import save_image
 from globals import assets, assets_html, assets_groups, assets_items
+from progress import Progress
 
 
 used_images: list[str] = []
@@ -111,9 +112,14 @@ def read_item_classes(item_id, item):
 
 
 def parse_group_items(content):
+    progress = Progress("Parsing group items")
+    progress.start()
+
     items = []
     ids = []
-    for item in content:
+    count = len(content)
+
+    for i, item in enumerate(content):
         if not item.name:
             continue
         if item.name == 'h2':
@@ -147,6 +153,9 @@ def parse_group_items(content):
         }
         items.append(item)
         ids.append(item_id)
+        progress.update(item_id, i, count)
+
+    progress.complete()
     return items, ids
 
 
@@ -180,6 +189,8 @@ def format_item(item):
 
 
 def save_groups(groups):
+    progress = Progress("Generating groups list")
+    progress.start()
     content = "import { ItemGroup } from \"@/model/item\";\n\n"
     content += "export const groups: ItemGroup[] = [\n"
     content += ",\n".join([
@@ -193,9 +204,12 @@ def save_groups(groups):
     content += "\n];\n"
     with open(assets_groups, "w", encoding="utf-8") as ts_file:
         ts_file.write(content)
+    progress.complete()
 
 
 def save_items(items):
+    progress = Progress("Generating items list")
+    progress.start()
     content = "import { Item } from \"@/model/item\";\n\n"
     content += "export const items: Record<string, Item> = {\n"
     content += ",\n".join([
@@ -205,6 +219,7 @@ def save_items(items):
     content += "\n};\n"
     with open(assets_items, "w", encoding="utf-8") as ts_file:
         ts_file.write(content)
+    progress.complete()
 
 
 def parse_html():
@@ -224,8 +239,4 @@ def parse_html():
                 if group_items is not None:
                     items.extend(group_items)
         os.makedirs(assets, exist_ok=True)
-        save_groups(groups)
-        save_items(items)
-        save_used_images(used_images)
-    else:
-        print("main div not found")
+        return groups, items, used_images
