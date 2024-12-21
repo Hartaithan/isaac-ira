@@ -185,26 +185,6 @@ def prepare_images():
     progress.complete()
 
 
-def scale_dataset():
-    progress = Progress("Scale dataset")
-    progress.start()
-    folders = os.listdir(pre_dataset)
-    for i, folder in enumerate(folders):
-        if folder == '.DS_Store':
-            continue
-        subfolder_path = os.path.join(pre_dataset, folder)
-        for filename in os.listdir(subfolder_path):
-            if filename == '.DS_Store':
-                continue
-            image_path = os.path.join(pre_dataset, folder, filename)
-            image = Image.open(image_path)
-            progress.update(f"{image_path}", i, len(folders))
-            scale_image(image, 1.1, filename, subfolder_path)
-            scale_image(image, 1.2, filename, subfolder_path)
-            scale_image(image, 1.3, filename, subfolder_path)
-    progress.complete()
-
-
 def save_used_images(images: list[str]):
     progress = Progress("Downloading all image assets")
     progress.start()
