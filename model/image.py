@@ -42,11 +42,12 @@ def save_image(name, image_path, position, size):
         x, y = position
         width, height = size
         box = (x, y, x + width, y + height)
-        cropped_image = image.crop(box)
+        cropped = image.crop(box)
         os.makedirs(assets_cropped, exist_ok=True)
         filename = f"{name}.png"
         output_path = os.path.join(assets_cropped, filename)
-        cropped_image.save(output_path)
+        resized = resize_image(cropped, 50, 50)
+        resized.save(output_path)
     except Exception as e:
         print(f"save image error: {e}")
 
