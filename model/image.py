@@ -2,10 +2,9 @@ import re
 import os
 import requests
 import numpy
-import pillow_avif  # pylint: disable=W0611
 from PIL import Image, ImageOps, ImageEnhance
 from globals import load_timeout, pre_dataset, background
-from globals import url, assets_css, assets_images, assets_cropped, assets_used
+from globals import url, assets, assets_css, assets_images, assets_cropped
 from progress import Progress
 
 
@@ -186,18 +185,43 @@ def prepare_images():
     progress.complete()
 
 
-def save_used_images(images: list[str]):
-    progress = Progress("Downloading all image assets")
-    progress.start()
-    os.makedirs(assets_used, exist_ok=True)
-    for i, filename in enumerate(images):
-        image_path = os.path.join(assets_images, filename)
-        if not os.path.exists(image_path):
-            print(f"used image {image_path} does not exist")
-            continue
-        image = Image.open(image_path)
-        output_path = os.path.join(assets_used, filename)
-        output_path = output_path.replace('.png', '.avif')
-        progress.update(output_path, i, len(images))
-        image.save(output_path, format='avif', quality=50)
-    progress.complete()
+def create_sprite_sheet(items):
+    sprites_progress = Progress("Loading cropped sprites")
+    sprites_progress.start()
+
+    SPRITE_SIZE = 50
+    SPRITES_PER_ROW = 50
+
+    sprites = []
+
+    for i, item in enumerate(items):
+        sprite_path = os.path.join(assets_cropped, f"{item['id']}.png")
+        sprites_progress.update(sprite_path, i, len(items))
+        sprite = Image.open(sprite_path)
+        sprites.append(sprite)
+
+    sprites_progress.complete()
+
+    sheet_progress = Progress("Creating sprite sheet")
+    sheet_progress.start()
+
+    num_rows = (len(sprites) + SPRITES_PER_ROW - 1) // SPRITES_PER_ROW
+    sheet_width = SPRITE_SIZE * SPRITES_PER_ROW
+    sheet_height = SPRITE_SIZE * num_rows
+
+    sprite_sheet = Image.new("RGBA", (sheet_width, sheet_height))
+
+    for i, sprite in enumerate(sprites):
+        sheet_progress.update(items[i]['name'], i, len(sprites))
+
+        x_offset = (i % SPRITES_PER_ROW) * SPRITE_SIZE
+        y_offset = (i // SPRITES_PER_ROW) * SPRITE_SIZE
+        sprite_sheet.paste(sprite, (x_offset, y_offset))
+
+        items[i]['position'] = (x_offset, y_offset)
+
+    sprite_sheet.save(os.path.join(assets, "items.webp"), "WEBP", quality=80)
+
+    sheet_progress.complete()
+
+    return items
