@@ -15,21 +15,13 @@ interface ItemImageProps {
 }
 
 const ItemImage: FC<ItemImageProps> = (props) => {
-  const { size = 50, item } = props;
+  const { item } = props;
   return (
-    <div className="overflow-hidden" style={{ width: size, height: size }}>
-      <div
-        className="relative scale-50"
-        style={{ width: size * 2, height: size * 2 }}
-      >
-        <img
-          className="absolute -translate-x-1/2 -translate-y-1/2 transform"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          style={getItemStyles(item)}
-          alt={item.name + " " + item.description}
-        />
-      </div>
-    </div>
+    <img
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      style={getItemStyles(item)}
+      alt={item.name + " " + item.description}
+    />
   );
 };
 
