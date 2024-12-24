@@ -18,6 +18,7 @@ const ItemImage: FC<ItemImageProps> = (props) => {
   const { item } = props;
   return (
     <img
+      className="mt-2"
       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
       style={getItemStyles(item)}
       alt={item.name + " " + item.description}
@@ -29,10 +30,12 @@ const PredictResultItem: FC<ItemProps> = memo((props) => {
   const { result } = props;
   const item = items[result.id];
   return (
-    <div className="flex min-w-24 flex-col items-center rounded bg-neutral-900/80 px-3 py-2 text-center text-white">
+    <div className="flex min-w-24 max-w-32 flex-col items-center rounded bg-neutral-900/80 px-3 py-2 text-center text-white">
       <ItemImage item={item} />
-      <p className="mt-1 text-sm font-bold">{item?.name || "Not found"}</p>
-      <p className="font-medium">{result.probability + "%"}</p>
+      <div className="flex h-full flex-col items-center justify-center">
+        <p className="mt-1 text-sm font-bold">{item?.name || "Not found"}</p>
+        <p className="font-medium">{result.probability + "%"}</p>
+      </div>
     </div>
   );
 });
