@@ -37,10 +37,15 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  unstyled?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  (
+    { className, variant, size, asChild = false, unstyled = false, ...props },
+    ref,
+  ) => {
+    if (unstyled) return <button ref={ref} className={className} {...props} />;
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
